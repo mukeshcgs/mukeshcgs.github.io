@@ -16,7 +16,8 @@ module.exports = merge(common, {
             }
         }),
         new CopyWebpackPlugin([
-            {from:'src/img',to:'img'} 
-        ]), 
+            { from: 'src/img', to: 'img' },
+            { from: 'src/index.html', to: 'index.html' }
+        ]),
     ]
 });
