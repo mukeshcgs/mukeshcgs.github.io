@@ -1,0 +1,60 @@
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px 0px;
+    left: 0px;
+    z-index: 1;
+    text-align: right;
+    ul {
+        margin-right: 10px;
+        display: block;
+        li {
+            display: inline-block;
+            a {
+                margin-right: 10px;
+                display: block;
+                padding: 6px;
+                border-radius: 6px;
+                color: $light-gray;
+                letter-spacing: 1px;
+                color: rgb(131, 131, 131);
+                &.fb {
+                    background: $fb;
+                }
+                &.tw {
+                    background: $tw;
+                }
+                &.gm {
+                    background: $gm;
+                }
+            }
+        }
+    }
+    @media (max-width: $to-small) {
+        position: relative;
+        text-align: center;
+        ul {
+            margin: 0px;
+            li {
+                margin: 0px;
+                a {
+                    margin-right: 0px;
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    letter-spacing: 1.5px;
+                    span {
+                        font-size: inherit;
+                        color: #0084ff;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {}
+    @media (min-width: $from-medium) and (max-width: $to-large) {}
+    @media (min-width: $from-large) and (max-width: $to-huge) {}
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+    @media (min-width: $from-colossal) {}
+}

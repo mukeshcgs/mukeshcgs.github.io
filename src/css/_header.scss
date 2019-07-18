@@ -1,0 +1,99 @@
+header {
+    text-align: center;
+    padding: 2rem;
+
+    span {
+        padding: 0.5rem;
+        color: #727272;
+        font-family: "Maison Neue", sans-serif;
+        font-weight: 300;
+        &.pluse {
+            color: #3f3f3f;
+        }
+
+        &.equal {
+            color: #3f3f3f;
+        }
+
+        &.art {
+            font-weight: 800;
+            // color: rgb(255, 251, 0);
+            -webkit-animation: colorchange 10s infinite alternate;
+        }
+
+        &.love {
+            color: red;
+        }
+    }
+
+    @media (max-width: $to-small) {}
+
+    @media (min-width: $from-small) and (max-width: $to-medium) {}
+
+    @media (min-width: $from-medium) and (max-width: $to-large) {}
+
+    @media (min-width: $from-large) and (max-width: $to-huge) {}
+
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+
+    @media (min-width: $from-colossal) {}
+}
+
+@keyframes colorchange {
+    0% {
+
+        color: rgb(255, 0, 0);
+    }
+
+    10% {
+
+        color: #ff8800;
+    }
+
+    20% {
+
+        color: #fbff00;
+    }
+
+    30% {
+
+        color: #1eff00;
+    }
+
+    40% {
+
+        color: rgb(0, 247, 255);
+    }
+
+    50% {
+
+        color: #1900ff;
+    }
+
+    60% {
+
+        color: rgb(140, 0, 255);
+    }
+
+    70% {
+
+        color: #f700ff;
+    }
+
+    80% {
+
+        color: #ffcc00;
+    }
+
+    90% {
+
+        color: #ff0000;
+    }
+
+    100% {
+
+        color: rgb(255, 0, 0);
+    }
+}

@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Maison Neue", sans-serif;
+    font-weight: 300; // font-size: 14px;
+    color: $mid-gray;
+}
+
+html {
+    @media (max-width: $to-small) {
+        font-size: 12px;
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {
+        font-size: 13px;
+    }
+    @media (min-width: $from-medium) and (max-width: $to-large) {
+        font-size: 14px;
+    }
+    @media (min-width: $from-large) and (max-width: $to-huge) {
+        font-size: $font-size;
+        /* [1] */
+    }
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {
+        font-size: 18px;
+    }
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {
+        font-size: 21px;
+    }
+    @media (min-width: $from-colossal) {
+        font-size: 24px;
+    }
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: $mid-gray;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+    color: #999;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+img {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 100rem;
+}
+
+@media (max-width: 1599px) and (min-width: 700px) {
+    #page-wrapper {
+        padding-right: 7.5rem;
+        padding-left: 7.5rem;
+        max-width: 140rem;
+    }
+    .page-container {
+        padding-right: 7.5rem;
+        padding-left: 7.5rem;
+        max-width: 140rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-container {
+        margin: 0 auto;
+        max-width: 1024px;
+        p {
+            // font-size: 14px;
+            color: #999;
+            letter-spacing: 1px;
+            font-weight: 300;
+            line-height: 1.5em;
+            margin-bottom: 2.5em;
+        }
+    }
+}

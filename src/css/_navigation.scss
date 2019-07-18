@@ -1,0 +1,25 @@
+.navigation {
+    left: 0px;
+    padding: 20px;
+    position: relative;
+    
+    @media (max-width: $to-small) {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        z-index: 2;
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        z-index: 2;
+    }
+    @media (min-width: $from-medium) and (max-width: $to-large) {}
+    @media (min-width: $from-large) and (max-width: $to-huge) {}
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+    @media (min-width: $from-colossal) {}
+}
