@@ -10,29 +10,45 @@
 </head>
 
 <body>
+  <canvas id="background"></canvas>
   <header>
     <p> <span>Generative <span class="art">Art</span></span></p>
     <!-- <p><span>Code</span><span class="pluse">+</span><span class="art">Art</span><span class="equal">=</span> <span
         class="love">Love</span>
     </p> -->
   </header>
+  <!-- <img src = <% require("html-loader!./index.html"); %> data-src=../../dist2/img/sketch-01.png /> -->
+
   <main data-module="home">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <img class="img-responsive" src="img/sketch-01.png" alt="" srcset="">
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive" src="img/sketch-02.png" alt="" srcset="">
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive" src="img/sketch-03.png" alt="" srcset="">
-        </div>
-        <div class="col-md-3">
-          <img class="img-responsive" src="img/sketch-04.png" alt="" srcset="">
+        <div class="col-md-3 col-sm-6">
+          <img class="img-responsive" src=<% require("html-loader?attrs=img:src img:data-src!./index.html");
+          %> data-src=../../src/img/sketch-01.png> 
+        </div> 
+          <div class="col-md-3 col-sm-6">
+          <img class="img-responsive" src=<% require("html-loader?attrs=img:src img:data-src!./index.html");
+          %> data-src=../../src/img/sketch-02.png> 
+        </div> 
+        <div class="col-md-3 col-sm-6">
+          <img class="img-responsive"
+            src=<% require("html-loader?attrs[]=img:src&attrs[]=img:data-src!./index.html"); %>
+            data-src=../../src/img/sketch-03.png> 
+          </div> 
+          <div class="col-md-3 col-sm-6">
+            <img class="img-responsive"
+              src=<% require("html-loader?attrs[]=img:src&attrs[]=img:data-src!./index.html"); %>
+              data-src=../../src/img/sketch-04.png> 
+            </div> 
+            <!-- <div class="col-md-3 col-sm-6">
+          <img class="img-responsive" src=<% require("html-loader!./index.html"); %>
+            data-src=../../dist2/img/sketch-02.png> </div> <div class="col-md-3 col-sm-6">
+          <img class="img-responsive" src=<% require("html-loader!./index.html"); %>
+            data-src=../../dist2/img/sketch-03.png> </div> <div class="col-md-3 col-sm-6">
+          <img class="img-responsive" src=<% require("html-loader!./index.html"); %>
+            data-src=../../dist2/img/sketch-04.png> </div> -->
         </div>
       </div>
-    </div>
   </main>
 </body>
 

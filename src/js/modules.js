@@ -9,3 +9,8 @@ export {
     default as Home
 }
 from './modules/Home';
+
+export {
+    default as Canvas
+}
+from './modules/Canvas';

@@ -16,75 +16,74 @@ let titles = {
 // console.log('Production: ', env.production); // true
 
 module.exports = {
-
   entry: {
     index: './src/js/index.js',
   },
   mode: 'development',
   module: {
     rules: [{
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015', 'stage-0'],
-          plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
-        }
-      },
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: [{
-            loader: "css-loader"
-          }, {
-            loader: "sass-loader"
-          }],
-        })
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-
-      {
-        test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            attrs: [':data-src']
-          }
-        }
-      },
-
-      {
-        test: /\.(html)$/,
-        use: {
-          loader: 'ractive',
-        }
-      },
-
-      {
-        test: /\.handlebars$/,
-        loader: "handlebars-loader"
-      },
-      {
-        test: /\.modernizrrc.js$/,
-        use: ['modernizr-loader']
-      },
-      {
-        test: /\.modernizrrc(\.json)?$/,
-        use: ['modernizr-loader', 'json-loader']
+      test: /\.jsx?$/,
+      exclude: /(node_modules|bower_components)/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['react', 'es2015', 'stage-0'],
+        plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
       }
+    },
+    {
+      test: /\.scss$/,
+      exclude: /node_modules/,
+      use: ExtractTextPlugin.extract({
+        fallback: "style-loader",
+        use: [{
+          loader: "css-loader"
+        }, {
+          loader: "sass-loader"
+        }],
+      })
+    },
+    {
+      test: /\.(png|svg|jpg|gif)$/,
+      use: [
+        'file-loader'
+      ]
+    },
+    {
+      test: /\.(woff|woff2|eot|ttf|otf)$/,
+      use: [
+        'file-loader'
+      ]
+    },
+    { test: /\.jpg$/, use: [ "file-loader" ] },
+    { test: /\.png$/, use: [ "url-loader?mimetype=image/png" ] },
+    {
+      test: /\.(html)$/,
+      use: {
+        loader: 'html-loader',
+        options: {
+          attrs: [':data-src']
+        }
+      }
+    },
+    {
+      test: /\.modernizrrc.js$/,
+      use: ['modernizr-loader']
+    },
+    {
+      test: /\.modernizrrc(\.json)?$/,
+      use: ['modernizr-loader', 'json-loader']
+    },
+    {
+      test: /\.(png|jpg|gif)$/i,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+          },
+        },
+      ],
+    },
     ]
   },
 
@@ -99,22 +98,6 @@ module.exports = {
     historyApiFallback: true,
   },
 
-  // devServer: {
-  //   historyApiFallback: true,
-  //   noInfo: true,
-  //   proxy: {
-  //     '*': {
-  //       target: 'http://localhost:8080',
-  //       changeOrigin: true,
-  //       secure: false,
-  //       cookieDomainRewrite: '',
-  //       onProxyReq: function (request, req, res) {
-  //         request.setHeader('origin', 'http://localhost:8080')
-  //       }
-  //     },
-  //   }
-  // },
-
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
@@ -126,7 +109,6 @@ module.exports = {
       disable: false,
       allChunks: true
     }),
-    new webpack.NormalModuleReplacementPlugin(/^ractive$/, 'ractive/ractive.min')
   ],
   output: {
     filename: '[name].bundle.js',
