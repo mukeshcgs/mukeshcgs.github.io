@@ -11,7 +11,8 @@
     "clean": "rm -rf dist/*",
     "release": "npm run clean && npm run build",
     "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push",
-    "deploy2": "git subtree push --prefix dist origin gh-pages"
+    "deploy2": "cd dist && git subtree push --prefix dist origin gh-pages",
+    "deploy3": "git subtree push --prefix dist origin gh-pages"
     
   },
   "dependencies": {
