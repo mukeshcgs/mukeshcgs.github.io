@@ -15,7 +15,7 @@ export default class {
 		this.el = options.el;
 	}
 
-	unescapeHTML(string) {
-		return string.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');
-	}
+	// unescapeHTML(string) {
+	// 	return string.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');
+	// }
 }

@@ -1,30 +1,51 @@
-console.log("Navigation");
+// export default function Navigation() {
+//     var init, toggleNav;
+//     console.log("ele");
 
-import AbstractModule from "./AbstractModule";
+//     init = function () {
+//       $('.burger-icon').on('click', function () {
+//         toggleNav($('nav'));
+//         console.log(ele);
+//       });
+//     }
 
-// ==========================================================================
-// Generic module
-// ==========================================================================
+//     toggleNav = function (ele) {
+
+//       const parent = $(ele).closest('.accordion');
+//       closeOtherAccordions(parent);
+
+//       if (parent.is('.is-active')) {
+//         parent.removeClass('is-active');
+//       } else {
+//         parent.addClass('is-active');
+//       }
+//     }
+//   };
+
+import $ from '../../../node_modules/jquery/dist/jquery'
+
+import AbstractModule from './AbstractModule';
+
 export default class extends AbstractModule {
     constructor(options) {
         super(options);
-        $("#threeLines").click(event => this.toggleNav());
-        console.log("Navigation Init");
-
+        this.$el.on('click', '.burger-icon', (event) => this.toggleNav($('nav')));
     }
-    // Toggle nav
+
+    // Toggle Navigation
     // ==========================================================================
     toggleNav() {
-        console.log("Navigation");
-        if (this.$body.find("#sidebar").hasClass("close")) {
-            this.$body.find("#sidebar").removeClass("close");
+        if (this.$el.is('.is-active')) {
+            this.$el.removeClass('is-active');
         } else {
-            this.$body.find("#sidebar").removeClass("close").addClass("open");
+            this.$el.addClass('is-active');
         }
     }
+
     // Destroy
     // ==========================================================================
     destroy() {
         this.$el.off();
     }
-};
+
+}

@@ -1,4 +1,3 @@
-console.log("HTML");
 /**
  * @see  https://github.com/ractivejs/ractive/blob/dev/src/utils/html.js
  */

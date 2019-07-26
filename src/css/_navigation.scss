@@ -1,15 +1,102 @@
 .navigation {
+    background: #e2e2e2;
+
+    // display: flex;
+    // flex-direction: row-reverse;
+    .burger-icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-flow: row nowrap;
+        // flex-direction: column;
+        right: 0px;
+        margin: 0px 20px;
+        span {
+            display: block;
+            padding: 2px;
+            // width: 100%;
+            margin-bottom: 5px;
+            background: #000000;
+        }
+    }
+
     left: 0px;
     padding: 20px;
     position: relative;
-    
+
+    &.is-active {
+        ul {
+            display: block;
+        }
+    }
+
+    ul {
+        margin: 0px;
+        // background: #a76161;
+        li {
+            display: inline-block;
+            list-style: none;
+
+            a {
+                display: block;
+                padding: 10px;
+                letter-spacing: 1px;
+                position: relative;
+                font-size: 1.5rem;
+                color: #000000;
+                z-index: 1;
+                font-weight: 900;
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
     @media (max-width: $to-small) {
+        height: 100vh;
         position: fixed;
         left: 0px;
         right: 0px;
         top: 0px;
         z-index: 2;
+
+        ul {
+            width: 100%;
+
+            li {
+                display: block;
+                list-style: none;
+
+                a {
+                    display: block;
+                    padding: 10px 0px;
+                    word-break: break-all;
+                    position: relative;
+                    font-size: 1.5rem;
+                    color: #000000;
+
+                    span {
+                        font-weight: 900;
+                        color: #f0f0f0;
+                        display: block;
+                        font-size: 6rem;
+                        position: absolute;
+                        top: -50%;
+                        z-index: -1;
+                    }
+
+                    &:hover {}
+
+
+                }
+            }
+        }
     }
+
     @media (min-width: $from-small) and (max-width: $to-medium) {
         position: fixed;
         left: 0px;
@@ -17,9 +104,14 @@
         top: 0px;
         z-index: 2;
     }
+
     @media (min-width: $from-medium) and (max-width: $to-large) {}
+
     @media (min-width: $from-large) and (max-width: $to-huge) {}
+
     @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+
     @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+
     @media (min-width: $from-colossal) {}
 }

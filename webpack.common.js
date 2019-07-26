@@ -20,6 +20,12 @@ module.exports = {
     index: './src/js/index.js',
   },
   mode: 'development',
+
+  resolve: {
+    alias: {
+      $: "jquery/src/jquery",
+    }
+  },
   module: {
     rules: [{
       test: /\.jsx?$/,
@@ -54,8 +60,8 @@ module.exports = {
         'file-loader'
       ]
     },
-    { test: /\.jpg$/, use: [ "file-loader" ] },
-    { test: /\.png$/, use: [ "url-loader?mimetype=image/png" ] },
+    { test: /\.jpg$/, use: ["file-loader"] },
+    { test: /\.png$/, use: ["url-loader?mimetype=image/png"] },
     {
       test: /\.(html)$/,
       use: {
