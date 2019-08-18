@@ -31,7 +31,8 @@
     "throttled-resize": "^1.0.1",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack-cli": "^3.0.8",
-    "wpapi": "^1.1.2"
+    "wpapi": "^1.1.2",
+    "scrollmagic": "^2.0.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
