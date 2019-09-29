@@ -15,7 +15,7 @@
     "deploy3": "git subtree push --prefix dist origin gh-pages",
     "add-commit":"git add --all && git commit -m \"Release at $(date)\"",
     "push-to-gh-pages": "git push -f origin gh-pages:gh-pages",
-    "gh-pages": "npm run build && npm run add-commit && git push && npm run push-to-gh-pages"
+    "gh-pages": "npm run build && npm run add-commit && npm run push-to-gh-pages"
   },
   "dependencies": {
     "axios": "^0.18.0",
