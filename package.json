@@ -12,7 +12,9 @@
     "release": "npm run clean && npm run build",
     "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push",
     "deploy2": "cd dist && git subtree push --prefix dist origin gh-pages",
-    "deploy3": "git subtree push --prefix dist origin gh-pages"
+    "deploy3": "git subtree push --prefix dist origin gh-pages",
+    "deploy4": "git push -f origin gh-pages:gh-pages",
+    "deploy5": "git add --all && git commit -m \"Release at $(date)\" && git push -f origin gh-pages:gh-pages"
   },
   "dependencies": {
     "axios": "^0.18.0",
