@@ -958,7 +958,7 @@ footer ul li a.gm {
     line-height: 1.5rem;
 }
 
-.about-details .work-exp-block .skills li span {
+.about-details .work-exp-block .skills li div {
     display: block;
 }
 
@@ -971,7 +971,7 @@ footer ul li a.gm {
     letter-spacing: 1px;
 }
 
-.about-details .work-exp-block .skills li .skill-name span {
+.about-details .work-exp-block .skills li .skill-name div {
     padding: 10px 20px;
     border-radius: 20px;
     background: #131313;
@@ -985,17 +985,17 @@ footer ul li a.gm {
     padding: 1rem 0px;
 }
 
-.about-details .work-exp-block .skills li .skill-type span {
+.about-details .work-exp-block .skills li .skill-type div {
     display: inline-block;
     padding: 0px 15px;
     border-right: 1px solid #2c2c2c;
 }
 
-.about-details .work-exp-block .skills li .skill-type span:nth-child(1) {
+.about-details .work-exp-block .skills li .skill-type div:nth-child(1) {
     padding-left: 0px;
 }
 
-.about-details .work-exp-block .skills li .skill-type span:nth-last-child(1) {
+.about-details .work-exp-block .skills li .skill-type div:nth-last-child(1) {
     border-right: 0px solid #2c2c2c;
 }
 
