@@ -111,27 +111,6 @@ img {
     }
 }
 
-@font-face {
-    font-family: 'Maison Neue';
-    src: url(4d4595242854f9f21260ad355cfeaf8f.woff2) format("woff2");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maison Neue';
-    src: url(9807d4d52cb14e87a81edf3bfab231d7.woff2) format("woff2");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Maison Neue';
-    src: url(14b15c650a5e8ee950f8987e27dfe1d8.woff2) format("woff2");
-    font-weight: 300;
-    font-style: normal;
-}
-
 h1 {
     font-size: 6rem;
 }
@@ -193,14 +172,29 @@ h5 {
     }
 }
 
+/* NEW LOADER */
+
+
 .loading_spinner-wrap {
-    padding: 50px 0;
+    /* padding: 50px 0; */
+    position: fixed;
+    z-index: 999;
+    background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .loading_spinner {
     display: block;
     margin: 0 auto;
     fill: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -10px;
 }
 
 .loading_spinner circle {
