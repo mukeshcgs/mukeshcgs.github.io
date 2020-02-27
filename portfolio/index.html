@@ -66,6 +66,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
 
     <link href="./css/styles.css" rel="stylesheet">
+
+
+    <script>
+        var onSubmit = function(token) {
+          console.log('success!');
+        };
+
+        var onloadCallback = function() {
+          grecaptcha.render('submit', {
+            'sitekey' : '6LcmzdwUAAAAAFDTv8rRuGWfESS1D0_KharJCtHW',
+            'callback' : onSubmit
+          });
+        };
+    </script>
+
 </head>
 
 <body role="document" data-gr-c-s-loaded="true">
@@ -292,6 +307,12 @@
                     </div>
                 </div>
             </div>
+            <form action="?" method="POST">
+                <input id='submit' type="submit" value="Submit">
+              </form>
+              <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                  async defer>
+              </script>
         </div>
     </div>
     <!--
