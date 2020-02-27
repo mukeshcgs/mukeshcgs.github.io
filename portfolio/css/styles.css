@@ -1126,3 +1126,27 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 */
+
+/* CONTACT */
+
+.contact-form{
+    /* padding: 1rem; */
+}
+.contact-form div span{
+position: absolute;
+font-size: 2rem;
+padding: 1.5rem 1rem;
+}
+.contact-form input {
+    font-size: 2rem;
+    width: 100%;
+    border: 0rem solid #ffffff;
+    border-bottom: 0.2rem solid #ffffff;
+    padding: 1.5rem 1rem 1.5rem 4rem;
+    box-sizing: border-box;
+    background: #000000;
+}
+
+.contact-form input:focus {
+    border-bottom: 0.2rem solid #0057ff; 
+}
