@@ -566,7 +566,7 @@ footer ul li a.gm {
     text-align: center;
     position: relative;
     top: 0px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .home-container .my-name {
