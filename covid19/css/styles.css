@@ -45,23 +45,54 @@
     width: 768px;
     margin: 0 auto;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.bg {
+    width: 768px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/covid19.jpeg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+@media (min-width: 699px) {
+    .bg {
+        background-position: 0% 0%;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 699px) {
-    .parent {
+
+    .parent,
+    .bg {
         width: 100%;
         margin: auto;
         text-align: center;
     }
 }
-.covid19{
+
+.covid19 {
     letter-spacing: 0.5rem;
 }
+
 /* SELECT  */
 .custom-select {
-    width: 100%;
     position: absolute;
-    bottom: 1rem;
+    background: #ffffff;
+    width: 100%;
+    bottom: 0rem;
     margin: 0 auto;
     width: 100%;
     left: 0;
@@ -71,10 +102,11 @@
     letter-spacing: 0.1rem;
     word-spacing: 0.5rem;
 }
+
 @media (min-width: 699px) {
     .custom-select {
-        width: 400px;
-        bottom: 3rem;
+        position: relative;
+        bottom: 0rem;
         padding: 2rem 1rem;
         border-bottom: 1px solid #eaecef;
     }
@@ -89,17 +121,36 @@ select {
     text-align: center;
     width: 100%;
     font-weight: 200;
+    display: block;
 }
 
 #result {
     display: flex;
     align-content: center;
     margin: 50px 0px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
+
 
 #result>div {
     flex: 1;
     font-size: 24px;
+}
+
+@media (max-width: 699px) {
+    #result {
+        flex-direction: column;
+        margin: 10px 0px;
+
+    }
+
+    #result>div {
+        flex: 0;
+        width: 100%;
+        border-bottom: 1px solid #eaecef;
+        padding: 10px 0px;
+    }
 }
 
 #result span {
@@ -116,7 +167,7 @@ select {
 .state {
     font-size: 3rem;
     font-weight: 100;
-    padding: 2rem 1rem;    
+    padding: 2rem 1rem;
     text-transform: uppercase;
     background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#330867));
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
@@ -124,13 +175,15 @@ select {
     -webkit-text-fill-color: transparent;
 }
 
-
-
-/* body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-} */
+@media (min-width: 699px) {
+    .state {
+        font-size: 3rem;
+        position: absolute;
+        bottom: 5rem;
+        left: 0;
+        right: 0;
+    }
+}
 
 @keyframes gradient {
     0% {
@@ -148,18 +201,19 @@ select {
 
 
 .cases {
-    /* background: red; */
+    /* width: 100%; */
 }
 
 .recovered {
-    /* background: blue; */
+    /* width: 50%; */
 }
 
 .deaths {
-    /* background: green; */
+    /* width: 50%; */
 }
 
 .caution {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
+    padding: 2rem;
 }

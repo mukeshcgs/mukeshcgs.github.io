@@ -6,7 +6,7 @@ $(function () {
     const rapidapiHost = "coronavirus-tracker-india-covid-19.p.rapidapi.com";
     const rapidapiKey = "7d2d8cdad7msh4d195f980df65dfp1e065bjsn15b1cff29222";
     const URL = "https://coronavirus-tracker-india-covid-19.p.rapidapi.com/api/getStatewise";
-
+    // https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#83c6f85b-9617-4378-b5bc-c9c0e17dbc5d
     var resData;
     var country = "India"
     function getData(data) {
