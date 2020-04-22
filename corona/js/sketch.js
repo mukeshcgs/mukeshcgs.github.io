@@ -4,7 +4,7 @@ let earth22;
 
 let allData;
 let eqAllDataIndex = 0;
-let angRotation = 0.001
+let angRotation = 0.009
 function preload() {
     earth22 = loadImage('./images/earth4.jpg');
 
@@ -34,7 +34,7 @@ function mouseDragged() {
 }
 function mouseReleased() {
     if (angRotation === 0) {
-        angRotation = 0.001;
+        angRotation = 0.009;
     } else {
         angRotation = 0;
     }
