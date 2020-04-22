@@ -7,76 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A Designer/Developer by profession an artist by passion">
     <meta name="author" content="Mukesh Thankar">
-    <title>COVID 19 </title>
-
-
-    <!--    Global CSS & JS-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./css/global.css">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./js/jquery.smooth-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        function onSubmit(token) {
-            alert('thanks ' + document.getElementById('field').value);
-        }
-
-        function validate(event) {
-            event.preventDefault();
-            if (!document.getElementById('field').value) {
-                alert("You must add text to the required field");
-            } else {
-                grecaptcha.execute();
-            }
-        }
-
-        function onload() {
-            var element = document.getElementById('submit');
-            element.onclick = validate;
-        }
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>CORONA</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
 
 </head>
 
 <body data-barba="wrapper">
-    <header></header>
-    <div class="parent">
-
-        <main>
-            <section>
-                <h1 class="covid19">COVID 19</h1>
-                <div class="custom-select">
-                    <select id="categoriesSelect">
-                        <option value="">Select State</option>
-                    </select>
-                </div>
-            </section>
-            <div class="state"></div>
-            <section id="result">
-                <div class="cases"><span class="count">999</span><span>Cases</span></div>
-                <div class="recovered"><span class="count">999</span><span>Recovered</span></div>
-                <div class="deaths"><span class="count">999</span><span>Deaths</span></div>
-            </section>
-            <section class="caution">
-Stay Home, Stay Safe
-            </section>
-
-        </main>
-    </div>
-
-    <!--LIBS-->
-    <script src="./js/libs/TweenMax.min.js"></script>
-    <!--SCRIPTS-->
-    <script src="./js/global.js"></script>
+    <div id="map"></div>
     <script src="./js/script.js"></script>
-</body>
+    <script src="./js/sketch.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script type="text/javascript" src="https://github.com/douglascrockford/JSON-js/raw/master/json2.js"></script> -->
+    </head>
+
+    <body>
+        <!-- <p>
+            https://rapidapi.com/ShubhGupta/api/covid19-data?endpoint=apiendpoint_be3dc62f-8735-4124-8b57-6f0f4cfd034c
+
+            https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics?endpoint=apiendpoint_ef9e1955-666c-43ba-9b5c-4b463ae316dc
+
+            https://www.youtube.com/watch?v=dbs4IYGfAXc&t=5s
+            https://www.youtube.com/watch?v=Ae73YY_GAU8&t=13s
+
+            https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_057_Earthquake_Viz/P5/sketch.js
+            https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_058_EarthQuakeViz3D/P5/sketch.js
+        </p> -->
+    </body>
 
 </html>
