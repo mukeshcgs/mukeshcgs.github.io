@@ -1,11 +1,12 @@
 let angle22 = 0;
-let r22 = 200;
+let r22 = 300;
 let earth22;
 
 let allData;
 let eqAllDataIndex = 0;
+let angRotation = 0.001
 function preload() {
-    earth22 = loadImage('./images/earth2.jpg');
+    earth22 = loadImage('./images/earth4.jpg');
 
     // ALL COUNTRYS DATA WITH COORDINATES
     var settings = {
@@ -26,10 +27,18 @@ function preload() {
 }
 
 function setup() {
-    wW = windowWidth;
     createCanvas(windowWidth, windowHeight, WEBGL);
 }
-
+function mouseDragged() {
+    angRotation = 0;
+}
+function mouseReleased() {
+    if (angRotation === 0) {
+        angRotation = 0.001;
+    } else {
+        angRotation = 0;
+    }
+}
 function draw() {
     // wait until the data is loaded
     if (!allData || !allData[eqAllDataIndex]) {
@@ -38,26 +47,25 @@ function draw() {
     clear();
 
     background(255);
-
+    //drag to move the world.
+    orbitControl(1, 1, 0.5);
     // We don't need to translate here, since WEBGL mode centers the view
     rotateY(angle22);
-    angle22 += 0.01;
+    angle22 += angRotation;
 
-    lights();
-    let dirX = (mouseX / width - 0.5) * 20;
-    let dirY = (mouseY / height - 0.5) * 20;
-    directionalLight(250, 250, 250, -dirX, -dirY, -1);
+    // lights();
+
     push();
-    fill(200);
-
-    noStroke();
+    noFill(200);
+    stroke(0);
+    // noStroke();
     // While the video shows that this doesn't work for texturing the
     // sphere, that's only true for Processing - in p5.js, it does work.
+
     texture(earth22);
-    sphere(r22);
-    rotateZ(0 * mouseX * 0.001);
-    rotateX(0 * mouseX * 0.001);
-    rotateY(0 * mouseY * 0.001);
+    sphere(r22, 100, 100);
+    line(200, 500, 400, 200)
+
     pop();
 
     for (let i = 0; i < allData.length; i++) {
@@ -87,9 +95,8 @@ function draw() {
 
         let pos = createVector(x, y, z);
 
-        let h = pow(10, mag / 10000);
-        //let h = 50
-        let maxh = pow(1, 500);
+        let h = pow(100, -mag);
+        let maxh = pow(10, 70);
         h = map(h, 0, maxh, 10, 100);
         let xaxis = createVector(1, 0, 0);
 
@@ -105,15 +112,20 @@ function draw() {
         let raxis = xaxis.cross(pos);
 
         push();
-        stroke(255, 204, 0);
+        stroke(255, 0, 0, 0.5);
         translate(x, y, z);
         // In p5.js, the rotation axis is a vector object instead of x,y,z
         rotate(angleb, raxis);
-        fill(255);
+        fill(255, 255, 0);
         // box(h, 2, 2);
         line(0, 0, 0, h, 0, 0);
-        textSize(32);
-        text(name, 200, 426);
+        textFont('Georgia');
+        textSize(216);
+        textAlign(RIGHT);
+        text(name, 100, 300);
+        textAlign(CENTER);
+        //sphere(5);
         pop();
+
     }
 }
