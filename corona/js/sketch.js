@@ -1,13 +1,6 @@
 let angle22 = 0;
-let wW;
-let countryCode;
-let oneCountry;
-let table22;
 let r22 = 200;
-let isLength = false;
 let earth22;
-let regionsData, countryData, fullDetailsData;
-let eqFeatureIndex = 0;
 
 let allData;
 let eqAllDataIndex = 0;
@@ -32,15 +25,6 @@ function preload() {
     });
 }
 
-function combineData(regions) {
-    let count = regions.data.length;
-    let getFruit;
-    for (let i = 0; i < count; i++) {
-        getFruit = regions.data.find(region => region.name === 'India');
-    }
-    console.log("getFruit", getFruit);
-}
-
 function setup() {
     wW = windowWidth;
     createCanvas(windowWidth, windowHeight, WEBGL);
@@ -52,6 +36,7 @@ function draw() {
         return;
     }
     clear();
+
     background(255);
 
     // We don't need to translate here, since WEBGL mode centers the view
@@ -62,44 +47,25 @@ function draw() {
     let dirX = (mouseX / width - 0.5) * 20;
     let dirY = (mouseY / height - 0.5) * 20;
     directionalLight(250, 250, 250, -dirX, -dirY, -1);
+    push();
     fill(200);
+
     noStroke();
     // While the video shows that this doesn't work for texturing the
     // sphere, that's only true for Processing - in p5.js, it does work.
     texture(earth22);
     sphere(r22);
-
-    /*
-        properties:
-    active: 35932
-    confirmed: 37658
-    continent: "North America"
-    deaths: 1726
-    economy: "1. Developed region: G7"
-    gdp_md_est: 1300000
-    income_grp: "1. High income: OECD"
-    iso_a2: "CA"
-    iso_a3: "CAN"
-    latitude: "56.130366"
-    longitude: "-106.346771"
-    name: "Canada"
-    pop_est: 33487208
-    recovered: 12543
-    */
+    rotateZ(0 * mouseX * 0.001);
+    rotateX(0 * mouseX * 0.001);
+    rotateY(0 * mouseY * 0.001);
+    pop();
 
     for (let i = 0; i < allData.length; i++) {
-        
+
         let lat = allData[i].properties.latitude;
         let lon = allData[i].properties.longitude;
-        let mag = allData[i].properties.Confirmed;
-
-        //    }
-        //     for (let i = 0; i < countryData.length; i++) {
-        //         let lat = countryData[i].Lat;
-        //         let lon = countryData[i].Lon;
-        //         let mag = countryData[i].Confirmed;
-
-        //console.log(lat, lon, mag);
+        let mag = allData[i].properties.confirmed;
+        let name = allData[i].properties.name;
 
         // original version
         // let theta = radians(lat) + PI/2;
@@ -115,15 +81,15 @@ function draw() {
         // let z = r * cos(theta);
 
         // fix: in OpenGL, y & z axes are flipped from math notation of spherical coordinates
-        let x = r * cos(theta) * cos(phi);
-        let y = -r * sin(theta);
-        let z = -r * cos(theta) * sin(phi);
+        let x = r22 * cos(theta) * cos(phi);
+        let y = -r22 * sin(theta);
+        let z = -r22 * cos(theta) * sin(phi);
 
         let pos = createVector(x, y, z);
 
-        // let h = pow(10, mag * 10 / 100000);
-        let h = 23
-        let maxh = pow(10, 7);
+        let h = pow(10, mag / 10000);
+        //let h = 50
+        let maxh = pow(1, 500);
         h = map(h, 0, maxh, 10, 100);
         let xaxis = createVector(1, 0, 0);
 
@@ -139,11 +105,15 @@ function draw() {
         let raxis = xaxis.cross(pos);
 
         push();
+        stroke(255, 204, 0);
         translate(x, y, z);
         // In p5.js, the rotation axis is a vector object instead of x,y,z
         rotate(angleb, raxis);
         fill(255);
-        box(h, 2,2);
+        // box(h, 2, 2);
+        line(0, 0, 0, h, 0, 0);
+        textSize(32);
+        text(name, 200, 426);
         pop();
     }
 }
