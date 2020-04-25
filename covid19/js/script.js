@@ -1,5 +1,5 @@
 
-document.body.requestFullscreen();
+// document.body.requestFullscreen();
 
 //AFTER LOAD
 $(function () {
@@ -34,12 +34,12 @@ $(function () {
     function setLocStorageData(resData) {
         var getLocData = localStorage.getItem('locData');
         if (getLocData) {
-            console.log("Loc Data Present");
+            //console.log("Loc Data Present");
             getLocData = JSON.parse(getLocData)
             if (getLocData.summary.total_cases === resData.summary.total_cases) {
-                console.log("Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
+                //console.log("Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
             } else {
-                console.log("NOT Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
+                //console.log("NOT Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
                 localStorage.removeItem('locData');
                 localStorage.setItem("locData", JSON.stringify(resData));
             }

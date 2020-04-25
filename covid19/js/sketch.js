@@ -1,5 +1,5 @@
 //Random Color select
-const PALLATE = ["#511845", "#900c3f", "#c70039", "#ff5733", "#ffa41b", "#000839", "#005082", "#00a8cc", "#00bdaa", "#f1e7b6"];
+const PALLATE = ["#511845", "#900c3f", "#c70039", "#ff5733", "#ffa41b", "#3dc400", "#005082", "#00a8cc", "#00bdaa", "#f1e7b6"];
 
 //This will stop P5 to exacute on load
 var started = false;
@@ -33,7 +33,6 @@ function setup() {
 
     minScreen = min([windowWidth, windowHeight]);
     maxScreen = max([windowWidth, windowHeight]);
-    console.log(minScreen);
 }
 
 // JS MEDIA QUERY FOR MOBILE VERSION
@@ -55,6 +54,7 @@ function draw() {
     if (started) {
 
         background(255);
+        angleMode(DEGREES);
         push();
         fill("#333333")
         textSize(20);
@@ -65,7 +65,7 @@ function draw() {
         let countPer, screenPer;
 
         data = window.regionTen;
-        for (let i = 0; i < data.length -4; i++) {
+        for (let i = 0; i < data.length; i++) {
 
             let total = resData.summary.total_cases;;
             let next = data[i].total_cases;
@@ -173,14 +173,15 @@ class Legends {
     constructor(cN, lX, lY, lR, lA) {
         this.x = lX;
         this.y = lY;
-        this.aStart = random(0, 360);
-        this.rStart = 0;
+        // this.aStart = floor(random(0, 360));
+        this.aStart = 0;
+        this.rStart = 40;
         this.r = lR;
         this.a = lA;
         this.n = cN;
         this.randPosX;
         this.randPosY;
-        this.ang = random(0, 360);
+        this.ang = floor(random(0, 360));
         // this.ang = 0;
     }
     pointOnCircle(randAng) {
@@ -197,29 +198,35 @@ class Legends {
     }
 
     show(i) {
-        fill(PALLATE[i]);
-        noStroke(0);
-        ellipse(this.x, this.ly, this.rStart);
-        let thisVertex = this.pointOnCircle(this.a)
-        ellipse(thisVertex.x, thisVertex.y, this.rStart, this.rStart);
+        //fill(PALLATE[i]);
+        //stroke(0);
+        noStroke()
+        //ellipse(this.x, this.y, this.rStart);
+        let thisVertex = this.pointOnCircle(lerp(this.ang, 10, 0.01))
+
+        //Ref Lines
+        // let aa = this.x + this.r * cos(180)
+        // let bb = this.y + this.r * sin(180)
+        // line(this.x, this.y, aa, bb)
+
+        //ellipse(thisVertex.x, thisVertex.y, this.rStart, this.rStart);
+
         this.randPosX = thisVertex.x;
         this.randPosY = thisVertex.y;
+
         fill(100)
-        text(this.n, thisVertex.x + 25, thisVertex.y - 10);
+        text(this.n, thisVertex.x + 20, thisVertex.y - 10);
         textSize(14);
-        textAlign(LEFT);
-        push()
-        translate(25, 100);
-        fill(PALLATE[i]);
-        ellipse(0, (20 * i) - 5, 10, 10);
-        text(this.n, 15, 20 * i);
-        //this.legends(i);
-        pop()
+        textAlign(CENTER);
+        this.legends(i)
     }
     legends(i) {
-        fill(PALLATE[i]);
+        push()
+        textAlign(LEFT);
+        translate(25, 100); fill(PALLATE[i]);
         ellipse(0, (20 * i) - 5, 10, 10);
         text(this.n, 15, 20 * i);
+        pop()
     }
 
     move(i) {
@@ -229,22 +236,37 @@ class Legends {
     animate(i) {
         if (this.rStart <= this.r) {
             //For Radius            
-            this.rStart = lerp(this.rStart, 10, random(0, 0.9))
-            //For Angle
-            // const xPos = this.x + this.r * cos(this.ang)
-            // const yPos = this.y + this.r * sin(this.ang)
-            let thisVertex = this.pointOnCircle(this.a)
+            this.rStart = lerp(this.rStart, 10, random(0, 0.1))
 
+            /////////////////////////////////
+            //For Angle
+            // const xPos  = this.x + this.r * cos(this.ang)
+            // const yPos = this.y + this.r * sin(this.ang)
+            //let thisVertex = this.pointOnCircle(this.a)
+            if (this.aStart <= this.ang) {
+                //Animate Radius            
+                //this.aStart = lerp(this.aStart, this.ang, 0.01)
+                const xPos = this.x + this.r * cos(this.aStart)
+                //console.log(xPos)
+                const yPos = this.y + this.r * sin(this.aStart)
+                // this.aStart += 1
+                this.aStart = lerp(this.aStart, this.ang, 0.01)
+                fill(PALLATE[i]);
+                ellipse(xPos, yPos, 10);
+            }
             // fill(PALLATE[i]);
-            noFill();
-            stroke(150);
-            ellipse(thisVertex.x, thisVertex.y, 20, 20)
+            //noFill();
+            //stroke(150);
+            //ellipse(thisVertex.x, thisVertex.y, 20, 20)
+
         }
     }
 
     clicked(px, py, i) {
         let d = dist(px, py, this.randPosX, this.randPosY);
         if (d < this.rStart) {
+            bubbles[i]
+            fill(PALLATE[i]);
             console.log("Legend Clicked ID is -", i);
         }
     }
