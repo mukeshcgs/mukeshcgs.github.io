@@ -1,4 +1,6 @@
 
+document.body.requestFullscreen();
+
 //AFTER LOAD
 $(function () {
     var $body = $('body');
