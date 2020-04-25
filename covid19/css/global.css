@@ -1,7 +1,8 @@
-* {
-       font-family: 'Roboto', sans-serif;
-    /*    font-family: 'Space Mono', monospace;*/
-    /* font-family: 'PT Mono', monospace; */
+*,
+html {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Space Mono', monospace; */
+    font-family: 'PT Mono', monospace;
     /* transition: all 0.5s ease-in; */
 }
 
@@ -38,8 +39,8 @@ h5,
 h6 {
     font-weight: 600;
     line-height: 1.25;
-    margin-bottom: 16px;
-    //margin-top: 24px;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 p {
@@ -64,10 +65,12 @@ header {
     background: #2d5bdc;
 
 }
+
 section {
     /* min-height: 100vh;
     background: #fff; */
 }
+
 .parent {
     /*
     display: flex;

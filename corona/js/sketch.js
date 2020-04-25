@@ -27,7 +27,9 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight, WEBGL);
+    var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+    canvas.parent('canvas01');
+
 }
 function mouseDragged() {
     angRotation = 0;
@@ -48,7 +50,7 @@ function draw() {
 
     background(255);
     //drag to move the world.
-    orbitControl(1, 1, 0.5);
+    // orbitControl(1, 1, 0.5);
     // We don't need to translate here, since WEBGL mode centers the view
     rotateY(angle22);
     angle22 += angRotation;
