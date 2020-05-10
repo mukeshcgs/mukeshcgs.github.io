@@ -1,0 +1,406 @@
+/* btn */
+
+// .btn {
+//     // padding: 12px 15px;
+//     border-radius: 20px;
+//     font-size: 12px;
+//     line-height: 14px;
+//     @include transition(all 0.3s ease);
+//     outline: none;
+//     overflow: hidden;
+//     // &.btn-default {
+//     //     text-transform: uppercase;
+//     //     border-color: $clr-primary;
+//     //     color: $clr-primary;
+//     //     font-weight: $font-regular;
+//     //     position: relative;
+//     //     z-index: 1;
+//     //     background: transparent;
+//     //     &:before {
+//     //         content: "\67";
+//     //         display: inline-block;
+//     //         font-family: "rhf" !important;
+//     //         font-style: normal !important;
+//     //         font-weight: normal !important;
+//     //         font-variant: normal !important;
+//     //         text-transform: none !important;
+//     //         font-size: 20px;
+//     //         line-height: 0;
+//     //         color: $clr-default;
+//     //         vertical-align: inherit;
+//     //         margin-right: 0px;
+//     //         position: relative;
+//     //         left: -5px;
+//     //         top: 0px;
+//     //         @include transition(all 0.2s ease-out 0.1s)
+//     //     }
+//     //     &:after {
+//     //         content: "";
+//     //         position: absolute;
+//     //         top: 0;
+//     //         bottom: 0;
+//     //         left: 0;
+//     //         right: 100%;
+//     //         background: $clr-primary;
+//     //         transition: all 1s ease;
+//     //         z-index: -1;
+//     //     }
+//     //     &:hover {
+//     //         background: none;
+//     //     }
+//     //     &:hover,
+//     //     &.active {
+//     //         color: $clr-root;
+//     //         outline: none;
+//     //         border-color: $clr-primary;
+//     //         &:before {
+//     //             color: $clr-root;
+//     //             left: 2px;
+//     //         }
+//     //         &:after {
+//     //             right: 0;
+//     //         }
+//     //     }
+//     //     &.active {
+//     //         background: $clr-primary;
+//     //     }
+//     //     &:active,
+//     //     &:focus {
+//     //         background: #c1141a;
+//     //         color: $clr-root;
+//     //         outline: none;
+//     //         border-color: #c1141a;
+//     //         &:before {
+//     //             //color: $clr-root;
+//     //         }
+//     //         &:after {
+//     //             display: none;
+//     //         }
+//     //     }
+//     //     &.typ2 {
+//     //         border: none;
+//     //         padding: 0;
+//     //         border-radius: 0;
+//     //         margin-left: -6px;
+//     //         background: transparent;
+//     //         color: $clr-primary;
+//     //         &:hover {
+//     //             background: none;
+//     //             color: $clr-primary;
+//     //             &:before {
+//     //                 color: $clr-default;
+//     //             }
+//     //         }
+//     //         &:after {
+//     //             display: none;
+//     //         }
+//     //     }
+//     //     &.btn-load {
+//     //         border: none;
+//     //         padding: 0 0 20px 0;
+//     //         border-radius: 0;
+//     //         margin-left: -6px;
+//     //         background: transparent;
+//     //         position: relative;
+//     //         &:before {
+//     //             content: 'y';
+//     //             text-transform: lowercase;
+//     //             font-family: 'RHF';
+//     //             top: 30px;
+//     //             left: 0;
+//     //             right: 0;
+//     //             position: absolute;
+//     //         }
+//     //         &:hover,
+//     //         &:focus,
+//     //         &.active {
+//     //             background: transparent;
+//     //             color: $clr-primary;
+//     //             &:before {
+//     //                 left: 0;
+//     //                 top: 25px;
+//     //                 color: $clr-default;
+//     //             }
+//     //             &:after {
+//     //                 display: none;
+//     //             }
+//     //         }
+//     //     }
+//     //     &.white {
+//     //         &:after {
+//     //             background: $clr-root;
+//     //         }
+//     //         &:hover,
+//     //         &:active,
+//     //         &:focus {
+//     //             color: $clr-default !important;
+//     //             &:before {
+//     //                 color: $clr-default !important;
+//     //             }
+//     //             &:after {
+//     //                 right: 0;
+//     //             }
+//     //         }
+//     //     }
+//     // }
+//     &.btn-download {
+//         padding-top: 26px;
+//         position: relative;
+//         &:before {
+//             content: "";
+//             width: 24px;
+//             height: 21px;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             left: 0;
+//             background: url('../img/icon/download.png') no-repeat;
+//             margin: 0 auto;
+//         }
+//     }
+//     &.resend {
+//         margin-top: 18px;
+//         padding: 0;
+//         background: none;
+//         border-bottom: 1px solid $clr-base;
+//         border-radius: 0px;
+//         color: $clr-base;
+//         font-weight: $font-bold;
+//         cursor: pointer;
+//         &:hover {
+//             color: $clr-primary;
+//             border-bottom: 1px solid $clr-primary;
+//         }
+//     }
+//     &.add-user {
+//         position: absolute;
+//         top: 0;
+//         right: 22px;
+//         width: 46px;
+//         height: 46px;
+//         border-radius: 50%;
+//         background: url('../img/icon/add-user.png') no-repeat center center;
+//         box-shadow: 0px 0px 35px -8px;
+//         padding: 0;
+//     }
+//     &.btn-link {
+//         font-size: 14px;
+//         line-height: 16px;
+//         color: $clr-base;
+//         text-transform: capitalize;
+//         padding: 0;
+//         border-radius: 0;
+//         &:hover {
+//             text-decoration: none;
+//         }
+//     }
+//     &.btn-action {
+//         color: $clr-base;
+//         font-weight: $font-light;
+//         &:before {
+//             display: none;
+//         }
+//         &.active {
+//             .icon-net-banking {
+//                 width: 38px;
+//                 height: 25px;
+//                 background: url('../img/icon/net-bank-hover.svg') no-repeat;
+//                 background-size: cover;
+//             }
+//         }
+//         .icon-net-banking {
+//             width: 38px;
+//             height: 25px;
+//             background: url('../img/icon/net-bank.svg') no-repeat;
+//         }
+//         .icon-upload {
+//             width: 38px;
+//             height: 25px;
+//             background: url('../img/icon/upload.svg') no-repeat;
+//         }
+//         .icon-bank {
+//             width: 38px;
+//             height: 25px;
+//             background: url('../img/icon/bank.svg') no-repeat;
+//         }
+//         .icon-applicant {
+//             width: 38px;
+//             height: 25px;
+//             background: url('../img/icon/applicant.svg') no-repeat;
+//         }
+//         &:hover {
+//             .icon-net-banking {
+//                 width: 38px;
+//                 height: 25px;
+//                 background: url('../img/icon/net-bank-hover.svg') no-repeat;
+//                 background-size: cover;
+//             }
+//             .icon-upload {
+//                 width: 38px;
+//                 height: 25px;
+//                 background: url('../img/icon/upload-hover.svg') no-repeat;
+//                 background-size: cover;
+//             }
+//         }
+//     }
+//     &.typ3 {
+//         background: none;
+//         margin-top: -15px;
+//         padding: 5px 0;
+//         color: $clr-base;
+//         font-weight: $font-regular;
+//         border-bottom: 1px solid $clr-base;
+//         border-radius: 0px;
+//         &:hover {
+//             color: $clr-primary;
+//             border-bottom: 1px solid $clr-primary;
+//         }
+//     }
+//     &.error-btn {
+//         &:focus {
+//             -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+//             animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+//             transform: translate3d(0, 0, 0);
+//             backface-visibility: hidden;
+//             perspective: 1000px;
+//         }
+//         @-webkit-keyframes shake {
+//             10%,
+//             90% {
+//                 transform: translate3d(-1px, 0, 0);
+//             }
+//             20%,
+//             80% {
+//                 transform: translate3d(2px, 0, 0);
+//             }
+//             30%,
+//             50%,
+//             70% {
+//                 transform: translate3d(-4px, 0, 0);
+//             }
+//             40%,
+//             60% {
+//                 transform: translate3d(4px, 0, 0);
+//             }
+//         }
+//         @keyframes shake {
+//             10%,
+//             90% {
+//                 transform: translate3d(-1px, 0, 0);
+//             }
+//             20%,
+//             80% {
+//                 transform: translate3d(2px, 0, 0);
+//             }
+//             30%,
+//             50%,
+//             70% {
+//                 transform: translate3d(-4px, 0, 0);
+//             }
+//             40%,
+//             60% {
+//                 transform: translate3d(4px, 0, 0);
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width:768px) {
+//     .btn {
+//         padding: 10px 16px;
+//         border-radius: 20px;
+//         font-size: 13px;
+//         line-height: 15px;
+//         &.btn-default {
+//             &:before {}
+//             &:hover,
+//             &:focus,
+//             &.active {
+//                 &:before {}
+//             }
+//         }
+//     }
+// }
+//SKLS BUTTONS
+.btn {
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include transition(all 0.3s ease);
+    outline: none;
+    overflow: hidden;
+    text-transform: uppercase; 
+    border: none;
+    min-width: 125px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    &.btn-condensed{
+        min-width: auto;
+    }
+    &.btn-default {
+        background-image: linear-gradient( #fa7b34, #F15C2F);
+        text-transform: uppercase;
+        border-color: transparent;
+        color: #ffffff;
+        font-weight: $font-regular;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            background: none;
+        }
+        &:hover,
+        &.active {
+            background-image: linear-gradient( #F15C2F, #fa7b34);       
+            outline: none;
+            border-color: $clr-primary;
+        }
+        &.active {
+            background: $clr-primary;
+        }
+        &:active,
+        &:focus {}
+        &.typ-outline{
+            background: transparent;
+            // background-image: linear-gradient( #01a46b, #008256);
+            // border: 2px solid #F15C2F;
+            box-shadow:0px 0px 0px 2px #F15C2F inset;
+            
+            color: #F15C2F;
+        }
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] {
+            background: #d4d4d4;
+            border:none;
+            background-image: linear-gradient( #d4d4d4, #d4d4d4);
+            color: #868686;
+            cursor: not-allowed;
+            opacity: .65;
+            box-shadow: none;    
+        }
+    }
+    &.btn-primary{
+        background-image: linear-gradient( #01a46b, #008256);
+        &.typ-outline{
+            background: transparent;
+            // background-image: linear-gradient( #01a46b, #008256);
+            //border: 2px solid #01a46b;
+            box-shadow:0px 0px 0px 2px #01a46b inset;
+            
+            color: #01a46b;
+        }
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] {
+            background: #d4d4d4;
+            border:none;
+            background-image: linear-gradient( #d4d4d4, #d4d4d4);
+            color: #868686;
+            cursor: not-allowed;
+            opacity: .65;
+            box-shadow: none;    
+        }
+    }
+    
+}

@@ -1,0 +1,38 @@
+.tools {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .tool {
+        position: relative;
+        padding: 10px 20px;
+        background: #ffffff;
+        margin-bottom: 15px;
+        @include box-shadow($shadow1...);
+        @include border-radius($block-radius...);
+        flex: 1;
+        .tool-wrapper {
+            display: flex;
+            .tool-img {
+                flex: 1;
+            }
+            .tool-title {
+                flex: 3;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            @media screen and (max-width:480px) {
+                // display: block;
+                // text-align: center;
+                // .tool-img {
+                //     img {
+                //         margin: 0 auto;
+                //     }
+                // }
+            }
+        }
+        @media screen and (max-width: 480px) {
+            // display: inline-block;
+            // max-width: 100px;
+        }
+    }
+}

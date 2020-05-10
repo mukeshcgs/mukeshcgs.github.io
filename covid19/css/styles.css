@@ -73,11 +73,11 @@
     }
 }
 
-#canvas01 {
+.canvas-cont{
     position: relative;
 }
 
-#canvas01 .canvsa-info {
+.canvas-cont .canvsa-info {
     position: absolute; 
     bottom: 2rem;
     /* width: 400px;

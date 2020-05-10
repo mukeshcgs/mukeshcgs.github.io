@@ -1,0 +1,283 @@
+.project-container {
+    margin: 0 auto;
+    width: 768px;
+    ul {
+        &.project-list {
+            padding: 20px;
+        }
+        li {
+            overflow: hidden;
+            margin-bottom: 1rem;
+            background-size: cover;
+            a {
+                position: relative;
+                padding: 40px 0px 40px 40px;
+                color: $light-gray;
+                text-transform: uppercase;
+                font-size: 32px;
+                font-weight: 700;
+                display: block;
+                letter-spacing: 2px;
+                -webkit-transition: all 1s ease-in;
+                -moz-transition: all 1s ease-in;
+                -o-transition: all 1s ease-in;
+                transition: all 1s ease-in;
+                background: rgba(51, 51, 51, 0.5);
+                &:hover {
+                    background: rgba(51, 51, 51, 0);
+                    -webkit-transition: all 1s ease-in;
+                    -moz-transition: all 1s ease-in;
+                    -o-transition: all 1s ease-in;
+                    transition: all 1s ease-in;
+                }
+                span {
+                    position: absolute;
+                    z-index: -1;
+                    color: #131313;
+                    left: 0px;
+                    font-size: 10rem;
+                    font-weight: 700;
+                    top: 0px;
+                }
+            }
+        }
+    }
+    @media (max-width: $to-small) {
+        width: 100%;
+        ul {
+            &.project-list {
+                padding: 0px;
+            }
+            li {
+                margin-bottom: 0rem;
+                a {
+                    padding: 40px 20px 40px 20px;
+                    &:hover {}
+                    span {}
+                }
+            }
+        }
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {}
+    @media (min-width: $from-medium) and (max-width: $to-large) {}
+    @media (min-width: $from-large) and (max-width: $to-huge) {}
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+    @media (min-width: $from-colossal) {}
+}
+
+.is-loaded .page-heading {
+    // -webkit-transform: translate3d(0, 0, 0);
+    // transform: translate3d(0, 0, 0); 
+}
+
+.page-heading {
+    font-size: 8rem;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 1rem; // -webkit-transform: translate3d(0, 100%, 0);
+    // transform: translate3d(0, 100%, 0);
+    // transition: -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    // transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    // transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    @media (max-width: $to-small) {
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {}
+    @media (min-width: $from-medium) and (max-width: $to-large) {}
+    @media (min-width: $from-large) and (max-width: $to-huge) {}
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+    @media (min-width: $from-colossal) {}
+}
+
+.pro-header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .page-heading {
+        margin-bottom: 0rem;
+    }
+    .pro-header {
+        h1 {
+            text-shadow: rgba(0, 0, 0, 0.46) 7px 7px 10px;
+        }
+    }
+    .view-proj-btn {
+        background: #fff;
+        padding: 2rem 3rem;
+        color: #000;
+        display: inline-block;
+    }
+    @media (max-width: $to-small) {
+        box-sizing: border-box;
+        position: relative;
+        height: 100vh;
+        padding: 3rem;
+        h1 {
+            font-size: 5rem;
+        }
+        .pro-header {
+            position: absolute;
+            bottom: 3rem;
+        }
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {
+        .pro-header {
+            position: absolute;
+            bottom: 3rem;
+        }
+    }
+    @media (min-width: $from-medium) and (max-width: $to-large) {}
+    @media (min-width: $from-large) and (max-width: $to-huge) {}
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+    @media (min-width: $from-colossal) {}
+}
+
+.technologies {
+    margin: 2rem 0px;
+    li {
+        list-style: none;
+        display: inline-block;
+        background: #2f2f2f;
+        color: #fff;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+    }
+    @media (max-width: $to-small) {
+        margin: 2rem 0px;
+        li {
+            font-size: 16px;
+        }
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {}
+    @media (min-width: $from-medium) and (max-width: $to-large) {}
+    @media (min-width: $from-large) and (max-width: $to-huge) {}
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+    @media (min-width: $from-colossal) {}
+}
+
+.project-type {
+    margin: 2rem 0px;
+    li {
+        list-style: none;
+        display: inline-block;
+        background: #2f2f2f;
+        color: #fff;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+    }
+    @media (max-width: $to-small) {
+        margin: 2rem 0px;
+        li {
+            font-size: 16px;
+        }
+    }
+}
+
+.pro-details {
+    margin-top: 60vh;
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        letter-spacing: 1px;
+    }
+    @media (max-width: $to-small) {
+        margin-top: 0rem;
+        padding: 3rem;
+        box-sizing: border-box;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+    }
+    @media (min-width: $from-small) and (max-width: $to-medium) {}
+    @media (min-width: $from-medium) and (max-width: $to-large) {
+        padding-top: 3rem;
+    }
+    @media (min-width: $from-large) and (max-width: $to-huge) {
+        padding-top: 0rem;
+    }
+    @media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+    @media (min-width: $from-colossal) {}
+}
+
+.pro-images {
+    img {
+        width: 100%;
+    }
+    .desktop-img {
+        border-radius: 12px;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .tab-img {
+        border-radius: 10px;
+        overflow: hidden;
+        width: 75%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .mob-img {
+        border-radius: 18px;
+        overflow: hidden;
+        width: 50%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @media (max-width: $to-small) {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        .desktop-img {
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            width: 150%;
+            bottom: 0px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .tab-img {
+            margin-left: -80%;
+            width: 200%;
+            overflow: hidden;
+            border-radius: 10px;
+            width: 150%;
+            z-index: 2;
+            bottom: 0px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .mob-img {
+            overflow: hidden;
+            border-radius: 18px;
+            width: 80%;
+            z-index: 3;
+            bottom: 0px;
+            margin-left: 37%;
+            right: 0px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+}

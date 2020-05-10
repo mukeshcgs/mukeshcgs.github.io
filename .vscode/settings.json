@@ -10,5 +10,6 @@
         "node_modules": true    // this excludes the folder 
                                 // only from the root of
                                 // your workspace 
-    }
+    },
+    "python.pythonPath": "/usr/local/bin/python3"
 }

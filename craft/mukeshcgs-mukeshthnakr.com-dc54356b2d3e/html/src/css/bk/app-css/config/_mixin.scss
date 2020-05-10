@@ -1,0 +1,102 @@
+//box-shadow
+@mixin box-shadow($left, $top, $radius, $color) {
+    box-shadow: $left $top $radius $color;
+    -webkit-box-shadow: $left $top $radius $color;
+    -moz-box-shadow: $left $top $radius $color;
+}
+
+//transition
+@mixin transition($arg) {
+    transition: $arg;
+    -webkit-transition: $arg;
+    -moz-transition: $arg;
+}
+
+//animation
+@mixin animation($anim-name, $duration, $iteration, $direction) {
+    animation: $anim-name $duration $iteration $direction;
+    -webkit-animation: $anim-name $duration $iteration $direction;
+    -moz-animation: $anim-name $duration $iteration $direction;
+}
+
+// animation keyframe
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+//border-radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+//input-placeholder 
+@mixin input-placeholder($content) {
+    &.placeholder {
+        color: $content;
+    }
+    &:-moz-placeholder {
+        color: $content;
+    }
+    &::-moz-placeholder {
+        color: $content;
+    }
+    &:-ms-input-placeholder {
+        color: $content;
+    }
+    &::-webkit-input-placeholder {
+        color: $content;
+    }
+}
+
+
+/* Added By Payal Start */
+
+//transition duration
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transform: $duration;
+    -ms-transform: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
+//transition scale
+@mixin scale($scale) {
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -o-transform: scale($scale);
+    transform: scale($scale);
+}
+
+//transform translate
+@mixin translate($translateX, $translateY) {
+    -webkit-transform: translate($translateX, $translateY);
+    -moz-transform: translate($translateX, $translateY);
+    -ms-transform: translate($translateX, $translateY);
+    -o-transform: translate($translateX, $translateY);
+    transform: translate($translateX, $translateY);
+}
+
+
+/* Added By Payal End */
+
+
+@mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+  }

@@ -1,0 +1,40 @@
+.skls-customer-details {
+    .detail-sec {
+        display: flex;
+        flex-direction: row;
+        >div {
+            // flex: 1;
+            padding: 5px 0px;
+            text-align: left;
+            margin-right: 25px;
+            color: $clr-root;
+            @media screen and (max-width:480px) {
+            margin-right: 5px;
+                
+            }
+            i {
+                &.fa {
+                    color: #7a909a;
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+        &.loan {
+            padding: 5px 0px;
+            z-index: 1;
+            position: relative;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            .sk-badge {
+                padding-right: 10px;
+                background: $clr-dark-orange;
+                border-radius: 25px;
+            }
+            
+        }
+    }
+}

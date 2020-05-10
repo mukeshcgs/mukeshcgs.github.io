@@ -1,6 +1,3 @@
-
-// document.body.requestFullscreen();
-
 //AFTER LOAD
 $(function () {
     var $body = $('body');
@@ -8,46 +5,164 @@ $(function () {
     var resData;
     let regionsArray;
     var regionTen;
+    let weekData;
     // LOADING STATIC DATA
+    var LatestSettings = {
+        "url": "https://api.quarantine.country/api/v1/summary/latest",
+        "method": "GET",
+        "timeout": 0,
+        "headers": {
+            "Accept": "application/json"
+        },
+    };
+    $.ajax(LatestSettings).done(function (response) {
+        resData = response.data;
+        console.log("resData", resData);
 
-    $.getJSON("./js/latest.json", function (json) {
-        resData = json.data;
+        setLocStorageData(resData, "locData")
+
         totalCount(resData);
 
         const regionsObj = resData.regions
         //Convert objects of Obj into objects of Array
         regionsArray = Object.values(regionsObj)
         //Sort Array 
-        regionTen = regionsArray.sort(compare);
+        regionTen = regionsArray.sort();
 
         regionTen = regionTen.filter((region, i) => i < 10)
 
-        window.resData = resData
-        window.regionTen = regionTen
+        window.resData = resData;
+        window.regionTen = regionTen;
 
         renderHighestCases(regionTen)
         //This start function will call the P5 defaults 
         start();
-        setLocStorageData(resData)
+        //Start Sketch 2
+        sketch_2.startSketch2(resData)
+        renderOptions(resData.regions)
+
+    });
+    var WRsettings = {
+        "url": "https://api.quarantine.country/api/v1/spots/week?region=usa",
+        "method": "GET",
+        "timeout": 0,
+        "headers": {
+            "Accept": "application/json"
+        },
+    };
+
+    $.ajax(WRsettings).done(function (response) {
+        console.log(response);
+        weekData = response;
+        setLocStorageData(weekData, "WeeklocData")
+
+        window.weekData = weekData
+
+        const weekObj = weekData.data
+        //Convert objects of Obj into objects of Array
+        weeksArray = Object.values(weekObj)
+
+        sketch_3.startSketch3(resData, weekData, weeksArray)
     });
 
-    function setLocStorageData(resData) {
-        var getLocData = localStorage.getItem('locData');
+    var monthsSettings = {
+        "url": "https://api.quarantine.country/api/v1/spots/month?region=usa",
+        "method": "GET",
+        "timeout": 0,
+        "headers": {
+            "Accept": "application/json"
+        },
+    };
+
+    $.ajax(monthsSettings).done(function (response) {
+        console.log(response);
+        monthData = response;
+        setLocStorageData(monthData, "MonthlocData")
+        window.monthData = monthData
+
+        const monthObj = monthData.data
+        monthArray = Object.values(monthObj)
+        monthArrayKeys = Object.keys(monthObj)
+
+        mergeArr = monthArray.map(function (x, i) {
+            return { ...x, "date": monthArrayKeys[i] }
+        }.bind(this));
+        monthArray = mergeArr
+        //Sedn to Sketch 4
+        sketch_4.startSketch4(resData, monthData, monthArray)
+    });
+
+
+    function setLocStorageData(data, name) {
+        var getLocData = localStorage.getItem(name);
         if (getLocData) {
             //console.log("Loc Data Present");
             getLocData = JSON.parse(getLocData)
-            if (getLocData.summary.total_cases === resData.summary.total_cases) {
-                //console.log("Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
-            } else {
-                //console.log("NOT Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
-                localStorage.removeItem('locData');
-                localStorage.setItem("locData", JSON.stringify(resData));
-            }
+            // if (getLocData.summary.total_cases === data.summary.total_cases) {
+            //     //console.log("Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
+            // } else {
+            //     //console.log("NOT Ideal", getLocData.summary.total_cases + "==" + resData.summary.total_cases);
+            //     localStorage.removeItem(name);
+            //     localStorage.setItem(name, JSON.stringify(data));
+            // }
         } else {
-            localStorage.setItem("locData", JSON.stringify(resData));
+            localStorage.setItem(name, JSON.stringify(data));
         }
     }
+    $('#country').on('change', function (e) {
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+        updateCountry(valueSelected)
+    });
 
+
+
+    function renderOptions(response) {
+        const regionsObj = resData.regions
+        //Convert objects of Obj into objects of Array
+        regionsArray = Object.values(regionsObj)
+        console.log("===+++++++++++++++++++++++++=", regionsArray);
+
+
+        $.each(response, function (index, value) {
+            var resHTML = '<option data-id="' + value.name + '" value="' + value.name + '">' + value.name + '</option>';
+            $('#country').append(resHTML);
+        });
+    }
+
+    $('#country').on('change', function (e) {
+        var state = "";
+        var result;
+        $("select option:selected").each(function () {
+            state += $(this).text() + " ";
+            var selectedId = $(this).attr("data-id")
+            result = regionsArray.find(({ id }) => id === selectedId);
+        });
+        updateCountry(result);
+    });
+    function updateCountry(country) {
+        var monthsSettings = {
+            "url": "https://api.quarantine.country/api/v1/spots/month?region=" + country + "",
+            "method": "GET",
+            "timeout": 0,
+            "headers": {
+                "Accept": "application/json"
+            },
+        };
+        $.ajax(monthsSettings).done(function (response) {
+            monthData = response;
+            setLocStorageData(monthData, "MonthlocData")
+            window.monthData = monthData
+            const monthObj = monthData.data
+            monthArray = Object.values(monthObj)
+            monthArrayKeys = Object.keys(monthObj)
+            mergeArr = monthArray.map(function (x, i) {
+                return { ...x, "date": monthArrayKeys[i] }
+            }.bind(this));
+            monthArray = mergeArr
+            sketch_4.startSketch4(resData, monthData, monthArray)
+        });
+    }
 
     let s2W = $('#s2 .bar-container').width();
     function renderHighestCases(regionTen) {
@@ -96,7 +211,7 @@ $(function () {
     //     });
     // }
     function totalCount(resData) {
-        console.log(resData);
+        // console.log(resData);
         let HTML = `
         <div class="cases"><span class="count">${resData.summary.total_cases}</span><span>Total Cases</span></div>
         <div class="recovered"><span class="count">${resData.summary.active_cases}</span><span>Active Cases</span></div>
@@ -193,3 +308,4 @@ $(function () {
 // }
 
 // animate() // Runs 60 times per second
+
