@@ -1,7 +1,0 @@
-lib/
-node_modules/
-docs/
-.sass-cache/
-bin/
-
-yarn-error.log
