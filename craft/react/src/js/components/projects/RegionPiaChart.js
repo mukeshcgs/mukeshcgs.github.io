@@ -10,7 +10,7 @@ import LoadingSpinner from '../loadingSpinner'
 class RegionPiaChart extends Component {
     constructor(props) {
         super(props);
-        this.state = {disAmount: 5}
+        this.state = {disAmount: 12}
       }
     avrRegionsBars(data) {
         if (data.pages.regions) {

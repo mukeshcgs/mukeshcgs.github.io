@@ -1,10 +1,8 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -91,12 +89,14 @@ module.exports = {
       // },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: `${commonPaths.cssFolder}/[name].css`,
-      chunkFilename: `${commonPaths.cssFolder}/[name].css`,
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: `${commonPaths.cssFolder}/[name].css`,
+    //   chunkFilename: `${commonPaths.cssFolder}/[name].css`,
+    // }),
     new HtmlWebpackPlugin({
       template: '!html-webpack-plugin/lib/loader!src/index.html',
       filename: 'index.html'

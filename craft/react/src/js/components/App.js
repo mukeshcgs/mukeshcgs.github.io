@@ -17,6 +17,8 @@ import PageNotFound from '../pages/PageNotFound'
 import browserHistory from 'react-router-dom'
 import AboutPage from '../pages/aboutpage';
 import Table from '../pages/table';
+import { TimelineLite, CSSPlugin } from "gsap/all";
+
 
 import { getPages, getRegionData } from "../actions/pages/pagesAction";
 class App extends React.Component {
@@ -25,22 +27,9 @@ class App extends React.Component {
     super(props);
     this.state = { selectValue: "Country" };
     this.handleChange = this.handleChange.bind(this);
+
   }
 
-  componantDidMount() { }
-
-  // latestSummery(data) {
-  //   if (data.pages.summary) {
-  //     return (<div id="result">
-  //       <div class="cases"><span class="count">{data.pages.summary.total_cases}</span><span>Total Cases</span></div>
-  //       <div class="recovered"><span class="count">{data.pages.summary.active_cases}</span><span>Active Cases</span></div>
-  //       <div class="deaths"><span class="count">{data.pages.summary.recovered}</span><span>Recovered</span></div>
-  //       <div class="deaths"><span class="count">{data.pages.summary.deaths}</span><span>Deaths</span></div>
-  //     </div>)
-  //   } else {
-  //     return (<div>NO</div>)
-  //   }
-  // }
 
 
   averagesRegion(data) {
@@ -90,16 +79,16 @@ class App extends React.Component {
     var message = 'You selected :' + selectValue;
 
     return <Router history={browserHistory}>
-      <div id="mukesh">
-        <Navbar />
+      <div id="mukesh" >
+        <Navbar ref={ img => this.logoContainer = img } />
         {/* <Sidebar /> */}
         <Switch>
           <Route path="/" component={HomePage} exact />
           <Route path="/home" component={HomePage} exact />
-          <Route path="/me" component={AboutMePage} exact />
-          <Route path="/projects" component={ProjectsPage} exact projects={this.props.pages} />
+          {/* <Route path="/me" component={AboutMePage} exact /> */}
+          <Route path="/statistics" component={ProjectsPage} exact projects={this.props.pages} />
           {/* <Route path="/:slug" component={ProjectPage} /> */}
-          <Route path="/say-hi" component={ContactPage} exact />
+          <Route path="/information" component={ContactPage} exact />
           {/* <Route path="*" component={PageNotFound} /> */}
           {/* {this.buildRoutes(this.props.pages)} */}
         </Switch>

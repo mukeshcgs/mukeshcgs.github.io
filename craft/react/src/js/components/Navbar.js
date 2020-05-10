@@ -3,11 +3,23 @@ import PropTypes from 'prop-types'
 import { connect } from "react-redux"
 import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import ReactDOM from "react-dom"
+import { TimelineLite, CSSPlugin } from "gsap/all";
 
 class Navbar extends Component {
-  componantDidMount() {
-    ///this.props.getpages();
+  constructor(props) {
+    super(props);
+    this.logoContainer = null;
+    this.logoTween = null;
   }
+  componentDidMount() {
+    this.logoTween = new TimelineLite({ paused: false }).from(this.logoContainer, 1, { y: -50, alpha: 0 })
+  }
+  componantDidUpdate(nextProps) {
+    if (nextProps.pages.pages) { }
+  }
+
+  componantDidUpdate() { }
+
   createListItems(data) {
     return data.pages.filter(page => {
       return page.parent === 0
@@ -31,26 +43,21 @@ class Navbar extends Component {
       return (<path d={pathData} fill={color} />)
     };
 
-    return (<div class="navigation">
-      
+    return (<div class="navigation" ref={ss => this.logoContainer = ss}>
+
       <ul>
         <li>
-          <Link to={"/home"} >HOME</Link>
+          <Link to={"/home"} >Home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to={"/me"} >ME</Link>
+        </li> */}
+
+        <li>
+          <Link to={"/statistics"} >Stats</Link>
         </li>
         <li>
-          <svg class="svg-logo" width="40" height="20">
-          <Triangle vertices={vertices} color="#0084ff" />
-          <Triangle vertices={vertices2} color="#FFFFFF" />
-        </svg>
-        </li>
-        <li>
-          <Link to={"/projects"} >projects</Link>
-        </li>
-        <li>
-          <Link to={"/say-hi"} >Information</Link>
+          <Link to={"/information"} >Information</Link>
         </li>
       </ul>
       {/* <ul >{this.createListItems(this.props.pages)}</ul> */}

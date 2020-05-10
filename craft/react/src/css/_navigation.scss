@@ -16,7 +16,12 @@
             display: inline-block;
             a{
                 padding: 1rem;
-            display: inline-block;
+                display: inline-block;
+                transition: all .3s linear 0s;
+                &:hover{
+                    color: $primary !important;
+                    transition: all .3s linear 0s;
+                }
             }
         }
     }

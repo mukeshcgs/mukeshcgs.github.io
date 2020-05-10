@@ -36,22 +36,22 @@
         h1 {
             font-size: 2em;
             letter-spacing: 0.2em;
-            font-weight: 300;
-            // color: $white;
+            font-weight: bold;
+            color: $primary;
             margin-bottom: 15px;
 
             span {
-                color: $primary;
+                color: $black;
             }
         }
 
         p {
-            color: $light-gray;
+            color: $dark-gray;
             letter-spacing: 0.3em;
             font-size: 1em;
 
             span {
-                color: $primary;
+                color: $black;
                 margin: 0px 10px;
             }
         }
@@ -177,6 +177,7 @@
     font-size: 3rem;
     font-weight: bold;
     color: $mid-gray;
+    letter-spacing: 2px;
 }
 
 .state {
