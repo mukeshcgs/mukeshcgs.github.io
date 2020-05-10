@@ -1,16 +1,18 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var CompressionPlugin = require('compression-webpack-plugin');
 var Visualizer = require('webpack-visualizer-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+
   entry: {
     app: './src/js/index.js'
   },
   module: {
-    loaders: [{
+    rules: [
+      {
       test: /\.jsx?$/,
       exclude: /(node_modules|bower_components)/,
       loader: 'babel-loader',
@@ -50,7 +52,9 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin({
+      cleanAfterEveryBuildPatterns: ['dist']
+    }),
     new HtmlWebpackPlugin({
       template: '!html-webpack-plugin/lib/loader!src/index.html',
       filename: 'index.html'

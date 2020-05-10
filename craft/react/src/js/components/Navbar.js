@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types'
 import { connect } from "react-redux"
 import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import ReactDOM from "react-dom"
@@ -58,8 +58,9 @@ class Navbar extends Component {
   }
 }
 
+
 Navbar.PropTypes = {
-  pages: React.PropTypes.array.isRequired,
+  pages: PropTypes.array.isRequired,
 };
 
 function mapStateToProps(state) {

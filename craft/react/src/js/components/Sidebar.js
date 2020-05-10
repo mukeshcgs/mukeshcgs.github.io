@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types'
 import { connect } from "react-redux"
 import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import ReactDOM from "react-dom"
@@ -66,8 +66,8 @@ class Sidebar extends Component {
 }
 
 Sidebar.PropTypes = {
-    pages: React.PropTypes.array.isRequired,
-    _toggle: React.PropTypes.func.isRequired
+    pages: PropTypes.array.isRequired,
+    _toggle: PropTypes.func.isRequired
 
 };
 

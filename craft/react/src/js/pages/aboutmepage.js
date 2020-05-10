@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types'
 import { connect } from "react-redux"
 import { bindActionCreators } from 'redux'
 import ReactDOM from "react-dom"
@@ -63,7 +63,7 @@ class AboutMePage extends Component {
         </div >)
     }
 }
-AboutMePage.PropTypes = { pages: React.PropTypes.array.isRequired, };
+AboutMePage.PropTypes = { pages: PropTypes.array.isRequired, };
 
 function mapStateToProps(state) { return { pages: state.pages } }
 

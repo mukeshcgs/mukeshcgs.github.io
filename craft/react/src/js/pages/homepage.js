@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types'
 import { connect } from "react-redux"
 import { bindActionCreators } from 'redux'
 import ReactDOM from "react-dom"
@@ -49,7 +49,7 @@ class HomePage extends Component {
 //  export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
 
 HomePage.PropTypes = {
-  pages: React.PropTypes.array.isRequired,
+  pages: PropTypes.array.isRequired,
 };
 
 function mapStateToProps(state) {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Link, Route } from "react-router-dom"
@@ -50,7 +50,7 @@ class RegionTable extends Component {
     }
 }
 
-RegionTable.PropTypes = { pages: React.PropTypes.array.isRequired, };
+RegionTable.PropTypes = { pages: PropTypes.array.isRequired, };
 
 function mapStateToProps(state) { return { pages: state.pages } }
 

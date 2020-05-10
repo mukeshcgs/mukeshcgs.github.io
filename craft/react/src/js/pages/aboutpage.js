@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types'
 import { connect } from "react-redux"
 import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import ReactDOM from "react-dom"
 import axios from 'axios'
 
-import { getProjects } from "../actions/projects/projectActions";
+import { getProjects } from "../actions/projects/ProjectActions";
 import ProjectPage from "./projectpage";
 
 class AboutPage extends Component {
@@ -75,9 +75,9 @@ class AboutPage extends Component {
     }
 }
 AboutPage.PropTypes = {
-    projects: React.PropTypes.array.isRequired,
-    getProjects: React.PropTypes.func.isRequired,
-    projectIndex: React.PropTypes.array.isRequired
+    projects: PropTypes.array.isRequired,
+    getProjects: PropTypes.func.isRequired,
+    projectIndex: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state) {

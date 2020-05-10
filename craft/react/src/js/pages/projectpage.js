@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Link, Route } from "react-router-dom"
@@ -83,7 +83,7 @@ function mapDispatchToProps(dispatch) {
 //export default connect(mapDispatchToProps)(ProjectPage);
 
 ProjectPage.PropTypes = {
-    pages: React.PropTypes.array.isRequired,
+    pages: PropTypes.array.isRequired,
 };
 
 function mapStateToProps(state) {
