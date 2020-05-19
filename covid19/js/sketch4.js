@@ -10,7 +10,7 @@ var S4 = function (SKM) {
         cWidth: cellSize,
         cHeight: cellSize
     }
-    const spaceBetweenCell = 50;
+    const spaceBetweenCell = 125;
     SKM.setup = function () {
         var canvas = SKM.createCanvas(SKM.windowWidth, SKM.windowHeight);
         canvas.parent('canvas04');

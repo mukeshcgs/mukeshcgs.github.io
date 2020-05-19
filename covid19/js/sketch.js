@@ -81,12 +81,12 @@ function draw() {
         text("COVID-19", 20, 40);
         pop();
 
-        for (let i = 0; i < vehicles.length; i++) {
-            var v = vehicles[i]
-            v.update();
-            v.show();
-            v.behaviors()
-        }
+        // for (let i = 0; i < vehicles.length; i++) {
+        //     var v = vehicles[i]
+        //     v.update();
+        //     v.show();
+        //     v.behaviors()
+        // }
 
         let countPer, screenPer;
 
