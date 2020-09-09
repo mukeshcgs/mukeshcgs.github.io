@@ -13,7 +13,7 @@
     "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push",
     "deploy2": "cd dist && git subtree push --prefix dist origin gh-pages",
     "deploy3": "git subtree push --prefix dist origin gh-pages",
-    "add-commit": "git add --all && git commit -m \"Release at $(date)\"",
+    "add-commit": "git add --all && git commit -m \"Release at",
     "push-to-gh-pages": "git push -f origin gh-pages:gh-pages",
     "gh-pages": "npm run build && npm run add-commit && git push && npm run push-to-gh-pages"
   },
