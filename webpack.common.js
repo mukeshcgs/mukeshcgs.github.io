@@ -113,7 +113,7 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(['docs']),
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: '!html-webpack-plugin/lib/loader!src/index.html',
       filename: 'index.html'
@@ -126,6 +126,6 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, 'dist')
   }
 };
