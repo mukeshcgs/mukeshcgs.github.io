@@ -6,7 +6,7 @@
 ## Directories
 log/
 #dist/
-node_modules/
+*/node_modules/
 bower_components/
 
 ## Files
@@ -14,3 +14,4 @@ result.xml
 npm-debug.log
 yarn.lock
 npm.lock
+node_modules

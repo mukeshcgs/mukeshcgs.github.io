@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__localhost">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Designer/Developer by profession an artist by passion">
+    <meta name="author" content="Mukesh Thankar">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon-16x16.png">
+
+    <!-- Recommended favicon format -->
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://mukeshthankar.ml/index.html">
+    <meta property="og:title" content="Mukesh Thankar | portfoli">
+    <meta property="og:image" content="http://mukeshthankar.ml/img/image.jpg">
+    <meta property="og:description" content="A Designer/Developer by profession an artist by passion">
+    <meta property="og:site_name" content="Mukesh Thankar | portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="http://mukeshthankar.ml/index.html">
+    <meta name="twitter:title" content="Mukesh Thankar-portfoli">
+    <meta name="twitter:description" content="A Designer/Developer by profession an artist by passion">
+    <meta name="twitter:image" content="http://mukeshthankar.com/image.jpg">
+
+    <title>Mukesh Thankar | Portfolio </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="./js/jquery.smooth-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.min.js"></script>
+
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <script>
+        function onSubmit(token) {
+            alert('thanks ' + document.getElementById('field').value);
+        }
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('field').value) {
+                alert("You must add text to the required field");
+            } else {
+                grecaptcha.execute();
+            }
+        }
+
+        function onload() {
+            var element = document.getElementById('submit');
+            element.onclick = validate;
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body role="document" data-gr-c-s-loaded="true">
+    <div id="preloader" class="loading_spinner-wrap"><svg class="loading_spinner" width="60" height="20"
+            viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7" cy="15" r="4"></circle>
+            <circle cx="30" cy="15" r="4"></circle>
+            <circle cx="53" cy="15" r="4"></circle>
+        </svg>
+    </div>
+    <header data-module="header" class="">
+        <div class="container" style="position: relative">
+            <div class="close-menu">
+                <div class="navigation">
+                    <div class="logo"><a href="http://localhost:8080/"><svg class="svg-logo" width="55" height="30">
+                                <path d="M 0 30 L 15 0 L 30 30 Z" fill="#0084ff"></path>
+                                <path d="M 15 30 L 30 0 L 45 30 Z" fill="#FFFFFF"></path>
+                            </svg></a></div>
+                    <div id="threeLines" class=""><button id="el"></button></div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="fade-in"><a href="#app">Top</a> </li>
+                    <li class="fade-in"><a href="#p0">About</a> </li>
+                    <li class="fade-in"><a href="#p1">Skills</a> </li>
+                    <li class="fade-in"><a href="#p2">Work Experience</a></li>
+                    <li class="fade-in"><a href="#p3">Freelance Work</a></li>
+                    <li class="fade-in"><a href="#p4">Education</a></li>
+                    <li class="fade-in"><a href="#p5">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="app">
+        <div data-reactroot="">
+            <div class="home-container">
+                <div class="my-name">
+                    <h1>
+                        mukesh thankar
+                        <span>.</span></h1>
+                    <p>
+                        designer
+                        <span>|</span>
+                        developer
+                    </p>
+                    <div class="visco-badg">
+                        <a style="display: inline-block; border: 0; text-decoration: none;"
+                            href="http://vsco.co/mypixels?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid"><img
+                                style="width: 48px; height: 48px; margin: 0px;"
+                                src="http://assets.vsco.co/assets/images/assets/Logo_white_48.png"
+                                alt="VSCO Logo" /></a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="p0" class="page-container">
+                <div class="page-heading">Me</div>
+                <div class="about-details">
+                    <div>
+                        <div>
+                            <p>I am Mukesh Thankar, a graphic designer and web developer living in Mumbai India. I am
+                                primarily focused on web design, and development but love taking on any good
+                                design/develop challenge. I love getting to collaborate with clients to find a strategic
+                                and creative solution for any and all of their design needs. When I am not designing,
+                                you can find me riding my bike, playing with my dog, or baking with my awesome wife.</p>
+                        </div>
+                    </div>
+                    <div class="work-exp-block">
+                        <!--SKILL-->
+                        <div id="p1" class="page-heading">Skills</div>
+                        <ul class="skills skill">
+                            <li class="fade-in">
+                                <div class="skill-name">
+                                    <div>Adobe Photoshop</div>
+                                    <div>Coral Draw</div>
+                                    <div>Adobe Illustrator</div>
+                                    <div>HTML5</div>
+                                    <div>CSS3+</div>
+                                    <div>Javascript</div>
+                                    <div>React JS</div>
+                                    <div>Stimulus JS</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--WORK EXPERIANCE-->
+                        <div id="p2" class="page-heading">Work Experience</div>
+                        <ul class="skills work-exp">
+                            <li>
+                                <div class="skill-name">Black Ant Pvt. Ltd.</div>
+                                <div class="skill-type">Graphic
+                                    Designer</div>
+                                <div class="skill-time">Nov 2007 - May 2013</div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Hotels &amp; More Pvt. Ltd.</div>
+                                <div class="skill-type">Web
+                                    Designer &amp; Developer</div>
+                                <div class="skill-time">May 2013 - June 2014</div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Astrika Infotech Pvt. Ltd.</div>
+                                <div class="skill-type">Web
+                                    Developer / Frontend Developer</div>
+                                <div class="skill-time">Jully 2014 - Sept
+                                    2018</div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Macann Erricson</div>
+                                <div class="skill-type">Frontend
+                                    Developer</div>
+                                <div class="skill-time">Sept 2018 - Present</div>
+                            </li>
+                        </ul>
+                        <!--FREELANCE WORK-->
+                        <div id="p3" class="page-heading">Freelance Work</div>
+                        <ul class="skills freelance">
+                            <li class="fade-in" style="color: rgb(203, 39, 37);">
+                                <div class="skill-name">Srikant Villuri</div>
+                                <div class="skill-type">
+                                    <div>website</div>
+                                    <div>design</div>
+                                    <div>UI</div>
+                                    <div>UX</div>
+                                </div>
+                                <div class="skill-time">3 Months <a href="./srikantvilluri/index.html" target="_blank"
+                                        rel="noopener noreferrer">Visit</a></div>
+                            </li>
+                            <li class="fade-in" style="color: rgb(203, 39, 37);">
+                                <div class="skill-name">CCUSA</div>
+                                <div class="skill-type">
+                                    <div>application</div>
+                                    <div>website</div>
+                                    <div>design</div>
+                                    <div>UI</div>
+                                    <div>UX</div>
+                                </div>
+                                <div class="skill-time">3 Months <a href="./ravebizz/index.html" target="_blank"
+                                        rel="noopener noreferrer">Visit</a></div>
+                            </li>
+                            <li class="fade-in" style="color: rgb(17, 35, 90);">
+                                <div class="skill-name">Ravebizz
+                                    Solutions</div>
+                                <div class="skill-type">
+                                    <div>application</div>
+                                    <div>website</div>
+                                    <div>design</div>
+                                    <div>UI</div>
+                                    <div>UX</div>
+                                </div>
+                                <div class="skill-time">3 Months <a href="./ravebizz/index.html" target="_blank"
+                                        rel="noopener noreferrer">Visit</a></div>
+                            </li>
+                            <li class="fade-in" style="color: rgb(0, 195, 244);">
+                                <div class="skill-name">Magical
+                                    Tarot</div>
+                                <div class="skill-type">
+                                    <div>website</div>
+                                    <div>UI</div>
+                                </div>
+                                <div class="skill-time">1.5 Months</div>
+                            </li>
+                            <li class="fade-in" style="color: rgb(225, 197, 116);">
+                                <div class="skill-name">Massakali
+                                    Sarees</div>
+                                <div class="skill-type">
+                                    <div>application</div>
+                                    <div>website</div>
+                                    <div>design</div>
+                                    <div>UI</div>
+                                </div>
+                                <div class="skill-time">2 Months <a href="./ravebizz/index.html" target="_blank"
+                                        rel="noopener noreferrer">Visit</a></div>
+                            </li>
+                        </ul>
+
+
+                        <!--FREELANCE WORK-->
+                        <div id="p3" class="page-heading">experimental Work</div>
+                        <ul class="skills freelance">
+                            <li class="fade-in" style="color: rgb(203, 39, 37);">
+                                <div class="skill-name">Experiment 01</div>
+                                <div class="skill-type">
+                                    <div>UI</div>
+                                    <div>UX</div>
+                                </div>
+                                <div class="skill-time">0 Months <a href="./experiment/01/index.html" target="_blank"
+                                        rel="noopener noreferrer">Visit</a></div>
+                            </li>
+                            <li class="fade-in" style="color: rgb(203, 39, 37);">
+                                <div class="skill-name">Experiment 02</div>
+                                <div class="skill-type">
+                                    <div>UI</div>
+                                    <div>UX</div>
+                                </div>
+                                <div class="skill-time">0 Months <a href="./experiment/02/index.html" target="_blank"
+                                        rel="noopener noreferrer">Visit</a></div>
+                            </li>
+                            <li class="fade-in" style="color: rgb(203, 39, 37);">
+                                <div class="skill-name">Experiment 03</div>
+                                <div class="skill-type">
+                                    <div>UI</div>
+                                    <div>UX</div>
+                                </div>
+                                <div class="skill-time">0 Months <a href="./experiment/03/index.html" target="_blank"
+                                        rel="noopener noreferrer">Visit</a></div>
+                            </li>
+                        </ul>
+                        <!--EDUCATION-->
+
+                        <div id="p4" class="page-heading">Education</div>
+                        <ul class="skills edu">
+                            <li>
+                                <div class="skill-name">BCA</div>
+                                <div class="skill-type">Pune Univercity</div>
+                                <div class="skill-time">Feb 2012 - 2013</div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Graphic Design</div>
+                                <div class="skill-type">Digicom
+                                    Institute</div>
+                                <div class="skill-time">Feb 2011 - 2012</div>
+                            </li>
+                            <li>
+                                <div class="skill-name">HSC</div>
+                                <div class="skill-type">Birla Collage</div>
+                                <div class="skill-time">Feb 2011 - 2012</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-container">
+                <form action="" class="contact-form">
+                    <div class="g12">
+                        <div class="g1x2">
+                            <div><input placeholder="Name" type="text" id="field" name="field" />
+                            </div>
+                        </div>
+                        <!-- <div class="g1x2">
+                        <div><span> 01</span><input placeholder="Email" type="text" /></div>
+                    </div>
+                    <div class="g1x2">
+                        <div><span> 01</span> <input placeholder="Message" type="text" /></div>
+                    </div>
+                    <div class="g1x2">
+                        <div><span> 01</span> <input placeholder="Mobile" /></div>
+                    </div>-->
+                        <div class="g1x2">
+                            <div><input id='submit' type="button" value="Sumbmit" type="text" /></div>
+                        </div>
+                    </div>
+                    <div id='recaptcha' class="g-recaptcha" data-sitekey="6LcmzdwUAAAAAFDTv8rRuGWfESS1D0_KharJCtHW"
+                        data-callback="onSubmit" data-size="invisible"></div>
+                </form>
+                <!-- <form>
+                Name: (required) <input id="field" name="field">
+                <div id='recaptcha' class="g-recaptcha"
+                    data-sitekey="6LcmzdwUAAAAAFDTv8rRuGWfESS1D0_KharJCtHW"
+                    data-callback="onSubmit"
+                    data-size="invisible"></div>
+              </form> -->
+            </div>
+
+            <script>onload();</script>
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery("#preloader").remove();
+        });
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/app.min.js"></script>
+
+</body>
+
+</html>
