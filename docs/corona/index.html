@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__localhost">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Designer/Developer by profession an artist by passion">
+    <meta name="author" content="Mukesh Thankar">
+    <title>Mukesh Thankar | CORONA</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/libs/jquery-3.2.1.min.js"></script>
+
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+
+</head>
+
+<body data-barba="wrapper">
+    <div class="parent">
+        <div class="bg"></div>
+        <main>
+            <section>
+                <h1 class="covid19">COVID 19</h1>
+
+            </section>
+            <div class="state"></div>
+            <div class="custom-select">
+                <select id="categoriesSelect">
+                    <option value="">Select State</option>
+                </select>
+            </div>
+            <section id="result">
+                <div class="cases"><span class="count">00</span><span>Cases</span></div>
+                <div class="recovered"><span class="count">00</span><span>Recovered</span></div>
+                <div class="deaths"><span class="count">00</span><span>Deaths</span></div>
+            </section>
+            <section class="caution">
+                Stay Home, Stay Safe
+            </section>
+
+        </main>
+    </div>
+    <div id="canvas01"></div>
+    <script src="./js/script.js"></script>
+    <script src="./js/sketch.js"></script>
+</body>
+
+</html>
