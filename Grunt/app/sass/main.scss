@@ -3,10 +3,10 @@ $white: #fff;
 $gray-light: #ccc;
 $gray-mid: #999;
 $gray-dark: #444444;
-$gray-dark-rgba: rgba(51, 51, 51, 0.5);
+$gray-dark-rgba: #2c2c2c;
 $black: #1f1f1f;
 
-$color_azure_radiance_approx: #0084ff;
+$primary: #0084ff;
 $color_chambray_approx: #3b5998;
 $color_dodger_blue_approx: #1da1f2;
 $color_valencia_approx: #d14836;
@@ -23,12 +23,16 @@ $font_1: sans-serif;
     margin: 0;
     font-family: $font_0, $font_1;
     color: $gray-dark;
+    // border: 1px solid green;
 }
+
 
 html {
     background: $white;
 }
-
+.mt{
+    color: $primary;
+}
 @media(max-width: 699px) {
     html {
         font-size: 12px;
@@ -60,7 +64,7 @@ html {
 
                     span {
                         font-size: inherit;
-                        color: $color_azure_radiance_approx;
+                        color: $primary;
                     }
                 }
             }
@@ -186,12 +190,30 @@ html {
             line-height: normal !important;
             bottom: 0;
             font-size: 1rem;
-        }
+            a{
+                color: $primary;
+                &:hover{
+                color: $black;
+                }
+            }
+        } 
     }
 
-    .home-container .my-name {
+    .home-container .my-name { 
         h1 {
             font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            &::after{
+                content:"";
+                bottom: 8px;
+                right: 0px;
+                display: block;
+                width: 3px;
+                height: 3px; 
+                background:$primary ;
+                position: absolute;
+            }
         }
 
         p {
@@ -452,7 +474,7 @@ h5 {
     right: 0;
     left: 0;
     padding: 20px;
-    position: fixed;
+    // position: fixed;
     z-index: 99;
 
     .logo {
@@ -695,7 +717,7 @@ footer {
 }
 
 .home-container {
-    width: 100vw;
+    // width: 100vw;
     height: 100vh;
     text-align: center;
     position: relative;
@@ -704,16 +726,27 @@ footer {
     .my-name {
         position: relative;
         top: 40%;
-
+        display: inline-block;
         h1 {
             font-size: 2em;
             letter-spacing: 0.2em;
             font-weight: 300;
             color: $black;
             margin-bottom: 15px;
-
+            position: relative;
+            display: inline-block;
+            &::after{
+                content:"";
+                bottom: 10px;
+                right: 3px;
+                display: block;
+                width: 3px;
+                height: 3px; 
+                background:$primary ;
+                position: absolute;
+            }
             span {
-                color: $color_azure_radiance_approx;
+                color: $primary;
             }
         }
 
@@ -723,7 +756,7 @@ footer {
             font-size: 1em;
 
             span {
-                color: $color_azure_radiance_approx;
+                color: $primary;
                 margin: 0 10px;
             }
         }
@@ -778,8 +811,7 @@ footer {
 }
 
 .page-heading {
-    font-size: 4rem;
-    color: $black;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -937,20 +969,21 @@ footer {
             }
 
             .skill-name {
-                color: $black;
-                font-size: 1.5rem;
+                color: $gray-dark;
+                font-size: 1rem;
                 font-weight: 500;
-                border-bottom: $gray-dark 1px solid;
+                border-bottom: $gray-light 1px solid;
                 padding: 1rem 0;
-                letter-spacing: 1px;
+                letter-spacing: 0.5px;
 
                 div {
                     padding: 10px 20px;
                     //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
                     border-radius: 30px;
-                    background: $gray-mid;
+                    border: 1px solid $gray-light;
                     margin-bottom: 15px;
-                    color: $white;
+                    color: $gray-mid;
+                    display: inline-block;
                 }
             }
 
@@ -961,15 +994,16 @@ footer {
 
                 div {
                     display: inline-block;
-                    padding: 0 15px;
-                    border-right: 1px solid $gray-dark;
+                    padding: 0 10px;
+                    border-right: 1px solid $gray-mid;
+                    color: $gray-mid;
 
                     &:nth-child(1) {
                         padding-left: 0;
                     }
 
                     &:nth-last-child(1) {
-                        border-right: 0 solid $gray-dark;
+                        border-right: 0 solid $gray-mid;
                     }
                 }
             }

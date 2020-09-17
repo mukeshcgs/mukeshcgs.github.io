@@ -76,14 +76,14 @@ module.exports = function (grunt) {
                     livereload: true
                 }
             },
-            // libs: {
-            //     files: ['libs/**/*.css'],
-            //     tasks: ['cssmin'],
-            // },
-            // scripts: {
-            //     files: ['<%= config.app %>/js/*.js', 'lib/**/*.js'],
-            //     tasks: ['concat', 'uglify'],
-            // }
+            libs: {
+                files: ['libs/**/*.css'],
+                tasks: ['cssmin'],
+            },
+            scripts: {
+                files: ['<%= config.app %>/js/*.js', 'lib/**/*.js'],
+                tasks: ['concat', 'uglify'],
+            }
         },
 
         sass: {
@@ -234,5 +234,5 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['browserSync', 'watch']);
 
     //MAKE BUILD
-    grunt.registerTask('build', ['newer:copy:main', 'sass:main', 'webfont', 'cssmin:main']);
+    grunt.registerTask('build', ['newer:copy:main', 'sass:main', 'cssmin:main']);
 };

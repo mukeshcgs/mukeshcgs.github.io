@@ -7,6 +7,9 @@
 html {
   background: #fff; }
 
+.mt {
+  color: #0084ff; }
+
 @media (max-width: 699px) {
   html {
     font-size: 12px; }
@@ -119,9 +122,24 @@ html {
       line-height: normal !important;
       bottom: 0;
       font-size: 1rem; }
+      .about-details .skills li .skill-time a {
+        color: #0084ff; }
+        .about-details .skills li .skill-time a:hover {
+          color: #1f1f1f; }
 
   .home-container .my-name h1 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    position: relative;
+    display: inline-block; }
+    .home-container .my-name h1::after {
+      content: "";
+      bottom: 8px;
+      right: 0px;
+      display: block;
+      width: 3px;
+      height: 3px;
+      background: #0084ff;
+      position: absolute; }
   .home-container .my-name p {
     font-size: 1rem; } }
 @media (min-width: 700px) and (max-width: 999px) {
@@ -294,7 +312,6 @@ h5 {
   right: 0;
   left: 0;
   padding: 20px;
-  position: fixed;
   z-index: 99; }
   .navigation .logo {
     display: inline-block; }
@@ -464,20 +481,31 @@ footer {
           background: #d14836; }
 
 .home-container {
-  width: 100vw;
   height: 100vh;
   text-align: center;
   position: relative;
   top: 0; }
   .home-container .my-name {
     position: relative;
-    top: 40%; }
+    top: 40%;
+    display: inline-block; }
     .home-container .my-name h1 {
       font-size: 2em;
       letter-spacing: 0.2em;
       font-weight: 300;
       color: #1f1f1f;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block; }
+      .home-container .my-name h1::after {
+        content: "";
+        bottom: 10px;
+        right: 3px;
+        display: block;
+        width: 3px;
+        height: 3px;
+        background: #0084ff;
+        position: absolute; }
       .home-container .my-name h1 span {
         color: #0084ff; }
     .home-container .my-name p {
@@ -507,7 +535,7 @@ footer {
       display: block;
       letter-spacing: 2px;
       transition: all 1s ease-in;
-      background: rgba(51, 51, 51, 0.5); }
+      background: #2c2c2c; }
       .project-container ul li a:hover {
         background: rgba(51, 51, 51, 0);
         transition: all 1s ease-in; }
@@ -521,8 +549,7 @@ footer {
         top: 0; }
 
 .page-heading {
-  font-size: 4rem;
-  color: #1f1f1f;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem; }
 
@@ -634,30 +661,32 @@ footer {
       .about-details .work-exp-block .skills li div {
         display: block; }
       .about-details .work-exp-block .skills li .skill-name {
-        color: #1f1f1f;
-        font-size: 1.5rem;
+        color: #444444;
+        font-size: 1rem;
         font-weight: 500;
-        border-bottom: #444444 1px solid;
+        border-bottom: #ccc 1px solid;
         padding: 1rem 0;
-        letter-spacing: 1px; }
+        letter-spacing: 0.5px; }
         .about-details .work-exp-block .skills li .skill-name div {
           padding: 10px 20px;
           border-radius: 30px;
-          background: #999;
+          border: 1px solid #ccc;
           margin-bottom: 15px;
-          color: #fff; }
+          color: #999;
+          display: inline-block; }
       .about-details .work-exp-block .skills li .skill-type {
         color: #999;
         font-size: 1rem;
         padding: 1rem 0; }
         .about-details .work-exp-block .skills li .skill-type div {
           display: inline-block;
-          padding: 0 15px;
-          border-right: 1px solid #444444; }
+          padding: 0 10px;
+          border-right: 1px solid #999;
+          color: #999; }
           .about-details .work-exp-block .skills li .skill-type div:nth-child(1) {
             padding-left: 0; }
           .about-details .work-exp-block .skills li .skill-type div:nth-last-child(1) {
-            border-right: 0 solid #444444; }
+            border-right: 0 solid #999; }
 
 .smooth-sec {
   position: fixed;
