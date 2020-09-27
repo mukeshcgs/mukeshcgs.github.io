@@ -64,6 +64,7 @@ module.exports = {
     { test: /\.png$/, use: ["url-loader?mimetype=image/png"] },
     {
       test: /\.(html)$/,
+      exclude: [/node_modules/, require.resolve('./index.html')],
       use: {
         loader: 'html-loader',
         options: {
