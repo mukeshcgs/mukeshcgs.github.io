@@ -16,9 +16,9 @@ let titles = {
 // console.log('Production: ', env.production); // true
 
 module.exports = {
-  entry: {
-    index: './src/js/index.js',
-  },
+  entry: path.resolve(__dirname, 'src') + 'js/index.js',
+
+  // entry: {index: './src/js/index.js',},
   mode: 'development',
 
   resolve: {
