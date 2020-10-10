@@ -1,3 +1,4 @@
+@import "barba-page";
 //colors
 $white: #fff;
 $gray-light: #ccc;
@@ -30,9 +31,11 @@ $font_1: sans-serif;
 html {
     background: $white;
 }
-.mt{
+
+.mt {
     color: $primary;
 }
+
 @media(max-width: 699px) {
     html {
         font-size: 12px;
@@ -79,6 +82,15 @@ html {
         text-align: center;
         font-size: 2rem;
         padding: 20px;
+        position: relative;
+
+        span.overlay {
+            top: 0px;
+            bottom: 0px;
+            display: block;
+            background-color: #d14836;
+            position: absolute;
+        }
     }
 
     .pro-header-container {
@@ -190,28 +202,31 @@ html {
             line-height: normal !important;
             bottom: 0;
             font-size: 1rem;
-            a{
+
+            a {
                 color: $primary;
-                &:hover{
-                color: $black;
+
+                &:hover {
+                    color: $black;
                 }
             }
-        } 
+        }
     }
 
-    .home-container .my-name { 
+    .home-container .my-name {
         h1 {
             font-size: 2rem;
             position: relative;
             display: inline-block;
-            &::after{
-                content:"";
+
+            &::after {
+                content: "";
                 bottom: 8px;
                 right: 0px;
                 display: block;
                 width: 3px;
-                height: 3px; 
-                background:$primary ;
+                height: 3px;
+                background: $primary;
                 position: absolute;
             }
         }
@@ -727,6 +742,7 @@ footer {
         position: relative;
         top: 40%;
         display: inline-block;
+
         h1 {
             font-size: 2em;
             letter-spacing: 0.2em;
@@ -735,16 +751,18 @@ footer {
             margin-bottom: 15px;
             position: relative;
             display: inline-block;
-            &::after{
-                content:"";
+
+            &::after {
+                content: "";
                 bottom: 10px;
                 right: 3px;
                 display: block;
                 width: 3px;
-                height: 3px; 
-                background:$primary ;
+                height: 3px;
+                background: $primary;
                 position: absolute;
             }
+
             span {
                 color: $primary;
             }
@@ -814,6 +832,17 @@ footer {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    position: relative;
+
+    .overlay {
+        top: 0px;
+        bottom: 0px;
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .pro-header-container {

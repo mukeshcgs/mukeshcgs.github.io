@@ -14,7 +14,7 @@ $(function () {
         } else {
             $mainNav.addClass("active");
             $(this).addClass("active");
-        }
+        } 
     });
 
     //SMOOTH SCROLL
@@ -45,4 +45,7 @@ $(function () {
         }
     });
 
+    // WOW
+    new WOW().init(); 
 });
+

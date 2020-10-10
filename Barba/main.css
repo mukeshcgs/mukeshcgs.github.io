@@ -1,0 +1,181 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #3d3d3d;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+
+}
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #fb9b00;
+    width: 0%;
+    height: 100%;
+}
+
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+h1 {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.nav {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav a {
+    text-decoration: none;
+    color: #3d3d3d;
+    border: 1px solid #3d3d3d;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    /* font-size: 10px; */
+    transition: 0.3s;
+}
+
+.button:hover a {
+    background: #3d3d3d;
+    color: #161616;
+    transition: 0.3s;
+}
+
+/* NAVBAR
+=========================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.navbar>div {
+    padding: 0 30px;
+    font-size: 20px;
+    align-self: auto;
+}
+
+.navbar .logo {
+    margin-right: auto;
+}
+
+
+.navbar .menus {
+    /* position: absolute;
+    top: 0px;
+    left: 0rem; */
+    /* transform: rotate(-90deg); */
+}
+
+.navbar .menus ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menus ul li a {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0 1.5rem;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.navbar .menus ul li a:hover {
+    color: #005de9;
+}
+
+/* SOCIAL MEDIA
+=========================== */
+.media ul {
+    position: absolute;
+    bottom: 250px;
+    left: -12rem;
+    transform: rotate(-90deg);
+}
+
+.media ul li {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+
+/* SOCIAL MEDIA
+=========================== */
+footer{
+    position: relative;
+}
+.footer {
+    position: fixed;
+    bottom: 0px;
+    right: 3rem;
+    /* left: -140px; */
+    /* transform: rotate(-90deg); */
+}
+.footer ul{position: relative;}
+.footer ul:after{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: #3d3d3d;
+    position: absolute;
+    top: 22px;
+    left: 100%;
+}
+
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer ul li a {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.footer ul li a:hover {
+    color: #005de9;
+}
+.about-text {
+    padding: 3rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}

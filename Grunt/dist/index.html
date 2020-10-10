@@ -64,6 +64,18 @@
 
     <link href="./css/main.min.css" rel="stylesheet">
 
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <!-- <link href="icon-font/icons.css" rel="stylesheet"> -->
+    <link href="css/vendor.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
     <script>
         function onSubmit(token) {
             alert('thanks ' + document.getElementById('field').value);
@@ -84,12 +96,6 @@
         }
     </script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
-    <link rel="icon" href="images/favicon.ico">
-    <!-- <link href="icon-font/icons.css" rel="stylesheet"> -->
-    <link href="css/vendor.css" rel="stylesheet">
-
 </head>
 
 <body role="document">
@@ -148,10 +154,10 @@
 
             </div>
             <div id="p0" class="page-container">
-                <div class="page-heading">Me</div>
                 <div class="about-details">
                     <div>
-                        <div>
+                        <div class="page-heading"><span class="overlay"></span>Me</div>
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
                             <p>I am <span class="mt">Mukesh Thankar</span>, a graphic designer and web developer living
                                 in Mumbai, India. I am primarily focused on web design, and development but love taking
                                 on any good design/development challenge. I love getting to collaborate with clients to
@@ -159,9 +165,10 @@
                                 not designing, you can find me drawing, playing games.</p>
                         </div>
                     </div>
+
                     <div class="work-exp-block">
                         <!--SKILL-->
-                        <div id="p1" class="page-heading">Skills</div>
+                        <div id="p1" class="page-heading"><span class="overlay"></span>Skills</div>
                         <ul class="skills skill">
                             <li class="fade-in">
                                 <div class="skill-name">
@@ -177,8 +184,8 @@
                             </li>
                         </ul>
                         <!--WORK EXPERIANCE-->
-                        <div id="p2" class="page-heading">Work Experience</div>
-                        <ul class="skills work-exp">
+                        <div id="p2" class="page-heading"><span class="overlay"></span>Work Experience</div>
+                        <ul class="skills work-exp wow fadeInUp" data-wow-delay="0.3s">
                             <li>
                                 <div class="skill-name">Black Ant Pvt. Ltd.</div>
                                 <div class="skill-type">Graphic
@@ -205,8 +212,8 @@
                             </li>
                         </ul>
                         <!--FREELANCE WORK-->
-                        <div id="p3" class="page-heading">Freelance Work</div>
-                        <ul class="skills freelance">
+                        <div id="p3" class="page-heading"><span class="overlay"></span>Freelance Work</div>
+                        <ul class="skills freelance  wow fadeInUp" data-wow-delay="0.3s">
                             <li class="fade-in" style="color: rgb(203, 39, 37);">
                                 <div class="skill-name">Srikant Villuri</div>
                                 <div class="skill-type">
@@ -268,8 +275,8 @@
 
 
                         <!--FREELANCE WORK-->
-                        <div id="p3" class="page-heading">experimental Work</div>
-                        <ul class="skills freelance">
+                        <!-- <div id="p3" class="page-heading"><span class="overlay"></span>experimental Work</div>
+                        <ul class="skills freelance wow fadeInUp" data-wow-delay="0.3s">
                             <li class="fade-in" style="color: rgb(203, 39, 37);">
                                 <div class="skill-name">Experiment 01</div>
                                 <div class="skill-type">
@@ -297,11 +304,11 @@
                                 <div class="skill-time">0 Months <a href="./experiment/03/index.html" target="_blank"
                                         rel="noopener noreferrer">Visit</a></div>
                             </li>
-                        </ul>
+                        </ul> -->
                         <!--EDUCATION-->
 
-                        <div id="p4" class="page-heading">Education</div>
-                        <ul class="skills edu">
+                        <div id="p4" class="page-heading"><span class="overlay"></span>Education</div>
+                        <ul class="skills edu wow fadeInUp" data-wow-delay="0.3s">
                             <li>
                                 <div class="skill-name">BCA</div>
                                 <div class="skill-type">Pune Univercity</div>
@@ -322,7 +329,7 @@
                     </div>
                 </div>
             </div>
-            <div class="page-container">
+            <div class="page-container wow fadeInUp" data-wow-delay="0.3s">
                 <form action="" class="contact-form">
                     <div class="g12">
                         <div class="g1x2">
@@ -375,12 +382,42 @@
             jQuery("#preloader").remove();
         });
     </script>
+
+
     <!-- <script src="./js/script.js"></script> -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/app.min.js">
     </script>
+    <!-- <script>
+        $(function () {
+            // // GSAP SCROLL MAGIC
+            var controller = new ScrollMagic.Controller();
+            // gsap.from(".skill .skill-name div", {
+            //     stagger: 1,
+            //     y: 10,
+            //     opacity: 0,
+            //     duration: 0.5
+            // })
+            $(".page-heading").each(function () {
+                var overlay = $(this).find(".overlay");
+                console.log(overlay);
+
+                var animateHeading = gsap.to(overlay, {
+                    y: 0,
+                    scaleY: 0,
+                    transformOrigin: "0% 100%",
+                })
+                // Make ScrollMagic Scene
+                var scene = new ScrollMagic.Scene({
+                    triggerElement: this,
+                }).setTween(animateHeading).addTo(controller);
+
+            })
+        })
+    </script> -->
+
 </body>
 
 </html>
