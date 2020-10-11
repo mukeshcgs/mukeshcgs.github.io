@@ -333,9 +333,11 @@ button:focus {
   display: inline-block;
   width: 100%;
 }
-.hero__btn .app{
+
+.hero__btn .app {
   font-size: 1.5rem;
 }
+
 @media(min-width: 992px) {
   .hero__btns-container {
     width: auto;
@@ -594,7 +596,7 @@ button:focus {
   font-size: 1.1rem;
   line-height: 1.5;
   opacity: .9;
-  color:var(--black);
+  color: var(--black);
 
 }
 
@@ -674,7 +676,7 @@ button:focus {
   font-size: 1.1rem;
   line-height: 1.5;
   opacity: .9;
-  color:var(--black);
+  color: var(--black);
 
 }
 
@@ -730,10 +732,12 @@ button:focus {
 .mb-2-1rem {
   margin-bottom: 2.1rem;
 }
-p{
+
+p {
   color: var(--black);
-  
+
 }
+
 /* ======================================= */
 
 .block-20 {
@@ -769,7 +773,7 @@ p{
   font-size: 1.1rem;
   line-height: 1.5;
   opacity: .9;
-  color:var(--black);
+  color: var(--black);
 
 }
 
@@ -874,7 +878,7 @@ p{
   font-size: 1.1rem;
   line-height: 1.5;
   opacity: .9;
-  color:var(--black);
+  color: var(--black);
 
 }
 
@@ -1211,7 +1215,7 @@ p{
   font-size: 1rem;
   opacity: .9;
   line-height: 1.7;
-  color:var(--black);
+  color: var(--black);
 
 }
 
@@ -1395,7 +1399,7 @@ textarea.contact-form__input {
   font-size: 1.1rem;
   line-height: 1.5;
   opacity: .9;
-  color:var(--black);
+  color: var(--black);
 }
 
 /* ====================================== */
@@ -1505,20 +1509,24 @@ textarea.contact-form__input {
 .red {
   color: #d81c23
 }
+
 .form-banner {
   padding-top: 1rem;
 }
-.form-banner h1{
+
+.form-banner h1 {
   font-size: 2.2rem;
-    line-height: 1.17;
-    font-weight: bold;
-    color: var(--primary);
+  line-height: 1.17;
+  font-weight: bold;
+  color: var(--primary);
 }
-.form-banner h3{
+
+.form-banner h3 {
   font-size: 1.5rem;
-    /* line-height: 1.17; */
-    /* font-weight: bold; */
+  /* line-height: 1.17; */
+  /* font-weight: bold; */
 }
+
 .form-banner-bg {
   background-image: url('./imgs/banner.png');
   margin-right: -15px;
@@ -1526,10 +1534,12 @@ textarea.contact-form__input {
   /* background-color: #06517c; */
   /* background-color: #d81c23; */
 }
-.form-banner-btns-container{
+
+.form-banner-btns-container {
   margin-bottom: 1rem;
   text-align: center;
 }
+
 .qr {
   /* margin: 0.5rem 0; */
   /* background: white; */
@@ -1549,7 +1559,16 @@ textarea.contact-form__input {
   /* color: #fff; */
   color: var(--black);
 }
-.qr div img{ width: 100%;}
+
+.qr div img {
+  width: 100%;
+}
+.qr div.qr-image {
+  text-align: center;
+}
+.qr div.qr-image img {
+  width: 100px;
+}
 
 .qr div h3 {
   font-weight: 900;
@@ -1614,19 +1633,25 @@ textarea.contact-form__input {
   font-weight: bold;
   margin: 10px 0px;
 }
-.basic, .preferred{
-height: 100%;}
-.preferred{
-background: rgb(127,1,232);
-background: -moz-linear-gradient(45deg, rgba(127,1,232,1) 0%, rgba(252,30,87,1) 100%);
-background: -webkit-linear-gradient(45deg, rgba(127,1,232,1) 0%, rgba(252,30,87,1) 100%);
-background: linear-gradient(45deg, rgba(127,1,232,1) 0%, rgba(252,30,87,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7f01e8",endColorstr="#fc1e57",GradientType=1);
 
-}.basic{
-  background: rgb(224,23,5);
-  background: -moz-linear-gradient(45deg, rgba(224,23,5,1) 0%, rgba(255,233,1,1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(224,23,5,1) 0%, rgba(255,233,1,1) 100%);
-  background: linear-gradient(45deg, rgba(224,23,5,1) 0%, rgba(255,233,1,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e01705",endColorstr="#ffe901",GradientType=1);
+.basic,
+.preferred {
+  height: 100%;
+}
+
+.preferred {
+  background: rgb(127, 1, 232);
+  background: -moz-linear-gradient(45deg, rgba(127, 1, 232, 1) 0%, rgba(252, 30, 87, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(127, 1, 232, 1) 0%, rgba(252, 30, 87, 1) 100%);
+  background: linear-gradient(45deg, rgba(127, 1, 232, 1) 0%, rgba(252, 30, 87, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7f01e8", endColorstr="#fc1e57", GradientType=1);
+
+}
+
+.basic {
+  background: rgb(224, 23, 5);
+  background: -moz-linear-gradient(45deg, rgba(224, 23, 5, 1) 0%, rgba(255, 233, 1, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(224, 23, 5, 1) 0%, rgba(255, 233, 1, 1) 100%);
+  background: linear-gradient(45deg, rgba(224, 23, 5, 1) 0%, rgba(255, 233, 1, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e01705", endColorstr="#ffe901", GradientType=1);
 }
