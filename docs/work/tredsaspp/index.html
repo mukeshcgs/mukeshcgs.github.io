@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/app.css">
   <link rel="stylesheet" href="assets/form.css">
 
-  <title>Frontendor | Component</title>
+  <title>TradesApp</title>
 </head>
 
 <body>
@@ -44,6 +44,14 @@
               <ul class="nav nav--lg-side list-unstyled align-items-center p-0">
                 <li class="hero-nav__item">
                   <a href="#contact-us" class="hero-nav__link">
+                    Open account</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#contact-us" class="hero-nav__link">
+                    Client Login</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#contact-us" class="hero-nav__link">
                     Contact</a>
                 </li>
                 <li class="hero-nav__item">
@@ -58,9 +66,9 @@
                 <li class="hero-nav__item">
                   <a href="#testimonials" class="hero-nav__link">Features</a>
                 </li>
-                <li class="hero-nav__item">
+                <!-- <li class="hero-nav__item">
                   <a href="#features" class="hero-nav__link">Overview</a>
-                </li>
+                </li> -->
                 <li class="hero-nav__item">
                   <a href="#product" class="hero-nav__link">Home</a>
                 </li>
@@ -89,18 +97,28 @@
     <!--FORM ====================================== -->
     <!--FORM ====================================== -->
     <!--FORM ====================================== -->
-    <div class="form-banner-bg">
+    <div class="form-banner form-banner-bg">
       <div class="container">
+        <!-- <div class="row ">
+          <div class="col-lg-12">
+            <h1>Choose from Our Wide Range of Offering</h1>
+            <h3>OPEN YOUR DEMAT & TRADING ACCOUNT FOR FREE*</h3>
+          </div>
+        </div> -->
         <div class="row ">
           <div class="col-lg-7">
+            <h1>Choose from Our Wide Range of Offering</h1>
+            <h3>OPEN YOUR DEMAT & TRADING ACCOUNT FOR FREE*</h3>
+            <!-- <h3>Scan <span>QR code</span> & download the App now.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur aliquid error cum vel
+              eveniet accusamus quam voluptat</p> -->
             <div class="qr">
               <div>
-                <h3>Scan <span>QR code</span> & download the App now.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur aliquid error cum vel
-                  eveniet accusamus quam voluptat</p>
+                <img src="./assets/imgs/o1.png">
               </div>
               <div>
-                <img src="./assets/imgs/qr.png" />
+                <!-- <img src="./assets/imgs/qr.png" /> -->
+                <img src="./assets/imgs/o2.png">
               </div>
             </div>
 
@@ -116,14 +134,29 @@
               </a>
             </div> -->
             <div class="form-banner-btns-container">
-              <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+              <!-- <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
                 Resume
               </a>
               <a class="hero__btn btn btn-secondary mx-lg-3" href="#">
                 Start DIY
-              </a>
+              </a> -->
               <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
                 Get a Callback
+              </a>
+              OR
+              <!-- <a class="hero__btn btn btn-secondary mb-2 mb-lg-0" href="#">
+                Download App<i class="fab fa-android app"></i> OR
+                <i class="fab fa-apple app"></i>
+                i class="fab fa-google-play app"></i>
+                <i class="fab fa-app-store app"></i>    
+              </a> -->
+              <a class="hero__btn  mx-lg-3" href="https://play.google.com/store/apps/details?id=com.kunvarji.tradesapp"
+                target="_blank">
+                <img src="./assets/imgs/google-play-badge.0547a72f.svg" />
+              </a>
+              <a class="hero__btn  mb-2 mb-lg-0" href="https://apps.apple.com/in/app/tradesapp/id1434839062"
+                target="_blank">
+                <img src="./assets/imgs/app-store-logo.060773ea.svg" />
               </a>
             </div>
           </div>
@@ -152,16 +185,16 @@
                   TradesApp Inquiry 2020</div>
                 <div>
                   <div class="bgn-wf-row">
-                    <div class="bgn-wf-label">Last Name
+                    <div class="bgn-wf-label">Name
                       <span class="bgn-star">&#42;</span>
                     </div>
                     <div class="bgn-wf-field">
-                      <input name="Last Name" type="text" maxlength="80" value="" placeholder=""
+                      <input name="Name" type="text" maxlength="80" value="" placeholder=""
                         style=" border: 1px solid #e2e0df;padding: 10px 15px;max-width: 480px;border-radius:3px;width: 100%;" />
                     </div>
                   </div>
                   <div class="bgn-wf-row">
-                    <div class="bgn-wf-label">Mobile
+                    <div class="bgn-wf-label">Mobile<span class="bgn-star">&#42;</span>
                     </div>
                     <div class="bgn-wf-field">
                       <input name="Mobile" type="text" maxlength="30" value="" placeholder=""
@@ -169,7 +202,7 @@
                     </div>
                   </div>
                   <div class="bgn-wf-row">
-                    <div class="bgn-wf-label">Email
+                    <div class="bgn-wf-label">Email<span class="bgn-star">&#42;</span>
                     </div>
                     <div class="bgn-wf-field">
                       <input name="Email" type="text" maxlength="100" value="" placeholder=""
@@ -188,14 +221,14 @@
                   <div class="bgn-wf-row">
                     <div class="bgn-wf-label"></div>
                     <div class="bgn-wf-field">
-                      <input class="btn btn-gradiant" onclick='disableSubmitwhileReset()' type='reset' value='Reset' />
-                      <input class="btn btn-primary" disabled id='formsubmit' type='submit' value='Submit' />
+                      <input class="btn btn-gradiant" onclick='disableSubmitwhileReset()' type='reset' value='Resume' />
+                      <input class="btn btn-primary" disabled id='formsubmit' type='submit' value='Start DIY' />
                     </div>
                   </div>
                 </div>
                 <script>
                   var mndFileds = new Array('Last_Name');
-                  var fldLangVal = new Array('Last Name');
+                  var fldLangVal = new Array('Name');
                   var name = '';
                   var email = '';
 
@@ -251,7 +284,7 @@
                               e]), i
                           .focus(), !1;
                         try {
-                          "Last Name" === i.name && (name = i.value)
+                          "Name" === i.name && (name = i.value)
                         } catch (e) {}
                       }
                     }
@@ -299,10 +332,12 @@
             <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
               Open an Account
             </a>
-            <a class="hero__btn  mx-lg-3" href="#">
+            <a class="hero__btn  mx-lg-3" href="https://play.google.com/store/apps/details?id=com.kunvarji.tradesapp"
+              target="_blank">
               <img src="./assets/imgs/google-play-badge.0547a72f.svg" />
             </a>
-            <a class="hero__btn  mb-2 mb-lg-0" href="#">
+            <a class="hero__btn  mb-2 mb-lg-0" href="https://apps.apple.com/in/app/tradesapp/id1434839062"
+              target="_blank">
               <img src="./assets/imgs/app-store-logo.060773ea.svg" />
             </a>
           </div>
@@ -327,64 +362,11 @@
         </p>
       </div>
       <div class="block-17__card row flex-column-reverse flex-lg-row justify-content-center">
-        <div class="cta-card col-lg-5 px-0">
+        <div class="cta-card col-lg-5 px-0 preferred">
           <div class="plan-card text-center">
-            <h6 class="plan-card__name mb-0">Offer</h6>
-            <p class="plan-card__price my-2">10% </p>
-            <span class="plan-card__duration">Preferred</span>
-            <ul class="plan-features list-unstyled mt-5 mb-0">
-              <li class="plan-features__li">
-                <span class="plan-features__li-icon mx-1">
-                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                    <path fill-rule="evenodd"
-                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
-                  </svg>
-                </span>
-                <span class="mx-3">FREE Demat Account</span>
-              </li>
-              <li class="plan-features__li">
-                <span class="plan-features__li-icon mx-1">
-                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                    <path fill-rule="evenodd"
-                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
-                  </svg>
-                </span>
-                <span class="mx-3">1st Month Brokerage FREE</span>
-              </li>
-              <li class="plan-features__li">
-                <span class="plan-features__li-icon mx-1">
-                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                    <path fill-rule="evenodd"
-                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
-                  </svg>
-                </span>
-                <span class="mx-3">From second month</span>
-              </li>
-              <li class="mt-5">
-                <a href="#" class="d-block btn btn-primary px-5 mx-auto">
-                  Know More
-                </a>
-
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="cta-card col-lg-2 px-0"></div>
-        <div class="cta-card col-lg-5 px-0">
-          <div class="plan-card text-center">
-            <h6 class="plan-card__name mb-0">Offer</h6>
+            <h6 class="plan-card__name mb-0">Preferred</h6>
             <p class="plan-card__price my-2">20% </p>
-            <span class="plan-card__duration">Pro</span>
+            <span class="plan-card__duration">Per executed order </span>
             <ul class="plan-features list-unstyled mt-5 mb-0">
               <li class="plan-features__li">
                 <span class="plan-features__li-icon mx-1">
@@ -420,7 +402,63 @@
                       d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
                   </svg>
                 </span>
-                <span class="mx-3">Full Back Office Support</span>
+                <span class="mx-3">Full Back Office Support
+                </span>
+              </li>
+              <li class="mt-5">
+                <a href="#" class="d-block btn btn-primary px-5 mx-auto">
+                  Know More
+                </a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-card col-lg-2 px-0"></div>
+        <div class="cta-card col-lg-5 px-0 basic">
+          <div class="plan-card text-center">
+            <h6 class="plan-card__name mb-0">Basic</h6>
+            <p class="plan-card__price my-2">0.01% </p>
+            <span class="plan-card__duration">Intraday, Delivery</span>
+            <ul class="plan-features list-unstyled mt-5 mb-0">
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">FREE Demat Account</span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">FULL Back Office Support
+                </span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">E-mail support
+                </span>
               </li>
               <li class="mt-5">
                 <a href="#" class="d-block btn btn-primary px-5 mx-auto">
@@ -442,7 +480,7 @@
       <!-- HEADER -->
       <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
         <!-- <p class="block__pre-title mb-2">GET MORE DETAILS</p> -->
-        <h1 class="block__title mb-3">Why <span class="highlight">TradesApp</span></h1>
+        <h1 class="block__title mb-3">Why <span class="highlight">TradesApp</span>?</h1>
         <p class="block__paragraph mb-0">
           Enhance Your Trading Experience and increase your profits with our TRADESAPP
 
@@ -515,7 +553,7 @@
     <div class="container">
       <!-- HEADER -->
       <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
-        <p class="block__pre-title mb-2">WHY CHOOSING US</p>
+        <!-- <p class="block__pre-title mb-2">WHY CHOOSING US</p> -->
         <h1 class="block__title mb-3">How to open <span class="highlight">Account</span></h1>
         <p class="block__paragraph mb-0">
 
@@ -645,7 +683,7 @@
       <!-- HEADER -->
       <div class="row">
         <div class="col-lg-12 mx-auto text-center mb-5">
-          <h1 class="block__title mb-3">Various Platforms to trade </h1>
+          <h1 class="block__title mb-3"><span class="highlight">Various Platforms</span> to trade </h1>
           <p class="block__paragraph mb-0">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry’s
@@ -813,46 +851,146 @@
   <!-- =================================== -->
   <div class="block-44 py-5">
     <div class="container">
+      <!-- <div class="row">
+        <div class="col-md-4"><img class="block-44__logo" src="assets/imgs/qr.png"></div>
+        <div class="col-md-4">
+          <div class="form-banner-btns-container">
+            <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+              Get a Callback
+            </a>
+            <a class="hero__btn  mx-lg-3" href="#">
+              <img src="./assets/imgs/google-play-badge.0547a72f.svg" />
+            </a>
+            <a class="hero__btn  mb-2 mb-lg-0" href="#">
+              <img src="./assets/imgs/app-store-logo.060773ea.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <ul class="block-44__list list-unstyled justify-content-center mb-0 text-center">
+            <li class="hero-nav__item">
+              <a href="#contact-us" class="hero-nav__link">
+                Open account</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#contact-us" class="hero-nav__link">
+                Client Login</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#contact-us" class="hero-nav__link">
+                Contact</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#contact-us" class="hero-nav__link">Get Started</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#faq" class="hero-nav__link">Pricing</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#pricing" class="hero-nav__link">Download</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#testimonials" class="hero-nav__link">Features</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#product" class="hero-nav__link">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
       <div class="row px-0 mx-0 justify-content-center align-items-center">
         <div class="block-44__logo-container">
           <img class="block-44__logo" src="assets/imgs/qr.png">
+          <div class="form-banner-btns-container">
+
+            <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+              Open Account
+            </a>
+            <a class="hero__btn  mx-lg-3" href="https://play.google.com/store/apps/details?id=com.kunvarji.tradesapp"
+              target="_blank">
+              <img src="./assets/imgs/google-play-badge.0547a72f.svg" />
+            </a>
+            <a class="hero__btn  mb-2 mb-lg-0" href="https://apps.apple.com/in/app/tradesapp/id1434839062"
+              target="_blank">
+              <img src="./assets/imgs/app-store-logo.060773ea.svg" />
+            </a>
+          </div>
         </div>
         <ul class="block-44__list list-unstyled justify-content-center mb-0 text-center">
-          <li class="block-44__li-1">
-            <a href="#" class="block-44__link">Affiliate</a>
+          <li class="hero-nav__item">
+            <a href="#contact-us" class="hero-nav__link">
+              Open account</a>
           </li>
-          <li class="block-44__li-1">
-            <a href="#" class="block-44__link">Entreprise</a>
+          <li class="hero-nav__item">
+            <a href="#contact-us" class="hero-nav__link">
+              Client Login</a>
           </li>
-          <li class="block-44__li-1">
-            <a href="#" class="block-44__link">Products</a>
+          <li class="hero-nav__item">
+            <a href="#contact-us" class="hero-nav__link">
+              Contact</a>
           </li>
-          <li class="block-44__li-1">
-            <a href="#" class="block-44__link">Account</a>
+          <li class="hero-nav__item">
+            <a href="#contact-us" class="hero-nav__link">Get Started</a>
+          </li>
+          <li class="hero-nav__item">
+            <a href="#faq" class="hero-nav__link">Pricing</a>
+          </li>
+          <li class="hero-nav__item">
+            <a href="#pricing" class="hero-nav__link">Download</a>
+          </li>
+          <li class="hero-nav__item">
+            <a href="#testimonials" class="hero-nav__link">Features</a>
+          </li>
+          <li class="hero-nav__item">
+            <a href="#product" class="hero-nav__link">Home</a>
           </li>
         </ul>
       </div>
     </div>
+
+
+
+
+
     <hr class="block-44__divider">
     <div class="container">
       <div class="row flex-column flex-md-row px-2 justify-content-center">
         <div class="flex-grow-1">
           <ul class="block-44__extra-links d-flex list-unstyled p-0">
             <li class="mx-2">
-              <a href="#" class="block-44__link m-0">
+              <a href="https://www.facebook.com/TradesApp.in/" target="_blank" class="block-44__link m-0">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="https://twitter.com/trades_app" target="_blank" class="block-44__link m-0">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="mx-2">
-              <a href="#" class="block-44__link m-0">
+              <a href="https://www.instagram.com/tradesapponlinetrading/" target="_blank" class="block-44__link m-0">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
+
             <li class="mx-2">
-              <a href="#" class="block-44__link m-0">
-                <i class="fas fa-envelope"></i>
+              <a href="http://linkedin.com/company/tradesapp-online-trading-app" target="_blank" class="block-44__link m-0">
+                <i class="fab fa-linkedin"></i>
               </a>
             </li>
+
+            <li class="mx-2">
+              <a href="https://www.youtube.com/playlist?list=PLxVwYlSKjBnJiSPbVwOIvUZ3x8flqurii" target="_blank"
+                class="block-44__link m-0">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="https://t.me/kunvarjinewsroom" target="_blank" class="block-44__link m-0">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </li>
+
           </ul>
         </div>
         <p class="block-41__copyrights">&copy; 2020 TredsApp. All Rights Reserved.</p>
