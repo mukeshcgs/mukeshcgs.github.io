@@ -688,11 +688,21 @@ button:focus {
   transition: .1s all;
 }
 
+#features .card-1 {
+  padding: 0.5rem;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+}
+
 .card-1:hover,
 .card-1:focus {
   color: white;
   background: var(--primary);
   border-color: var(--primary);
+}
+
+.card-1:hover p,
+.card-1:focus p {
+  color: white;
 }
 
 .card-1__symbol {
@@ -1567,12 +1577,22 @@ textarea.contact-form__input {
 .qr div img {
   width: 100%;
 }
+
 .qr div.qr-image {
   text-align: center;
 }
+
 .qr div.qr-image img {
   /* width: 100px; */
 }
+
+.qr.plans div.qr-image {
+  padding: 5rem;
+}
+
+/* .qr.plans div.qr-image img {
+  width: 200px;
+} */
 
 .qr div h3 {
   font-weight: 900;
@@ -1658,4 +1678,34 @@ textarea.contact-form__input {
   background: -webkit-linear-gradient(45deg, rgba(224, 23, 5, 1) 0%, rgba(255, 233, 1, 1) 100%);
   background: linear-gradient(45deg, rgba(224, 23, 5, 1) 0%, rgba(255, 233, 1, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e01705", endColorstr="#ffe901", GradientType=1);
+}
+
+.app-form {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.get-mob-form{
+  background: var(--primary);
+}
+.get-mob-form .block__title{
+  color: #ffffff;
+}
+.app-form .contact-form__input {
+  border-radius: var(--elements-roundness);
+  border-top-right-radius:0px ;
+  border-bottom-right-radius:0px ;
+  margin-bottom: 0px;
+  background: #ffffff;
+
+}
+.app-form .btn {
+  border-top-left-radius:0px ;
+  border-bottom-left-radius:0px ;
+  font-size: .87rem;
+  padding: .87rem 1.4rem;
+  /* border-radius: 5px; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.01); */
 }
