@@ -1515,7 +1515,7 @@ textarea.contact-form__input {
 }
 
 .form-banner h1 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   line-height: 1.17;
   font-weight: bold;
   color: var(--primary);
@@ -1531,9 +1531,6 @@ textarea.contact-form__input {
   background-image: url('./imgs/banner.png');
   margin-right: -15px;
   margin-left: -15px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   /* background-color: #06517c; */
   /* background-color: #d81c23; */
 }
@@ -1550,18 +1547,17 @@ textarea.contact-form__input {
   align-content: center;
   justify-content: center;
   align-items: center;
+
 }
 
 .qr div {
   /* margin-bottom: 20px; */
   padding: 0.5rem;
-  /* flex: 1; */
+  flex: 1;
   /* border: 1px solid red; */
   text-align: right;
   /* color: #fff; */
   color: var(--black);
-  /* align-self: auto; */
-  /* align-self: stretch; */
 }
 
 .qr div img {
@@ -1571,7 +1567,7 @@ textarea.contact-form__input {
   text-align: center;
 }
 .qr div.qr-image img {
-  /* width: 100px; */
+  width: 100px;
 }
 
 .qr div h3 {

@@ -2,7 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #D8DBE2;
     color: #3d3d3d;
     font-size: 12px;
     font-family: Poppins, sans-serif;
@@ -133,7 +134,11 @@ h1 {
 }
 
 
-/* SOCIAL MEDIA
+.title {
+    color: #ffffff;
+}
+
+/* FOOTER
 =========================== */
 footer{
     position: relative;
