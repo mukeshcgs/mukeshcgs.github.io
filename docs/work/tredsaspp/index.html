@@ -23,18 +23,10 @@
 </head>
 
 <body>
-
-  <!--Offer Alert ================================ -->
-  <!-- <div class="offer-alert">
-       <div class="offer-alert__container container">
-         <span>🔥😍 Preview All Beautiful Templates &amp; UI Blocks</span> <a href="https://frontendor.com" class="offer-alert__btn">PREVIEW ALL</a>
-       </div>
-     </div> -->
-
   <!--Hero ====================================== -->
   <header class="hero container-fluid border-bottom">
-    <nav class="hero-nav container px-4 px-lg-0 mx-auto">
-      <ul class="nav w-100 list-unstyled align-items-center p-0">
+    <nav id="navbar" class="hero-nav  px-4 px-lg-0 mx-auto">
+      <ul class="nav container w-100 list-unstyled align-items-center p-0">
         <li class="hero-nav__item">
           <img class="hero-nav__logo" src="assets/imgs/tradeapp-1.png">
         </li>
@@ -44,34 +36,35 @@
               <ul class="nav nav--lg-side list-unstyled align-items-center p-0">
                 <li class="hero-nav__item">
                   <a href="#contact-us" class="hero-nav__link">
-                    Open account</a>
-                </li>
-                <li class="hero-nav__item">
-                  <a href="#contact-us" class="hero-nav__link">
-                    Client Login</a>
-                </li>
-                <li class="hero-nav__item">
-                  <a href="#contact-us" class="hero-nav__link">
                     Contact</a>
                 </li>
-                <li class="hero-nav__item">
+                <li class="hero-nav__item highlight-nav">
+                  <a href="#hero" class="hero-nav__link">
+                    Open Account</a>
+                </li>
+                <li class="hero-nav__item  highlight-nav">
+                  <a href="https://backoffice.kunvarjidc.com/Focaps/Sessions/Login.cfm" target="_blank"
+                    class="hero-nav__link">
+                    Client Login</a>
+                </li>
+                <!-- <li class="hero-nav__item">
                   <a href="#contact-us" class="hero-nav__link">Get Started</a>
+                </li> -->
+                <li class="hero-nav__item">
+                  <a href="#features" class="hero-nav__link">App Features</a>
                 </li>
                 <li class="hero-nav__item">
-                  <a href="#faq" class="hero-nav__link">Pricing</a>
+                  <a href="#why-us" class="hero-nav__link">Why Us?</a>
                 </li>
                 <li class="hero-nav__item">
-                  <a href="#pricing" class="hero-nav__link">Download</a>
-                </li>
-                <li class="hero-nav__item">
-                  <a href="#testimonials" class="hero-nav__link">Features</a>
+                  <a href="#offers" class="hero-nav__link">Brokerage Offers</a>
                 </li>
                 <!-- <li class="hero-nav__item">
                   <a href="#features" class="hero-nav__link">Overview</a>
-                </li> -->
+                </li> 
                 <li class="hero-nav__item">
                   <a href="#product" class="hero-nav__link">Home</a>
-                </li>
+                </li>-->
               </ul>
             </li>
           </ul>
@@ -95,9 +88,7 @@
       </ul>
     </nav>
     <!--FORM ====================================== -->
-    <!--FORM ====================================== -->
-    <!--FORM ====================================== -->
-    <div class="form-banner form-banner-bg">
+    <div id="hero" class="form-banner form-banner-bg">
       <div class="container">
         <!-- <div class="row ">
           <div class="col-lg-12">
@@ -116,11 +107,10 @@
               <div>
                 <img src="./assets/imgs/o1.png">
               </div>
-              <div class="qr-image">
+              <!-- <div class="qr-image">
                 <img src="./assets/imgs/qr.png" />
-              </div>
+              </div> -->
               <div>
-                <!-- <img src="./assets/imgs/qr.png" /> -->
                 <img src="./assets/imgs/o2.png">
               </div>
             </div>
@@ -143,24 +133,37 @@
               <a class="hero__btn btn btn-secondary mx-lg-3" href="#">
                 Start DIY
               </a> -->
-              <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
-                Get a Callback
-              </a>
-              OR
-              <!-- <a class="hero__btn btn btn-secondary mb-2 mb-lg-0" href="#">
-                Download App<i class="fab fa-android app"></i> OR
-                <i class="fab fa-apple app"></i>
-                i class="fab fa-google-play app"></i>
-                <i class="fab fa-app-store app"></i>    
-              </a> -->
-              <a class="hero__btn  mx-lg-3" href="https://play.google.com/store/apps/details?id=com.kunvarji.tradesapp"
+              <div>
+                <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+                  Get a Callback
+                </a>
+                <a class="hero__btn btn btn-secondary mb-2 mb-lg-0" href="#">
+                  Download App
+                </a>
+              </div>
+              <div>
+                <div class="qr-image">
+                  <img src="./assets/imgs/qr.png" />
+                </div>
+              </div>
+              <!-- <span class="hero__btn btn btn-secondary mb-2 mb-lg-0 btn-group">
+                Download App
+                <a href="#">
+                  <i class="fab fa-android app"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-apple app"></i>
+                </a>
+              </span> -->
+
+              <!-- <a class="hero__btn  mx-lg-3" href="https://play.google.com/store/apps/details?id=com.kunvarji.tradesapp"
                 target="_blank">
                 <img src="./assets/imgs/google-play-badge.0547a72f.svg" />
               </a>
               <a class="hero__btn  mb-2 mb-lg-0" href="https://apps.apple.com/in/app/tradesapp/id1434839062"
                 target="_blank">
                 <img src="./assets/imgs/app-store-logo.060773ea.svg" />
-              </a>
+              </a> -->
             </div>
           </div>
 
@@ -319,8 +322,6 @@
       </div>
     </div>
     <!-- ===================================== -->
-    <!-- ===================================== -->
-    <!-- ===================================== -->
     <div class="hero__content container mx-auto">
       <div class="row px-0 mx-0 align-items-center">
         <div class="col-lg-6 px-0">
@@ -355,17 +356,18 @@
   </header>
 
   <!-- ===================================== -->
-  <div id="pricing" class="block-17 px-4 space-between-blocks">
+  <div id="offers" class="block-17 px-4 space-between-blocks">
     <div class="container">
       <div class="block-17__header col-lg-8 col-xl-7 mx-auto text-center px-0">
-        <h1 class="block__title mb-3">OFFERS</h1>
+        <h1 class="block__title mb-3">Best <span class="highlight">Lowest Brokerage </span>Offers
+        </h1>
         <p class="block__paragraph">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
-          standard
+          Choose from our wide range offerings and select best suited plan for you.
+
         </p>
       </div>
       <div class="block-17__card row flex-column-reverse flex-lg-row justify-content-center">
-        <div class="cta-card col-lg-5 px-0 preferred">
+        <div class="cta-card col-lg-4 px-0 preferred">
           <div class="plan-card text-center">
             <h6 class="plan-card__name mb-0">Preferred</h6>
             <p class="plan-card__price my-2">20% </p>
@@ -381,7 +383,7 @@
                       d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
                   </svg>
                 </span>
-                <span class="mx-3">FREE Demat Account</span>
+                <span class="mx-3">Zero Account opening charge</span>
               </li>
               <li class="plan-features__li">
                 <span class="plan-features__li-icon mx-1">
@@ -393,7 +395,7 @@
                       d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
                   </svg>
                 </span>
-                <span class="mx-3">E-mail Support</span>
+                <span class="mx-3">1st year AMC free</span>
               </li>
               <li class="plan-features__li">
                 <span class="plan-features__li-icon mx-1">
@@ -405,25 +407,40 @@
                       d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
                   </svg>
                 </span>
-                <span class="mx-3">Full Back Office Support
+                <span class="mx-3">Lowest Brokerage
                 </span>
               </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">Free Research Recommendations
+                </span>
+              </li>
+              
               <li class="mt-5">
-                <a href="#" class="d-block btn btn-primary px-5 mx-auto">
-                  Know More
+                <a href="./preferred.html" class="d-block btn btn-primary px-5 mx-auto">
+                  Open Account
                 </a>
 
               </li>
             </ul>
           </div>
         </div>
-
-        <div class="cta-card col-lg-2 px-0"></div>
-        <div class="cta-card col-lg-5 px-0 basic">
+        <div class="cta-card plan-bg col-lg-4 px-0">
+          <!-- <img src="./assets/imgs/plan_bg.jpg" alt="" srcset=""> -->
+        </div>
+        <div class="cta-card col-lg-4 px-0 basic">
           <div class="plan-card text-center">
             <h6 class="plan-card__name mb-0">Basic</h6>
             <p class="plan-card__price my-2">0.01% </p>
-            <span class="plan-card__duration">Intraday, Delivery</span>
+            <span class="plan-card__duration">Brokerage in Intraday</span>
             <ul class="plan-features list-unstyled mt-5 mb-0">
               <li class="plan-features__li">
                 <span class="plan-features__li-icon mx-1">
@@ -435,7 +452,7 @@
                       d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
                   </svg>
                 </span>
-                <span class="mx-3">FREE Demat Account</span>
+                <span class="mx-3">Zero Account opening charge</span>
               </li>
               <li class="plan-features__li">
                 <span class="plan-features__li-icon mx-1">
@@ -447,7 +464,7 @@
                       d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
                   </svg>
                 </span>
-                <span class="mx-3">FULL Back Office Support
+                <span class="mx-3">1st year AMC free
                 </span>
               </li>
               <li class="plan-features__li">
@@ -460,12 +477,25 @@
                       d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
                   </svg>
                 </span>
-                <span class="mx-3">E-mail support
+                <span class="mx-3">0.10% Brokerage in delivery
+                </span>
+              </li>
+              <li class="plan-features__li">
+                <span class="plan-features__li-icon mx-1">
+                  <svg class="bi bi-check2-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+                  </svg>
+                </span>
+                <span class="mx-3">Free Research Recommendations
                 </span>
               </li>
               <li class="mt-5">
                 <a href="#" class="d-block btn btn-primary px-5 mx-auto">
-                  Know More
+                  Open Account
                 </a>
 
               </li>
@@ -478,12 +508,12 @@
 
   <!-- ===================================== -->
 
-  <div id="features" class="block-11 space-between-blocks">
+  <div id="why-us" class="block-11 space-between-blocks">
     <div class="container">
       <!-- HEADER -->
       <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
         <!-- <p class="block__pre-title mb-2">GET MORE DETAILS</p> -->
-        <h1 class="block__title mb-3">Why <span class="highlight">TradesApp</span>?</h1>
+        <h1 class="block__title mb-3">Why <span class="highlight">TradesApp?</span></h1>
         <p class="block__paragraph mb-0">
           Enhance Your Trading Experience and increase your profits with our TRADESAPP
 
@@ -659,7 +689,7 @@
             </div>
             <div class="px-2"></div>
             <div>
-              <h3 class="card-2__title mb-2">Happy Treading</h3>
+              <h3 class="card-2__title mb-2">Happy Trading</h3>
               <p class="card-2__paragraph">
                 Lorem Ipsum is simply dummy text of
                 the printing and typesetting industry.
@@ -672,19 +702,13 @@
   </div>
 
   <!-- ======================================== -->
-  <div id="platforms" class="">
-
-    <div class="container">
-
-    </div>
-  </div>
 
   <div class="block-32 space-between-blocks">
     <div class="container">
       <!-- HEADER -->
       <div class="row">
-        <div class="col-lg-12 mx-auto text-center mb-5">
-          <h1 class="block__title mb-3"><span class="highlight">Various Platforms</span> to trade </h1>
+        <div class="col-lg-12 mx-auto text-center mb-2">
+          <h1 class="block__title mb-2"><span class="highlight">Various Platforms</span> to trade </h1>
           <!-- <p class="block__paragraph mb-0">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry’s
@@ -707,12 +731,12 @@
             <div class="sec">
               <div class="name">TradesApp Mobile Application
               </div>
-              <a href="">
+              <a href="http://onelink.to/ujxpwr" target="_blank">
                 <div class="icon">
-
                   <i class="fas fa-mobile-alt"></i>
                 </div>
               </a>
+              <a></a>
             </div>
             <div class="sec">
               <div class="name">Desktop Terminal
@@ -722,6 +746,7 @@
                   <i class="fas fa-desktop"></i>
                 </div>
               </a>
+              <!-- <a>7573917841</a> -->
             </div>
             <div class="sec">
               <div class="name"> Call &amp; Trade Facility
@@ -731,6 +756,7 @@
                   <i class="fas fa-phone"></i>
                 </div>
               </a>
+              <!-- <a>07966669064</a> -->
             </div>
             <!-- <div class="sec">
               <div class="name">Whats App
@@ -776,17 +802,17 @@
               <div class="mb-2">
                 <img class="block-20__person-avatar" src="assets/imgs/img-2.png">
               </div>
-              <!-- <div class="flex-grow-1 d-flex flex-column">
-                <span class="block-20__person-rating">
+              <div class="flex-grow-1 d-flex flex-column">
+                <!-- <span class="block-20__person-rating">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                </span>
-                <span class="block-20__person-name my-1">Samir Sharma</span>
-                <span class="block-20__person-info">Studant</span>
-              </div> -->
+                </span> -->
+                <span class="block-20__person-name my-1">Ajay Shah</span>
+                <!-- <span class="block-20__person-info">Studant</span> -->
+              </div>
             </div>
             <span class="testimonial-card-1__quote-symbol">
               <i class="fas fa-quote-left"></i>
@@ -803,17 +829,10 @@
               <div class="mb-2">
                 <img class="block-20__person-avatar" src="assets/imgs/img-2.png">
               </div>
-              <!-- <div class="flex-grow-1 d-flex flex-column">
-                <span class="block-20__person-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </span>
-                <span class="block-20__person-name my-1">Raj Thakur</span>
-                <span class="block-20__person-info">Managar</span>
-              </div> -->
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="block-20__person-name my-1">Rajiv Mehta</span>
+                <span class="block-20__person-info"></span>
+              </div>
             </div>
             <span class="testimonial-card-1__quote-symbol">
               <i class="fas fa-quote-left"></i>
@@ -823,24 +842,15 @@
         <div class="col-lg-4">
           <div class="testimonial-card-1 mb-5">
             <p class="testimonial-card-1__paragraph mb-3">
-              Its all in one app. Very user friendly, can create own watchlist, fund transfer facility, technical
-              analysis available.
+              Its all in one app. Very user friendly, can create own watchlist, fund transfer facility, technical analysis available. I would definitely recommend this app to traders.
             </p>
             <div class="block-20__person">
               <div class="mb-2">
                 <img class="block-20__person-avatar" src="assets/imgs/img-2.png">
               </div>
-              <!-- <div class="flex-grow-1 d-flex flex-column">
-                <span class="block-20__person-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </span>
-                <span class="block-20__person-name my-1">Kunal Patil</span>
-                <span class="block-20__person-info">Software Engineer</span>
-              </div> -->
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="block-20__person-name my-1">Mahendra Chaudhary</span>
+              </div>
             </div>
             <span class="testimonial-card-1__quote-symbol">
               <i class="fas fa-quote-left"></i>
@@ -902,8 +912,57 @@
         </div>
       </div> -->
       <div class="row px-0 mx-0 justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="form-banner-btns-container">
+            <div>
+              <div class="qr-image">
+                <img src="./assets/imgs/qr.png">
+              </div>
+            </div>
+            <div>
+              <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+                Get a Callback
+              </a>
+              <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+                Download App
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 footer-nav">
+          <ul class="block-44__list list-unstyled justify-content-center22 mb-0 text-center22">
+            <li class="hero-nav__item">
+              <a href="#offers" class="hero-nav__link">Brokerage Offers</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#why-us" class="hero-nav__link">Why Us?</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#features" class="hero-nav__link">App Features</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 footer-nav">
+          <ul class="block-44__list list-unstyled justify-content-center22 mb-0 text-center22">
+            <li class="hero-nav__item">
+              <a href="#hero" class="hero-nav__link">
+                Open account</a>
+            </li>
+            <li class="hero-nav__item ">
+              <a href="https://backoffice.kunvarjidc.com/Focaps/Sessions/Login.cfm" target="_blank"
+                class="hero-nav__link">
+                Client Login</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#contact-us" class="hero-nav__link">
+                Contact</a>
+            </li>
+          </ul>
+        </div>
         <div class="block-44__logo-container">
-          <img class="block-44__logo" src="assets/imgs/qr.png">
+          <!-- <img class="block-44__logo" src="assets/imgs/qr.png">
           <div class="form-banner-btns-container">
 
             <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
@@ -917,37 +976,10 @@
               target="_blank">
               <img src="./assets/imgs/app-store-logo.060773ea.svg" />
             </a>
-          </div>
+          </div> -->
+
         </div>
-        <ul class="block-44__list list-unstyled justify-content-center mb-0 text-center">
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">
-              Open account</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">
-              Client Login</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">
-              Contact</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">Get Started</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#faq" class="hero-nav__link">Pricing</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#pricing" class="hero-nav__link">Download</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#testimonials" class="hero-nav__link">Features</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#product" class="hero-nav__link">Home</a>
-          </li>
-        </ul>
+
       </div>
     </div>
 

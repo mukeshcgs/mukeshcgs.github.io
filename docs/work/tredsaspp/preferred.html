@@ -24,17 +24,10 @@
 
 <body>
 
-  <!--Offer Alert ================================ -->
-  <!-- <div class="offer-alert">
-       <div class="offer-alert__container container">
-         <span>🔥😍 Preview All Beautiful Templates &amp; UI Blocks</span> <a href="https://frontendor.com" class="offer-alert__btn">PREVIEW ALL</a>
-       </div>
-     </div> -->
-
   <!--Hero ====================================== -->
   <header class="hero container-fluid border-bottom">
-    <nav class="hero-nav container px-4 px-lg-0 mx-auto">
-      <ul class="nav w-100 list-unstyled align-items-center p-0">
+    <nav id="navbar" class="hero-nav  px-4 px-lg-0 mx-auto">
+      <ul class="nav container w-100 list-unstyled align-items-center p-0">
         <li class="hero-nav__item">
           <img class="hero-nav__logo" src="assets/imgs/tradeapp-1.png">
         </li>
@@ -44,34 +37,35 @@
               <ul class="nav nav--lg-side list-unstyled align-items-center p-0">
                 <li class="hero-nav__item">
                   <a href="#contact-us" class="hero-nav__link">
-                    Open account</a>
-                </li>
-                <li class="hero-nav__item">
-                  <a href="#contact-us" class="hero-nav__link">
-                    Client Login</a>
-                </li>
-                <li class="hero-nav__item">
-                  <a href="#contact-us" class="hero-nav__link">
                     Contact</a>
                 </li>
-                <li class="hero-nav__item">
+                <li class="hero-nav__item highlight-nav">
+                  <a href="#hero" class="hero-nav__link">
+                    Open Account</a>
+                </li>
+                <li class="hero-nav__item  highlight-nav">
+                  <a href="https://backoffice.kunvarjidc.com/Focaps/Sessions/Login.cfm" target="_blank"
+                    class="hero-nav__link">
+                    Client Login</a>
+                </li>
+                <!-- <li class="hero-nav__item">
                   <a href="#contact-us" class="hero-nav__link">Get Started</a>
+                </li> -->
+                <li class="hero-nav__item">
+                  <a href="#features" class="hero-nav__link">App Features</a>
                 </li>
                 <li class="hero-nav__item">
-                  <a href="#faq" class="hero-nav__link">Pricing</a>
+                  <a href="#why-us" class="hero-nav__link">Why Us?</a>
                 </li>
                 <li class="hero-nav__item">
-                  <a href="#pricing" class="hero-nav__link">Download</a>
-                </li>
-                <li class="hero-nav__item">
-                  <a href="#testimonials" class="hero-nav__link">Features</a>
+                  <a href="#offers" class="hero-nav__link">Brokerage Offers</a>
                 </li>
                 <!-- <li class="hero-nav__item">
                   <a href="#features" class="hero-nav__link">Overview</a>
-                </li> -->
+                </li> 
                 <li class="hero-nav__item">
                   <a href="#product" class="hero-nav__link">Home</a>
-                </li>
+                </li>-->
               </ul>
             </li>
           </ul>
@@ -97,64 +91,36 @@
     <!--FORM ====================================== -->
     <div class="form-banner form-banner-bg">
       <div class="container">
-        <!-- <div class="row ">
-          <div class="col-lg-12">
-            <h1>Choose from Our Wide Range of Offering</h1>
-            <h3>OPEN YOUR DEMAT & TRADING ACCOUNT FOR FREE*</h3>
-          </div>
-        </div> -->
+
         <div class="row ">
           <div class="col-lg-7">
             <h1>Choose from Our Wide Range of Offering</h1>
             <h3>OPEN YOUR DEMAT & TRADING ACCOUNT FOR FREE*</h3>
-            <!-- <h3>Scan <span>QR code</span> & download the App now.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur aliquid error cum vel
-              eveniet accusamus quam voluptat</p> -->
-            <div class="qr plans">
-              <div>
-                <img src="./assets/imgs/o1.png">
-              </div>
-              <div class="qr-image">
-                <img src="./assets/imgs/qr.png" />
-              </div>
-            </div>
 
-            <!-- <div class="form-banner-btns-container">
-              <a class="hero__btn btn btn-gradiant mb-2 mb-lg-0" href="#">
-                Resume
-              </a>
-              <a class="hero__btn btn btn-gradiant mx-lg-3" href="#">
-                Start DIY
-              </a>
-              <a class="hero__btn btn btn-gradiant mb-2 mb-lg-0" href="#">
-                Get a Callback
-              </a>
-            </div> -->
+            <div class="qr plans">
+              <div >
+                <img style="max-width: 300px;" src="./assets/imgs/o1.png">
+              </div>
+              <!-- <div class="qr-image">
+                <img src="./assets/imgs/qr.png" />
+              </div> -->
+            </div>
             <div class="form-banner-btns-container">
-              <!-- <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
-                Resume
-              </a>
-              <a class="hero__btn btn btn-secondary mx-lg-3" href="#">
-                Start DIY
-              </a> -->
-              <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
-                Get a Callback
-              </a>
-              OR
-              <!-- <a class="hero__btn btn btn-secondary mb-2 mb-lg-0" href="#">
-                Download App<i class="fab fa-android app"></i> OR
-                <i class="fab fa-apple app"></i>
-                i class="fab fa-google-play app"></i>
-                <i class="fab fa-app-store app"></i>    
-              </a> -->
-              <a class="hero__btn  mx-lg-3" href="https://play.google.com/store/apps/details?id=com.kunvarji.tradesapp"
-                target="_blank">
-                <img src="./assets/imgs/google-play-badge.0547a72f.svg" />
-              </a>
-              <a class="hero__btn  mb-2 mb-lg-0" href="https://apps.apple.com/in/app/tradesapp/id1434839062"
-                target="_blank">
-                <img src="./assets/imgs/app-store-logo.060773ea.svg" />
-              </a>
+
+              <div>
+                <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+                  Get a Callback
+                </a>
+                <a class="hero__btn btn btn-secondary mb-2 mb-lg-0" href="#">
+                  Download App
+                </a>
+              </div>
+              <div>
+                <div class="qr-image">
+                  <img src="./assets/imgs/qr.png" />
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -509,7 +475,7 @@
     <div class="container">
       <!-- HEADER -->
       <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
-        <h1 class="block__title mb-3">Why <span class="highlight">TradesApp</span>?</h1>
+        <h1 class="block__title mb-3">Why <span class="highlight">TradesApp?</span></h1>
         <p class="block__paragraph mb-0">
           Enhance Your Trading Experience and increase your profits with our TRADESAPP
 
@@ -893,8 +859,57 @@
         </div>
       </div> -->
       <div class="row px-0 mx-0 justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="form-banner-btns-container">
+            <div>
+              <div class="qr-image">
+                <img src="./assets/imgs/qr.png">
+              </div>
+            </div>
+            <div>
+              <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+                Get a Callback
+              </a>
+              <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
+                Download App
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 footer-nav">
+          <ul class="block-44__list list-unstyled justify-content-center22 mb-0 text-center22">
+            <li class="hero-nav__item">
+              <a href="#offers" class="hero-nav__link">Brokerage Offers</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#why-us" class="hero-nav__link">Why Us?</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#features" class="hero-nav__link">App Features</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 footer-nav">
+          <ul class="block-44__list list-unstyled justify-content-center22 mb-0 text-center22">
+            <li class="hero-nav__item">
+              <a href="#hero" class="hero-nav__link">
+                Open account</a>
+            </li>
+            <li class="hero-nav__item ">
+              <a href="https://backoffice.kunvarjidc.com/Focaps/Sessions/Login.cfm" target="_blank"
+                class="hero-nav__link">
+                Client Login</a>
+            </li>
+            <li class="hero-nav__item">
+              <a href="#contact-us" class="hero-nav__link">
+                Contact</a>
+            </li>
+          </ul>
+        </div>
         <div class="block-44__logo-container">
-          <img class="block-44__logo" src="assets/imgs/qr.png">
+          <!-- <img class="block-44__logo" src="assets/imgs/qr.png">
           <div class="form-banner-btns-container">
 
             <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
@@ -908,37 +923,10 @@
               target="_blank">
               <img src="./assets/imgs/app-store-logo.060773ea.svg" />
             </a>
-          </div>
+          </div> -->
+
         </div>
-        <ul class="block-44__list list-unstyled justify-content-center mb-0 text-center">
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">
-              Open account</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">
-              Client Login</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">
-              Contact</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#contact-us" class="hero-nav__link">Get Started</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#faq" class="hero-nav__link">Pricing</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#pricing" class="hero-nav__link">Download</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#testimonials" class="hero-nav__link">Features</a>
-          </li>
-          <li class="hero-nav__item">
-            <a href="#product" class="hero-nav__link">Home</a>
-          </li>
-        </ul>
+
       </div>
     </div>
 

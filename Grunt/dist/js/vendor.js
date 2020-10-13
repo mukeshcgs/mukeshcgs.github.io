@@ -1,4 +1,4 @@
-/*!grunt - v0.0.1 -  2020-10-06 *//*!
+/*!grunt - v0.0.1 -  2020-10-13 *//*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
  *
@@ -10667,5 +10667,29 @@ $(function () {
     new WOW().init(); 
 });
 
+alert();
+import "babel-polyfill";
+require('./components/utils');
+
+
+// require standard modules
+require('./components/countrySelectorColumns');
+//require('./components/heroCarousel');
+require('./components/industryCookie');
+require('./components/mobileMenu');
+
+require('./components/mainjs');
+
+/**
+ * Auto initialise modules that support it
+ **/
+const moduleElements = document.querySelectorAll('[data-module]')
+
+for (var i = 0; i < moduleElements.length; i++) {
+  const el = moduleElements[i]
+  const name = el.getAttribute('data-module')
+  const Module = require(`./components/${name}`).default
+  new Module(el)
+}
 
 //# sourceMappingURL=vendor.js.map
