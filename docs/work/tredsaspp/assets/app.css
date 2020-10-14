@@ -223,7 +223,7 @@ button:focus {
 
 @media(min-width: 992px) {
   .hero-nav__item {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
   }
 }
 
@@ -446,7 +446,7 @@ button:focus {
 }
 
 .ft-menu__slider {
-  width: 80%;
+  width: 100%;
   height: 100%;
   background: var(--block-background);
   overflow: hidden;
@@ -470,8 +470,9 @@ button:focus {
 }
 
 .ft-menu__close-btn {
-  color: var(--primary-invert);
+  /* color: var(--primary-invert); */
   position: absolute;
+  color: #000000;
   right: 0;
   top: 0;
   font-size: 2rem;
@@ -1090,6 +1091,7 @@ p {
     width: 80%;
   }
 }
+
 .plan-features__li {
   font-size: 1rem;
   margin-bottom: 1.3rem;
@@ -1749,10 +1751,21 @@ textarea.contact-form__input {
 }
 
 .highlight-nav {
+  /* border: 0px solid #ffffff; */
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  color: #fff;
+  background: var(--primary);
+}
+
+.highlight-nav.border {
   border: 1px solid var(--primary);
   padding: 0.2rem 0.5rem;
-  border-radius: 1rem;
-  margin: 0 0.5rem;
+  border-radius: 5px;
+  background: #fff;
+  color: var(--primary);
+
 }
 
 .form-banner-btns-container {
@@ -1798,16 +1811,66 @@ textarea.contact-form__input {
   color: #ffffff;
 }
 
+
+
+.privacy-disclaimer {
+  text-align: right;
+}
+
+.privacy-disclaimer a {
+  color: #ffffff;
+  padding: 0 0.5rem;
+}
+
+footer .info p {
+  margin: 0px;
+  color: #ffffff;
+  opacity: 0.5;
+  letter-spacing: 0.5px;
+}
+
 @media(max-width: 480px) {
-  .form-banner-btns-container div .hero__btn{
+  .nav--lg-side{
+
+    flex-direction: column-reverse;
+  }
+  .nav {
+    padding-top: 4rem;
+  }
+
+  .highlight-nav {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .ft-menu .hero-nav__item {
+    /* width: auto; */
+  }
+
+  .form-banner-btns-container div .hero__btn {
     padding: .8rem 0.6rem;
   }
-  .hero__btns-container{
+
+  .hero__btns-container {
     display: block;
     text-align: center;
     width: 200px;
   }
-  #product .flex-column-reverse{
-    flex-direction:unset !important
+
+  #how-to .flex-column-reverse {
+    -ms-flex-direction: unset !important;
+    flex-direction: unset !important;
+  }
+
+  #product .flex-column-reverse {
+    flex-direction: unset !important
+  }
+
+  .privacy-disclaimer {
+    text-align: center;
+  }
+
+  footer .form-banner-btns-container div {
+    width: 100%;
   }
 }
