@@ -1794,13 +1794,15 @@ textarea.contact-form__input {
 }
 
 .form-banner-btns-container div {
-  width: 300px;
+  /* width: 300px; */
   /* flex: 1; */
 }
 
 .form-banner-btns-container div .hero__btn {
-  margin: 5px;
+  margin: 30px 5px;
+  padding: 8px 15px;
 }
+
 
 .form-banner-btns-container div .qr-image img {
   width: 100px;
