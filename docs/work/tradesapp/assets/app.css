@@ -399,7 +399,7 @@ button:focus {
 }
 
 .ft-menu .hero-nav__item {
-  width: 100%;
+  width: 60%;
   margin-top: .75rem;
   margin-bottom: .75rem;
 }
@@ -1758,6 +1758,9 @@ textarea.contact-form__input {
   color: #fff;
   background: var(--primary);
 }
+.highlight-nav .hero-nav__link:hover, .highlight-nav .hero-nav__link:focus{
+  color: #fff !important;
+}
 
 .highlight-nav.border {
   border: 1px solid var(--primary);
@@ -1830,10 +1833,11 @@ footer .info p {
 }
 
 @media(max-width: 480px) {
-  .nav--lg-side{
+  .nav--lg-side {
 
     flex-direction: column-reverse;
   }
+
   .nav {
     padding-top: 4rem;
   }

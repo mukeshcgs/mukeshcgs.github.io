@@ -1,20 +1,27 @@
+
+if ($(window).width() < 767) { 
+
+}
 function closeMenuAndGoTo(query) {
   document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')
   setTimeout(() => {
-    const element = document.querySelector(query)
-    window.scrollTo({
-      top: element.getBoundingClientRect().top,
-      behavior: 'smooth'
-    })
+    if (query.indexOf("#") !== -1) {
+      const element = document.querySelector(query)
+      window.scrollTo({
+        top: element.getBoundingClientRect().top,
+        behavior: 'smooth'
+      })
+    }
   }, 250);
 }
 
 document.querySelector('#hero-menu').
-  querySelectorAll('[href]').
+  querySelectorAll('a[href^="#"]').
   forEach(function (link) {
     link.onclick = function (event) {
       event.preventDefault()
-      closeMenuAndGoTo(link.getAttribute('href'))
+      // closeMenuAndGoTo(link.getAttribute('href'))
+      document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')
     }
   })
 
@@ -31,12 +38,12 @@ function myFunction() {
   }
 }
 
-$( document ).ready(function() {
+$(document).ready(function () {
 
   $(document).on('click', 'a[href^="#"]', function (e) {
     // target element id
     var id = $(this).attr('href');
-console.log(id);
+    console.log(id);
     // target element
     var $id = $(id);
     if ($id.length === 0) {
@@ -52,5 +59,5 @@ console.log(id);
     // animated top scrolling
     $('body, html').animate({ scrollTop: pos });
   });
-    console.log( "ready!" );
+  console.log("ready!");
 });
