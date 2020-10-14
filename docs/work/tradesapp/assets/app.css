@@ -1758,8 +1758,10 @@ textarea.contact-form__input {
   color: #fff;
   background: var(--primary);
 }
-.highlight-nav .hero-nav__link:hover, .highlight-nav .hero-nav__link:focus{
-  color: #fff !important;
+
+.highlight-nav .hero-nav__link:hover,
+.highlight-nav .hero-nav__link:focus {
+  color: #fff;
 }
 
 .highlight-nav.border {
@@ -1769,6 +1771,11 @@ textarea.contact-form__input {
   background: #fff;
   color: var(--primary);
 
+}
+
+.highlight-nav.border .hero-nav__link:hover,
+.highlight-nav.border .hero-nav__link:focus {
+  color: var(--primary);
 }
 
 .form-banner-btns-container {
