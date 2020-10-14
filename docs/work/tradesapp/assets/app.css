@@ -60,7 +60,7 @@ button:focus {
 
 @media(min-width: 992px) {
   .btn {
-    padding: .8rem 2rem;
+    padding: .8rem 1.5rem;
   }
 }
 
@@ -89,6 +89,10 @@ button:focus {
 .btn-secondary:focus {
   background: var(--secondary);
   color: var(--secondary-invert);
+}
+
+.btn-green {
+  background: #018d3b;
 }
 
 .btn-gradiant,
@@ -193,6 +197,10 @@ button:focus {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
+}
+
+#hero h2 {
+  font-size: 1.5rem;
 }
 
 .hero p {
@@ -1786,7 +1794,7 @@ textarea.contact-form__input {
 }
 
 .form-banner-btns-container div {
-  width: 200px;
+  width: 300px;
   /* flex: 1; */
 }
 
