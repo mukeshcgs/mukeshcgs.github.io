@@ -27,9 +27,9 @@
   <header class="hero container-fluid border-bottom">
     <nav id="navbar" class="hero-nav  px-4 px-lg-0 mx-auto">
       <ul class="nav container w-100 list-unstyled align-items-center p-0">
-        <li class="hero-nav__item">
+        <a href="./">
           <img class="hero-nav__logo" src="assets/imgs/tradeapp-1.png">
-        </li>
+        </a>
         <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
           <ul class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
             <li class="flex-grow-1">
@@ -39,7 +39,7 @@
                   <a href="https://ekyc.kunvarji.com/index.aspx" target="_blank" class="hero-nav__link">
                     Open Account</a>
                 </li>
-                <li class="hero-nav__item  highlight-nav border">
+                <li class="hero-nav__item  highlight-nav">
                   <a href="https://backoffice.kunvarjidc.com/Focaps/Sessions/Login.cfm" target="_blank"
                     class="hero-nav__link">
                     Client Login</a>
@@ -89,12 +89,6 @@
     <!--FORM ====================================== -->
     <div id="hero" class="form-banner form-banner-bg">
       <div class="container">
-        <!-- <div class="row ">
-          <div class="col-lg-12">
-            <h1>Choose from Our Wide Range of Offering</h1>
-            <h3>OPEN YOUR DEMAT & TRADING ACCOUNT FOR FREE*</h3>
-          </div>
-        </div> -->
         <div class="row ">
           <div class="col-lg-7">
             <h1>Choose from Our Wide Range of Offering</h1>
@@ -137,8 +131,8 @@
                   <img src="./assets/imgs/qr.png" />
                 </div>
               </div>
-              <div>
-                <a class="hero__btn btn btn-primary mb-2 mb-lg-0 btn-green" href="#">
+              <div class="all-btns">
+                <a class="hero__btn btn btn-primary mb-2 mb-lg-0 btn-green" href="tel:+91 97267 14024">
                   WhatsApp
                 </a>
                 <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
@@ -803,7 +797,7 @@
             </p>
             <div class="block-20__person">
               <div class="mb-2">
-                <img class="block-20__person-avatar" src="assets/imgs/img-2.png">
+                <img class="block-20__person-avatar" src="assets/imgs/profile-1.png">
               </div>
               <div class="flex-grow-1 d-flex flex-column">
                 <!-- <span class="block-20__person-rating">
@@ -830,7 +824,7 @@
             </p>
             <div class="block-20__person">
               <div class="mb-2">
-                <img class="block-20__person-avatar" src="assets/imgs/img-2.png">
+                <img class="block-20__person-avatar" src="assets/imgs/profile-2.png">
               </div>
               <div class="flex-grow-1 d-flex flex-column">
                 <span class="block-20__person-name my-1">Rajiv Mehta</span>
@@ -850,7 +844,7 @@
             </p>
             <div class="block-20__person">
               <div class="mb-2">
-                <img class="block-20__person-avatar" src="assets/imgs/img-2.png">
+                <img class="block-20__person-avatar" src="assets/imgs/profile-3.png">
               </div>
               <div class="flex-grow-1 d-flex flex-column">
                 <span class="block-20__person-name my-1">Mahendra Chaudhary</span>
@@ -920,11 +914,11 @@
           <div class="form-banner-btns-container">
             <div>
               <div class="qr-image">
-                <img src="./assets/imgs/qr.png">
+                <img src="./assets/imgs/qr.png" />
               </div>
             </div>
-            <div>
-              <a class="hero__btn btn btn-primary mb-2 mb-lg-0 btn-green" href="#">
+            <div class="all-btns">
+              <a class="hero__btn btn btn-primary mb-2 mb-lg-0 btn-green" href="tel:+91 97267 14024">
                 WhatsApp
               </a>
               <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#">
@@ -934,7 +928,6 @@
                 Download App
               </a>
             </div>
-
           </div>
         </div>
         <div class="col-md-3 footer-nav">
@@ -1076,6 +1069,9 @@
 
   <!-- =================================== -->
 
+  <a id="back2Top" title="Back to top" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+
+  <!-- =================================== -->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

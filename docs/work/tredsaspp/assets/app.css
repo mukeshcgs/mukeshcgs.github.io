@@ -54,13 +54,14 @@ button:focus {
 .btn {
   font-size: .87rem;
   padding: .8rem 1.6rem;
-  border-radius: var(--elements-roundness);
+  border-radius: 5px;
   transition: .2s all;
 }
 
 @media(min-width: 992px) {
   .btn {
-    padding: .8rem 1.5rem;
+    /* padding: .8rem 1.5rem; */
+    padding: .7rem 00.8rem;
   }
 }
 
@@ -706,6 +707,7 @@ button:focus {
 }
 
 .card-1 {
+  background: #ffffff;
   height: 100%;
   padding: 2rem 1rem;
   border-radius: 5px;
@@ -886,7 +888,7 @@ p {
 /* ========================================= */
 
 .block-17 {
-  --block-background: white;
+  --block-background: #f8f8f8;
   --block-text-color: var(--text-primary);
   background: var(--block-background);
   color: var(--block-text-color);
@@ -1731,7 +1733,7 @@ textarea.contact-form__input {
 }
 
 .app-form .contact-form__input {
-  border-radius: var(--elements-roundness);
+  border-radius: 5px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   margin-bottom: 0px;
@@ -1799,13 +1801,12 @@ textarea.contact-form__input {
 }
 
 .form-banner-btns-container div .hero__btn {
-  margin: 30px 5px;
-  padding: 8px 15px;
+  padding: 9px 15px;
 }
 
 
 .form-banner-btns-container div .qr-image img {
-  width: 100px;
+  width: 125px;
 }
 
 .plan-bg {
@@ -1894,4 +1895,41 @@ footer .info p {
   footer .form-banner-btns-container div {
     width: 100%;
   }
+}
+
+.all-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-btns a {
+  margin-bottom: 5px !important;
+}
+
+#back2Top {
+  width: 50px;
+  line-height: 50px;
+    border-radius: 20px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  /* -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* background-color: #DDD; */
+  color: rgb(136, 136, 136);
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#back2Top:hover {
+  /* background-color:#d81c23; */
+  color: #d81c23;
 }
