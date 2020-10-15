@@ -1895,6 +1895,9 @@ footer .info p {
   footer .form-banner-btns-container div {
     width: 100%;
   }
+.platform{
+  display: block;
+}
 }
 
 .all-btns {
