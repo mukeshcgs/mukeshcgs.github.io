@@ -1677,6 +1677,18 @@ textarea.contact-form__input {
   transform: rotate(45);
 }
 
+.platform.prf .sec .icon{
+  width: 6rem;
+  height: 6rem;
+  background: white;
+  border: 1px solid var(--primary);
+  /* border: 1px solid var(--secondary); */
+}
+.platform.prf .sec .icon img{
+  padding: 1rem;
+  width: 100%;
+}
+
 .platform .sec .icon i {
   font-size: 1.7rem;
   line-height: 3.8rem;
