@@ -2,6 +2,8 @@ html,
 body {
       cursor: url(cursor.png), auto !important;
       font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1px;
       font-family: 'Poppins', sans-serif;
 }
 
@@ -131,11 +133,13 @@ video {
       color: #0066ff;
       transition: all 500ms ease-out;
 }
+
 .nav #menu li a.active:hover,
 .nav.scrolled #menu li a.active:hover {
       color: #ffffff;
       transition: all 500ms ease-out;
 }
+
 .nav.scrolled #menu li a {
       color: #cccccc;
       transition: all 500ms ease-out;
@@ -278,7 +282,7 @@ section {
       color: grey;
       text-transform: uppercase;
       letter-spacing: 4px;
-      font-size: 18px;
+      font-size: 2rempx;
 }
 
 .section-subheading {
@@ -287,7 +291,7 @@ section {
 }
 
 .section-info {
-      font-size: 24px;
+      font-size: 1.2rem;
       color: grey;
 }
 
@@ -302,7 +306,8 @@ button {
       font-size: 12px !important;
       letter-spacing: 2px;
       padding: 18px 36px;
-      color: #0066ff !important;
+      /* color: #0066ff !important; */
+      color: #505050;
 }
 
 /*--------------- services section starts  --------------- */
@@ -315,13 +320,35 @@ button {
       margin: 30px 0;
 }
 
+.services-list ul li {
+      list-style: none;
+      margin-bottom: 1rem;
+}
+
+.services-list ul li div {
+      display: block;
+      position: relative;
+}
+.services-list ul li div.icon{
+      position: absolute;
+}
+.services-list ul li div.icon ion-icon {
+      font-size: 1.5rem !important;
+      padding: 0.5rem;
+}
+
+.services-list ul li div.service-name {
+      font-size: 1rem;
+      margin-left: 3rem;
+}
+
 .icon ion-icon {
       font-size: 36px;
       color: #0066ff;
 }
 
 .icon-title {
-      font-size: 20px;
+      font-size: 1.2rem;
       margin-bottom: 4px;
       color: rgb(182, 182, 182);
       font-weight: lighter;
@@ -496,7 +523,7 @@ textarea:focus {
 .footer li,
 p,
 h4 {
-      font-size: 24px !important;
+      font-size: 1.5rem !important;
 }
 
 .footer h4 {
