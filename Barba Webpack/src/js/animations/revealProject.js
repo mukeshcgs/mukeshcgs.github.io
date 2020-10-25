@@ -5,7 +5,7 @@ const revealProject = (container) => {
 	const images = container.querySelectorAll('.image');
 	const content = container.querySelectorAll('.content');
 	const h1 = container.querySelectorAll('h1');
-	const img = container.querySelectorAll('img');
+	const img = container.querySelectorAll('.m-img');
 	const hero = container.querySelector('.hero');
 	const tl = gsap.timeline({
 		defaults: {

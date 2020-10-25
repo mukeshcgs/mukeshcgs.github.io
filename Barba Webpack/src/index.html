@@ -9,6 +9,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="assets/app.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <style>
+    #slider,
+    main,
+    .swiper-slide {
+      width: auto;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    main {
+      background: #000000;
+    }
+
+    #js-header {
+      height: 100vh;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
 </head>
 
 <body data-barba="wrapper">
@@ -38,18 +62,19 @@
             <li><a href="work.html">
                 work
               </a></li>
-
+            <li><a href="work2.html">
+                work2
+              </a></li>
           </ul>
         </div>
       </div>
-
     </nav>
     <!-- <header>
       <a href="index.html" class="is-active">Landscape<span>&nbsp;</span></a>
       <a href="architecture.html">Architecture</a>
     </header> -->
-    <main data-module="work">
-      <section>
+    <main>
+      <!-- <section>
         <div class="about-text">
           <p>
             I am Mukesh Thankar, a graphic designer and web developer living in Mumbai, India. I am
@@ -58,79 +83,157 @@
             design needs. When I am not designing, you can find me drawing, playing games.
           </p>
         </div>
+      </section> -->
+      <section>
+        <div class="c-header-home -full" data-module="SliderHome" id="js-header">
+
+          <article class="c-header-home_section is-current js-slider-home-slide" data-slide="1">
+            <div class="c-header-home_background-parallax o-background js-parallax" data-speed="-1" data-position="top"
+              data-target="#js-header">
+              <div class="c-header-home_background-load-wrap o-background">
+                <div class="c-header-home_background-load o-background">
+                  <div class="c-header-home_background-wrap o-background">
+                    <div class="c-header-home_background o-background">
+                      <div class="c-header-home_image-wrap o-background">
+                        <div class="c-header-home_image o-background"
+                          style="background-image: url('./images/img_landscape-01.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-header-home_text-load">
+              <div class="c-header-home_text">
+                <div class="c-header-home_container o-container js-parallax" data-speed="2" data-position="top"
+                  data-target="#js-header">
+                  <h1 class="c-header-home_heading -full">COVID-19</h1>
+                  <a class="c-header-home_subheading -load o-hsub -link" href="en/55/covid-19">
+                    <span class="o-hsub_label">Pomerleau is here for its employees and partners</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="c-header-home_section is-next js-slider-home-slide" data-slide="2">
+            <div class="c-header-home_background-parallax o-background js-parallax" data-speed="-1" data-position="top"
+              data-target="#js-header">
+              <div class="c-header-home_background-load-wrap o-background">
+                <div class="c-header-home_background-load o-background">
+                  <div class="c-header-home_background-wrap o-background">
+                    <div class="c-header-home_background o-background">
+                      <div class="c-header-home_image-wrap o-background">
+                        <div class="c-header-home_image o-background"
+                          style="background-image: url('./images/img_landscape-02.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-header-home_text-load">
+              <div class="c-header-home_text">
+                <div class="c-header-home_container o-container js-parallax" data-speed="2" data-position="top"
+                  data-target="#js-header">
+                  <h1 class="c-header-home_heading -full">Pushing our limits, loving every second of it</h1>
+                  <a class="c-header-home_subheading -load o-hsub -link" href="en/34/athletic-challenges">
+                    <span class="o-hsub_label">Learn more about our athletic challenges</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="c-header-home_section is-next js-slider-home-slide" data-slide="3">
+            <div class="c-header-home_background-parallax o-background js-parallax" data-speed="-1" data-position="top"
+              data-target="#js-header">
+              <div class="c-header-home_background-load-wrap o-background">
+                <div class="c-header-home_background-load o-background">
+                  <div class="c-header-home_background-wrap o-background">
+                    <div class="c-header-home_background o-background">
+                      <div class="c-header-home_image-wrap o-background">
+                        <div class="c-header-home_image o-background"
+                          style="background-image: url('./images/img_landscape-03.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-header-home_text-load">
+              <div class="c-header-home_text">
+                <div class="c-header-home_container o-container js-parallax" data-speed="2" data-position="top"
+                  data-target="#js-header">
+                  <h1 class="c-header-home_heading -full">Innovation starts with a dream and a plan</h1>
+                  <a class="c-header-home_subheading -load o-hsub -link" href="en/23/bim-vdc">
+                    <span class="o-hsub_label">Discover BIM-VDC</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- <div class="c-header-home_footer">
+            <div class="o-container">
+              <div class="c-header-home_controls -nomobile o-button-group">
+                <div class="js-parallax" data-speed="1" data-position="top" data-target="#js-header">
+                  <button class="o-button -white -square -left js-slider-home-button js-slider-home-prev" type="button">
+                    <span class="o-button_label">
+                      <svg class="o-button_icon" role="img">
+                        <use xlink:href="assets/pomerleau/images/sprite.svg#arrow-prev"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <button class="o-button -white -square js-slider-home-button js-slider-home-next" type="button">
+                    <span class="o-button_label">
+                      <svg class="o-button_icon" role="img">
+                        <use xlink:href="assets/pomerleau/images/sprite.svg#arrow-next"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="c-header-home_buttons o-button-group">
+                <div class="js-parallax" data-speed="0.5" data-position="top" data-target="#js-header">
+                  <a class="c-header-home_button o-button -white -left" data-route-option="keep-header"
+                    href="en/1/our-markets">
+                    <span class="o-button_label">Civil & Infrastructure</span>
+                  </a>
+                  <a class="c-header-home_button o-button -white" data-route-option="keep-header" href="en/2/buildings">
+                    <span class="o-button_label">Buildings</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
       </section>
-
-      <div class="column">
-        <div class="project project01">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-01.jpg" /></a>
+      <!-- <section id="slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/img_landscape-01.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/img_landscape-02.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/img_landscape-03.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/img_landscape-04.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/img_landscape-05.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/img_landscape-06.jpg" />
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="project project04">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-04.jpg" /></a>
-          </div>
-        </div>
-        <div class="project project06">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-06.jpg" /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="project project02">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-02.jpg" /></a>
-          </div>
-        </div>
-        <div class="project project03">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-03.jpg" /></a>
-          </div>
-        </div>
-        <div class="project project05">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-05.jpg" /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="project project01">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-01.jpg" /></a>
-          </div>
-        </div>
-        <div class="project project04">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-04.jpg" /></a>
-          </div>
-        </div>
-        <div class="project project06">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-06.jpg" /></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="project project02">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-02.jpg" /></a>
-          </div>
-        </div>
-        <div class="project project03">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-03.jpg" /></a>
-          </div>
-        </div>
-        <div class="project project05">
-          <div class="image">
-            <a href="detail-page.html"><img src="images/img_landscape-05.jpg" /></a>
-          </div>
-        </div>
-      </div>
+      </section> -->
 
     </main>
     <div class="media">

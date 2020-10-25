@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 
 const animationEnterHide = (container) => {
-	const images = container.querySelectorAll('img');
+	const images = container.querySelectorAll('.m-img');
 	return gsap.from(images, { 
 		duration: 0.7, 
 		xPercent: 101,

@@ -1,11 +1,12 @@
 import barba from '@barba/core';
 import barbaRouter from '@barba/router';
 import Home from './pages/home';
-import About from './pages/detail-page';
+import DetailPage from './pages/detail-page';
+import About from './pages/about';
 import gsap from 'gsap';
 import "babel-polyfill";
 
-import { workScript, workScript2, revealProject, leaveToProject, leaveFromProject, animationEnterMask, animationLeaveMask } from './animations';
+import { SwiperSlider, about, workScript, workScript2, revealProject, leaveToProject, leaveFromProject, animationEnterMask, animationLeaveMask } from './animations';
 
 // define your routes
 const myRoutes = [{
@@ -35,6 +36,8 @@ barba.init({
 		{
 			name: 'general-transition',
 			once: ({ next }) => {
+				SwiperSlider(next.container)
+
 				resetActiveLink();
 				gsap.from('.menus ul li', {
 					duration: 0.6,
@@ -61,6 +64,7 @@ barba.init({
 			leave: ({ current }) => animationLeaveMask(current.container),
 			enter: ({ next }) => {
 				animationEnterMask(next.container)
+				SwiperSlider(next.container)
 			}
 		},
 		{
@@ -108,6 +112,18 @@ barba.init({
 				revealProject(next.container)
 			}
 		}, {
+			name: 'about',
+			to: {
+				namespace: ['about']
+			},
+			once: ({ next }) => {
+				about(next.container);
+			},
+			leave: ({ current }) => leaveToProject(current.container),
+			enter: ({ next }) => {
+				about(next.container)
+			}
+		}, {
 			name: 'from-detail',
 			from: {
 				namespace: ['detail']
@@ -129,17 +145,3 @@ barba.init({
 		}
 	]
 });
-
-
-// const moduleElements = document.querySelectorAll('[data-module]')
-
-// /**
-//  * Auto initialise modules that support it
-//  **/
-
-// for (var i = 0; i < moduleElements.length; i++) {
-// 	const el = moduleElements[i]
-// 	const name = el.getAttribute('data-module')
-// 	const Module = require(`./components/${name}`).default
-// 	new Module(el)
-// }

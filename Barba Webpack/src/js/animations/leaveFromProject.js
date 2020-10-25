@@ -3,7 +3,7 @@ import gsap from 'gsap';
 const leaveFromProject = (container) => {
 	const headerLink = container.querySelector('.menus ul li');
 	const projects = container.querySelectorAll('.image');
-	const images = container.querySelectorAll('img');
+	const images = container.querySelectorAll('.m-img');
 	const content = container.querySelector('.content');
 	const tl = gsap.timeline({
 		onStart: () => console.log('starting animationLeave'),

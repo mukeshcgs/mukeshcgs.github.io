@@ -76,7 +76,7 @@ const workScript2 = (container) => {
     });
 
     function setData() {
-        let img = document.getElementsByTagName('img')
+        let img = document.getElementsByTagName('.m-img')
         let text = document.getElementsByTagName('p')
         //gsap.timeline({onComplete: myFunction, repeat: 2, repeatDelay: 1, yoyo: true});
         var tl = gsap.timeline({ defaults: { duration: 1, ease: 'power4.easeInOut' } });

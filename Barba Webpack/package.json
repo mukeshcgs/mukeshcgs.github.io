@@ -39,6 +39,7 @@
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
     "reset-css": "^5.0.1",
-    "smooth-scrollbar": "^8.5.2"
+    "smooth-scrollbar": "^8.5.2",
+    "swiper": "^6.3.4"
   }
 }

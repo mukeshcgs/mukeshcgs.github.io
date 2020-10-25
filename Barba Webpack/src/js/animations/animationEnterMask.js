@@ -4,7 +4,7 @@ const animationEnterMask = (container) => {
 	const activeLink = container.querySelector('.menus ul li.is-active span');
 	const projects = container.querySelectorAll('.project');
 	const images = container.querySelectorAll('.image');
-	const img = container.querySelectorAll('img');
+	const img = container.querySelectorAll('.m-img');
 	const tl = gsap.timeline({
 		onStart: () => console.log('starting animationEnter'),
 		onComplete: () => console.log('completed animationEnter'),

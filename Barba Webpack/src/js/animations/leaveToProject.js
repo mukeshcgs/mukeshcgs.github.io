@@ -3,7 +3,7 @@ import gsap from 'gsap';
 const leaveToProject = (container) => {
 	const navLinks = container.querySelectorAll('.menus ul li');
 	const projects = container.querySelectorAll('.image');
-	const images = container.querySelectorAll('img');
+	const images = container.querySelectorAll('.m-img');
 	const tl = gsap.timeline({
 		onStart: () => console.log('starting animationLeave'),
 		onComplete: () => console.log('completed animationLeave'),
