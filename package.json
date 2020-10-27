@@ -10,7 +10,7 @@
     "prod": "npm run clean && NODE_ENV=production webpack -p",
     "clean": "rimraf docs/*",
     "release": "npm run clean && npm run build",
-    "deploy": "cd docs && git add --all && git commit -m \"Release at $(date)\" && git push",
+    "deploy": "cd docs && git add --all && git commit -m \"Release at\" && git push",
     "deploy2": "cd docs && git subtree push --prefix docs origin gh-pages",
     "deploy3": "git subtree push --prefix docs origin gh-pages",
     "add-commit": "git add --all && git commit -m \"Release at $(date)\"",
