@@ -54,6 +54,11 @@ video {
       font-size: 80px !important;
 }
 
+button:focus {
+      outline: 0px dotted !important;
+      outline: 0px auto -webkit-focus-ring-color !important;
+}
+
 @media(max-width: 900px) {
       .header {
             left: 50%;
@@ -73,7 +78,7 @@ video {
       position: fixed;
       z-index: 5;
       /* background: rgba(15, 15, 15,0.2); */
-      background: rgb(255 255 255 / 70%);
+      /* background: rgb(255 255 255 / 70%); */
 }
 
 .nav.scrolled {
@@ -89,6 +94,8 @@ video {
       font-weight: bold;
       text-transform: uppercase;
       font-size: 18px;
+      /* background: rgb(0 0 0  / 70%); */
+
 }
 
 .nav #brand a {
@@ -126,7 +133,17 @@ video {
       font-weight: 500;
       color: #000000;
       transition: all 500ms ease-out;
+      transition: all 500ms ease-out;
+
 }
+
+
+.nav #menu li.active a,
+.nav.scrolled #menu li.active a {
+      color: #0066ff;
+      transition: all 500ms ease-out;
+}
+
 
 .nav #menu li a.active,
 .nav.scrolled #menu li a.active {
@@ -329,9 +346,11 @@ button {
       display: block;
       position: relative;
 }
-.services-list ul li div.icon{
+
+.services-list ul li div.icon {
       position: absolute;
 }
+
 .services-list ul li div.icon ion-icon {
       font-size: 1.5rem !important;
       padding: 0.5rem;
@@ -352,6 +371,18 @@ button {
       margin-bottom: 4px;
       color: rgb(182, 182, 182);
       font-weight: lighter;
+}
+
+.all-services .section-data .row {
+      padding: 1.5rem 0;
+}
+
+.all-services .section-info h1 {
+      font-size: 1.5rem !important;
+}
+
+.all-services .section-info p {
+      font-size: 1rem !important;
 }
 
 /*--------------- our team section starts  --------------- */

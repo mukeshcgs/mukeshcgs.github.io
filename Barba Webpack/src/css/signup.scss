@@ -1,0 +1,206 @@
+.sign-up {
+  // background: $black;
+  padding: 2rem 0px;
+  // margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.signup {
+  width: 50vw;
+  margin: 0 auto;
+
+  .form-heading {
+    padding: 2rem 0px;
+    font-weight: 700;
+    margin: 0px;
+  }
+
+  .signup-container {
+    border: 1px solid $light-gray;
+    background: #fff;
+
+    .signup-row {
+      // border: 1px solid #cccccc;
+      display: flex;
+    }
+
+    .signup-col {
+      // border: 1px solid #cccccc;
+      flex: 1;
+
+      .field-cont {
+        padding: 1rem 2rem;
+        border-bottom: 1px solid $light-gray;
+        height: 100%;
+
+        &:last-child {
+          border-bottom: 0px;
+        }
+
+        &.error {
+          label {
+            // border:1px solid rgb(255, 195, 195);
+            color: rgb(255, 50, 50);
+            ;
+          }
+        }
+      }
+    }
+  }
+
+
+  button {
+    outline: 0px;
+    border: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: $primary;
+    cursor: pointer;
+  }
+}
+
+.left-side {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.right-side {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  align-self: stretch;
+  justify-content: space-between;
+
+  &>div {
+    display: flex;
+    border-left: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+
+  .have-an-account {
+    p {
+      color: #ccc;
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+
+    a {
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+}
+
+.signup-form {
+  label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: $mid-gray;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    padding-left: 0.5rem;
+    margin: 0px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0px;
+    outline: 0px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: $dark-gray;
+
+    &:placeholder-shown {
+      opacity: 0.3;
+    }
+
+  }
+}
+
+@media (max-width: $to-small) {
+  .signup {
+    width: 100vw;
+    padding-top: 100px;
+
+    .form-heading {
+      display: none;
+    }
+
+    .signup-container {
+      border: 1px solid $light-gray;
+      background: #fff;
+
+      .signup-row {
+        // border: 1px solid #cccccc;
+        display: unset;
+      }
+
+      .signup-col {
+        // border: 1px solid #cccccc;
+        flex: unset;
+
+        .field-cont {
+          padding: 1rem 2rem;
+          border-bottom: 1px solid $light-gray;
+          height: 100%;
+
+          &:last-child {
+            border-bottom: 0px;
+          }
+
+          &.error {
+            label {
+              // border:1px solid rgb(255, 195, 195);
+              color: rgb(255, 50, 50);
+              ;
+            }
+          }
+        }
+      }
+    }
+
+    .have-an-account {
+      display: none;
+    }
+
+    button {
+      padding: 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+
+@media (max-width: $to-small) {}
+
+@media (min-width: $from-small) and (max-width: $to-medium) {}
+
+@media (min-width: $from-medium) and (max-width: $to-large) {}
+
+@media (min-width: $from-large) and (max-width: $to-huge) {}
+
+@media (min-width: $from-huge) and (max-width: $to-gigantic) {}
+
+@media (min-width: $from-gigantic) and (max-width: $to-colossal) {}
+
+@media (min-width: $from-colossal) {}

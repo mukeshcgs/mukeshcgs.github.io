@@ -1,25 +1,35 @@
 
-// navigation starts here
-$("#toggle").click(function () {
-    $(this).toggleClass('on');
-    $("#resize").toggleClass("active");
-});
-$("#resize ul li a").click(function () {
-    $(this).toggleClass('on');
-    $("#resize").toggleClass("active");
-});
-$(".close-btn").click(function () {
-    $(this).toggleClass('on');
-    $("#resize").toggleClass("active");
-});
-
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".nav");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
-});
 
+    $('#menu li a').on('click', function (event) {
+        event.preventDefault
+        $('.nav #menu li a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+ 
+    // navigation starts here
+    $("#toggle").click(function () {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+    $("#resize ul li a").click(function () {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+    $(".close-btn").click(function () {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+});
+var elm = document.querySelector('#main-header');
+var ms = new MenuSpy(elm);
 new WOW().init();
 
 // Select all links with hashes
@@ -61,3 +71,4 @@ $('a[href*="#"]')
             }
         }
     });
+

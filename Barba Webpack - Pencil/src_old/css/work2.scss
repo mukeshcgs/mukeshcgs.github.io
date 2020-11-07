@@ -1,0 +1,260 @@
+#work {
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+}
+
+.page-heading {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.bg-text {
+    position: fixed;
+    left: 25%;
+    font-size: 25rem;
+    text-transform: uppercase;
+    opacity: 0.07;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    // background: #fff;
+}
+
+.card-img {
+    width: 60%;
+    height: 100%;
+    text-align: right;
+    position: relative;
+}
+
+.card-img>div {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-top: -200px;
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 20px 20px 69px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 20px 20px 69px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 69px -10px rgba(0, 0, 0, 0.3);
+
+}
+
+#img01 {
+    background-image: url("https://images.unsplash.com/photo-1505324453012-a12195b84346?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80");
+}
+
+#img02 {
+    background-image: url(" https://images.unsplash.com/photo-1517223674523-595bea3551ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1402&q=80");
+}
+
+#img03 {
+    background-image: url(" https://images.unsplash.com/photo-1485880776513-a4058931414e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+}
+
+.card-content {
+    padding: 10% 5% 10% 0%;
+    box-sizing: border-box;
+    width: 50%;
+    // background: #ffffff;
+    position: relative;
+}
+
+.card-theme {
+    font-weight: 900;
+    font-size: 1.7vmin;
+    text-transform: uppercase;
+    font-family: Poppins;
+    letter-spacing: 10px;
+    color: grey;
+}
+
+.card-header {
+    position: absolute;
+    left: -25%;
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 1;
+    margin: 3vmin 0 3.5vmin;
+    font-family: Poppins;
+}
+
+.card-para {
+    font-size: 2.2vmin;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-top: 100px;
+    margin-bottom: 2.5vmin;
+    // color: #fff;
+    font-family: Poppins;
+}
+
+.card-link {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.8vmin;
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+    // opacity: 0.7;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    background-color: $color_blue;
+}
+
+.card-link:after {
+    content: "→";
+}
+
+.prevnext {
+    position: absolute;
+    width: 4vmin;
+    height: 8vmin;
+    right: 2%;
+    bottom: 0;
+    top: 80%;
+    // color: #fff;
+    margin: auto 0;
+}
+
+.pn-btn {
+    // color: #fff;
+    width: 100%;
+    height: 50%;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+#prev,
+#next {
+    position: relative;
+    cursor: pointer;
+    color: #000000;
+}
+
+#prev:focus,
+#next:focus {
+    outline: none;
+}
+
+#prev:hover:after,
+#next:hover:after {
+    opacity: 1;
+}
+
+#prev:after,
+#next:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+#prev:after {
+    content: "↑"
+}
+
+#next:after {
+    content: "↓"
+}
+
+@media only screen and (max-width: 767px) {
+    .bg-text {
+        position: fixed;
+        left: 5%;
+        bottom: 5%;
+        font-size: 10rem;
+        text-transform: uppercase;
+        opacity: 0.07;
+    }
+
+    .card {
+        height: auto;
+        display: block;
+
+        .card-img {
+            width: 100%;
+            height: auto;
+
+            &>div {
+                position: relative;
+                width: 100%;
+                right: 0px;
+                top: auto;
+                margin-top: auto;
+                height: 30vh;
+            }
+        }
+
+        .card-content {
+            width: 100%;
+            padding: 2rem;
+
+            .card-theme {
+                font-weight: 500;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-family: Poppins;
+                letter-spacing: 1px;
+                color: grey;
+            }
+
+            .card-header {
+                left: auto;
+                position: relative;
+                font-size: 2.5rem;
+            }
+
+            .card-para {
+                margin-top: 10px;
+            }
+
+            .card-link {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .prevnext {
+        position: absolute;
+        width: 1rem;
+        height: 4rem;
+        right: 10%;
+        bottom: 10px;
+        top: 80%;
+        margin: auto 0;
+
+        .pn-btn {
+            font-size: 2rem;
+        }
+    }
+}

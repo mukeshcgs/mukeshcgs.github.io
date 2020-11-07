@@ -35,7 +35,7 @@
 
 <body>
       <a name="home"></a>
-      <div class="wrapper">
+      <div class="wrapper" id="main-header">
             <!--------------- hero section starts here --------------->
             <!-- <div class="video-container">
                   <video playsinline autoplay muted loop id="bgvid">
@@ -54,10 +54,10 @@
                         <a href="index.html"><img src="./images/logo.png" /></a>
                   </span>
                   <ul id="menu">
-                        <li><a href="#home" class="active">Home</a></li>
+                        <li class="active"><a href="#home">Home</a></li>
                         <li><a href="#about">About us</a></li>
-                        <li><a href="#benifits">Benefits</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#services">Benefits</a></li>
+                        <!-- <li><a href="#services">Services</a></li> -->
                         <li><a href="#team">Pricing</a></li>
                         <li><a href="#contact">Contact</a></li>
                   </ul>
@@ -71,14 +71,17 @@
                   <ul id="menu">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About us</a></li>
-                        <li><a href="#benifits">Benefits</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#services">Benefits</a></li>
+                        <!-- <li><a href="#services">Services</a></li> -->
                         <li><a href="#team">Pricing</a></li>
                         <li><a href="#contact">Contact</a></li>
                   </ul>
             </div>
 
             <!--------------- navbar ends here --------------->
+
+            <a id="home" class="target" name="home"></a>
+
             <div class="slider-holder">
                   <div class="text-slider-wrapper">
                         <div class="text-slider">
@@ -87,7 +90,7 @@
                                           of candidates</h1>
                               </div>
                               <div class="text-slide">
-                                    <h1>2 Reduce your bottomline outgoing on recruiters </br>by more than
+                                    <h1>Reduce your bottomline outgoing on recruiters </br>by more than
                                           <span>50% Genarate more business</span> </h1>
                               </div>
                               <div class="text-slide">
@@ -131,9 +134,12 @@
                               style="background: url(images/02.jpg) no-repeat 50% 50%; background-size: cover;">
                         </div>
                         <div class="image-slide" id="three"
-                              style="background: url(images/01.jpg) no-repeat 50% 50%; background-size: cover;">
+                              style="background: url(images/04.jpg) no-repeat 50% 50%; background-size: cover;">
                         </div>
-                        <!-- <div class="image-slide" id="four"
+                        <!-- <div class="image-slide" id="three"
+                              style="background: url(images/05.jpg) no-repeat 50% 50%; background-size: cover;">
+                        </div>
+                        <div class="image-slide" id="four"
                               style="background: url(images/slider-img-4.jpg) no-repeat 50% 50%; background-size: cover;">
                         </div>
                         <div class="image-slide" id="five"
@@ -144,7 +150,7 @@
 
             <div class="content">
                   <!--------------- about section starts here --------------->
-                  <a name="about"></a>
+                  <a id="about" class="target" name="about"></a>
                   <section class="story">
                         <div class="container-fluid">
                               <div class="section-data">
@@ -190,7 +196,6 @@
                         </div>
                   </section>
                   <!--------------- about section ends here --------------->
-
                   <section class="story">
                         <div class="container-fluid">
                               <div class="section-data">
@@ -241,9 +246,8 @@
                               </div>
                         </div>
                   </section>
-
                   <!--------------- services section starts here --------------->
-                  <a name="services"></a>
+                  <a id="services" class="target" name="services"></a>
                   <section class="services">
                         <div class="container-fluid">
                               <div class="section-data">
@@ -326,13 +330,9 @@
                               </div>
                         </div>
                   </section>
-
                   <!--------------- services section ends here --------------->
-
                   <!--------------- team section starts here --------------->
-
-                  <a name="team"></a>
-
+                  <a id="team" class="target" name="team"></a>
                   <section class="team">
                         <div class="container-fluid">
                               <div class="row">
@@ -351,6 +351,13 @@
                                                       currently incur for continuous contracts. We also do ad-hoc
                                                       once-in-a-while work at a higher price per hour.</div>
                                           </div>
+                                    </div>
+                              </div>
+
+                              <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-8 more wow fadeInUp" data-wow-delay="0.7s">
+                                          <a href="services.html" id="btn">Know more</a>
                                     </div>
                               </div>
                               <div class="row members">
@@ -462,11 +469,8 @@
                         </div>
 
                   </section>
-
                   <!--------------- team section ends here --------------->
-
                   <!--------------- newsletter section starts here --------------->
-
                   <section class="newsletter">
 
                         <div class="container">
@@ -493,12 +497,9 @@
                         </div>
 
                   </section>
-
                   <!--------------- newsletter section ends here --------------->
-
                   <!--------------- contact section starts here --------------->
-
-                  <a name="contact"></a>
+                  <a id="contact" class="target" name="contact"></a>
                   <section class="contact">
                         <div class="container-fluid">
                               <div class="row">
@@ -601,13 +602,12 @@
             </div>
       </div>
 
-
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="js/menuspy.min.js"></script>
       <script src="js/slick.js"></script>
-
       <script src="js/script.js"> </script>
-
       <script src="js/slider.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+main {
+    &#interior {
+        margin-top: 5rem;
+
+        .int-column {
+            display: flex;
+            // align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            width: 100%;
+            .int-project {
+                width: 50%;
+                .image {
+                    padding: 0;
+
+                    a {
+                        display: block;
+
+                        .pro-img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
