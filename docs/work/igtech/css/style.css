@@ -79,10 +79,12 @@ button:focus {
       z-index: 5;
       /* background: rgba(15, 15, 15,0.2); */
       /* background: rgb(255 255 255 / 70%); */
+      background-color: rgb(0 0 0 / 20%) !important;
 }
 
 .nav.scrolled {
-      background-color: #161616 !important;
+      /* background-color: #161616 !important; */
+      background-color: rgb(0 0 0 / 70%) !important;
       transition: background-color 500ms linear;
 }
 
@@ -314,6 +316,27 @@ section {
 
 .more {
       margin: 40px 0;
+}
+
+.more a {
+      text-decoration: none;
+
+      background: none;
+      border: .3pt solid #0066ff;
+      text-transform: uppercase !important;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      padding: 18px 36px;
+      /* color: #0066ff !important; */
+      transition: all 0.3s ease-out;
+      color: #505050;
+}
+
+.more a:hover {
+      border: .3pt solid #000000;
+      text-decoration: none;
+      transition: all 0.3s ease-out;
+
 }
 
 button {
