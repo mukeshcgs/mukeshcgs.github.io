@@ -5,11 +5,11 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 
-    $('#menu li a').on('click', function (event) {
-        event.preventDefault
-        $('.nav #menu li a').removeClass('active');
-        $(this).addClass('active');
-    });
+    // $('#menu li a').on('click', function (event) {
+    //     event.preventDefault
+    //     $('.nav #menu li a').removeClass('active');
+    //     $(this).addClass('active');
+    // });
 
  
     // navigation starts here

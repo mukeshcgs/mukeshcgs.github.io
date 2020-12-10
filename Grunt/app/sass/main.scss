@@ -976,6 +976,28 @@ footer {
     }
 
     .work-exp-block .skills {
+        li {
+
+            .skill-time {}
+
+            div {}
+
+            .skill-name {
+                div {}
+            }
+
+            .skill-type {
+
+                div {
+                    &:nth-child(1) {}
+
+                    &:nth-last-child(1) {}
+                }
+            }
+        }
+    }
+
+    .work-exp-block .skills {
         padding: 1rem 0;
         margin-bottom: 4rem;
 

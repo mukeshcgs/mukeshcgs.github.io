@@ -166,7 +166,7 @@ button:focus {
 
 .nav #menu li a:hover {
       text-decoration: none;
-      color: #0066ff;
+      color: #ffffff;
       transition: all 500ms ease-out;
 }
 

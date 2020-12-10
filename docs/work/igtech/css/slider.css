@@ -60,16 +60,16 @@
     position: absolute;
     top: 50vh;
     left: 0px;
-    background: #0066ff;
-
+    /* background: #0066ff; */
+    background: #2b2b2b
 }
 
 .next {
     position: absolute;
     right: 0px;
     top: 50vh;
-    background: #0066ff;
-
+    /* background: #0066ff; */
+    background: #2b2b2b
 }
 
 .block-1 {

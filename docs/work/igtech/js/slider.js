@@ -1,7 +1,7 @@
 
 var sickPrimary = {
     autoplay: false,
-    autoplaySpeed: 2400,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1800,
@@ -14,7 +14,7 @@ var sickPrimary = {
 
 var sickSecondary = {
     autoplay: false,
-    autoplaySpeed: 2400,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1800,
