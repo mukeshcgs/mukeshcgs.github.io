@@ -18,7 +18,7 @@
     "gh-pages": "npm run build && npm run add-commit && git push && npm run push-to-gh-pages"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "barba.js": "^1.0.0",
     "copy-webpack-plugin": "^5.0.2",
     "cors": "^2.8.4",
