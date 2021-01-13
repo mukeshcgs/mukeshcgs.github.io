@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite default and user settings.
+
+{
+    "files.exclude": {
+        "**/node_modules": true, // this excludes all folders 
+                                 // named "node_modules" from 
+                                 // the explore tree
+
+        // alternative version
+        "node_modules": true    // this excludes the folder 
+                                // only from the root of
+                                // your workspace 
+    },
+    "git.ignoreLimitWarning": true
+}

@@ -1,0 +1,4058 @@
+
+{
+  "status": 200,
+  "type": "stack",
+  "data": {
+    "summary": {
+      "total_cases": 2762485,
+      "active_cases": 1806763,
+      "deaths": 193227,
+      "recovered": 762494,
+      "critical": 58694,
+      "tested": 25022031,
+      "death_ratio": 0.0699468304612805,
+      "recovery_ratio": 0.2760175262553557
+    },
+    "change": {
+      "total_cases": 47489,
+      "active_cases": 26532,
+      "deaths": 2830,
+      "recovered": 18127,
+      "critical": 16,
+      "tested": 785781,
+      "death_ratio": -0.00018110715923076726,
+      "recovery_ratio": 0.0018486972151549041
+    },
+    "generated_on": 1587742470,
+    "regions": {
+      "usa": {
+        "name": "usa",
+        "total_cases": 890198,
+        "active_cases": 749813,
+        "deaths": 50403,
+        "recovered": 89982,
+        "critical": 15042,
+        "tested": 4819705,
+        "death_ratio": 0.05661998791280142,
+        "recovery_ratio": 0.10108088312937122,
+        "change": {
+          "total_cases": 11224,
+          "active_cases": 6217,
+          "deaths": 649,
+          "recovered": 4358,
+          "death_ratio": 0.00001535569387344643,
+          "recovery_ratio": 0.003667307756265753
+        }
+      },
+      "spain": {
+        "name": "spain",
+        "total_cases": 219764,
+        "active_cases": 104885,
+        "deaths": 22524,
+        "recovered": 92355,
+        "critical": 7705,
+        "tested": 930230,
+        "death_ratio": 0.10249176389217524,
+        "recovery_ratio": 0.42024626417429606,
+        "change": {
+          "total_cases": 6740,
+          "active_cases": 3268,
+          "deaths": 367,
+          "recovered": 3105,
+          "death_ratio": -0.0015199906519136885,
+          "recovery_ratio": 0.001279387202687221
+        }
+      },
+      "italy": {
+        "name": "italy",
+        "total_cases": 189973,
+        "active_cases": 106848,
+        "deaths": 25549,
+        "recovered": 57576,
+        "critical": 2267,
+        "tested": 1579909,
+        "death_ratio": 0.13448753243882025,
+        "recovery_ratio": 0.30307464744990076,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "france": {
+        "name": "france",
+        "total_cases": 158183,
+        "active_cases": 94239,
+        "deaths": 21856,
+        "recovered": 42088,
+        "critical": 5053,
+        "tested": 463662,
+        "death_ratio": 0.13816908264478484,
+        "recovery_ratio": 0.2660715753273108,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "germany": {
+        "name": "germany",
+        "total_cases": 153584,
+        "active_cases": 41207,
+        "deaths": 5577,
+        "recovered": 106800,
+        "critical": 2908,
+        "tested": 2072669,
+        "death_ratio": 0.03631237628919679,
+        "recovery_ratio": 0.6953849359308262,
+        "change": {
+          "total_cases": 455,
+          "active_cases": -3047,
+          "deaths": 2,
+          "recovered": 3500,
+          "death_ratio": -0.00009483593056563294,
+          "recovery_ratio": 0.020790313096483937
+        }
+      },
+      "uk": {
+        "name": "uk",
+        "total_cases": 143464,
+        "active_cases": 123958,
+        "deaths": 19506,
+        "recovered": 0,
+        "critical": 1559,
+        "tested": 612031,
+        "death_ratio": 0.13596442313054147,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 5386,
+          "active_cases": 4618,
+          "deaths": 768,
+          "recovered": 0,
+          "death_ratio": 0.0002585177727002508,
+          "recovery_ratio": 0
+        }
+      },
+      "turkey": {
+        "name": "turkey",
+        "total_cases": 101790,
+        "active_cases": 80808,
+        "deaths": 2491,
+        "recovered": 18491,
+        "critical": 1816,
+        "tested": 791906,
+        "death_ratio": 0.024471952058158955,
+        "recovery_ratio": 0.18165831614107475,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "iran": {
+        "name": "iran",
+        "total_cases": 88194,
+        "active_cases": 16021,
+        "deaths": 5574,
+        "recovered": 66599,
+        "critical": 3121,
+        "tested": 399927,
+        "death_ratio": 0.0632015783386625,
+        "recovery_ratio": 0.7551420731569041,
+        "change": {
+          "total_cases": 1168,
+          "active_cases": -681,
+          "deaths": 93,
+          "recovered": 1756,
+          "death_ratio": 0.00022040029991544918,
+          "recovery_ratio": 0.010042907390351519
+        }
+      },
+      "china": {
+        "name": "china",
+        "total_cases": 82804,
+        "active_cases": 915,
+        "deaths": 4632,
+        "recovered": 77257,
+        "critical": 57,
+        "tested": 0,
+        "death_ratio": 0.05593932660257959,
+        "recovery_ratio": 0.9330104825853823,
+        "change": {
+          "total_cases": 6,
+          "active_cases": -44,
+          "deaths": 0,
+          "recovered": 50,
+          "death_ratio": -0.000004053672306277012,
+          "recovery_ratio": 0.0005362682323786228
+        }
+      },
+      "russia": {
+        "name": "russia",
+        "total_cases": 68622,
+        "active_cases": 62439,
+        "deaths": 615,
+        "recovered": 5568,
+        "critical": 2300,
+        "tested": 2550000,
+        "death_ratio": 0.008962140421439188,
+        "recovery_ratio": 0.08114015913263968,
+        "change": {
+          "total_cases": 5849,
+          "active_cases": 5112,
+          "deaths": 60,
+          "recovered": 677,
+          "death_ratio": 0.00012075957298523544,
+          "recovery_ratio": 0.0032244947546427732
+        }
+      },
+      "brazil": {
+        "name": "brazil",
+        "total_cases": 50512,
+        "active_cases": 20574,
+        "deaths": 3365,
+        "recovered": 26573,
+        "critical": 8318,
+        "tested": 291922,
+        "death_ratio": 0.06661783338612606,
+        "recovery_ratio": 0.5260730123535001,
+        "change": {
+          "total_cases": 1020,
+          "active_cases": 968,
+          "deaths": 52,
+          "recovered": 0,
+          "death_ratio": -0.0003222781470510194,
+          "recovery_ratio": -0.010842044625405611
+        }
+      },
+      "belgium": {
+        "name": "belgium",
+        "total_cases": 44293,
+        "active_cases": 27492,
+        "deaths": 6679,
+        "recovered": 10122,
+        "critical": 970,
+        "tested": 189067,
+        "death_ratio": 0.1507913214277651,
+        "recovery_ratio": 0.22852369448897117,
+        "change": {
+          "total_cases": 1496,
+          "active_cases": 985,
+          "deaths": 189,
+          "recovered": 322,
+          "death_ratio": -0.0008548219935027301,
+          "recovery_ratio": -0.00046431868952265254
+        }
+      },
+      "canada": {
+        "name": "canada",
+        "total_cases": 42110,
+        "active_cases": 25202,
+        "deaths": 2147,
+        "recovered": 14761,
+        "critical": 557,
+        "tested": 634917,
+        "death_ratio": 0.05098551412966041,
+        "recovery_ratio": 0.3505343148895749,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "netherlands": {
+        "name": "netherlands",
+        "total_cases": 36535,
+        "active_cases": 32246,
+        "deaths": 4289,
+        "recovered": 0,
+        "critical": 963,
+        "tested": 187000,
+        "death_ratio": 0.11739427945805392,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 806,
+          "active_cases": 694,
+          "deaths": 112,
+          "recovered": 0,
+          "death_ratio": 0.00048644548565054957,
+          "recovery_ratio": 0
+        }
+      },
+      "switzerland": {
+        "name": "switzerland",
+        "total_cases": 28677,
+        "active_cases": 6499,
+        "deaths": 1578,
+        "recovered": 20600,
+        "critical": 386,
+        "tested": 235252,
+        "death_ratio": 0.05502667643058897,
+        "recovery_ratio": 0.7183457125919727,
+        "change": {
+          "total_cases": 181,
+          "active_cases": 152,
+          "deaths": 29,
+          "recovered": 0,
+          "death_ratio": 0.000668169973542368,
+          "recovery_ratio": -0.0045627657909582675
+        }
+      },
+      "india": {
+        "name": "india",
+        "total_cases": 23502,
+        "active_cases": 17768,
+        "deaths": 722,
+        "recovered": 5012,
+        "critical": 0,
+        "tested": 541789,
+        "death_ratio": 0.030720789720023827,
+        "recovery_ratio": 0.2132584460896945,
+        "change": {
+          "total_cases": 463,
+          "active_cases": 462,
+          "deaths": 1,
+          "recovered": 0,
+          "death_ratio": -0.0005739713373137285,
+          "recovery_ratio": -0.004285718153545226
+        }
+      },
+      "portugal": {
+        "name": "portugal",
+        "total_cases": 22797,
+        "active_cases": 20715,
+        "deaths": 854,
+        "recovered": 1228,
+        "critical": 188,
+        "tested": 315758,
+        "death_ratio": 0.03746106943896127,
+        "recovery_ratio": 0.05386673685134009,
+        "change": {
+          "total_cases": 444,
+          "active_cases": 383,
+          "deaths": 34,
+          "recovered": 27,
+          "death_ratio": 0.0007769554497875572,
+          "recovery_ratio": 0.00013793087451371283
+        }
+      },
+      "peru": {
+        "name": "peru",
+        "total_cases": 20914,
+        "active_cases": 12920,
+        "deaths": 572,
+        "recovered": 7422,
+        "critical": 396,
+        "tested": 185238,
+        "death_ratio": 0.027350100411207803,
+        "recovery_ratio": 0.35488189729367886,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "ireland": {
+        "name": "ireland",
+        "total_cases": 17607,
+        "active_cases": 7580,
+        "deaths": 794,
+        "recovered": 9233,
+        "critical": 147,
+        "tested": 111584,
+        "death_ratio": 0.04509570057363549,
+        "recovery_ratio": 0.5243937070483331,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "sweden": {
+        "name": "sweden",
+        "total_cases": 17567,
+        "active_cases": 14865,
+        "deaths": 2152,
+        "recovered": 550,
+        "critical": 547,
+        "tested": 94500,
+        "death_ratio": 0.12250241930893152,
+        "recovery_ratio": 0.031308703819661866,
+        "change": {
+          "total_cases": 812,
+          "active_cases": 681,
+          "deaths": 131,
+          "recovered": 0,
+          "death_ratio": 0.0018817090731809982,
+          "recovery_ratio": -0.0015173182632984422
+        }
+      },
+      "saudi_arabia": {
+        "name": "saudi_arabia",
+        "total_cases": 15102,
+        "active_cases": 12926,
+        "deaths": 127,
+        "recovered": 2049,
+        "critical": 93,
+        "tested": 200000,
+        "death_ratio": 0.008409482187789696,
+        "recovery_ratio": 0.13567739372268572,
+        "change": {
+          "total_cases": 1172,
+          "active_cases": 1042,
+          "deaths": 6,
+          "recovered": 124,
+          "death_ratio": -0.0002768063979963764,
+          "recovery_ratio": -0.0025135610511836104
+        }
+      },
+      "austria": {
+        "name": "austria",
+        "total_cases": 15071,
+        "active_cases": 2669,
+        "deaths": 530,
+        "recovered": 11872,
+        "critical": 156,
+        "tested": 212686,
+        "death_ratio": 0.03516687678322606,
+        "recovery_ratio": 0.7877380399442638,
+        "change": {
+          "total_cases": 69,
+          "active_cases": -117,
+          "deaths": 8,
+          "recovered": 178,
+          "death_ratio": 0.00037151616464187187,
+          "recovery_ratio": 0.008241972753222693
+        }
+      },
+      "israel": {
+        "name": "israel",
+        "total_cases": 14882,
+        "active_cases": 9004,
+        "deaths": 193,
+        "recovered": 5685,
+        "critical": 139,
+        "tested": 240303,
+        "death_ratio": 0.012968687004434888,
+        "recovery_ratio": 0.38200510684047845,
+        "change": {
+          "total_cases": 79,
+          "active_cases": 4,
+          "deaths": 1,
+          "recovered": 74,
+          "death_ratio": -0.0000016568447848645113,
+          "recovery_ratio": 0.002960318621874125
+        }
+      },
+      "japan": {
+        "name": "japan",
+        "total_cases": 12368,
+        "active_cases": 10546,
+        "deaths": 328,
+        "recovered": 1494,
+        "critical": 259,
+        "tested": 135983,
+        "death_ratio": 0.02652005174644243,
+        "recovery_ratio": 0.12079560155239327,
+        "change": {
+          "total_cases": 418,
+          "active_cases": 319,
+          "deaths": 29,
+          "recovered": 70,
+          "death_ratio": 0.001499131244350381,
+          "recovery_ratio": 0.0016324216360752847
+        }
+      },
+      "singapore": {
+        "name": "singapore",
+        "total_cases": 12075,
+        "active_cases": 11139,
+        "deaths": 12,
+        "recovered": 924,
+        "critical": 26,
+        "tested": 94796,
+        "death_ratio": 0.0009937888198757764,
+        "recovery_ratio": 0.07652173913043478,
+        "change": {
+          "total_cases": 897,
+          "active_cases": 897,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.00007974848554558695,
+          "recovery_ratio": -0.006140633387010208
+        }
+      },
+      "chile": {
+        "name": "chile",
+        "total_cases": 11812,
+        "active_cases": 5840,
+        "deaths": 168,
+        "recovered": 5804,
+        "critical": 411,
+        "tested": 135147,
+        "death_ratio": 0.014222824246528954,
+        "recovery_ratio": 0.4913647138503217,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "mexico": {
+        "name": "mexico",
+        "total_cases": 11633,
+        "active_cases": 7937,
+        "deaths": 1069,
+        "recovered": 2627,
+        "critical": 378,
+        "tested": 51297,
+        "death_ratio": 0.09189375053726467,
+        "recovery_ratio": 0.22582308948680477,
+        "change": {
+          "total_cases": 1089,
+          "active_cases": 990,
+          "deaths": 99,
+          "recovered": 0,
+          "death_ratio": -0.00010169711068676313,
+          "recovery_ratio": -0.023323344504090515
+        }
+      },
+      "ecuador": {
+        "name": "ecuador",
+        "total_cases": 11183,
+        "active_cases": 9295,
+        "deaths": 560,
+        "recovered": 1328,
+        "critical": 141,
+        "tested": 34840,
+        "death_ratio": 0.05007600822677278,
+        "recovery_ratio": 0.11875167665206117,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "pakistan": {
+        "name": "pakistan",
+        "total_cases": 11155,
+        "active_cases": 8391,
+        "deaths": 237,
+        "recovered": 2527,
+        "critical": 111,
+        "tested": 131365,
+        "death_ratio": 0.02124607799193187,
+        "recovery_ratio": 0.2265351860152398,
+        "change": {
+          "total_cases": 98,
+          "active_cases": -94,
+          "deaths": 2,
+          "recovered": 190,
+          "death_ratio": -0.00000742657531060259,
+          "recovery_ratio": 0.015175866127385973
+        }
+      },
+      "poland": {
+        "name": "poland",
+        "total_cases": 10759,
+        "active_cases": 8352,
+        "deaths": 463,
+        "recovered": 1944,
+        "critical": 160,
+        "tested": 265201,
+        "death_ratio": 0.04303373919509248,
+        "recovery_ratio": 0.18068593735477276,
+        "change": {
+          "total_cases": 248,
+          "active_cases": 35,
+          "deaths": 9,
+          "recovered": 204,
+          "death_ratio": -0.00015910639524145676,
+          "recovery_ratio": 0.015145075400629482
+        }
+      },
+      "south_korea": {
+        "name": "south_korea",
+        "total_cases": 10708,
+        "active_cases": 1967,
+        "deaths": 240,
+        "recovered": 8501,
+        "critical": 55,
+        "tested": 589520,
+        "death_ratio": 0.022413149047441166,
+        "recovery_ratio": 0.7938924168845722,
+        "change": {
+          "total_cases": 6,
+          "active_cases": -84,
+          "deaths": 0,
+          "recovered": 90,
+          "death_ratio": -0.00001256577221871169,
+          "recovery_ratio": 0.007964552933908853
+        }
+      },
+      "romania": {
+        "name": "romania",
+        "total_cases": 10417,
+        "active_cases": 7048,
+        "deaths": 552,
+        "recovered": 2817,
+        "critical": 241,
+        "tested": 121602,
+        "death_ratio": 0.052990304310262075,
+        "recovery_ratio": 0.2704233464529135,
+        "change": {
+          "total_cases": 321,
+          "active_cases": -25,
+          "deaths": 7,
+          "recovered": 339,
+          "death_ratio": -0.000991470650118273,
+          "recovery_ratio": 0.02497960635782634
+        }
+      },
+      "uae": {
+        "name": "uae",
+        "total_cases": 9281,
+        "active_cases": 7457,
+        "deaths": 64,
+        "recovered": 1760,
+        "critical": 1,
+        "tested": 790000,
+        "death_ratio": 0.0068958086413102035,
+        "recovery_ratio": 0.1896347376360306,
+        "change": {
+          "total_cases": 525,
+          "active_cases": 394,
+          "deaths": 8,
+          "recovered": 123,
+          "death_ratio": 0.0005001942054947625,
+          "recovery_ratio": 0.002677222789068512
+        }
+      },
+      "belarus": {
+        "name": "belarus",
+        "total_cases": 8773,
+        "active_cases": 7590,
+        "deaths": 63,
+        "recovered": 1120,
+        "critical": 92,
+        "tested": 130824,
+        "death_ratio": 0.007181123902883848,
+        "recovery_ratio": 0.1276644249401573,
+        "change": {
+          "total_cases": 751,
+          "active_cases": 566,
+          "deaths": 3,
+          "recovered": 182,
+          "death_ratio": -0.0002983076603173488,
+          "recovery_ratio": 0.01073597816877861
+        }
+      },
+      "qatar": {
+        "name": "qatar",
+        "total_cases": 8525,
+        "active_cases": 7706,
+        "deaths": 10,
+        "recovered": 809,
+        "critical": 72,
+        "tested": 75888,
+        "death_ratio": 0.0011730205278592375,
+        "recovery_ratio": 0.09489736070381231,
+        "change": {
+          "total_cases": 761,
+          "active_cases": 702,
+          "deaths": 0,
+          "recovered": 59,
+          "death_ratio": -0.00011497535055395155,
+          "recovery_ratio": -0.0017023301771768723
+        }
+      },
+      "indonesia": {
+        "name": "indonesia",
+        "total_cases": 8211,
+        "active_cases": 6520,
+        "deaths": 689,
+        "recovered": 1002,
+        "critical": 0,
+        "tested": 64054,
+        "death_ratio": 0.08391182559980515,
+        "recovery_ratio": 0.12203142126415784,
+        "change": {
+          "total_cases": 436,
+          "active_cases": 352,
+          "deaths": 42,
+          "recovered": 42,
+          "death_ratio": 0.000696391516203862,
+          "recovery_ratio": -0.0014412475461315494
+        }
+      },
+      "denmark": {
+        "name": "denmark",
+        "total_cases": 8210,
+        "active_cases": 2281,
+        "deaths": 403,
+        "recovered": 5526,
+        "critical": 69,
+        "tested": 125329,
+        "death_ratio": 0.04908647990255786,
+        "recovery_ratio": 0.6730816077953715,
+        "change": {
+          "total_cases": 137,
+          "active_cases": -14,
+          "deaths": 9,
+          "recovered": 142,
+          "death_ratio": 0.0002818224022481802,
+          "recovery_ratio": 0.006167201750530649
+        }
+      },
+      "ukraine": {
+        "name": "ukraine",
+        "total_cases": 7647,
+        "active_cases": 6853,
+        "deaths": 193,
+        "recovered": 601,
+        "critical": 45,
+        "tested": 77752,
+        "death_ratio": 0.025238655681966784,
+        "recovery_ratio": 0.07859291225317118,
+        "change": {
+          "total_cases": 477,
+          "active_cases": 374,
+          "deaths": 6,
+          "recovered": 97,
+          "death_ratio": -0.000842236926122477,
+          "recovery_ratio": 0.00830002522388247
+        }
+      },
+      "serbia": {
+        "name": "serbia",
+        "total_cases": 7483,
+        "active_cases": 6245,
+        "deaths": 144,
+        "recovered": 1094,
+        "critical": 96,
+        "tested": 54887,
+        "death_ratio": 0.01924361886943739,
+        "recovery_ratio": 0.14619804891086463,
+        "change": {
+          "total_cases": 207,
+          "active_cases": 171,
+          "deaths": 5,
+          "recovered": 31,
+          "death_ratio": 0.00013971562589698214,
+          "recovery_ratio": 0.00010129245127143971
+        }
+      },
+      "norway": {
+        "name": "norway",
+        "total_cases": 7401,
+        "active_cases": 7174,
+        "deaths": 195,
+        "recovered": 32,
+        "critical": 53,
+        "tested": 155125,
+        "death_ratio": 0.0263477908390758,
+        "recovery_ratio": 0.004323740035130388,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -1,
+          "deaths": 1,
+          "recovered": 0,
+          "death_ratio": 0.00013511687609782386,
+          "recovery_ratio": 0
+        }
+      },
+      "philippines": {
+        "name": "philippines",
+        "total_cases": 7192,
+        "active_cases": 5953,
+        "deaths": 477,
+        "recovered": 762,
+        "critical": 1,
+        "tested": 76956,
+        "death_ratio": 0.06632369299221356,
+        "recovery_ratio": 0.10595105672969966,
+        "change": {
+          "total_cases": 211,
+          "active_cases": 156,
+          "deaths": 15,
+          "recovered": 40,
+          "death_ratio": 0.00014406256677308715,
+          "recovery_ratio": 0.0025274784457861854
+        }
+      },
+      "czechia": {
+        "name": "czechia",
+        "total_cases": 7188,
+        "active_cases": 4789,
+        "deaths": 213,
+        "recovered": 2186,
+        "critical": 76,
+        "tested": 203622,
+        "death_ratio": 0.02963272120200334,
+        "recovery_ratio": 0.30411797440178073,
+        "change": {
+          "total_cases": 1,
+          "active_cases": -36,
+          "deaths": 3,
+          "recovered": 34,
+          "death_ratio": 0.0004132972420756928,
+          "recovery_ratio": 0.004688448869569817
+        }
+      },
+      "australia": {
+        "name": "australia",
+        "total_cases": 6675,
+        "active_cases": 1460,
+        "deaths": 79,
+        "recovered": 5136,
+        "critical": 43,
+        "tested": 482371,
+        "death_ratio": 0.011835205992509363,
+        "recovery_ratio": 0.7694382022471911,
+        "change": {
+          "total_cases": 8,
+          "active_cases": -87,
+          "deaths": 4,
+          "recovered": 91,
+          "death_ratio": 0.0005857684643857681,
+          "recovery_ratio": 0.012726037855410599
+        }
+      },
+      "malaysia": {
+        "name": "malaysia",
+        "total_cases": 5691,
+        "active_cases": 1932,
+        "deaths": 96,
+        "recovered": 3663,
+        "critical": 41,
+        "tested": 121722,
+        "death_ratio": 0.01686874011597259,
+        "recovery_ratio": 0.6436478650500791,
+        "change": {
+          "total_cases": 88,
+          "active_cases": -34,
+          "deaths": 1,
+          "recovered": 121,
+          "death_ratio": -0.00008646245407916905,
+          "recovery_ratio": 0.011486522911938857
+        }
+      },
+      "dominican_republic": {
+        "name": "dominican_republic",
+        "total_cases": 5543,
+        "active_cases": 4604,
+        "deaths": 265,
+        "recovered": 674,
+        "critical": 135,
+        "tested": 18261,
+        "death_ratio": 0.047808046184376694,
+        "recovery_ratio": 0.12159480425762223,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -93,
+          "deaths": 0,
+          "recovered": 93,
+          "death_ratio": 0,
+          "recovery_ratio": 0.01677791809489447
+        }
+      },
+      "panama": {
+        "name": "panama",
+        "total_cases": 5166,
+        "active_cases": 4749,
+        "deaths": 146,
+        "recovered": 271,
+        "critical": 86,
+        "tested": 23534,
+        "death_ratio": 0.028261711188540456,
+        "recovery_ratio": 0.052458381726674407,
+        "change": {
+          "total_cases": 174,
+          "active_cases": 156,
+          "deaths": 2,
+          "recovered": 16,
+          "death_ratio": -0.0005844426576133918,
+          "recovery_ratio": 0.0013766509574436384
+        }
+      },
+      "bangladesh": {
+        "name": "bangladesh",
+        "total_cases": 4689,
+        "active_cases": 4446,
+        "deaths": 131,
+        "recovered": 112,
+        "critical": 1,
+        "tested": 39476,
+        "death_ratio": 0.027937726594156536,
+        "recovery_ratio": 0.023885689912561313,
+        "change": {
+          "total_cases": 503,
+          "active_cases": 495,
+          "deaths": 4,
+          "recovered": 4,
+          "death_ratio": -0.002401499397243368,
+          "recovery_ratio": -0.001914596757290575
+        }
+      },
+      "colombia": {
+        "name": "colombia",
+        "total_cases": 4561,
+        "active_cases": 3419,
+        "deaths": 215,
+        "recovered": 927,
+        "critical": 98,
+        "tested": 71500,
+        "death_ratio": 0.04713878535408902,
+        "recovery_ratio": 0.20324490243367682,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "finland": {
+        "name": "finland",
+        "total_cases": 4395,
+        "active_cases": 1718,
+        "deaths": 177,
+        "recovered": 2500,
+        "critical": 61,
+        "tested": 74500,
+        "death_ratio": 0.040273037542662114,
+        "recovery_ratio": 0.5688282138794084,
+        "change": {
+          "total_cases": 111,
+          "active_cases": -394,
+          "deaths": 5,
+          "recovered": 500,
+          "death_ratio": 0.00012364445209255004,
+          "recovery_ratio": 0.10197480584952978
+        }
+      },
+      "egypt": {
+        "name": "egypt",
+        "total_cases": 4092,
+        "active_cases": 2723,
+        "deaths": 294,
+        "recovered": 1075,
+        "critical": 0,
+        "tested": 90000,
+        "death_ratio": 0.0718475073313783,
+        "recovery_ratio": 0.26270772238514173,
+        "change": {
+          "total_cases": 201,
+          "active_cases": 123,
+          "deaths": 7,
+          "recovered": 71,
+          "death_ratio": -0.0019124515480871268,
+          "recovery_ratio": 0.004676367977534457
+        }
+      },
+      "south_africa": {
+        "name": "south_africa",
+        "total_cases": 3953,
+        "active_cases": 2405,
+        "deaths": 75,
+        "recovered": 1473,
+        "critical": 36,
+        "tested": 143570,
+        "death_ratio": 0.018972931950417403,
+        "recovery_ratio": 0.3726283835061978,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "morocco": {
+        "name": "morocco",
+        "total_cases": 3692,
+        "active_cases": 3059,
+        "deaths": 155,
+        "recovered": 478,
+        "critical": 1,
+        "tested": 22816,
+        "death_ratio": 0.04198266522210184,
+        "recovery_ratio": 0.1294691224268689,
+        "change": {
+          "total_cases": 124,
+          "active_cases": 102,
+          "deaths": 0,
+          "recovered": 22,
+          "death_ratio": -0.0014590388137726007,
+          "recovery_ratio": 0.001666431843909244
+        }
+      },
+      "luxembourg": {
+        "name": "luxembourg",
+        "total_cases": 3665,
+        "active_cases": 2854,
+        "deaths": 83,
+        "recovered": 728,
+        "critical": 27,
+        "tested": 36891,
+        "death_ratio": 0.022646657571623464,
+        "recovery_ratio": 0.19863574351978172,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "argentina": {
+        "name": "argentina",
+        "total_cases": 3435,
+        "active_cases": 2292,
+        "deaths": 167,
+        "recovered": 976,
+        "critical": 123,
+        "tested": 44654,
+        "death_ratio": 0.04861717612809316,
+        "recovery_ratio": 0.2841339155749636,
+        "change": {
+          "total_cases": 147,
+          "active_cases": 82,
+          "deaths": 8,
+          "recovered": 57,
+          "death_ratio": 0.0002595118945165134,
+          "recovery_ratio": 0.004632699029951448
+        }
+      },
+      "moldova": {
+        "name": "moldova",
+        "total_cases": 3110,
+        "active_cases": 2271,
+        "deaths": 84,
+        "recovered": 755,
+        "critical": 212,
+        "tested": 11763,
+        "death_ratio": 0.027009646302250803,
+        "recovery_ratio": 0.2427652733118971,
+        "change": {
+          "total_cases": 184,
+          "active_cases": 86,
+          "deaths": 4,
+          "recovered": 94,
+          "death_ratio": -0.00033143367040811694,
+          "recovery_ratio": 0.016859600037802763
+        }
+      },
+      "algeria": {
+        "name": "algeria",
+        "total_cases": 3007,
+        "active_cases": 1245,
+        "deaths": 407,
+        "recovered": 1355,
+        "critical": 40,
+        "tested": 6500,
+        "death_ratio": 0.13535084802128367,
+        "recovery_ratio": 0.45061523112736945,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "thailand": {
+        "name": "thailand",
+        "total_cases": 2854,
+        "active_cases": 314,
+        "deaths": 50,
+        "recovered": 2490,
+        "critical": 61,
+        "tested": 142589,
+        "death_ratio": 0.01751927119831815,
+        "recovery_ratio": 0.8724597056762439,
+        "change": {
+          "total_cases": 15,
+          "active_cases": -45,
+          "deaths": 0,
+          "recovered": 60,
+          "death_ratio": -0.00009256395490481531,
+          "recovery_ratio": 0.016524517229607683
+        }
+      },
+      "kuwait": {
+        "name": "kuwait",
+        "total_cases": 2614,
+        "active_cases": 1986,
+        "deaths": 15,
+        "recovered": 613,
+        "critical": 60,
+        "tested": 0,
+        "death_ratio": 0.005738332058148432,
+        "recovery_ratio": 0.23450650344299923,
+        "change": {
+          "total_cases": 215,
+          "active_cases": 99,
+          "deaths": 1,
+          "recovered": 115,
+          "death_ratio": -0.00009743284389408541,
+          "recovery_ratio": 0.026920009070343948
+        }
+      },
+      "bahrain": {
+        "name": "bahrain",
+        "total_cases": 2506,
+        "active_cases": 1416,
+        "deaths": 8,
+        "recovered": 1082,
+        "critical": 2,
+        "tested": 100031,
+        "death_ratio": 0.0031923383878691143,
+        "recovery_ratio": 0.4317637669592977,
+        "change": {
+          "total_cases": 289,
+          "active_cases": 289,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.00041614153996128713,
+          "recovery_ratio": -0.05628314327976408
+        }
+      },
+      "greece": {
+        "name": "greece",
+        "total_cases": 2490,
+        "active_cases": 1783,
+        "deaths": 130,
+        "recovered": 577,
+        "critical": 48,
+        "tested": 59241,
+        "death_ratio": 0.05220883534136546,
+        "recovery_ratio": 0.2317269076305221,
+        "change": {
+          "total_cases": 27,
+          "active_cases": 22,
+          "deaths": 5,
+          "recovered": 0,
+          "death_ratio": 0.0014577188168019214,
+          "recovery_ratio": -0.0025402462468632203
+        }
+      },
+      "hungary": {
+        "name": "hungary",
+        "total_cases": 2383,
+        "active_cases": 1732,
+        "deaths": 250,
+        "recovered": 401,
+        "critical": 61,
+        "tested": 58251,
+        "death_ratio": 0.1049097775912715,
+        "recovery_ratio": 0.16827528325639948,
+        "change": {
+          "total_cases": 99,
+          "active_cases": 77,
+          "deaths": 11,
+          "recovered": 11,
+          "death_ratio": 0.00026879685571983003,
+          "recovery_ratio": -0.0024777815421994642
+        }
+      },
+      "kazakhstan": {
+        "name": "kazakhstan",
+        "total_cases": 2376,
+        "active_cases": 1749,
+        "deaths": 25,
+        "recovered": 602,
+        "critical": 29,
+        "tested": 153492,
+        "death_ratio": 0.010521885521885523,
+        "recovery_ratio": 0.25336700336700335,
+        "change": {
+          "total_cases": 87,
+          "active_cases": 40,
+          "deaths": 5,
+          "recovered": 42,
+          "death_ratio": 0.001784445591785042,
+          "recovery_ratio": 0.008718685324189901
+        }
+      },
+      "croatia": {
+        "name": "croatia",
+        "total_cases": 2009,
+        "active_cases": 976,
+        "deaths": 51,
+        "recovered": 982,
+        "critical": 19,
+        "tested": 30213,
+        "death_ratio": 0.02538576406172225,
+        "recovery_ratio": 0.4888003982080637,
+        "change": {
+          "total_cases": 28,
+          "active_cases": -72,
+          "deaths": 1,
+          "recovered": 99,
+          "death_ratio": 0.00014598617176768067,
+          "recovery_ratio": 0.04306592067146603
+        }
+      },
+      "oman": {
+        "name": "oman",
+        "total_cases": 1790,
+        "active_cases": 1456,
+        "deaths": 9,
+        "recovered": 325,
+        "critical": 3,
+        "tested": 0,
+        "death_ratio": 0.005027932960893855,
+        "recovery_ratio": 0.18156424581005587,
+        "change": {
+          "total_cases": 74,
+          "active_cases": 56,
+          "deaths": 0,
+          "recovered": 18,
+          "death_ratio": -0.00021682228386139032,
+          "recovery_ratio": 0.0026598169056269716
+        }
+      },
+      "iceland": {
+        "name": "iceland",
+        "total_cases": 1789,
+        "active_cases": 237,
+        "deaths": 10,
+        "recovered": 1542,
+        "critical": 5,
+        "tested": 45286,
+        "death_ratio": 0.005589714924538848,
+        "recovery_ratio": 0.8619340413638904,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -33,
+          "deaths": 0,
+          "recovered": 33,
+          "death_ratio": 0,
+          "recovery_ratio": 0.018446059250978197
+        }
+      },
+      "uzbekistan": {
+        "name": "uzbekistan",
+        "total_cases": 1778,
+        "active_cases": 1172,
+        "deaths": 8,
+        "recovered": 598,
+        "critical": 8,
+        "tested": 210000,
+        "death_ratio": 0.0044994375703037125,
+        "recovery_ratio": 0.3363329583802025,
+        "change": {
+          "total_cases": 20,
+          "active_cases": -18,
+          "deaths": 1,
+          "recovered": 37,
+          "death_ratio": 0.0005176400731478539,
+          "recovery_ratio": 0.0172203303938544
+        }
+      },
+      "iraq": {
+        "name": "iraq",
+        "total_cases": 1677,
+        "active_cases": 423,
+        "deaths": 83,
+        "recovered": 1171,
+        "critical": 0,
+        "tested": 64882,
+        "death_ratio": 0.04949314251639833,
+        "recovery_ratio": 0.6982707215265355,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "estonia": {
+        "name": "estonia",
+        "total_cases": 1605,
+        "active_cases": 1353,
+        "deaths": 46,
+        "recovered": 206,
+        "critical": 6,
+        "tested": 46281,
+        "death_ratio": 0.02866043613707165,
+        "recovery_ratio": 0.12834890965732088,
+        "change": {
+          "total_cases": 13,
+          "active_cases": -2,
+          "deaths": 1,
+          "recovered": 14,
+          "death_ratio": 0.00039410447878019186,
+          "recovery_ratio": 0.007745894581943996
+        }
+      },
+      "armenia": {
+        "name": "armenia",
+        "total_cases": 1596,
+        "active_cases": 841,
+        "deaths": 27,
+        "recovered": 728,
+        "critical": 10,
+        "tested": 16552,
+        "death_ratio": 0.016917293233082706,
+        "recovery_ratio": 0.45614035087719296,
+        "change": {
+          "total_cases": 73,
+          "active_cases": 1,
+          "deaths": 3,
+          "recovered": 69,
+          "death_ratio": 0.00115892159815165,
+          "recovery_ratio": 0.023441729734711036
+        }
+      },
+      "azerbaijan": {
+        "name": "azerbaijan",
+        "total_cases": 1592,
+        "active_cases": 558,
+        "deaths": 21,
+        "recovered": 1013,
+        "critical": 14,
+        "tested": 114410,
+        "death_ratio": 0.013190954773869347,
+        "recovery_ratio": 0.6363065326633166,
+        "change": {
+          "total_cases": 44,
+          "active_cases": -22,
+          "deaths": 1,
+          "recovered": 65,
+          "death_ratio": 0.000271058133042474,
+          "recovery_ratio": 0.023903431888122828
+        }
+      },
+      "new_zealand": {
+        "name": "new_zealand",
+        "total_cases": 1456,
+        "active_cases": 344,
+        "deaths": 17,
+        "recovered": 1095,
+        "critical": 1,
+        "tested": 108238,
+        "death_ratio": 0.011675824175824176,
+        "recovery_ratio": 0.7520604395604396,
+        "change": {
+          "total_cases": 5,
+          "active_cases": -26,
+          "deaths": 1,
+          "recovered": 30,
+          "death_ratio": 0.0006489461606622188,
+          "recovery_ratio": 0.01808387167622172
+        }
+      },
+      "cameroon": {
+        "name": "cameroon",
+        "total_cases": 1430,
+        "active_cases": 719,
+        "deaths": 43,
+        "recovered": 668,
+        "critical": 20,
+        "tested": 0,
+        "death_ratio": 0.03006993006993007,
+        "recovery_ratio": 0.4671328671328671,
+        "change": {
+          "total_cases": 96,
+          "active_cases": 96,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.0021639529885406975,
+          "recovery_ratio": -0.033616758054539175
+        }
+      },
+      "bosnia_and_herzegovina": {
+        "name": "bosnia_and_herzegovina",
+        "total_cases": 1421,
+        "active_cases": 828,
+        "deaths": 55,
+        "recovered": 538,
+        "critical": 4,
+        "tested": 21432,
+        "death_ratio": 0.03870513722730472,
+        "recovery_ratio": 0.378606615059817,
+        "change": {
+          "total_cases": 8,
+          "active_cases": -46,
+          "deaths": 1,
+          "recovered": 53,
+          "death_ratio": 0.0004885767177505787,
+          "recovery_ratio": 0.035365284557340004
+        }
+      },
+      "lithuania": {
+        "name": "lithuania",
+        "total_cases": 1410,
+        "active_cases": 940,
+        "deaths": 40,
+        "recovered": 430,
+        "critical": 17,
+        "tested": 90992,
+        "death_ratio": 0.028368794326241134,
+        "recovery_ratio": 0.3049645390070922,
+        "change": {
+          "total_cases": 12,
+          "active_cases": -19,
+          "deaths": 0,
+          "recovered": 31,
+          "death_ratio": -0.00024350896417374424,
+          "recovery_ratio": 0.01955681368520379
+        }
+      },
+      "slovenia": {
+        "name": "slovenia",
+        "total_cases": 1373,
+        "active_cases": 1082,
+        "deaths": 80,
+        "recovered": 211,
+        "critical": 23,
+        "tested": 45703,
+        "death_ratio": 0.05826656955571741,
+        "recovery_ratio": 0.15367807720320467,
+        "change": {
+          "total_cases": 7,
+          "active_cases": 6,
+          "deaths": 1,
+          "recovered": 0,
+          "death_ratio": 0.0004334802438579616,
+          "recovery_ratio": -0.0007875157689768708
+        }
+      },
+      "slovakia": {
+        "name": "slovakia",
+        "total_cases": 1360,
+        "active_cases": 988,
+        "deaths": 17,
+        "recovered": 355,
+        "critical": 8,
+        "tested": 61261,
+        "death_ratio": 0.0125,
+        "recovery_ratio": 0.2610294117647059,
+        "change": {
+          "total_cases": 35,
+          "active_cases": -34,
+          "deaths": 2,
+          "recovered": 67,
+          "death_ratio": 0.0011792452830188694,
+          "recovery_ratio": 0.04367092119866817
+        }
+      },
+      "afghanistan": {
+        "name": "afghanistan",
+        "total_cases": 1351,
+        "active_cases": 1120,
+        "deaths": 43,
+        "recovered": 188,
+        "critical": 7,
+        "tested": 6422,
+        "death_ratio": 0.03182827535159141,
+        "recovery_ratio": 0.1391561806069578,
+        "change": {
+          "total_cases": 72,
+          "active_cases": 62,
+          "deaths": 1,
+          "recovered": 9,
+          "death_ratio": -0.0010098794568526859,
+          "recovery_ratio": -0.0007969077433158389
+        }
+      },
+      "north_macedonia": {
+        "name": "north_macedonia",
+        "total_cases": 1326,
+        "active_cases": 932,
+        "deaths": 57,
+        "recovered": 337,
+        "critical": 14,
+        "tested": 13649,
+        "death_ratio": 0.042986425339366516,
+        "recovery_ratio": 0.25414781297134237,
+        "change": {
+          "total_cases": 26,
+          "active_cases": -11,
+          "deaths": 1,
+          "recovered": 36,
+          "death_ratio": -0.00009049773755655938,
+          "recovery_ratio": 0.022609351432880842
+        }
+      },
+      "ghana": {
+        "name": "ghana",
+        "total_cases": 1279,
+        "active_cases": 1135,
+        "deaths": 10,
+        "recovered": 134,
+        "critical": 4,
+        "tested": 88188,
+        "death_ratio": 0.007818608287724784,
+        "recovery_ratio": 0.10476935105551212,
+        "change": {
+          "total_cases": 125,
+          "active_cases": 89,
+          "deaths": 1,
+          "recovered": 35,
+          "death_ratio": 0.000019648149076604074,
+          "recovery_ratio": 0.01898078953038214
+        }
+      },
+      "cuba": {
+        "name": "cuba",
+        "total_cases": 1235,
+        "active_cases": 827,
+        "deaths": 43,
+        "recovered": 365,
+        "critical": 14,
+        "tested": 34243,
+        "death_ratio": 0.034817813765182185,
+        "recovery_ratio": 0.29554655870445345,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "bulgaria": {
+        "name": "bulgaria",
+        "total_cases": 1188,
+        "active_cases": 941,
+        "deaths": 54,
+        "recovered": 193,
+        "critical": 37,
+        "tested": 27000,
+        "death_ratio": 0.045454545454545456,
+        "recovery_ratio": 0.16245791245791247,
+        "change": {
+          "total_cases": 91,
+          "active_cases": 86,
+          "deaths": 2,
+          "recovered": 3,
+          "death_ratio": -0.0019474600149167118,
+          "recovery_ratio": -0.01074172291127623
+        }
+      },
+      "hong_kong": {
+        "name": "hong_kong",
+        "total_cases": 1036,
+        "active_cases": 333,
+        "deaths": 4,
+        "recovered": 699,
+        "critical": 9,
+        "tested": 131786,
+        "death_ratio": 0.003861003861003861,
+        "recovery_ratio": 0.6747104247104247,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "ivory_coast": {
+        "name": "ivory_coast",
+        "total_cases": 1004,
+        "active_cases": 631,
+        "deaths": 14,
+        "recovered": 359,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.013944223107569721,
+        "recovery_ratio": 0.35756972111553786,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "djibouti": {
+        "name": "djibouti",
+        "total_cases": 999,
+        "active_cases": 667,
+        "deaths": 2,
+        "recovered": 330,
+        "critical": 0,
+        "tested": 11090,
+        "death_ratio": 0.002002002002002002,
+        "recovery_ratio": 0.3303303303303303,
+        "change": {
+          "total_cases": 13,
+          "active_cases": -65,
+          "deaths": 0,
+          "recovered": 78,
+          "death_ratio": -0.00002639556392091888,
+          "recovery_ratio": 0.07475223702404227
+        }
+      },
+      "nigeria": {
+        "name": "nigeria",
+        "total_cases": 981,
+        "active_cases": 753,
+        "deaths": 31,
+        "recovered": 197,
+        "critical": 2,
+        "tested": 8003,
+        "death_ratio": 0.03160040774719674,
+        "recovery_ratio": 0.20081549439347604,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "tunisia": {
+        "name": "tunisia",
+        "total_cases": 918,
+        "active_cases": 690,
+        "deaths": 38,
+        "recovered": 190,
+        "critical": 32,
+        "tested": 19411,
+        "death_ratio": 0.04139433551198257,
+        "recovery_ratio": 0.20697167755991286,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "guinea": {
+        "name": "guinea",
+        "total_cases": 862,
+        "active_cases": 686,
+        "deaths": 6,
+        "recovered": 170,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.0069605568445475635,
+        "recovery_ratio": 0.19721577726218098,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "cyprus": {
+        "name": "cyprus",
+        "total_cases": 804,
+        "active_cases": 692,
+        "deaths": 14,
+        "recovered": 98,
+        "critical": 15,
+        "tested": 40745,
+        "death_ratio": 0.017412935323383085,
+        "recovery_ratio": 0.12189054726368159,
+        "change": {
+          "total_cases": 9,
+          "active_cases": 8,
+          "deaths": 1,
+          "recovered": 0,
+          "death_ratio": 0.00106073406552145,
+          "recovery_ratio": -0.0013798929878907351
+        }
+      },
+      "latvia": {
+        "name": "latvia",
+        "total_cases": 784,
+        "active_cases": 639,
+        "deaths": 12,
+        "recovered": 133,
+        "critical": 6,
+        "tested": 43080,
+        "death_ratio": 0.015306122448979591,
+        "recovery_ratio": 0.16964285714285715,
+        "change": {
+          "total_cases": 6,
+          "active_cases": 5,
+          "deaths": 1,
+          "recovered": 0,
+          "death_ratio": 0.001167304968259798,
+          "recovery_ratio": -0.001308299669482177
+        }
+      },
+      "andorra": {
+        "name": "andorra",
+        "total_cases": 723,
+        "active_cases": 353,
+        "deaths": 37,
+        "recovered": 333,
+        "critical": 17,
+        "tested": 1673,
+        "death_ratio": 0.051175656984785614,
+        "recovery_ratio": 0.4605809128630705,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "diamond_princess": {
+        "name": "diamond_princess",
+        "total_cases": 712,
+        "active_cases": 54,
+        "deaths": 13,
+        "recovered": 645,
+        "critical": 4,
+        "tested": 0,
+        "death_ratio": 0.018258426966292134,
+        "recovery_ratio": 0.9058988764044944,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "bolivia": {
+        "name": "bolivia",
+        "total_cases": 703,
+        "active_cases": 616,
+        "deaths": 43,
+        "recovered": 44,
+        "critical": 3,
+        "tested": 4420,
+        "death_ratio": 0.06116642958748222,
+        "recovery_ratio": 0.06258890469416785,
+        "change": {
+          "total_cases": 31,
+          "active_cases": 28,
+          "deaths": 3,
+          "recovered": 0,
+          "death_ratio": 0.0016426200636726965,
+          "recovery_ratio": -0.0028872857820226305
+        }
+      },
+      "lebanon": {
+        "name": "lebanon",
+        "total_cases": 696,
+        "active_cases": 534,
+        "deaths": 22,
+        "recovered": 140,
+        "critical": 46,
+        "tested": 25337,
+        "death_ratio": 0.031609195402298854,
+        "recovery_ratio": 0.20114942528735633,
+        "change": {
+          "total_cases": 8,
+          "active_cases": 8,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.0003675487837476593,
+          "recovery_ratio": -0.0023389468056669305
+        }
+      },
+      "costa_rica": {
+        "name": "costa_rica",
+        "total_cases": 686,
+        "active_cases": 484,
+        "deaths": 6,
+        "recovered": 196,
+        "critical": 8,
+        "tested": 12073,
+        "death_ratio": 0.008746355685131196,
+        "recovery_ratio": 0.2857142857142857,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "albania": {
+        "name": "albania",
+        "total_cases": 678,
+        "active_cases": 257,
+        "deaths": 27,
+        "recovered": 394,
+        "critical": 4,
+        "tested": 6509,
+        "death_ratio": 0.03982300884955752,
+        "recovery_ratio": 0.5811209439528023,
+        "change": {
+          "total_cases": 15,
+          "active_cases": 6,
+          "deaths": 0,
+          "recovered": 9,
+          "death_ratio": -0.0009009730508949682,
+          "recovery_ratio": 0.00042712796486865656
+        }
+      },
+      "niger": {
+        "name": "niger",
+        "total_cases": 671,
+        "active_cases": 391,
+        "deaths": 24,
+        "recovered": 256,
+        "critical": 0,
+        "tested": 4832,
+        "death_ratio": 0.03576751117734724,
+        "recovery_ratio": 0.38152011922503726,
+        "change": {
+          "total_cases": 9,
+          "active_cases": -56,
+          "deaths": 2,
+          "recovered": 63,
+          "death_ratio": 0.0025348827785557013,
+          "recovery_ratio": 0.08997933372654782
+        }
+      },
+      "kyrgyzstan": {
+        "name": "kyrgyzstan",
+        "total_cases": 656,
+        "active_cases": 326,
+        "deaths": 8,
+        "recovered": 322,
+        "critical": 11,
+        "tested": 39615,
+        "death_ratio": 0.012195121951219513,
+        "recovery_ratio": 0.49085365853658536,
+        "change": {
+          "total_cases": 25,
+          "active_cases": 5,
+          "deaths": 0,
+          "recovered": 20,
+          "death_ratio": -0.0004831664798422945,
+          "recovery_ratio": 0.012248270264002159
+        }
+      },
+      "burkina_faso": {
+        "name": "burkina_faso",
+        "total_cases": 616,
+        "active_cases": 165,
+        "deaths": 41,
+        "recovered": 410,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.06655844155844155,
+        "recovery_ratio": 0.6655844155844156,
+        "change": {
+          "total_cases": 7,
+          "active_cases": -16,
+          "deaths": 2,
+          "recovered": 21,
+          "death_ratio": 0.002519032691446474,
+          "recovery_ratio": 0.02683236303925962
+        }
+      },
+      "honduras": {
+        "name": "honduras",
+        "total_cases": 562,
+        "active_cases": 465,
+        "deaths": 47,
+        "recovered": 50,
+        "critical": 10,
+        "tested": 3107,
+        "death_ratio": 0.08362989323843416,
+        "recovery_ratio": 0.08896797153024912,
+        "change": {
+          "total_cases": 43,
+          "active_cases": 24,
+          "deaths": 0,
+          "recovered": 19,
+          "death_ratio": -0.0069288736209107415,
+          "recovery_ratio": 0.029237721048553544
+        }
+      },
+      "uruguay": {
+        "name": "uruguay",
+        "total_cases": 557,
+        "active_cases": 191,
+        "deaths": 12,
+        "recovered": 354,
+        "critical": 10,
+        "tested": 15142,
+        "death_ratio": 0.02154398563734291,
+        "recovery_ratio": 0.6355475763016158,
+        "change": {
+          "total_cases": 8,
+          "active_cases": -9,
+          "deaths": 0,
+          "recovered": 17,
+          "death_ratio": -0.0003139378599248503,
+          "recovery_ratio": 0.021704224753346213
+        }
+      },
+      "senegal": {
+        "name": "senegal",
+        "total_cases": 545,
+        "active_cases": 276,
+        "deaths": 7,
+        "recovered": 262,
+        "critical": 1,
+        "tested": 466,
+        "death_ratio": 0.012844036697247707,
+        "recovery_ratio": 0.48073394495412847,
+        "change": {
+          "total_cases": 66,
+          "active_cases": 60,
+          "deaths": 1,
+          "recovered": 5,
+          "death_ratio": 0.0003179406638447839,
+          "recovery_ratio": -0.05580050180996343
+        }
+      },
+      "channel_islands": {
+        "name": "channel_islands",
+        "total_cases": 521,
+        "active_cases": 197,
+        "deaths": 29,
+        "recovered": 295,
+        "critical": 0,
+        "tested": 3320,
+        "death_ratio": 0.05566218809980806,
+        "recovery_ratio": 0.5662188099808061,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "san_marino": {
+        "name": "san_marino",
+        "total_cases": 501,
+        "active_cases": 398,
+        "deaths": 40,
+        "recovered": 63,
+        "critical": 3,
+        "tested": 1929,
+        "death_ratio": 0.07984031936127745,
+        "recovery_ratio": 0.12574850299401197,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "palestine": {
+        "name": "palestine",
+        "total_cases": 480,
+        "active_cases": 384,
+        "deaths": 4,
+        "recovered": 92,
+        "critical": 0,
+        "tested": 27000,
+        "death_ratio": 0.008333333333333333,
+        "recovery_ratio": 0.19166666666666668,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "malta": {
+        "name": "malta",
+        "total_cases": 447,
+        "active_cases": 221,
+        "deaths": 3,
+        "recovered": 223,
+        "critical": 2,
+        "tested": 27422,
+        "death_ratio": 0.006711409395973154,
+        "recovery_ratio": 0.4988814317673378,
+        "change": {
+          "total_cases": 2,
+          "active_cases": -17,
+          "deaths": 0,
+          "recovered": 19,
+          "death_ratio": -0.00003016363773471111,
+          "recovery_ratio": 0.04045446547520298
+        }
+      },
+      "jordan": {
+        "name": "jordan",
+        "total_cases": 437,
+        "active_cases": 112,
+        "deaths": 7,
+        "recovered": 318,
+        "critical": 5,
+        "tested": 36000,
+        "death_ratio": 0.016018306636155607,
+        "recovery_ratio": 0.7276887871853547,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "georgia": {
+        "name": "georgia",
+        "total_cases": 431,
+        "active_cases": 294,
+        "deaths": 5,
+        "recovered": 132,
+        "critical": 6,
+        "tested": 8375,
+        "death_ratio": 0.01160092807424594,
+        "recovery_ratio": 0.3062645011600928,
+        "change": {
+          "total_cases": 6,
+          "active_cases": -15,
+          "deaths": 0,
+          "recovered": 21,
+          "death_ratio": -0.00016377780810700182,
+          "recovery_ratio": 0.04508803057185751
+        }
+      },
+      "taiwan*": {
+        "name": "taiwan*",
+        "total_cases": 428,
+        "active_cases": 158,
+        "deaths": 6,
+        "recovered": 264,
+        "critical": 0,
+        "tested": 59026,
+        "death_ratio": 0.014018691588785047,
+        "recovery_ratio": 0.616822429906542,
+        "change": {
+          "total_cases": 1,
+          "active_cases": -10,
+          "deaths": 0,
+          "recovered": 11,
+          "death_ratio": -0.000032830659458513156,
+          "recovery_ratio": 0.024316575105605254
+        }
+      },
+      "sri_lanka": {
+        "name": "sri_lanka",
+        "total_cases": 416,
+        "active_cases": 300,
+        "deaths": 7,
+        "recovered": 109,
+        "critical": 2,
+        "tested": 13142,
+        "death_ratio": 0.016826923076923076,
+        "recovery_ratio": 0.2620192307692308,
+        "change": {
+          "total_cases": 48,
+          "active_cases": 46,
+          "deaths": 0,
+          "recovered": 2,
+          "death_ratio": -0.0021948160535117077,
+          "recovery_ratio": -0.028741638795986624
+        }
+      },
+      "reunion": {
+        "name": "reunion",
+        "total_cases": 412,
+        "active_cases": 174,
+        "deaths": 0,
+        "recovered": 238,
+        "critical": 2,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.5776699029126213,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "drc": {
+        "name": "drc",
+        "total_cases": 394,
+        "active_cases": 321,
+        "deaths": 25,
+        "recovered": 48,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.06345177664974619,
+        "recovery_ratio": 0.1218274111675127,
+        "change": {
+          "total_cases": 17,
+          "active_cases": 16,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": -0.002861220697733924,
+          "recovery_ratio": -0.0028410238457498987
+        }
+      },
+      "guatemala": {
+        "name": "guatemala",
+        "total_cases": 384,
+        "active_cases": 343,
+        "deaths": 11,
+        "recovered": 30,
+        "critical": 5,
+        "tested": 7200,
+        "death_ratio": 0.028645833333333332,
+        "recovery_ratio": 0.078125,
+        "change": {
+          "total_cases": 42,
+          "active_cases": 36,
+          "deaths": 1,
+          "recovered": 5,
+          "death_ratio": -0.0005939327485380112,
+          "recovery_ratio": 0.0050255847953216415
+        }
+      },
+      "mayotte": {
+        "name": "mayotte",
+        "total_cases": 354,
+        "active_cases": 206,
+        "deaths": 4,
+        "recovered": 144,
+        "critical": 4,
+        "tested": 2200,
+        "death_ratio": 0.011299435028248588,
+        "recovery_ratio": 0.4067796610169492,
+        "change": {
+          "total_cases": 28,
+          "active_cases": 9,
+          "deaths": 0,
+          "recovered": 19,
+          "death_ratio": -0.0009705036220581612,
+          "recovery_ratio": 0.023344078194863283
+        }
+      },
+      "kenya": {
+        "name": "kenya",
+        "total_cases": 336,
+        "active_cases": 228,
+        "deaths": 14,
+        "recovered": 94,
+        "critical": 2,
+        "tested": 16738,
+        "death_ratio": 0.041666666666666664,
+        "recovery_ratio": 0.27976190476190477,
+        "change": {
+          "total_cases": 16,
+          "active_cases": 11,
+          "deaths": 0,
+          "recovered": 5,
+          "death_ratio": -0.002083333333333333,
+          "recovery_ratio": 0.001636904761904756
+        }
+      },
+      "mauritius": {
+        "name": "mauritius",
+        "total_cases": 331,
+        "active_cases": 56,
+        "deaths": 9,
+        "recovered": 266,
+        "critical": 3,
+        "tested": 12835,
+        "death_ratio": 0.027190332326283987,
+        "recovery_ratio": 0.8036253776435045,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "somalia": {
+        "name": "somalia",
+        "total_cases": 328,
+        "active_cases": 304,
+        "deaths": 16,
+        "recovered": 8,
+        "critical": 2,
+        "tested": 0,
+        "death_ratio": 0.04878048780487805,
+        "recovery_ratio": 0.024390243902439025,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "montenegro": {
+        "name": "montenegro",
+        "total_cases": 319,
+        "active_cases": 191,
+        "deaths": 5,
+        "recovered": 123,
+        "critical": 7,
+        "tested": 5085,
+        "death_ratio": 0.01567398119122257,
+        "recovery_ratio": 0.38557993730407525,
+        "change": {
+          "total_cases": 3,
+          "active_cases": 3,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.00014880361890401428,
+          "recovery_ratio": -0.0036605690250386957
+        }
+      },
+      "venezuela": {
+        "name": "venezuela",
+        "total_cases": 311,
+        "active_cases": 175,
+        "deaths": 10,
+        "recovered": 126,
+        "critical": 4,
+        "tested": 347236,
+        "death_ratio": 0.03215434083601286,
+        "recovery_ratio": 0.40514469453376206,
+        "change": {
+          "total_cases": 13,
+          "active_cases": 9,
+          "deaths": 0,
+          "recovered": 4,
+          "death_ratio": -0.0014027061438529123,
+          "recovery_ratio": -0.004251278620600374
+        }
+      },
+      "mali": {
+        "name": "mali",
+        "total_cases": 309,
+        "active_cases": 211,
+        "deaths": 21,
+        "recovered": 77,
+        "critical": 0,
+        "tested": 2023,
+        "death_ratio": 0.06796116504854369,
+        "recovery_ratio": 0.24919093851132687,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "isle_of_man": {
+        "name": "isle_of_man",
+        "total_cases": 307,
+        "active_cases": 70,
+        "deaths": 16,
+        "recovered": 221,
+        "critical": 20,
+        "tested": 2674,
+        "death_ratio": 0.05211726384364821,
+        "recovery_ratio": 0.7198697068403909,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "tanzania": {
+        "name": "tanzania",
+        "total_cases": 284,
+        "active_cases": 226,
+        "deaths": 10,
+        "recovered": 48,
+        "critical": 7,
+        "tested": 0,
+        "death_ratio": 0.035211267605633804,
+        "recovery_ratio": 0.16901408450704225,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -37,
+          "deaths": 0,
+          "recovered": 37,
+          "death_ratio": 0,
+          "recovery_ratio": 0.13028169014084506
+        }
+      },
+      "vietnam": {
+        "name": "vietnam",
+        "total_cases": 270,
+        "active_cases": 45,
+        "deaths": 0,
+        "recovered": 225,
+        "critical": 8,
+        "tested": 206253,
+        "death_ratio": 0,
+        "recovery_ratio": 0.8333333333333334,
+        "change": {
+          "total_cases": 2,
+          "active_cases": 1,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": -0.0024875621890546595
+        }
+      },
+      "el_salvador": {
+        "name": "el_salvador",
+        "total_cases": 261,
+        "active_cases": 181,
+        "deaths": 8,
+        "recovered": 72,
+        "critical": 2,
+        "tested": 16418,
+        "death_ratio": 0.03065134099616858,
+        "recovery_ratio": 0.27586206896551724,
+        "change": {
+          "total_cases": 11,
+          "active_cases": 6,
+          "deaths": 0,
+          "recovered": 5,
+          "death_ratio": -0.0013486590038314199,
+          "recovery_ratio": 0.007862068965517222
+        }
+      },
+      "jamaica": {
+        "name": "jamaica",
+        "total_cases": 257,
+        "active_cases": 223,
+        "deaths": 6,
+        "recovered": 28,
+        "critical": 0,
+        "tested": 2213,
+        "death_ratio": 0.023346303501945526,
+        "recovery_ratio": 0.10894941634241245,
+        "change": {
+          "total_cases": 5,
+          "active_cases": 5,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.0004632203075782826,
+          "recovery_ratio": -0.002161694768698652
+        }
+      },
+      "paraguay": {
+        "name": "paraguay",
+        "total_cases": 220,
+        "active_cases": 141,
+        "deaths": 9,
+        "recovered": 70,
+        "critical": 1,
+        "tested": 6917,
+        "death_ratio": 0.04090909090909091,
+        "recovery_ratio": 0.3181818181818182,
+        "change": {
+          "total_cases": 7,
+          "active_cases": 4,
+          "deaths": 0,
+          "recovered": 3,
+          "death_ratio": -0.0013444302176696538,
+          "recovery_ratio": 0.0036278275714895503
+        }
+      },
+      "faeroe_islands": {
+        "name": "faeroe_islands",
+        "total_cases": 187,
+        "active_cases": 9,
+        "deaths": 0,
+        "recovered": 178,
+        "critical": 0,
+        "tested": 6458,
+        "death_ratio": 0,
+        "recovery_ratio": 0.9518716577540107,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "congo": {
+        "name": "congo",
+        "total_cases": 186,
+        "active_cases": 164,
+        "deaths": 6,
+        "recovered": 16,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.03225806451612903,
+        "recovery_ratio": 0.08602150537634409,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "sudan": {
+        "name": "sudan",
+        "total_cases": 174,
+        "active_cases": 144,
+        "deaths": 16,
+        "recovered": 14,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.09195402298850575,
+        "recovery_ratio": 0.08045977011494253,
+        "change": {
+          "total_cases": 12,
+          "active_cases": 9,
+          "deaths": 3,
+          "recovered": 0,
+          "death_ratio": 0.011707109408258837,
+          "recovery_ratio": -0.005959982971477221
+        }
+      },
+      "martinique": {
+        "name": "martinique",
+        "total_cases": 170,
+        "active_cases": 79,
+        "deaths": 14,
+        "recovered": 77,
+        "critical": 6,
+        "tested": 0,
+        "death_ratio": 0.08235294117647059,
+        "recovery_ratio": 0.45294117647058824,
+        "change": {
+          "total_cases": 6,
+          "active_cases": 2,
+          "deaths": 0,
+          "recovered": 4,
+          "death_ratio": -0.0030129124820660047,
+          "recovery_ratio": 0.007819225251076034
+        }
+      },
+      "gabon": {
+        "name": "gabon",
+        "total_cases": 167,
+        "active_cases": 141,
+        "deaths": 2,
+        "recovered": 24,
+        "critical": 1,
+        "tested": 572,
+        "death_ratio": 0.011976047904191617,
+        "recovery_ratio": 0.1437125748502994,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "rwanda": {
+        "name": "rwanda",
+        "total_cases": 154,
+        "active_cases": 67,
+        "deaths": 0,
+        "recovered": 87,
+        "critical": 0,
+        "tested": 6959,
+        "death_ratio": 0,
+        "recovery_ratio": 0.564935064935065,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "guadeloupe": {
+        "name": "guadeloupe",
+        "total_cases": 149,
+        "active_cases": 55,
+        "deaths": 12,
+        "recovered": 82,
+        "critical": 11,
+        "tested": 0,
+        "death_ratio": 0.08053691275167785,
+        "recovery_ratio": 0.5503355704697986,
+        "change": {
+          "total_cases": 1,
+          "active_cases": -5,
+          "deaths": 0,
+          "recovered": 6,
+          "death_ratio": -0.0005441683294032384,
+          "recovery_ratio": 0.036822056956285154
+        }
+      },
+      "myanmar": {
+        "name": "myanmar",
+        "total_cases": 139,
+        "active_cases": 125,
+        "deaths": 5,
+        "recovered": 9,
+        "critical": 0,
+        "tested": 5775,
+        "death_ratio": 0.03597122302158273,
+        "recovery_ratio": 0.06474820143884892,
+        "change": {
+          "total_cases": 7,
+          "active_cases": 7,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.0019075648572051476,
+          "recovery_ratio": -0.003433616742969256
+        }
+      },
+      "brunei": {
+        "name": "brunei",
+        "total_cases": 138,
+        "active_cases": 17,
+        "deaths": 1,
+        "recovered": 120,
+        "critical": 2,
+        "tested": 12770,
+        "death_ratio": 0.007246376811594203,
+        "recovery_ratio": 0.8695652173913043,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -1,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": 0.007246376811594124
+        }
+      },
+      "gibraltar": {
+        "name": "gibraltar",
+        "total_cases": 133,
+        "active_cases": 4,
+        "deaths": 0,
+        "recovered": 129,
+        "critical": 0,
+        "tested": 2062,
+        "death_ratio": 0,
+        "recovery_ratio": 0.9699248120300752,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "cambodia": {
+        "name": "cambodia",
+        "total_cases": 122,
+        "active_cases": 12,
+        "deaths": 0,
+        "recovered": 110,
+        "critical": 1,
+        "tested": 5768,
+        "death_ratio": 0,
+        "recovery_ratio": 0.9016393442622951,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "madagascar": {
+        "name": "madagascar",
+        "total_cases": 122,
+        "active_cases": 61,
+        "deaths": 0,
+        "recovered": 61,
+        "critical": 1,
+        "tested": 2357,
+        "death_ratio": 0,
+        "recovery_ratio": 0.5,
+        "change": {
+          "total_cases": 1,
+          "active_cases": -2,
+          "deaths": 0,
+          "recovered": 3,
+          "death_ratio": 0,
+          "recovery_ratio": 0.020661157024793375
+        }
+      },
+      "ethiopia": {
+        "name": "ethiopia",
+        "total_cases": 117,
+        "active_cases": 89,
+        "deaths": 3,
+        "recovered": 25,
+        "critical": 0,
+        "tested": 11669,
+        "death_ratio": 0.02564102564102564,
+        "recovery_ratio": 0.21367521367521367,
+        "change": {
+          "total_cases": 1,
+          "active_cases": -3,
+          "deaths": 0,
+          "recovered": 4,
+          "death_ratio": -0.00022104332449160088,
+          "recovery_ratio": 0.032640730916592975
+        }
+      },
+      "liberia": {
+        "name": "liberia",
+        "total_cases": 117,
+        "active_cases": 84,
+        "deaths": 8,
+        "recovered": 25,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.06837606837606838,
+        "recovery_ratio": 0.21367521367521367,
+        "change": {
+          "total_cases": 16,
+          "active_cases": 11,
+          "deaths": 0,
+          "recovered": 5,
+          "death_ratio": -0.010831852416010826,
+          "recovery_ratio": 0.015655411695015636
+        }
+      },
+      "maldives": {
+        "name": "maldives",
+        "total_cases": 116,
+        "active_cases": 100,
+        "deaths": 0,
+        "recovered": 16,
+        "critical": 2,
+        "tested": 5296,
+        "death_ratio": 0,
+        "recovery_ratio": 0.13793103448275862,
+        "change": {
+          "total_cases": 8,
+          "active_cases": 8,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": -0.010217113665389521
+        }
+      },
+      "trinidad_and_tobago": {
+        "name": "trinidad_and_tobago",
+        "total_cases": 115,
+        "active_cases": 59,
+        "deaths": 8,
+        "recovered": 48,
+        "critical": 0,
+        "tested": 1473,
+        "death_ratio": 0.06956521739130435,
+        "recovery_ratio": 0.41739130434782606,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -3,
+          "deaths": 0,
+          "recovered": 3,
+          "death_ratio": 0,
+          "recovery_ratio": 0.02608695652173909
+        }
+      },
+      "french_guiana": {
+        "name": "french_guiana",
+        "total_cases": 107,
+        "active_cases": 22,
+        "deaths": 1,
+        "recovered": 84,
+        "critical": 1,
+        "tested": 0,
+        "death_ratio": 0.009345794392523364,
+        "recovery_ratio": 0.7850467289719626,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "aruba": {
+        "name": "aruba",
+        "total_cases": 100,
+        "active_cases": 30,
+        "deaths": 2,
+        "recovered": 68,
+        "critical": 4,
+        "tested": 1535,
+        "death_ratio": 0.02,
+        "recovery_ratio": 0.68,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "bermuda": {
+        "name": "bermuda",
+        "total_cases": 99,
+        "active_cases": 55,
+        "deaths": 5,
+        "recovered": 39,
+        "critical": 10,
+        "tested": 949,
+        "death_ratio": 0.050505050505050504,
+        "recovery_ratio": 0.3939393939393939,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "monaco": {
+        "name": "monaco",
+        "total_cases": 94,
+        "active_cases": 55,
+        "deaths": 4,
+        "recovered": 35,
+        "critical": 2,
+        "tested": 0,
+        "death_ratio": 0.0425531914893617,
+        "recovery_ratio": 0.3723404255319149,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "togo": {
+        "name": "togo",
+        "total_cases": 90,
+        "active_cases": 25,
+        "deaths": 6,
+        "recovered": 59,
+        "critical": 0,
+        "tested": 4733,
+        "death_ratio": 0.06666666666666667,
+        "recovery_ratio": 0.6555555555555556,
+        "change": {
+          "total_cases": 2,
+          "active_cases": 2,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.001515151515151511,
+          "recovery_ratio": -0.014898989898989856
+        }
+      },
+      "cabo_verde": {
+        "name": "cabo_verde",
+        "total_cases": 88,
+        "active_cases": 86,
+        "deaths": 1,
+        "recovered": 1,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.011363636363636364,
+        "recovery_ratio": 0.011363636363636364,
+        "change": {
+          "total_cases": 6,
+          "active_cases": 6,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.0008314855875831487,
+          "recovery_ratio": -0.0008314855875831487
+        }
+      },
+      "equatorial_guinea": {
+        "name": "equatorial_guinea",
+        "total_cases": 84,
+        "active_cases": 76,
+        "deaths": 1,
+        "recovered": 7,
+        "critical": 0,
+        "tested": 854,
+        "death_ratio": 0.011904761904761904,
+        "recovery_ratio": 0.08333333333333333,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "sierra_leone": {
+        "name": "sierra_leone",
+        "total_cases": 82,
+        "active_cases": 70,
+        "deaths": 2,
+        "recovered": 10,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.024390243902439025,
+        "recovery_ratio": 0.12195121951219512,
+        "change": {
+          "total_cases": 18,
+          "active_cases": 17,
+          "deaths": 1,
+          "recovered": 0,
+          "death_ratio": 0.008765243902439025,
+          "recovery_ratio": -0.03429878048780488
+        }
+      },
+      "liechtenstein": {
+        "name": "liechtenstein",
+        "total_cases": 81,
+        "active_cases": 25,
+        "deaths": 1,
+        "recovered": 55,
+        "critical": 0,
+        "tested": 900,
+        "death_ratio": 0.012345679012345678,
+        "recovery_ratio": 0.6790123456790124,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "zambia": {
+        "name": "zambia",
+        "total_cases": 76,
+        "active_cases": 36,
+        "deaths": 3,
+        "recovered": 37,
+        "critical": 1,
+        "tested": 2586,
+        "death_ratio": 0.039473684210526314,
+        "recovery_ratio": 0.4868421052631579,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "barbados": {
+        "name": "barbados",
+        "total_cases": 76,
+        "active_cases": 40,
+        "deaths": 6,
+        "recovered": 30,
+        "critical": 4,
+        "tested": 1222,
+        "death_ratio": 0.07894736842105263,
+        "recovery_ratio": 0.39473684210526316,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "uganda": {
+        "name": "uganda",
+        "total_cases": 74,
+        "active_cases": 28,
+        "deaths": 0,
+        "recovered": 46,
+        "critical": 0,
+        "tested": 17388,
+        "death_ratio": 0,
+        "recovery_ratio": 0.6216216216216216,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "sint_maarten": {
+        "name": "sint_maarten",
+        "total_cases": 73,
+        "active_cases": 39,
+        "deaths": 12,
+        "recovered": 22,
+        "critical": 8,
+        "tested": 266,
+        "death_ratio": 0.1643835616438356,
+        "recovery_ratio": 0.3013698630136986,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "haiti": {
+        "name": "haiti",
+        "total_cases": 72,
+        "active_cases": 65,
+        "deaths": 5,
+        "recovered": 2,
+        "critical": 0,
+        "tested": 690,
+        "death_ratio": 0.06944444444444445,
+        "recovery_ratio": 0.027777777777777776,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "bahamas": {
+        "name": "bahamas",
+        "total_cases": 72,
+        "active_cases": 47,
+        "deaths": 11,
+        "recovered": 14,
+        "critical": 1,
+        "tested": 0,
+        "death_ratio": 0.1527777777777778,
+        "recovery_ratio": 0.19444444444444445,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "guyana": {
+        "name": "guyana",
+        "total_cases": 70,
+        "active_cases": 51,
+        "deaths": 7,
+        "recovered": 12,
+        "critical": 5,
+        "tested": 375,
+        "death_ratio": 0.1,
+        "recovery_ratio": 0.17142857142857143,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -3,
+          "deaths": 0,
+          "recovered": 3,
+          "death_ratio": 0,
+          "recovery_ratio": 0.04285714285714287
+        }
+      },
+      "cayman_islands": {
+        "name": "cayman_islands",
+        "total_cases": 66,
+        "active_cases": 58,
+        "deaths": 1,
+        "recovered": 7,
+        "critical": 3,
+        "tested": 778,
+        "death_ratio": 0.015151515151515152,
+        "recovery_ratio": 0.10606060606060606,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "libya": {
+        "name": "libya",
+        "total_cases": 60,
+        "active_cases": 40,
+        "deaths": 2,
+        "recovered": 18,
+        "critical": 0,
+        "tested": 1337,
+        "death_ratio": 0.03333333333333333,
+        "recovery_ratio": 0.3,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -4,
+          "deaths": 1,
+          "recovered": 3,
+          "death_ratio": 0.016666666666666666,
+          "recovery_ratio": 0.04999999999999999
+        }
+      },
+      "french_polynesia": {
+        "name": "french_polynesia",
+        "total_cases": 57,
+        "active_cases": 21,
+        "deaths": 0,
+        "recovered": 36,
+        "critical": 1,
+        "tested": 1803,
+        "death_ratio": 0,
+        "recovery_ratio": 0.631578947368421,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "benin": {
+        "name": "benin",
+        "total_cases": 54,
+        "active_cases": 26,
+        "deaths": 1,
+        "recovered": 27,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.018518518518518517,
+        "recovery_ratio": 0.5,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "guinea_bissau": {
+        "name": "guinea_bissau",
+        "total_cases": 50,
+        "active_cases": 47,
+        "deaths": 0,
+        "recovered": 3,
+        "critical": 0,
+        "tested": 1500,
+        "death_ratio": 0,
+        "recovery_ratio": 0.06,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "nepal": {
+        "name": "nepal",
+        "total_cases": 48,
+        "active_cases": 38,
+        "deaths": 0,
+        "recovered": 10,
+        "critical": 0,
+        "tested": 9200,
+        "death_ratio": 0,
+        "recovery_ratio": 0.20833333333333334,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -1,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": 0.020833333333333343
+        }
+      },
+      "mozambique": {
+        "name": "mozambique",
+        "total_cases": 46,
+        "active_cases": 34,
+        "deaths": 0,
+        "recovered": 12,
+        "critical": 0,
+        "tested": 1325,
+        "death_ratio": 0,
+        "recovery_ratio": 0.2608695652173913,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -3,
+          "deaths": 0,
+          "recovered": 3,
+          "death_ratio": 0,
+          "recovery_ratio": 0.06521739130434781
+        }
+      },
+      "macao": {
+        "name": "macao",
+        "total_cases": 45,
+        "active_cases": 18,
+        "deaths": 0,
+        "recovered": 27,
+        "critical": 1,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.6,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "syria": {
+        "name": "syria",
+        "total_cases": 42,
+        "active_cases": 33,
+        "deaths": 3,
+        "recovered": 6,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.07142857142857142,
+        "recovery_ratio": 0.14285714285714285,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "chad": {
+        "name": "chad",
+        "total_cases": 40,
+        "active_cases": 32,
+        "deaths": 0,
+        "recovered": 8,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.2,
+        "change": {
+          "total_cases": 7,
+          "active_cases": 7,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": -0.04242424242424242
+        }
+      },
+      "eritrea": {
+        "name": "eritrea",
+        "total_cases": 39,
+        "active_cases": 28,
+        "deaths": 0,
+        "recovered": 11,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.28205128205128205,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -5,
+          "deaths": 0,
+          "recovered": 5,
+          "death_ratio": 0,
+          "recovery_ratio": 0.1282051282051282
+        }
+      },
+      "saint_martin": {
+        "name": "saint_martin",
+        "total_cases": 38,
+        "active_cases": 16,
+        "deaths": 2,
+        "recovered": 20,
+        "critical": 3,
+        "tested": 0,
+        "death_ratio": 0.05263157894736842,
+        "recovery_ratio": 0.5263157894736842,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -1,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": 0.02631578947368418
+        }
+      },
+      "eswatini": {
+        "name": "eswatini",
+        "total_cases": 36,
+        "active_cases": 25,
+        "deaths": 1,
+        "recovered": 10,
+        "critical": 0,
+        "tested": 714,
+        "death_ratio": 0.027777777777777776,
+        "recovery_ratio": 0.2777777777777778,
+        "change": {
+          "total_cases": 5,
+          "active_cases": 3,
+          "deaths": 0,
+          "recovered": 2,
+          "death_ratio": -0.004480286738351255,
+          "recovery_ratio": 0.01971326164874554
+        }
+      },
+      "mongolia": {
+        "name": "mongolia",
+        "total_cases": 36,
+        "active_cases": 27,
+        "deaths": 0,
+        "recovered": 9,
+        "critical": 0,
+        "tested": 7234,
+        "death_ratio": 0,
+        "recovery_ratio": 0.25,
+        "change": {
+          "total_cases": 1,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": 0.021428571428571436
+        }
+      },
+      "malawi": {
+        "name": "malawi",
+        "total_cases": 33,
+        "active_cases": 27,
+        "deaths": 3,
+        "recovered": 3,
+        "critical": 1,
+        "tested": 519,
+        "death_ratio": 0.09090909090909091,
+        "recovery_ratio": 0.09090909090909091,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "zimbabwe": {
+        "name": "zimbabwe",
+        "total_cases": 29,
+        "active_cases": 23,
+        "deaths": 4,
+        "recovered": 2,
+        "critical": 0,
+        "tested": 5450,
+        "death_ratio": 0.13793103448275862,
+        "recovery_ratio": 0.06896551724137931,
+        "change": {
+          "total_cases": 1,
+          "active_cases": 1,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": -0.0049261083743842304,
+          "recovery_ratio": -0.0024630541871921152
+        }
+      },
+      "angola": {
+        "name": "angola",
+        "total_cases": 25,
+        "active_cases": 17,
+        "deaths": 2,
+        "recovered": 6,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.08,
+        "recovery_ratio": 0.24,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "antigua_and_barbuda": {
+        "name": "antigua_and_barbuda",
+        "total_cases": 24,
+        "active_cases": 11,
+        "deaths": 3,
+        "recovered": 10,
+        "critical": 1,
+        "tested": 108,
+        "death_ratio": 0.125,
+        "recovery_ratio": 0.4166666666666667,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "timor_leste": {
+        "name": "timor_leste",
+        "total_cases": 23,
+        "active_cases": 22,
+        "deaths": 0,
+        "recovered": 1,
+        "critical": 0,
+        "tested": 322,
+        "death_ratio": 0,
+        "recovery_ratio": 0.043478260869565216,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "botswana": {
+        "name": "botswana",
+        "total_cases": 22,
+        "active_cases": 21,
+        "deaths": 1,
+        "recovered": 0,
+        "critical": 0,
+        "tested": 5023,
+        "death_ratio": 0.045454545454545456,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "laos": {
+        "name": "laos",
+        "total_cases": 19,
+        "active_cases": 15,
+        "deaths": 0,
+        "recovered": 4,
+        "critical": 0,
+        "tested": 1461,
+        "death_ratio": 0,
+        "recovery_ratio": 0.21052631578947367,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "fiji": {
+        "name": "fiji",
+        "total_cases": 18,
+        "active_cases": 8,
+        "deaths": 0,
+        "recovered": 10,
+        "critical": 0,
+        "tested": 900,
+        "death_ratio": 0,
+        "recovery_ratio": 0.5555555555555556,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -2,
+          "deaths": 0,
+          "recovered": 2,
+          "death_ratio": 0,
+          "recovery_ratio": 0.11111111111111116
+        }
+      },
+      "new_caledonia": {
+        "name": "new_caledonia",
+        "total_cases": 18,
+        "active_cases": 1,
+        "deaths": 0,
+        "recovered": 17,
+        "critical": 1,
+        "tested": 3952,
+        "death_ratio": 0,
+        "recovery_ratio": 0.9444444444444444,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "belize": {
+        "name": "belize",
+        "total_cases": 18,
+        "active_cases": 11,
+        "deaths": 2,
+        "recovered": 5,
+        "critical": 1,
+        "tested": 816,
+        "death_ratio": 0.1111111111111111,
+        "recovery_ratio": 0.2777777777777778,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "car": {
+        "name": "car",
+        "total_cases": 16,
+        "active_cases": 6,
+        "deaths": 0,
+        "recovered": 10,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.625,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "dominica": {
+        "name": "dominica",
+        "total_cases": 16,
+        "active_cases": 7,
+        "deaths": 0,
+        "recovered": 9,
+        "critical": 0,
+        "tested": 377,
+        "death_ratio": 0,
+        "recovery_ratio": 0.5625,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "namibia": {
+        "name": "namibia",
+        "total_cases": 16,
+        "active_cases": 9,
+        "deaths": 0,
+        "recovered": 7,
+        "critical": 0,
+        "tested": 590,
+        "death_ratio": 0,
+        "recovery_ratio": 0.4375,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "grenada": {
+        "name": "grenada",
+        "total_cases": 15,
+        "active_cases": 8,
+        "deaths": 0,
+        "recovered": 7,
+        "critical": 4,
+        "tested": 92,
+        "death_ratio": 0,
+        "recovery_ratio": 0.4666666666666667,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -1,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": 0.06666666666666665
+        }
+      },
+      "saint_kitts_and_nevis": {
+        "name": "saint_kitts_and_nevis",
+        "total_cases": 15,
+        "active_cases": 13,
+        "deaths": 0,
+        "recovered": 2,
+        "critical": 0,
+        "tested": 260,
+        "death_ratio": 0,
+        "recovery_ratio": 0.13333333333333333,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -1,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": 0.06666666666666667
+        }
+      },
+      "saint_lucia": {
+        "name": "saint_lucia",
+        "total_cases": 15,
+        "active_cases": 0,
+        "deaths": 0,
+        "recovered": 15,
+        "critical": 0,
+        "tested": 364,
+        "death_ratio": 0,
+        "recovery_ratio": 1,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "st_vincent_grenadines": {
+        "name": "st_vincent_grenadines",
+        "total_cases": 14,
+        "active_cases": 9,
+        "deaths": 0,
+        "recovered": 5,
+        "critical": 0,
+        "tested": 108,
+        "death_ratio": 0,
+        "recovery_ratio": 0.35714285714285715,
+        "change": {
+          "total_cases": 1,
+          "active_cases": -1,
+          "deaths": 0,
+          "recovered": 2,
+          "death_ratio": 0,
+          "recovery_ratio": 0.12637362637362637
+        }
+      },
+      "curacao": {
+        "name": "curacao",
+        "total_cases": 14,
+        "active_cases": 2,
+        "deaths": 1,
+        "recovered": 11,
+        "critical": 0,
+        "tested": 304,
+        "death_ratio": 0.07142857142857142,
+        "recovery_ratio": 0.7857142857142857,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "falkland_islands": {
+        "name": "falkland_islands",
+        "total_cases": 12,
+        "active_cases": 1,
+        "deaths": 0,
+        "recovered": 11,
+        "critical": 0,
+        "tested": 337,
+        "death_ratio": 0,
+        "recovery_ratio": 0.9166666666666666,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "seychelles": {
+        "name": "seychelles",
+        "total_cases": 11,
+        "active_cases": 5,
+        "deaths": 0,
+        "recovered": 6,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.5454545454545454,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "nicaragua": {
+        "name": "nicaragua",
+        "total_cases": 11,
+        "active_cases": 1,
+        "deaths": 3,
+        "recovered": 7,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.2727272727272727,
+        "recovery_ratio": 0.6363636363636364,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "burundi": {
+        "name": "burundi",
+        "total_cases": 11,
+        "active_cases": 6,
+        "deaths": 1,
+        "recovered": 4,
+        "critical": 0,
+        "tested": 284,
+        "death_ratio": 0.09090909090909091,
+        "recovery_ratio": 0.36363636363636365,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "turks_and_caicos": {
+        "name": "turks_and_caicos",
+        "total_cases": 11,
+        "active_cases": 6,
+        "deaths": 1,
+        "recovered": 4,
+        "critical": 0,
+        "tested": 83,
+        "death_ratio": 0.09090909090909091,
+        "recovery_ratio": 0.36363636363636365,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "greenland": {
+        "name": "greenland",
+        "total_cases": 11,
+        "active_cases": 0,
+        "deaths": 0,
+        "recovered": 11,
+        "critical": 0,
+        "tested": 1150,
+        "death_ratio": 0,
+        "recovery_ratio": 1,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "montserrat": {
+        "name": "montserrat",
+        "total_cases": 11,
+        "active_cases": 9,
+        "deaths": 0,
+        "recovered": 2,
+        "critical": 1,
+        "tested": 36,
+        "death_ratio": 0,
+        "recovery_ratio": 0.18181818181818182,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "gambia": {
+        "name": "gambia",
+        "total_cases": 10,
+        "active_cases": 7,
+        "deaths": 1,
+        "recovered": 2,
+        "critical": 0,
+        "tested": 316,
+        "death_ratio": 0.1,
+        "recovery_ratio": 0.2,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "suriname": {
+        "name": "suriname",
+        "total_cases": 10,
+        "active_cases": 3,
+        "deaths": 1,
+        "recovered": 6,
+        "critical": 0,
+        "tested": 404,
+        "death_ratio": 0.1,
+        "recovery_ratio": 0.6,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "ms_zaandam": {
+        "name": "ms_zaandam",
+        "total_cases": 9,
+        "active_cases": 7,
+        "deaths": 2,
+        "recovered": 0,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.2222222222222222,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "vatican_city": {
+        "name": "vatican_city",
+        "total_cases": 9,
+        "active_cases": 7,
+        "deaths": 0,
+        "recovered": 2,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.2222222222222222,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "papua_new_guinea": {
+        "name": "papua_new_guinea",
+        "total_cases": 8,
+        "active_cases": 8,
+        "deaths": 0,
+        "recovered": 0,
+        "critical": 0,
+        "tested": 604,
+        "death_ratio": 0,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "bhutan": {
+        "name": "bhutan",
+        "total_cases": 7,
+        "active_cases": 4,
+        "deaths": 0,
+        "recovered": 3,
+        "critical": 0,
+        "tested": 8953,
+        "death_ratio": 0,
+        "recovery_ratio": 0.42857142857142855,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "mauritania": {
+        "name": "mauritania",
+        "total_cases": 7,
+        "active_cases": 0,
+        "deaths": 1,
+        "recovered": 6,
+        "critical": 0,
+        "tested": 969,
+        "death_ratio": 0.14285714285714285,
+        "recovery_ratio": 0.8571428571428571,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "st_barth": {
+        "name": "st_barth",
+        "total_cases": 6,
+        "active_cases": 0,
+        "deaths": 0,
+        "recovered": 6,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 1,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "western_sahara": {
+        "name": "western_sahara",
+        "total_cases": 6,
+        "active_cases": 1,
+        "deaths": 0,
+        "recovered": 5,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.8333333333333334,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "british_virgin_islands": {
+        "name": "british_virgin_islands",
+        "total_cases": 5,
+        "active_cases": 1,
+        "deaths": 1,
+        "recovered": 3,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0.2,
+        "recovery_ratio": 0.6,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "caribbean_netherlands": {
+        "name": "caribbean_netherlands",
+        "total_cases": 5,
+        "active_cases": 5,
+        "deaths": 0,
+        "recovered": 0,
+        "critical": 0,
+        "tested": 110,
+        "death_ratio": 0,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "south_sudan": {
+        "name": "south_sudan",
+        "total_cases": 5,
+        "active_cases": 5,
+        "deaths": 0,
+        "recovered": 0,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 1,
+          "active_cases": 1,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "sao_tome_and_principe": {
+        "name": "sao_tome_and_principe",
+        "total_cases": 4,
+        "active_cases": 4,
+        "deaths": 0,
+        "recovered": 0,
+        "critical": 0,
+        "tested": 19,
+        "death_ratio": 0,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "anguilla": {
+        "name": "anguilla",
+        "total_cases": 3,
+        "active_cases": 2,
+        "deaths": 0,
+        "recovered": 1,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0.3333333333333333,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "saint_pierre_miquelon": {
+        "name": "saint_pierre_miquelon",
+        "total_cases": 1,
+        "active_cases": 1,
+        "deaths": 0,
+        "recovered": 0,
+        "critical": 0,
+        "tested": 0,
+        "death_ratio": 0,
+        "recovery_ratio": 0,
+        "change": {
+          "total_cases": 0,
+          "active_cases": 0,
+          "deaths": 0,
+          "recovered": 0,
+          "death_ratio": 0,
+          "recovery_ratio": 0
+        }
+      },
+      "yemen": {
+        "name": "yemen",
+        "total_cases": 1,
+        "active_cases": 0,
+        "deaths": 0,
+        "recovered": 1,
+        "critical": 0,
+        "tested": 120,
+        "death_ratio": 0,
+        "recovery_ratio": 1,
+        "change": {
+          "total_cases": 0,
+          "active_cases": -1,
+          "deaths": 0,
+          "recovered": 1,
+          "death_ratio": 0,
+          "recovery_ratio": 1
+        }
+      }
+    }
+  }
+}
