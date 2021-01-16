@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font_0, $font_1;
+    color: $gray-lighter;
+}
+
+html {
+    background: $base;
+}
+
+main {
+    margin-top: 3.5rem;
+}
+
+
+@media(max-width: 699px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        margin-top: 4rem;
+    }
+
+    footer {
+        position: relative;
+        text-align: center;
+
+        ul {
+            margin: 0;
+
+            li {
+                margin: 0;
+
+                a {
+                    margin-right: 0;
+                    color: $black;
+                    font-size: 1.5rem;
+                    letter-spacing: 1.5px;
+
+                    span {
+                        font-size: inherit;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(min-width: 700px) and(max-width: 999px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1000px) and(max-width: 1199px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1200px) and(max-width: 1599px) {
+    html {
+        font-size: 16px;
+    }
+
+
+}
+
+@media(min-width: 1600px) and(max-width: 1999px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 2000px) and(max-width: 2399px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media(min-width: 2400px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+a {
+    color: $gray-mid;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $gray-dark;
+    }
+}
+
+p {
+    font-size: 1rem;
+    color: $gray-mid;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+img {
+    width: 100%;
+}

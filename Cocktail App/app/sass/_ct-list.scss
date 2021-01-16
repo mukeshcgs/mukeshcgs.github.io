@@ -1,0 +1,61 @@
+$clr-base:#273554;
+$clr-root:#ffffff;
+
+.page-header {
+    @include border-radius(auto, $radius: 20px);
+    // background: $clr-base;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    color: $white;
+
+    h2 {
+        color: inherit;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+}
+
+.d-list {
+    .drink {
+        overflow: hidden;
+        padding: 1rem;
+        height: 40vh;
+        width: 48%;
+        margin-right: 4%;
+        border-radius: 1.5rem;
+        margin-bottom: 2rem;
+        box-sizing: border-box;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 10rem;
+        position: relative;
+        cursor: pointer;
+
+        &:nth-child(even) {
+            margin-right: 0px;
+        }
+
+        .d-name {
+            position: absolute;
+            bottom: 1rem;
+            right: 0px;
+            left: auto;
+            max-width: 40vw;
+            padding: 10px 8px 10px 1rem;
+            border-radius: 2.5rem;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            background: $gray-lighter;
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            box-sizing: border-box;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

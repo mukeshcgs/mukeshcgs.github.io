@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Designer/Developer by profession an artist by passion">
+    <meta name="author" content="Mukesh Thankar">
+    <!-- ios support -->
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="apple-touch-startup-image" href="temp/apple-splash-2048-2732.png"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+
+
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon-16x16.png">
+
+    <!-- Recommended favicon format -->
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png">
+
+    <!-- Apple Touch Icon -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mukeshcgs.github.io/">
+    <meta property="og:title" content="Mukesh Thankar | portfoli">
+    <meta property="og:image" content="https://mukeshcgs.github.io/images/image.jpg">
+    <meta property="og:description" content="A Designer/Developer by profession an artist by passion">
+    <meta property="og:site_name" content="Mukesh Thankar | portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="https://mukeshcgs.github.io/">
+    <meta name="twitter:title" content="Mukesh Thankar-portfoli">
+    <meta name="twitter:description" content="A Designer/Developer by profession an artist by passion">
+    <meta name="twitter:image" content="https://mukeshcgs.github.io/images/image.jpg">
+
+    <title>Mukesh Thankar | Portfolio </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"
+        integrity="sha256-lrZTgsdM1iVdRigETFOU8u8/BmLX1ysQ8bzrULbuVFU=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link href="./css/main.min.css" rel="stylesheet">
+
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <!-- <link href="icon-font/icons.css" rel="stylesheet"> -->
+    <link href="css/vendor.css" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script> -->
+    <script src="https://unpkg.com/@babel/standalone@7.12.12/babel.min.js"></script>
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+    <script>
+        function onSubmit(token) {
+            alert('thanks ' + document.getElementById('field').value);
+        }
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('field').value) {
+                alert("You must add text to the required field");
+            } else {
+                grecaptcha.execute();
+            }
+        }
+
+        function onload() {
+            var element = document.getElementById('submit');
+            element.onclick = validate;
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="./icon-font/icons.css" rel="stylesheet">
+</head>
+
+<body role="document" class="cocktails-page">
+    <header class="ct-header">
+        <div class="container" style="position: relative">
+            <div class="page-header">
+                <h2 class="db-cat-name">Cocktail</h2>
+            </div>
+            <div class="burger-menu22">
+                <div id="menu-lines" class=""><button id="el"></button></div>
+            </div>
+            <nav class="mob-nav">
+                <ul>
+                    <li class="fade-in"><a href="./index.html">Home <i class="tn-icon tn-home"></i>
+                        </a> </li>
+                    <li class="fade-in"><a href="./drink-list.html">drink-list <i class="tn-icon tn-list"></i></a> </li>
+                    <li class="fade-in"><a href="./drink-details.html">drink-details <i class="tn-icon tn-home"></i></a>
+                    </li>
+                    <li class="fade-in"><a href="#p0">About <i class="tn-icon tn-home"></i></a> </li>
+                    <li class="fade-in"><a href="#p5">Connect <i class="tn-icon tn-home"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="ct-details">
+            <div class="d-bg-img">
+            </div>
+            <div class="d-info">
+                <div class="quantity">
+                    <span>+</span>
+                    <span>0</span>
+                    <span>-</span>
+                </div>
+                <div class="d-info-cont">
+                    <h1 class="d-name">Margarita</h1>
+                    <div class="d-category">Ordinary Drink</div>
+                </div>
+                <div class="d-spec">
+                    <div>
+                        <i class="tn-icon tn-shot"></i>
+                        <span>Cocktail glass</span>
+                    </div>
+                    <div>
+                        <i class="tn-icon tn-alcohol"></i>
+                        <span>Contemporary Classics</span>
+                    </div>
+                    <div>
+                        <i class="tn-icon tn-search"></i>
+                        <span>Alcoholic</span>
+                    </div>
+                    <div>
+                        <i class="tn-icon tn-home"></i>
+                        <span>Cocktail glass</span>
+                    </div>
+                    <div>
+                        <i class="tn-icon tn-alcohol"></i>
+                        <span>Contemporary Classics</span>
+                    </div>
+                    <div>
+                        <i class="tn-icon tn-alcohol"></i>
+                        <span>Alcoholic</span>
+                    </div>
+                </div>
+
+                <div class="ingredients">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Tequila</li>
+                        <li>Triple sec</li>
+                        <li>Lime juice</li>
+                        <li>Salt</li>
+                    </ul>
+                </div>
+                <div class="measure">
+                    <h2>Measure</h2>
+                    <ul>
+                        <li>1 1/2 oz</li>
+                        <li>1/2 oz</li>
+                        <li>1 oz</li>
+                    </ul>
+                </div>
+                <p class="instructions">
+                    Rub the rim of the glass with the lime s lice to make the salt stick to it. Take care to moisten
+                    only
+                    the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and
+                    never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the
+                    glass.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/app.min.js">
+    </script>
+</body>
+
+</html>

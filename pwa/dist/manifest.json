@@ -1,7 +1,7 @@
 {
   "name": "Portfolio",
   "display": "standalone",
-  "start_url": "http://localhost:3000/",
+  "start_url": "/index.html",
   "short_name": "Portfolio",
   "theme_color": "#000000",
   "description": "This is a Portfolio app",

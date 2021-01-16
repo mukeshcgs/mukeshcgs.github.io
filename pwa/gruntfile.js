@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
-    require('time-grunt')(grunt);
+    // require('time-grunt')(grunt);
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
@@ -16,6 +16,10 @@ module.exports = function (grunt) {
         // Project settings
         config: config,
         pkg: grunt.file.readJSON('package.json'),
+
+
+
+
         copy: {
             // making working assets copy
             main: {
@@ -83,10 +87,10 @@ module.exports = function (grunt) {
                 files: ['libs/**/*.css'],
                 tasks: ['cssmin'],
             },
-            scripts: {
-                files: ['<%= config.app %>/js/*.js', 'lib/**/*.js'],
-                tasks: ['concat', 'uglify'],
-            }
+            // scripts: {
+            //     files: ['<%= config.app %>/js/*.js', 'lib/**/*.js'],
+            //     tasks: ['concat', 'uglify'],
+            // }
         },
 
         sass: {
@@ -151,6 +155,18 @@ module.exports = function (grunt) {
         //         '!<%= config.app %>lib/**/*.js'
         //     ]
         // },
+        // babel: {
+        //     options: {
+        //         sourceMap: true,
+        //         presets: ['@babel/preset-env']
+        //     },
+        //     dist: {
+        //         files: {
+        //             '<%= config.dist %>/js/cocktails.js': '<%= config.app %>/js/cocktails.js'
+        //         }
+        //     }
+        // },
+
         concat: {
             options: {
                 seperator: '\n\n',
@@ -159,14 +175,14 @@ module.exports = function (grunt) {
                 banner: '/*!<%= pkg.name %> - v<%= pkg.version %> - ' + ' <%= grunt.template.today("yyyy-mm-dd") %> */',
             },
             dist: {
-                src: ['<%= config.app %>/js/script.js'],
+                src: ['<%= config.app %>/js/index.js', '<%= config.app %>/js/script.js', '<%= config.app %>/js/cocktails.js'],
                 dest: '<%= config.dist %>/js/script.js',
             },
             deps: {
                 src: [
                     'libs/jquery/dist/jquery.js',
                     'libs/modernizr/modernizr.js',
-                    '<%= config.app %>/js/script.js',
+                    '<%= config.dist %>/js/script.js',
                 ],
                 dest: '<%= config.dist %>/js/vendor.js'
             },
@@ -234,7 +250,9 @@ module.exports = function (grunt) {
         },
 
     });
+
     grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.loadNpmTasks('grunt-contrib-uglify-es');
 
     //MAKE BUILD
     grunt.registerTask('build', ['newer:copy:main', 'sass:main', 'cssmin:main']);

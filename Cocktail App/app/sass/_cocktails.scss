@@ -1,0 +1,89 @@
+#cocktails {}
+
+
+#tets {
+    width: 100px;
+    height: 100px;
+}
+
+div.anim {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+p b {
+    font-weight: bold;
+}
+
+#my-scrollbar {
+    height: 100vh;
+    overflow: auto;
+}
+
+#selected {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 1rem;
+}
+
+// .drink {
+//     overflow: hidden;
+//     width: 25%;
+//     padding: 1rem;
+//     border-radius: 0.5rem;
+//     margin-bottom: 1rem;
+//     box-sizing: border-box;
+//     margin-right: 1rem;
+//     background-position: center center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     min-height: 10rem;
+//     position: relative;
+//     cursor: pointer;
+// }
+
+// .d-name {
+//     position: absolute;
+//     bottom: 0rem;
+//     right: 0rem;
+//     background-color: rgba(255, 255, 255, 0.5);
+//     width: 100%;
+//     text-align: right;
+//     padding: 0.5rem;
+//     box-sizing: border-box;
+// }
+
+#drink-details {
+    display: none;
+    background: #fff;
+    height: 100vh;
+    width: 65%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    border-left: 1px solid #ccc;
+}
+
+.d-details {
+    overflow: auto;
+    height: inherit;
+    padding: 2rem;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.dImg {
+    padding: 2rem 0.5rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

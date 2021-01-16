@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font_0, $font_1;
+    color: $gray-dark;
+    // border: 1px solid green;
+}
+
+
+html {
+    background: $white;
+}
+
+.mt {
+    color: $primary;
+}
+
+@media(max-width: 699px) {
+    html {
+        font-size: 12px;
+    }
+
+    .navigation {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
+    }
+
+    footer {
+        position: relative;
+        text-align: center;
+
+        ul {
+            margin: 0;
+
+            li {
+                margin: 0;
+
+                a {
+                    margin-right: 0;
+                    color: $black;
+                    font-size: 1.5rem;
+                    letter-spacing: 1.5px;
+
+                    span {
+                        font-size: inherit;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-container {
+        width: 100%;
+    }
+
+    .page-heading {
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+        position: relative;
+
+        span.overlay {
+            top: 0px;
+            bottom: 0px;
+            display: block;
+            background-color: #d14836;
+            position: absolute;
+        }
+    }
+
+    .pro-header-container {
+        //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+        position: relative;
+        height: 100vh;
+        padding: 3rem;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        .pro-header {
+            position: absolute;
+            bottom: 3rem;
+        }
+    }
+
+    .technologies {
+        margin: 2rem 0;
+
+        li {
+            font-size: 16px;
+        }
+    }
+
+    .project-type {
+        margin: 2rem 0;
+
+        li {
+            font-size: 16px;
+        }
+    }
+
+    .pro-details {
+        margin-top: 0;
+        padding: 3rem;
+        //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    .pro-images {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        .desktop-img {
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            width: 150%;
+            bottom: 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .tab-img {
+            margin-left: -80%;
+            width: 200%;
+            overflow: hidden;
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 10px;
+            width: 150%;
+            z-index: 2;
+            bottom: 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .mob-img {
+            overflow: hidden;
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 18px;
+            width: 80%;
+            z-index: 3;
+            bottom: 0;
+            margin-left: 37%;
+            right: 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .about-details {
+        margin-top: 0;
+        padding: 3rem;
+        //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .skills li .skill-time {
+            top: unset !important;
+            line-height: normal !important;
+            bottom: 0;
+            font-size: 1rem;
+
+            a {
+                color: $primary;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .home-container .my-name {
+        h1 {
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                bottom: 8px;
+                right: 0px;
+                display: block;
+                width: 3px;
+                height: 3px;
+                background: $primary;
+                position: absolute;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(min-width: 700px) and(max-width: 999px) {
+    html {
+        font-size: 13px;
+    }
+
+    .navigation {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
+    }
+
+    .page-heading {
+        text-align: center;
+        font-size: 3rem;
+        padding: 20px;
+    }
+
+    .pro-header-container .pro-header {
+        position: absolute;
+        bottom: 3rem;
+    }
+}
+
+@media(min-width: 1000px) and(max-width: 1199px) {
+    html {
+        font-size: 14px;
+    }
+
+    .pro-details {
+        padding-top: 3rem;
+    }
+
+    .about-details {
+        padding-top: 3rem;
+    }
+}
+
+@media(min-width: 1200px) and(max-width: 1599px) {
+    html {
+        font-size: 16px;
+    }
+
+    .pro-details {
+        padding-top: 0;
+    }
+
+    .about-details {
+        padding-top: 0;
+    }
+}
+
+@media(min-width: 1600px) and(max-width: 1999px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 2000px) and(max-width: 2399px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media(min-width: 2400px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $gray-dark;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+    color: $gray-mid;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+img {
+    width: 100%;
+}

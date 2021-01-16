@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>An implementation design</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <section class="menu">
+    <span class="logo centered" onclick="hideDetails()"><i class="fas fa-arrow-left"></i>
+      <span>KOMPASS</span>
+    </span>
+    <menu class="centered">
+      <a href="">Home</a>
+      <a href="">Locations</a>
+      <a href="">Trips</a>
+      <a href="">Contact</a>
+    </menu>
+  </section>
+  <div class="bg-tilter"></div>
+  <div class="bg-wrapper bg"></div>
+  <div class="hero">
+    <span class="bg">MONT BLANC</span>
+  </div>
+  <span class="text-flavor">White Mountain</span>
+  <section class="options">
+    <div class="option">
+      <span>01</span>
+      <a href="" onclick="showDetails(1); return false">Routes</a>
+    </div>
+    <div class="option">
+      <span>02</span>
+      <a href="" onclick="showDetails(2); return false">Trips</a>
+    </div>
+    <div class="option">
+      <span>03</span>
+      <a href="" onclick="showDetails(3); return false">Accomodation</a>
+    </div>
+  </section>
+  <section class="details">
+    <article>
+      <div class="layer" data-option="1">
+        <h2>Routes</h2>
+        <h3>Cosmique Route</h3>
+        <p>Sed eleifend auctor eros, at auctor lectus pharetra vitae. Aliquam ut libero et est semper pellentesque. Etiam imperdiet leo non elit auctor molestie. Donec ut libero at ante interdum pulvinar a ut odio. Aenean sed scelerisque felis. Pellentesque id commodo lorem. Donec a molestie ante. Sed et sem felis. Nam ullamcorper lectus in eleifend lacinia. Ut ut mi sed orci facilisis fermentum. In laoreet urna at quam imperdiet pharetra.</p>
+        <p>Integer eleifend non metus vel pretium. Morbi quis dui sollicitudin, faucibus risus nec, lacinia nunc. Aenean gravida turpis sed nisl fermentum, sed vestibulum risus lobortis. Nam et nisi ac dolor euismod varius ac sed nisl.</p>
+      </div>
+      <div class="layer" data-option="2">
+        <h2>Trips</h2>
+        <h3>Bold Trip</h3>
+        <p>Integer ex mi, suscipit quis blandit sit amet, pellentesque quis enim. Maecenas tristique nec elit sed pellentesque. Donec libero felis, pretium in tortor nec, rutrum ultricies neque.</p>
+        <p>Aliquam hendrerit vulputate justo, id facilisis augue sollicitudin nec. Proin volutpat, quam vel dapibus congue, lorem augue maximus enim, non lacinia ligula diam vitae leo. Integer mattis id diam vitae iaculis. Proin ut urna dui. Ut vel pellentesque ante, ut consequat nunc. Quisque posuere orci nec ex convallis tincidunt. </p>
+      </div>
+      <div class="layer" data-option="3">
+        <h2>Accomodation</h2>
+        <h3>Cozy Rooms</h3>
+        <p>Pellentesque pulvinar purus lacinia, interdum turpis vitae, molestie leo. Aenean sit amet justo lectus. Maecenas vestibulum magna nec dolor porttitor malesuada. Suspendisse semper vel nisi non blandit. Cras vulputate nisi vitae ipsum efficitur, quis rhoncus sapien lacinia. Nulla feugiat at libero vel accumsan.</p>
+      </div>
+    </article>
+    <article style="background-image: url('https://images.unsplash.com/photo-1530738270955-2ed78de5c2a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=649&q=80')">
+    </article>
+  </section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

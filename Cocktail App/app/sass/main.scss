@@ -1,0 +1,33 @@
+//colors
+$white: #fff;
+$gray-lighter: #7b7794;
+$gray-light: #49465c;
+$gray-mid:#302e3d;
+$gray-dark: #1e1e2c;
+$gray-darker: #0d0d13;
+$black: #000;
+
+//App
+$base:#1e1e2c;
+$primary: #0084ff;
+
+//Social
+$color_fb: #3b5998;
+$tw: #1da1f2;
+$color_valencia_approx: #d14836;
+$brown: rgba(175, 29, 29, 0.46);
+$red: red;
+$color_blue_ribbon_approx: #0057ff;
+
+//fonts
+$font_0: Poppins;
+$font_1: sans-serif;
+
+@import "mixin";
+@import "root";
+@import "ct-header";
+
+@import "portfolio";
+@import "cocktails";
+@import "ct-list";
+@import "ct-details";
