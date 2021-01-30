@@ -146,7 +146,7 @@ img {
     position: fixed;
     top: 0;
     right: 0;
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     background: #000;
     z-index: 10;
@@ -179,12 +179,43 @@ img {
             font-size: 2.5rem; }
         .ct-header nav.mob-nav ul li.nav-logo {
           display: none; }
+    .ct-header nav.mob-nav::after {
+      display: block;
+      width: 100vh;
+      height: 100vh;
+      background: #1e1a29;
+      position: absolute;
+      top: -50vh;
+      right: -50vh;
+      z-index: -1;
+      content: '';
+      border-radius: 50%; }
+    .ct-header nav.mob-nav::before {
+      display: block;
+      width: 150vh;
+      height: 150vh;
+      background: #130f21;
+      position: absolute;
+      top: -75vh;
+      right: -75vh;
+      z-index: -1;
+      content: '';
+      border-radius: 50%; }
     .ct-header nav.mob-nav.active {
       opacity: 1;
       display: flex; }
       .ct-header nav.mob-nav.active ul {
         display: block;
         width: 100%; }
+
+.js-randomDrink .bg {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(8px); }
 
 #tets {
   width: 100px;

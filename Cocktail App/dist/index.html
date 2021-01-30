@@ -116,11 +116,18 @@
             </div>
             <nav class="mob-nav">
                 <ul>
-                    <li class="fade-in"><a href="./index.html"> <i class="tn-icon tn-home"></i>
-                            Home</a> </li>
-                    <li class="fade-in"><a href="./drink-list.html">drink-list</a> </li>
-                    <li class="fade-in"><a href="drink-details.html">drink-details</a> </li>
-                    <li class="fade-in"><a href="#p0">About</a> </li>
+                    <li class="fade-in">
+                        <a href="./index.html">
+                            Home<i class="tn-icon tn-home"></i>
+                        </a> </li>
+                    <li class="fade-in"><a href="./drink-list.html">
+                            Drink list<i class="tn-icon tn-cocktail"></i>
+                        </a> </li>
+                    <li class="fade-in"><a href="drink-details.html">
+                            Drink details<i class="tn-icon tn-list"></i>
+                        </a> </li>
+                    <li class="fade-in"><a href="#p0">About<i class="tn-icon tn-shot"></i>
+                        </a> </li>
                     <li class="fade-in"><a href="#p5">Connect</a></li>
                 </ul>
             </nav>
@@ -128,6 +135,11 @@
     </header>
     <main>
         <div id="app">
+            <!-- //////////////////////////////////////////////////////////////////////////////// -->
+            <div class="js-randomDrink">
+
+            </div>
+
             <section>
                 <select id="categoriesSelect"></select>
                 <div id="test"></div>
@@ -146,10 +158,35 @@
             <div>
                 <ul class="js-categorie-list"></ul>
             </div>
+            <div id="test"></div>
+
+
         </div>
     </main>
-    <script src="js/app.min.js">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDAw1dTO4bA0D1tCML21qoA5Q1kL12LyPQ",
+            authDomain: "cocktailpwa.firebaseapp.com",
+            projectId: "cocktailpwa",
+            storageBucket: "cocktailpwa.appspot.com",
+            messagingSenderId: "607246835394",
+            appId: "1:607246835394:web:4fe92e72857a56a76ee55b",
+            measurementId: "G-JVLTTJPLKY"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
     </script>
+
+
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>

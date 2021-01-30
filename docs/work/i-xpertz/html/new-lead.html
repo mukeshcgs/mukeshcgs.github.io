@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="fa fa" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico"> 
+    -->
+    <!-- <link type="image/x-icon" href="images/fav-icon.png" rel="stylesheet"> -->
+    <link rel="shortcut icon" type="image/png" href="/images/fav-icon.png" />
+
+    <title>Pre Submit</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+    <style>
+        .datepicker {
+            z-index: 1151 !important;
+        }
+    </style>
+    <!--[if IE 9]>
+<style>
+    .select-selected{padding:9px 6px;}
+</style>
+<![endif]-->
+
+
+
+
+    <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+
+</head>
+
+<body class="selector">
+    <div class="">
+        <img src="images/Spinner-1s-200px.gif">
+    </div>
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <a href="">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                                --
+
+                                <a href="">NEW LEAD ELEGIBILITY</a>
+
+                            </div>
+                            <h1 class="title">New Lead Elegibility</h1>
+                        </div>
+                        <div class="xpertz-col v-align-bottom text-right gen-date">
+                            <div class="lead-gen-date ">
+                                Lead Started On
+                                <span id=""> 2:43 PM 7 March 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="new-lead-error">
+
+        </div>
+        <form action="" id="new-lead">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="xpertz-sec cong-sec-thankyou2">
+                        <div class="sec-head">
+                            <h3 class="sec-title">DEM<span class="orange-o">O</span>GRAPHIC DETAILS
+                                <!-- <span class="italic"> (Optional)</span> -->
+                            </h3>
+                        </div>
+                        <div class="sec-body">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="float-default">
+
+                                            <input type="text" required="" class="form-control" name="val_firstname"
+                                                id="val_firstname" placeholder="">
+                                            <label class="floating-label" for="dla">FIRST NAME</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="float-default">
+
+                                            <input type="text" required="" class="form-control" name="val_lastname"
+                                                id="val_lastname" placeholder="">
+                                            <label class="floating-label" for="dla">LAST NAME</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="float-default">
+
+                                            <input id="val_contact" type="text" required="" maxlenght="10"
+                                                class="form-control" name="val_contact" placeholder="">
+                                            <label class="floating-label" for="dla">CONTACT #</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="float-default">
+
+                                            <input required type="text" maxlenght="10" class="form-control"
+                                                name="val_alternatecontact" id="val_alternatecontact" placeholder="">
+                                            <label class="floating-label" for="dla">ALTERNATE CONTACT #
+                                                <span class="italic"> (Optional)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="float-default">
+
+                                            <input required id="val_pincode" name="val_pincode" type="text"
+                                                class="form-control" placeholder="" maxlength="6">
+                                            <label class="floating-label" for="op">PIN CODE
+                                                <span class="italic"> (Optional)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group custom-select" width="200%">
+                                        <div>
+                                            <label for="area">AREA
+                                                <small class="italic"> (Optional)</small>
+                                            </label>
+
+                                            <select class="form-control" aria-invalid="false">
+                                                <option id="">Area</option>
+                                                <option id="">Bandra east</option>
+                                                <option id="">Bandra west</option>
+                                                <option id="">Sion east</option>
+                                                <option id="">Sion west</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="float-default">
+
+                                            <input id="val_city" name="val_city" type="text" required=""
+                                                class="form-control" placeholder="">
+                                            <label class="floating-label" for="op">CITY</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="float-default">
+
+                                            <input maxlength="40" id="val_landmark" name="val_landmark" type="text"
+                                                class="form-control" placeholder="">
+                                            <label class="floating-label" for="op">LANDMARK
+                                                <small class="italic"> (Optional)</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="xpertz-sec">
+                        <div class="sec-head">
+                            <h3 class="sec-title">SCHEDULE CALL
+                                <span class="italic"> (Optional)</span>
+                            </h3>
+                            <div class="sec-option pull-right typ-date">
+                                <div class="opt-btn">
+                                    <a href="" data-toggle="modal" data-target="#selectDate">Choose Date
+                                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec-body">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <div class=" mob-select lead">
+                                            <label for="contact">SELECT DATE</label>
+                                            <select id="day" class="form-control text-orange valid"
+                                                aria-invalid="false">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                            </select>
+
+                                        </div>
+                                        <span class="help-block">DATE</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <div class=" mob-select lead">
+                                            <label class="hide-label" for="contact">SELECT DATE</label>
+                                            <select id="month" class="form-control text-orange valid"
+                                                aria-invalid="false">
+                                                <option selected value='1'>January</option>
+                                                <option value='2'>February</option>
+                                                <option value='3'>March</option>
+                                                <option value='4'>April</option>
+                                                <option value='5'>May</option>
+                                                <option value='6'>June</option>
+                                                <option value='7'>July</option>
+                                                <option value='8'>August</option>
+                                                <option value='9'>September</option>
+                                                <option value='10'>October</option>
+                                                <option value='11'>November</option>
+                                                <option value='12'>December</option>
+                                            </select>
+
+                                        </div>
+                                        <span class="help-block">MONTH</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <div class=" lead">
+                                            <label class="hide-label" for="contact">SELECT DATE</label>
+                                            <select id="year" class="form-control text-orange valid"
+                                                aria-invalid="false">
+                                                <option>2018</option>
+                                                <option>2017</option>
+                                                <option>2016</option>
+                                                <option>2015</option>
+                                            </select>
+
+                                        </div>
+                                        <span class="help-block">YEAR</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="custom-select lead">
+                                            <label class="" for="contact">SELECT TIME</label>
+                                            <select class="form-control text-orange valid" aria-invalid="false">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                            </select>
+
+                                        </div>
+                                        <span class="help-block">HOURS</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="custom-select lead">
+                                            <label class="hide-label" for="contact">SELECT TIME</label>
+                                            <select class="form-control text-orange valid" aria-invalid="false">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                            </select>
+
+                                        </div>
+
+                                        <span class="help-block">MINUTES</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="custom-select lead">
+                                            <label class="hide-label" for="contact">SELECT TIME</label>
+                                            <select class="form-control text-orange valid" aria-invalid="false">
+                                                <option>AM</option>
+                                                <option>PM</option>
+                                            </select>
+
+                                        </div>
+                                        <span class="help-block">AM/PM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xpertz-sec">
+                <div class="sec-head">
+                    <h3 class="sec-title">DESIRED L<span class="orange-o">O</span>AN
+
+                    </h3>
+                </div>
+                <div class="sec-body">
+                    <div class="row">
+                        <div class=" ">
+                            <div class="form-group col-md-4 col-sm-6">
+                                <label>TYPE OF LOAN </label>
+                                <div class="xpertz-radio-group">
+                                    <div>
+                                        <input required="" class="xpertz-radio" type="radio" name="radio" id="plnew"
+                                            value="1">
+                                        <label class="new-lead " for="plnew">PL</label>
+                                    </div>
+                                    <div>
+                                        <input required="" class="xpertz-radio" type="radio" name="radio" id="lapnew"
+                                            value="2">
+                                        <label class="new-lead " for="lapnew">LAP</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-8 col-sm-6">
+                                <label>TYPE OF JOB </label>
+                                <div class="">
+                                    <div class="custom-checknew">
+                                        <input name="noti_6" class="checkbox-custom" id="noti_6" value="6"
+                                            type="checkbox">
+                                        <label class="checkbox-custom-label" for="noti_6">Cheked</label>
+                                    </div>
+                                    <div class="custom-checknew">
+                                        <input name="noti_7" class="checkbox-custom" id="noti_7" value="6"
+                                            type="checkbox">
+                                        <label class="checkbox-custom-label" for="noti_7">Inactive</label>
+                                    </div>
+                                    <div class="custom-checknew">
+                                        <input disabled="" name="noti_8" class="checkbox-custom" id="noti_8" value="6"
+                                            type="checkbox">
+                                        <label class="checkbox-custom-label" for="noti_8">Inactive</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="xpertz-radio-group">
+                                    <div>
+                                        <input required="" class="xpertz-radio" type="radio" name="radio" id="salaried"
+                                            value="1">
+                                        <label class="new-lead " for="salaried">SALARIED</label>
+                                    </div>
+                                    <div>
+                                        <input required="" class="xpertz-radio" type="radio" name="radio" id="self_employee"
+                                            value="2">
+                                        <label class="new-lead " for="self_employee">SELF EMPLOYED</label>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+
+                        <div class="  ">
+                            <div class="form-group col-md-4 col-sm-6">
+                                <label>AMOUNT
+                                    <span class="italic"> (Optional)</span>
+                                </label>
+                                <div class="xpertz-radio-group">
+                                    <div class=" ">
+                                        <div>
+                                            <span>
+                                                <strong>
+                                                    <span class="inp-icon">
+                                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input id="val_loanAmount" name="val_loanAmount" value=""
+                                                        class="form-control inline-inp text-center" type="text">
+
+                                                </strong>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <input class="xpertz-radio" type="radio" name="val_amountUnitID"
+                                                id="thousand" value="1">
+                                            <label class="new-lead " for="thousand">THOUSAND</label>
+                                        </div>
+                                        <div>
+                                            <input class="xpertz-radio" type="radio" name="val_amountUnitID" id="lakh"
+                                                value="2">
+                                            <label class="new-lead " for="lakh">LAKH</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-6">
+                                <label>TENURE MONTH
+                                    <span class="italic"> (Optional)</span>
+                                </label>
+                                <div class="xpertz-radio-group ">
+                                    <div>
+                                        <input class="xpertz-radio" type="radio" name="val_loanTenure" id="3" value="3">
+                                        <label class="new-lead " for="3">3</label>
+                                    </div>
+                                    <div>
+                                        <input class="xpertz-radio" type="radio" name="val_loanTenure" id="6" value="6">
+                                        <label class="new-lead " for="6">6</label>
+                                    </div>
+                                    <div>
+                                        <input class="xpertz-radio" type="radio" name="val_loanTenure" id="12"
+                                            value="12">
+                                        <label class="new-lead " for="12">12</label>
+                                    </div>
+                                    <div>
+                                        <input class="xpertz-radio" type="radio" name="val_loanTenure" id="18"
+                                            value="18">
+                                        <label class="new-lead " for="18">18</label>
+                                    </div>
+                                    <div>
+                                        <input class="xpertz-radio" type="radio" name="val_loanTenure" id="24"
+                                            value="24">
+                                        <label class="new-lead " for="24">24</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" placeholder="" name="val_customTenure"
+                                            id="val_customTenure" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="xpertz-sec">
+                <div class="sec-head">
+                    <h3 class="sec-title">EMPL<span class="orange-o">O</span>YMENT DETAILS
+                        <span class="help-text  italic">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Provide these info to check if you
+                            have any
+                            <span class="">
+                                <a href="javascript:void(0)" class=" offer" data-toggle="modal"
+                                    data-target="#special-modal">
+                                    <strong class="">SPECIAL OFFERS</strong>
+                                </a>
+                            </span>
+                        </span>
+                    </h3>
+                </div>
+                <div class="sec-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <div class="float-default">
+
+                                    <input id="val_companyId" type="text" required="" class="form-control"
+                                        name="val_companyId" placeholder="">
+                                    <label class="floating-label" for="dla">COMPANY NAME</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <div class="float-default">
+
+                                    <input id="val_industryId" name="val_industryId" type="text" required=""
+                                        class="form-control" placeholder="">
+                                    <label class="floating-label" for="dla">COMPANY INDUSTRY</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row form-row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="form-group with-icon left">
+                                <div class="float-default-icon">
+
+
+                                    <input name="val_netMonthlySalary" required="" type="text" class="form-control"
+                                        id="val_netMonthlySalary" placeholder="" maxlength="9">
+                                    <label class="floating-label" for="netmonthlysalary">NET MONTHLY SALARY
+
+                                    </label>
+                                    <span class="inp-icon">
+                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="form-group with-icon left">
+                                <div class="float-default-icon">
+
+
+                                    <input name="val_totalMonthelyEmi" required="" type="text" class="form-control"
+                                        id="val_totalMonthelyEmi" placeholder="" maxlength="9">
+                                    <span class="inp-icon">
+                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                    </span>
+                                    <label class="floating-label" for="totalemis">TOTAL EMIs
+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <div class="float-default">
+
+                                    <input id="val_emailId" type="text" required="" class="form-control"
+                                        name="val_emailId" placeholder="">
+                                    <label class="floating-label" for="op">EMAIL ID
+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="action-btn-wrapper text-center">
+                <button type="button" class="btn btn-primary typ-outline btn-condensed">SAVE AS LEAD</button>
+                <a href="/new-lead_pre-approved-offer.html" type="button" class="btn btn-primary btn-condensed"
+                    id="newLeadSaveBtn ">PROCEED</a>
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <!-- T&C Modal -->
+    <div class="modal fade typ-tnc" id="tnc-modal" tabindex="-1" role="dialog" aria-labelledby="tnc-modalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Terms & Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-5">
+                            <img src="images/tnc.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-7">
+                            <h4>By giving your Lorem ipsum dolor sit amet consectetur.</h4>
+                            <ol>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </li>
+                                <li>Aspernatur ea facilis est autem asperiores temporibus, sapiente iusto maiores!</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </li>
+                                <li>Aspernatur ea facilis est autem asperiores temporibus, sapiente iusto maiores!</li>
+                                <li>Aspernatur ea facilis est autem asperiores temporibus, sapiente iusto maiores!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="action-btn-wrapper text-center">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary typ-outline">CLOSE</button>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade typ-tnc" id="special-modal" tabindex="-1" role="dialog" aria-labelledby="special-modalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">SPECIAL OFFER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-5">
+                            <img src="images/tnc.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-7">
+                            <h4>You might have an offer under</h4>
+                            <ol>
+                                <li>Our corporate tie-up program
+                                </li>
+                                <li>Our pre-approved offers program</li>
+                                <li>Our group affiliate companies database
+                                </li>
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="action-btn-wrapper text-center">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary typ-outline">CLOSE</button>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade typ-select-date" id="selectDate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="call-date-popup">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="popup-task">
+                                    <div class="day">Wednesday</div>
+                                    <div class="date">
+                                        <h2 class="tetx-orange">9 March 2018</h2>
+                                    </div>
+                                    <h4 class="u-case">Tasks FOR the DAY</h4>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    10:25 PM
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-circle text-danger" aria-hidden="true"></i>
+                                                    <strong> Visit Loop</strong>
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-user" aria-hidden="true"></i> User Name
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    10:25 PM
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-circle text-success" aria-hidden="true"></i>
+                                                    <strong> Call Loop</strong>
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-user" aria-hidden="true"></i> User Name
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i> Location</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="selectCallDate"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-wrapper text-center">
+                        <button type="button" class="btn btn-primary typ-outline">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer include in external file -->
+    <footer class="xpertz-footer" id="inc-footer">
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_xpertz.min.js"></script>
+    <script src="js/pages/new-lead.js"></script>
+    <script src="js/custom_select.js"></script>
+    <script>
+        $(function () {
+            NewLead.init();
+            var d = new Date();
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            var time = d.getTime();
+            var output = d.getFullYear() + '/' +
+                (('' + month).length < 2 ? '0' : '') + month + '/' +
+                (('' + day).length < 2 ? '0' : '') + day;
+            $("#date").append(output);
+        });
+    </script>
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            dpick('#year', '#month', '#day', 1);
+        });
+
+        function dpick(year, month, day, td) {
+            if (td == 1) {
+                var today = new Date();
+                $(year).val(today.getFullYear());
+                $(month).val(today.getMonth() + 1);
+
+
+
+            }
+            $(year).change(function () {
+                dpick(year, month, day);
+            });
+            $(month).change(function () {
+                dpick(year, month, day);
+            });
+            var month_val = $(month).val();
+
+            var i = 0;
+            $(day).empty();
+            if (month_val == "1") {
+                if ($(year).val() % 4 == 0) {
+                    for (i = 1; i <= 29; i++) {
+                        $(day).append($("<option></option>").attr("value", i).text(i));
+                    }
+                } else {
+                    for (i = 1; i <= 28; i++) {
+                        $(day).append($("<option></option>").attr("value", i).text(i));
+                    }
+                }
+            } else if (month_val == "8" || month_val == "3" || month_val == "5" || month_val == "10") {
+                for (i = 1; i <= 30; i++) {
+                    $(day).append($("<option></option>").attr("value", i).text(i));
+                }
+            } else {
+                for (i = 1; i <= 31; i++) {
+                    $(day).append($("<option></option>").attr("value", i).text(i));
+                }
+            }
+            if (td == 1) {
+                $(day).val(today.getDate());
+            }
+
+        }
+
+
+        var min = new Date().getFullYear(),
+            max = min + 50,
+            select = document.getElementById('year');
+
+        for (var i = min; i <= max; i++) {
+            var opt = document.createElement('option');
+            opt.value = i;
+            opt.innerHTML = i;
+            select.appendChild(opt);
+        }
+    </script>
+</body>
+
+</html>

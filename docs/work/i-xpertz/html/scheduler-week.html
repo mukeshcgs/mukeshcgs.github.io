@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="fa fa" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title>Pre Submit</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .datepicker {
+            z-index: 1151 !important;
+        }
+    </style>
+    <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+
+</head>
+
+<body class="selector">
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header list-tabs no-border">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <a href="">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                                --
+
+                                <a href="">Scheduler</a>
+                                <h1 class="title">Scheduler </h1><span> <i class="fa fa-align-right"
+                                        aria-hidden="true"></i>(MONTH)</span>
+                            </div>
+
+                            <!-- <ul class="nav xpertz-tab nav-justified scheduler-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#month" aria-controls="month" role="tab" data-toggle="tab">
+                                        <span class="schdul-icon">
+                                            <i class="fa fa-align-right" aria-hidden="true"></i>
+                                        </span> MONTH</a>
+
+                                </li>
+                                <li role="presentation">
+                                    <a href="#week" aria-controls="week" role="tab" data-toggle="tab">
+                                        <span class="schdul-icon">
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </span> WEEK</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#day" aria-controls="day" role="tab" data-toggle="tab">
+                                        <span class="schdul-icon">
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </span> DAY</a>
+                                </li>
+                            </ul> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-container">
+                        <div id="mySchedule">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <footer class="footer" id="inc-footer">
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_xpertz.min.js"></script>
+
+    <script src="js/jquery.weekly-schedule-plugin.min.js"></script>
+    <script src="js/pages/new-lead.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script>
+        $('#mySchedule').weekly_schedule({
+
+            // Days displayed
+            days: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"],
+
+            date: [],
+            // Hours displyed
+            hours: "7:00AM-10:00PM",
+
+            // Font used in the component
+            fontFamily: "Montserrat",
+
+            // Font colot used in the component
+            fontColor: "black",
+
+            // Font weight used in the component
+            fontWeight: "100",
+
+            // Font size used in the component
+            fontSize: "0.8em",
+
+            // Background color when hovered
+            hoverColor: "#727bad",
+
+            // Background color when selected
+            selectionColor: "#9aa7ee",
+
+            // Background color of headers
+            headerBackgroundColor: "transparent"
+
+        });
+
+        // $('#mySchedule').weekly_schedule({
+
+
+        // // handler called after selection
+        // onSelected: function(){}, 
+
+        // // handler called after removal
+        // onRemoved: function(){} 
+
+        // });
+
+
+        $('.schedule').on('selectionmade', function () {
+            console.log("Selection Made");
+        }).on('selectionremoved', function () {
+            console.log("Selection Removed");
+        });
+    </script>
+
+</body>
+
+</html>

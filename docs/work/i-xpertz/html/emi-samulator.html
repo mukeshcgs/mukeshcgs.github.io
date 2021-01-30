@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+    <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+    <script type="text/javascript" src="js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="js/lib/daterangepicker.min.js"></script>
+    <link href="css/nouislider.min.css" rel="stylesheet">
+    <!-- Offline -->
+    <!-- <script src="js/lib/offline.min.js"></script> -->
+    <script src="js/lib/simulate-ui.js"></script>
+</head>
+
+<body class="selector">
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <i class="fa fa-home icon-2"></i> -- EMI SAMULATOR
+                            </div>
+                            <h1 class="title">EMI SAMULATOR</h1>
+                        </div>
+                        <div class="xpertz-col v-align-bottom text-right gen-date">
+                            <div class="">
+                                <img src="images/calculator.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class=" tabs typ-verti2">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3">
+                                <!-- Nav tabs -->
+                                <ul class="nav xpertz-tab typ-verti2 nav-stacked" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#personal-details" aria-controls="personal-details" role="tab"
+                                            data-toggle="tab">Personal Loan</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#loanagtproperty" aria-controls="loanagtproperty" role="tab"
+                                            data-toggle="tab">Loan Against Property</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-md-10 col-sm-9">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active emi-cal" id="#personal-details">
+                                        <div class="xpertz-sec">
+                                            <div class="row">
+                                                <!-- <div class="hidden-lg hidden-md col-xs-12">
+                                                    <div class="mob-tab-sub-heading">Calculate your loan eligibility in seconds using our eligibility calculator
+                                                    </div>
+                                                </div> -->
+                                                <div class="col-md-7 col-sm-12 col-xs-12">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/money.png" width="60px"
+                                                                            height="auto">
+                                                                    </span>
+                                                                    <span class="svg-title">Desire Loan</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="slider1">
+
+                                                                </div>
+                                                            </div>
+                                                            <span class="low-amount">30k</span>
+                                                            <span class="high-amount">20lac</span>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                                            <div class="input-unit">
+                                                                <span class="example-val" id="slider1-input"> </span>
+                                                                <span class="text-ammount">Seventy Thousand /
+                                                                    month</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/time.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Tenure required</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="slider1">
+                                                                </div>
+                                                            </div>
+                                                            <span class="low-amount">12 Months</span>
+                                                            <span class="high-amount">240 Months</span>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                                            <div class="input-unit">
+                                                                <span class="example-val1" id="slider1-span">00.00
+                                                                </span>
+                                                                <span class="text-ammount">Eigth Thousand / month</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="images/rate1.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Intrest Rate</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="slider1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                                            <div class="input-unit">
+                                                                <span class="example-val2"
+                                                                    id="slider1-span">00.00</span>
+                                                                <span class="text-ammount"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-5 col-sm-12 col-xs-12 mob-pad-30-0">
+                                                    <div class="text-center mob-emi-image">
+                                                        <div class="calculator">
+                                                            <div class="loan-ammount">
+                                                                <!-- <div class="text-center">
+                                                                            <span class="text-600">Eligible Loan Amt.</span>
+                                                                            <i class="fa fa-rupee"><h3 class="font-semi-bold">12,30,000</h3></i>
+                                                                        </div>
+                                                                        <div class="division"></div> -->
+                                                                <div class="text-center">
+                                                                    <span class="text-600">Estimated EMI</span>
+                                                                    <h3 class="font-semi-bold">
+                                                                        6,700</h3>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                    <span class="intrest-rate">10.25%</span>
+                                                                    <h3 class="intrest-txt">
+                                                                        Intrest Rate</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="button-overlap">
+                                                                <a class="btn btn-primary border-5" href="#"
+                                                                    type="button">Calculate</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane emi-cal" id="loanagtproperty">
+                                        <div class="xpertz-sec">
+                                            <div class="row">
+                                                <!-- <div class="hidden-lg hidden-md col-xs-12">
+                                                    <div class="mob-tab-sub-heading">Calculate your loan eligibility in seconds using our eligibility calculator
+                                                    </div>
+                                                </div> -->
+                                                <div class="col-md-7 col-sm-12 col-xs-12">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 col-xs-6">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/money.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Desire Loan</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="slider2">
+
+                                                                </div>
+                                                            </div>
+                                                            <span class="low-amount">30k</span>
+                                                            <span class="high-amount">20lac</span>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-6">
+                                                            <div class="input-unit">
+                                                                <span class="example-val" id="slider2-input"> </span>
+                                                                <span class="text-ammount">Seventy Thousand /
+                                                                    month</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 col-xs-6">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/time.png" width="60px"
+                                                                            height="auto">
+                                                                    </span>
+                                                                    <span class="svg-title">Tenure required</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="slider1">
+                                                                </div>
+                                                            </div>
+                                                            <span class="low-amount">12 Months</span>
+                                                            <span class="high-amount">240 Months</span>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-6">
+                                                            <div class="input-unit">
+                                                                <span class="example-val" id="slider2-span">00.00
+                                                                </span>
+                                                                <span class="text-ammount">Eigth Thousand / month</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-sm-7 col-xs-6">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="images/rate1.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Intrest Rate</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="slider2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5 col-xs-6">
+                                                            <div class="input-unit">
+                                                                <span class="example-val" id="slider2-span">00.00</span>
+                                                                <span class="text-ammount"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-5 col-sm-12 col-xs-12 mob-pad-30-0">
+                                                    <div class="text-center">
+                                                        <div class="calculator">
+                                                            <div class="loan-ammount">
+                                                                <!-- <div class="text-center">
+                                                                                            <span class="text-600">Eligible Loan Amt.</span>
+                                                                                            <i class="fa fa-rupee"><h3 class="font-semi-bold">12,30,000</h3></i>
+                                                                                        </div>
+                                                                                        <div class="division"></div> -->
+                                                                <div class="text-center">
+                                                                    <span class="text-600">Estimated EMI</span>
+                                                                    <h3 class="font-semi-bold">
+                                                                        6,700</h3>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                    <span class="intrest-rate">10.25%</span>
+                                                                    <h3 class="intrest-txt">
+                                                                        Intrest Rate</h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="button-overlap">
+                                                                <a class="btn btn-primary border-5" href="#"
+                                                                    type="button">Calculate</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <!-- <div class="tabs typ-verti">
+            <div class="row">
+                <div class="col-md-3 no-pad-right">
+
+                    <ul class="nav xpertz-tab typ-verti nav-stacked" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#personal-details" aria-controls="personal-details" role="tab" data-toggle="tab">personal-details</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#visiting-card" aria-controls="visiting-card" role="tab" data-toggle="tab">visiting-card</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#change-pass" aria-controls="change-pass" role="tab" data-toggle="tab">change-pass</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9 no-pad-left">
+
+                    <div class="tab-content xpertz-sec">
+                        <div role="tabpanel" class="tab-pane active" id="personal-details">
+                            <strong>personal-details</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum
+                            reprehenderit, esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam
+                            excepturi temporibus ex quas beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Animi earum reprehenderit, esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis
+                            quam excepturi temporibus ex quas beatae!Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Animi earum reprehenderit, esse ratione laudantium accusamus repellat recusandae aperiam
+                            perspiciatis quam excepturi temporibus ex quas beatae!</div>
+                        <div role="tabpanel" class="tab-pane" id="visiting-card">
+                            <strong>visiting-card</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum reprehenderit,
+                            esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam excepturi temporibus
+                            ex quas beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum reprehenderit,
+                            esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam excepturi temporibus
+                            ex quas beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum reprehenderit,
+                            esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam excepturi temporibus
+                            ex quas beatae!</div>
+                        <div role="tabpanel" class="tab-pane" id="change-pass">
+                            <strong>change-pass</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum reprehenderit,
+                            esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam excepturi temporibus
+                            ex quas beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum reprehenderit,
+                            esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam excepturi temporibus
+                            ex quas beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum reprehenderit,
+                            esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam excepturi temporibus
+                            ex quas beatae!</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- SELECT DATE MODAL -->
+        <div class="modal fade typ-select-date" id="selectDate" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="call-date-popup">
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6">
+                                    <div id="selectCallDate"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary typ-outline">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer include in external file -->
+    <footer class="xpertz-footer" id="inc-footer">
+    </footer>
+
+    <script src="js/nouislider.min.js"></script>
+    <script>
+        var lockedState = false;
+        var lockedSlider = false;
+        var lockedValues = [1000];
+
+        var slider1 = document.getElementById('slider1');
+        var slider1Value = document.getElementById('slider1-input');
+        var connect = slider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+    </script>
+    <script>
+        var slider = document.getElementById('slider-color');
+        noUiSlider.create(slider1, {
+            start: 70000,
+            connect: [true, false],
+            // Disable animation on value-setting,
+            // so the sliders respond immediately.
+            animate: false,
+            range: {
+                min: 0,
+                max: 100000
+            }
+        });
+
+        slider1.noUiSlider.on('update', function (values, handle) {
+            slider1Value.innerHTML = values[handle];
+        });
+    </script>
+
+
+
+    <script>
+        var lockedState = false;
+        var lockedSlider = false;
+        var lockedValues = [1000];
+
+        var slider2 = document.getElementById('slider2');
+        var slider2Value = document.getElementById('slider2-input');
+        var connect = slider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+    </script>
+    <script>
+        var slider = document.getElementById('slider-color');
+        noUiSlider.create(slider2, {
+            start: 70000,
+            connect: [true, false],
+            // Disable animation on value-setting,
+            // so the sliders respond immediately.
+            animate: false,
+            range: {
+                min: 0,
+                max: 100000
+            }
+        });
+
+        slider2.noUiSlider.on('update', function (values, handle) {
+            slider2Value.innerHTML = values[handle];
+        });
+    </script>
+
+
+
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_xpertz.min.js"></script>
+
+</body>
+
+</html>

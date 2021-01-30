@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.png">
+    <title>XPERTZ</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+    <!-- <link href="css/muli/stylesheet.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Open Sans';
+        }
+    </style>
+</head>
+
+<body class="selector">
+    <!-- navigation include in external file -->
+    <header>
+        <div id="inc-navigation">
+        </div>
+        <div> Dynamic </div>
+    </header>
+    <div class="">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                    Launch demo modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary typ-outline">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" style="margin:50px;">
+                    <input type="checkbox">
+                    <input type="checkbox" checked>
+                    <input type="radio" name="iCheck">
+                    <input type="radio" name="iCheck" checked>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <button type="button" class="btn btn-default btn-sm">Default</button>
+                    <button type="button" class="btn btn-primary btn-sm">Primary</button>
+                    <button type="button" class="btn btn-success btn-sm">Success</button>
+                    <button type="button" class="btn btn-info btn-sm">Info</button>
+                    <button type="button" class="btn btn-warning btn-sm">Warning</button>
+                    <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                    <button type="button" class="btn btn-link btn-sm">Link</button>
+                </div>
+                <br />
+                <br />
+                <div>
+                    <button type="button" class="btn btn-default typ-outline">Back to verification</button>
+                    <button type="button" class="btn btn-primary typ-outline">save</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </div>
+                <br />
+                <br />
+                <div>
+                    <button type="button" class="btn btn-default btn-condensed typ-outline">edit</button>
+                    <button type="button" class="btn btn-primary btn-condensed">save</button>
+                    <button type="button" class="btn btn-primary btn-condensed" disabled="disabled">save</button>
+                </div>
+                <br />
+                <br />
+                <button type="button" class="btn btn-primary" disabled="disabled">Primary button</button>
+                <button type="button" class="btn btn-default" disabled="disabled">Button</button>
+            </div>
+
+        </div>
+        <div class="well"> </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="tabs typ-verti">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- Nav tabs -->
+                            <ul class="nav xpertz-tab nav-stacked" role="tablist">
+                                <li role="presentation" class="active"><a href="#personal-details"
+                                        aria-controls="personal-details" role="tab"
+                                        data-toggle="tab">personal-details</a></li>
+                                <li role="presentation"><a href="#visiting-card" aria-controls="visiting-card"
+                                        role="tab" data-toggle="tab">visiting-card</a></li>
+                                <li role="presentation"><a href="#change-pass" aria-controls="change-pass" role="tab"
+                                        data-toggle="tab">change-pass</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="personal-details">personal-details
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="visiting-card">visiting-card</div>
+                                <div role="tabpanel" class="tab-pane" id="change-pass">change-pass</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tabs typ-horiz">
+                    <!-- Nav tabs -->
+                    <ul class="nav xpertz-tab nav-justified" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                data-toggle="tab">Home</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                data-toggle="tab">Profile</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                data-toggle="tab">Messages</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                                data-toggle="tab">Settings</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">home</div>
+                        <div role="tabpanel" class="tab-pane" id="profile">profile</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">messages</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">settings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer include in external file -->
+    <footer class="footer" id="inc-footer">
+    </footer>
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_xpertz.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_minimal',
+                radioClass: 'iradio_minimal',
+                increaseArea: '20%' // optional
+            });
+            // $('input').iCheck('check', function () {
+            //     //alert('Well done, Sir');
+            // });
+        });
+    </script>
+
+</body>
+
+</html>

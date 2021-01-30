@@ -1,0 +1,399 @@
+<nav class="nav-wrap">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <div class="nav-icon hidden-xs hidden-sm hidden-md hidden-lg mob-search">
+                </li>
+                <a href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed hidden-xs hidden-sm" data-toggle="collapse"
+                data-target="#nav-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-xs hidden-sm" href="./index.html">
+                <img src="images/logo.svg" alt="" srcset="">
+            </a>
+            <div class="mob-page hidden-md hidden-lg">
+                <div class="page-name">Page Name</div>
+                <ul class="nav navbar-nav navbar-right1 nav-notify">
+                    <li class="nav-icon">
+                        <a href="#">
+                            <span class="n-count">10</span>
+                            <i class="tn-icon tn-bell"></i>
+                            <!-- <i class="fa fa-bell-o" aria-hidden="true"></i> -->
+                        </a>
+                    </li>
+                    <li class="nav-icon">
+                        <a href="#">
+                            <span class="n-count">3</span>
+                            <i class="tn-icon tn-shopping-cart"></i>
+
+                            <!-- <i class="fa fa-shopping-cart" aria-hidden="true"></i> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="nav-collapse">
+
+            <ul class="nav navbar-nav navbar-right nav-gp ">
+                <li class="">
+                    <a href="#" class="user-pic-btn" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="user-pic" style="background-image: url(../images/ios.png);"></span>
+                        <div class="u-details">
+                            <span>John Doe</span>
+                            <span><small>Some text here</small></span>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">
+                                <img src="./images/user.svg" alt="" srcset=""> My Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"> <img src="./images/airplay.svg" alt="" srcset=""> Interview</a>
+                        </li>
+                        <li>
+                            <a href="#"> <img src="./images/user.svg" alt="" srcset=""> Help</a>
+                        </li>
+                        <li>
+                            <a href="#"> <img src="./images/user.svg" alt="" srcset=""> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right1 nav-notify">
+                <!-- <li class="nav-icon hidden-xs">
+                    <a href="#">
+                        <i class="fa fa-search " aria-hidden="true"></i>
+                    </a>
+                </li> -->
+                <li class="nav-icon">
+                    <a href="#">
+                        <span class="n-count">3</span>
+                        <i class="tn-icon tn-bell"></i>
+                        <!-- <i class="fa fa-shopping-cart" aria-hidden="true"></i> -->
+                    </a>
+                </li>
+                <li class="nav-icon">
+                    <a href="#">
+                        <span class="n-count">10</span>
+                        <i class="tn-icon tn-shopping-cart"></i>
+                        <!-- <i class="fa fa-bell-o" aria-hidden="true"></i> -->
+                    </a>
+                </li>
+                <!-- <li class=""><a href="#"><span class="new-lead"><i class="icon-plus"></i></span></a></li> -->
+                <li class="create-new">
+                    <a class="btn btn-default typ-outline" href="/new-lead.html">
+                        Login </a>
+                </li>
+                <li class="create-new">
+                    <a class="btn btn-default typ-outline" href="/new-lead.html">
+                        Sign Up
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right2 nav-list">
+                <li class="">
+                    <a href="#">Home</a>
+                </li>
+                <li class="">
+                    <a href="#">About</a>
+                </li>
+                <li class="">
+                    <a href="#">Corporate</a>
+                </li>
+                <li class="">
+                    <a href="#">Contact</a>
+                </li>
+                <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">Tools
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">Partners</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- MOBILE NAVIGATION -->
+
+
+<div class="mob-nav js-mob-nav">
+    <ul>
+        <li class="active">
+            <a>
+                <img src="./images/home.svg" alt="" srcset=""><span>Home</span>
+            </a>
+        </li>
+        <li class="">
+            <a>
+                <img src="./images/search.svg" alt="" srcset=""><span>Search</span>
+            </a>
+            <div class="sub-menu">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search all products">
+                    </div>
+                </form>
+                <div class="trending-list">
+                    <h2>Trending </h2>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)"> java</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> android</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> java</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> android</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> java</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> android</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="categories-list">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li class="">
+                            <a href="javascript:void(0)"> java</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 01
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 02
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 03
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 04
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 05
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 06
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 07
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 08
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 09
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 10
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 11
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        sub link 12
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> java</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios 1</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios 2</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios 3</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios 4</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"> ios</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        link 01
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </li>
+        <li class="">
+            <a>
+                <img src="./images/airplay.svg" alt="" srcset=""><span>Interview</span>
+            </a>
+        </li>
+        <li class="">
+            <a>
+                <img src="./images/user.svg" alt="" srcset=""><span>Profile</span>
+            </a>
+        </li>
+    </ul>
+
+</div>

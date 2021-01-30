@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title>Pre Submit</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+</head>
+
+<body>
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header no-border list-tabs">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <a href="">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                                --
+                                <a href=""> Pre Submit</a>
+                                <h1 class="title">Pre Submit</h1>
+                            </div>
+                            <!-- Nav tabs -->
+                            <ul class="nav xpertz-tab nav-justified lap-tabs pre-tab" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#unattended" aria-controls="unattended" role="tab"
+                                        data-toggle="tab">UNATTENDED</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#call" aria-controls="call" role="tab" data-toggle="tab">CALL</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#visit" aria-controls="visit" role="tab" data-toggle="tab">VISIT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- TABS -->
+        <div class="tabs typ-pre list-tab">
+            <!-- tab-panes -->
+            <div class="tab-content no-shadow no-lr-padding draft-panes">
+                <div role="tabpanel" class="tab-pane active" id="unattended">
+                    <div class="draft-count">
+                        <div class="" id="count-list">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6 col-xs-6">
+                                    <div class="">
+                                        <!-- <i class="fa fa-sort-amount-desc" aria-hidden="true"></i> -->
+                                        <img src="images/icons/files.png">
+                                        <span class="count-presumbit">9</span>
+                                        <span class="count-file"> Files</span>
+                                        <span class="files"> 9 </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6 col-xs-6">
+                                    <div class="draft-loan-amnt pull-right">
+                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                        <span class="total-loan-amnt">7.5 Cr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="no-mcs">
+                        <table id="pl-list" class="table typ-draft table-responsive ">
+                            <thead class="hidden-xs">
+                                <tr>
+                                    <th class="first-td">
+                                        <!-- <i class="fa fa-sort-amount-desc" aria-hidden="true"></i> -->
+                                        <img src="images/icons/shuffel.png">
+
+
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-sort-alpha-asc" aria-hidden="true"> -->
+                                        <img src="images/icons/atoz.png"> NAME
+                                    </th>
+                                    <th class="hidden-xs">
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/location.png"> LOCATION
+                                    </th>
+                                    <th># CONTACT</th>
+                                    <th class="hidden-xs">
+                                        <!-- <i class="fa fa-folder" aria-hidden="true"></i> -->
+                                        <img src="images/icons/channel.png"> CHANNEL
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-calendar" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/date.png"> DATE
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-shield" aria-hidden="true"></i> -->
+                                        <img src="images/icons/offer.png"> OFFER</th>
+
+                                    <th>
+                                        <i class="fa fa-inr"></i> AMOUNT</th>
+                                    <th>
+                                        <i class="icon-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="draft-item">
+                                <tr data-toggle="modal" data-target="#current-status" style="position: relative;">
+                                    <td class="user-mob">
+                                        <span class="loan-type pl">PL</span>
+                                        <!-- <span class="loan-type lap">LAP</span>
+                                                                <span class="loan-type mf">MF</span> -->
+                                    </td>
+                                    <td class="inline-blck hidden-sm hidden-md hidden-lg">
+                                        <div class="u-name1">
+                                            <span>Ganpat Gaytonde</span>
+                                            <br>
+                                            <span class="hidden-md hidden-lg hidden-sm loc">Virar
+                                            </span>
+                                            <span class="hidden-md hidden-lg hidden-sm loc"> Mira Road (e)
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <div class="u-name">Ganpat Gaytonde</div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true"> -->
+                                        <img src="images/icons/location.png"> User Location</td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="hidden-sm hidden-md hidden-lg mob-amount">
+                                            <i class="icon-calendar"></i>
+                                            <strong class="amount">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 4 L</strong>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">#
+                                        <strong>9821672735</strong>
+                                    </td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="arrow-res">
+                                            <a href="">
+                                                <img src="images/arrow.png">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-folder" aria-hidden="true"></i> -->
+                                        <img src="images/icons/channel.png"> Channel
+                                    </td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="mob-dots">
+                                            <a href="">
+                                                <img src="images/dots.png">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-calendar" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/date.png"> 7 Mar</td>
+                                    <td class="hidden-xs">
+
+                                        <span class="offer">
+                                            <strong>
+                                                <img src="images/icons/offer.png" alt="" srcset="">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 3 L</strong>
+                                        </span>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <div class="">
+                                            <i class="icon-calendar"></i>
+                                            <strong class="amount">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 4 L</strong>
+                                        </div>
+                                    </td>
+                                    <td class="actions hidden-xs social-pad">
+
+                                        <span>
+
+                                            <a href="">
+                                                <!-- <i class="fa fa-share-alt" aria-hidden="true"></i> -->
+                                                <img src="images/icons/share.png">
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a href="">
+                                                <!-- <i class="fa fa-pencil-square-o" aria-hidden="true"></i> -->
+                                                <img src="images/icons/edit.png">
+                                            </a>
+                                        </span>
+
+
+                                    </td>
+                                </tr>
+
+
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane " id="call">
+                    <div class="draft-count">
+                        <div class="" id="count-list">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6 col-xs-6">
+                                    <div class="">
+                                        <!-- <i class="fa fa-sort-amount-desc" aria-hidden="true"></i> -->
+                                        <img src="images/icons/files.png">
+                                        <span class="count-presumbit">9</span>
+                                        <span class="count-file"> Files</span>
+                                        <span class="files"> 9 </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6 col-xs-6">
+                                    <div class="draft-loan-amnt pull-right">
+                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                        <span class="total-loan-amnt">7.5 Cr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="no-mcs">
+                        <table id="pl-list" class="table typ-draft table-responsive ">
+                            <thead class="hidden-xs">
+                                <tr>
+                                    <th class="first-td">
+                                        <!-- <i class="fa fa-sort-amount-desc" aria-hidden="true"></i> -->
+                                        <img src="images/icons/shuffel.png">
+
+
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-sort-alpha-asc" aria-hidden="true"> -->
+                                        <img src="images/icons/atoz.png"> NAME
+                                    </th>
+                                    <th class="hidden-xs">
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/location.png"> LOCATION
+                                    </th>
+                                    <th># CONTACT</th>
+                                    <th class="hidden-xs">
+                                        <!-- <i class="fa fa-folder" aria-hidden="true"></i> -->
+                                        <img src="images/icons/channel.png"> CHANNEL
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-calendar" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/date.png"> DATE
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-shield" aria-hidden="true"></i> -->
+                                        <img src="images/icons/offer.png"> OFFER</th>
+
+                                    <th>
+                                        <i class="fa fa-inr"></i> AMOUNT</th>
+                                    <th>
+                                        <i class="icon-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="draft-item">
+                                <tr data-toggle="modal" data-target="#current-status" style="position: relative;">
+                                    <td class="user-mob">
+                                        <span class="loan-type pl">PL</span>
+                                        <!-- <span class="loan-type lap">LAP</span>
+                                                                <span class="loan-type mf">MF</span> -->
+                                    </td>
+                                    <td class="inline-blck hidden-sm hidden-md hidden-lg">
+                                        <div class="u-name1">
+                                            <span>Ganpat Gaytonde</span>
+                                            <br>
+                                            <span class="hidden-md hidden-lg hidden-sm loc">Virar
+                                            </span>
+                                            <span class="hidden-md hidden-lg hidden-sm loc"> Mira Road (e)
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <div class="u-name">Ganpat Gaytonde</div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true"> -->
+                                        <img src="images/icons/location.png"> User Location</td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="hidden-sm hidden-md hidden-lg mob-amount">
+                                            <i class="icon-calendar"></i>
+                                            <strong class="amount">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 4 L</strong>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">#
+                                        <strong>9821672735</strong>
+                                    </td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="arrow-res">
+                                            <a href="">
+                                                <img src="images/arrow.png">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-folder" aria-hidden="true"></i> -->
+                                        <img src="images/icons/channel.png"> Channel
+                                    </td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="mob-dots">
+                                            <a href="">
+                                                <img src="images/dots.png">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-calendar" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/date.png"> 7 Mar</td>
+                                    <td class="hidden-xs">
+
+                                        <span class="offer">
+                                            <strong>
+                                                <img src="images/icons/offer.png" alt="" srcset="">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 3 L</strong>
+                                        </span>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <div class="">
+                                            <i class="icon-calendar"></i>
+                                            <strong class="amount">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 4 L</strong>
+                                        </div>
+                                    </td>
+                                    <td class="actions hidden-xs social-pad">
+
+                                        <span>
+
+                                            <a href="">
+                                                <!-- <i class="fa fa-share-alt" aria-hidden="true"></i> -->
+                                                <img src="images/icons/share.png">
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a href="">
+                                                <!-- <i class="fa fa-pencil-square-o" aria-hidden="true"></i> -->
+                                                <img src="images/icons/edit.png">
+                                            </a>
+                                        </span>
+
+
+                                    </td>
+                                </tr>
+
+
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane " id="visit">
+                    <div class="draft-count">
+                        <div class="" id="count-list">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6 col-xs-6">
+                                    <div class="">
+                                        <!-- <i class="fa fa-sort-amount-desc" aria-hidden="true"></i> -->
+                                        <img src="images/icons/files.png">
+                                        <span class="count-presumbit">9</span>
+                                        <span class="count-file"> Files</span>
+                                        <span class="files"> 9 </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-6 col-xs-6">
+                                    <div class="draft-loan-amnt pull-right">
+                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                        <span class="total-loan-amnt">7.5 Cr</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="no-mcs">
+                        <table id="pl-list" class="table typ-draft table-responsive ">
+                            <thead class="hidden-xs">
+                                <tr>
+                                    <th class="first-td">
+                                        <!-- <i class="fa fa-sort-amount-desc" aria-hidden="true"></i> -->
+                                        <img src="images/icons/shuffel.png">
+
+
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-sort-alpha-asc" aria-hidden="true"> -->
+                                        <img src="images/icons/atoz.png"> NAME
+                                    </th>
+                                    <th class="hidden-xs">
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/location.png"> LOCATION
+                                    </th>
+                                    <th># CONTACT</th>
+                                    <th class="hidden-xs">
+                                        <!-- <i class="fa fa-folder" aria-hidden="true"></i> -->
+                                        <img src="images/icons/channel.png"> CHANNEL
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-calendar" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/date.png"> DATE
+                                    </th>
+                                    <th>
+                                        <!-- <i class="fa fa-shield" aria-hidden="true"></i> -->
+                                        <img src="images/icons/offer.png"> OFFER</th>
+
+                                    <th>
+                                        <i class="fa fa-inr"></i> AMOUNT</th>
+                                    <th>
+                                        <i class="icon-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="draft-item">
+                                <tr data-toggle="modal" data-target="#current-status" style="position: relative;">
+                                    <td class="user-mob">
+                                        <span class="loan-type pl">PL</span>
+                                        <!-- <span class="loan-type lap">LAP</span>
+                                                                <span class="loan-type mf">MF</span> -->
+                                    </td>
+                                    <td class="inline-blck hidden-sm hidden-md hidden-lg">
+                                        <div class="u-name1">
+                                            <span>Ganpat Gaytonde</span>
+                                            <br>
+                                            <span class="hidden-md hidden-lg hidden-sm loc">Virar
+                                            </span>
+                                            <span class="hidden-md hidden-lg hidden-sm loc"> Mira Road (e)
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <div class="u-name">Ganpat Gaytonde</div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-map-marker" aria-hidden="true"> -->
+                                        <img src="images/icons/location.png"> User Location</td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="hidden-sm hidden-md hidden-lg mob-amount">
+                                            <i class="icon-calendar"></i>
+                                            <strong class="amount">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 4 L</strong>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">#
+                                        <strong>9821672735</strong>
+                                    </td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="arrow-res">
+                                            <a href="">
+                                                <img src="images/arrow.png">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-folder" aria-hidden="true"></i> -->
+                                        <img src="images/icons/channel.png"> Channel
+                                    </td>
+                                    <td class="hidden-sm hidden-md hidden-lg">
+                                        <div class="mob-dots">
+                                            <a href="">
+                                                <img src="images/dots.png">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <!-- <i class="fa fa-calendar" aria-hidden="true"></i>  -->
+                                        <img src="images/icons/date.png"> 7 Mar</td>
+                                    <td class="hidden-xs">
+
+                                        <span class="offer">
+                                            <strong>
+                                                <img src="images/icons/offer.png" alt="" srcset="">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 3 L</strong>
+                                        </span>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        <div class="">
+                                            <i class="icon-calendar"></i>
+                                            <strong class="amount">
+                                                <i class="fa fa-inr" aria-hidden="true"></i> 4 L</strong>
+                                        </div>
+                                    </td>
+                                    <td class="actions hidden-xs social-pad">
+
+                                        <span>
+
+                                            <a href="">
+                                                <!-- <i class="fa fa-share-alt" aria-hidden="true"></i> -->
+                                                <img src="images/icons/share.png">
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a href="">
+                                                <!-- <i class="fa fa-pencil-square-o" aria-hidden="true"></i> -->
+                                                <img src="images/icons/edit.png">
+                                            </a>
+                                        </span>
+
+
+                                    </td>
+                                </tr>
+
+
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="modal fade typ-tnc" id="current-status" tabindex="-1" role="dialog" aria-labelledby="tnc-modalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title">CURRENT STATUS</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="xpertz-sec">
+                                <div class="sec-body">
+                                    <div class="row">
+                                        <ul class=" current-tab" role="tablist">
+                                            <li role="presentation" class="active">
+                                                <a href="#" aria-controls="personal-details" role="" data-toggle="">Call
+                                                    Loop</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#" aria-controls="visiting-card" role="" data-toggle="">Visit
+                                                    Loop</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#" aria-controls="change-pass" role="" data-toggle="">Not
+                                                    Interested</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#" aria-controls="not-contactable" role="" data-toggle=""> NOT
+                                                    CONTACTABLE</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#" aria-controls="no-eligible" role="" data-toggle="">NOT
+                                                    ELIGIBLE</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#" aria-controls="duplicate" role=""
+                                                    data-toggle="">DUPLICATE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer include in external file -->
+    <footer class="xpertz-footer" id="inc-footer">
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/app_xpertz.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(() => {
+                var trH = $("tbody tr").outerHeight();
+                var thtrH = $("thead").outerHeight();
+                $('tr').height(trH);
+                $('thead tr').height(thtrH);
+            }, 2000);
+        })
+    </script>
+</body>
+
+</html>

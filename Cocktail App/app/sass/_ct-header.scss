@@ -8,6 +8,8 @@ $clr-root:#ffffff;
     z-index: 12;
     top: 0px;
 
+
+
     .burger-menu {
         position: relative;
     }
@@ -103,7 +105,7 @@ $clr-root:#ffffff;
         top: 0;
         // left: 0;
         right: 0;
-        width: 80vw;
+        width: 100vw;
         height: 100vh;
         background: $black;
         z-index: 10;
@@ -148,6 +150,37 @@ $clr-root:#ffffff;
                     display: none;
                 }
             }
+
+
+
+
+
+        }
+
+        &::after {
+            display: block;
+            width: 100vh;
+            height: 100vh;
+            background: #1e1a29;
+            position: absolute;
+            top: -50vh;
+            right: -50vh;
+            z-index: -1;
+            content: '';
+            border-radius: 50%;
+        }
+
+        &::before {
+            display: block;
+            width: 150vh;
+            height: 150vh;
+            background: #130f21;
+            position: absolute;
+            top: -75vh;
+            right: -75vh;
+            z-index: -1;
+            content: '';
+            border-radius: 50%;
         }
 
         &.active {
@@ -158,6 +191,8 @@ $clr-root:#ffffff;
                 display: block;
                 width: 100%;
             }
+
+
         }
     }
 }

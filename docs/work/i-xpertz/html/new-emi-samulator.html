@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+    <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+    <!-- <script type="text/javascript" src="js/lib/moment.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/lib/daterangepicker.min.js"></script> -->
+    <link href="css/nouislider.min.css" rel="stylesheet">
+    <!-- Offline -->
+    <!-- <script src="js/lib/offline.min.js"></script> -->
+
+    <style>
+        input:focus {
+            outline: 0;
+            border-bottom: 1px solid #f16738;
+            border-color: #f16738;
+            box-shadow: 0 0 0 #f16738;
+        }
+    </style>
+</head>
+
+<body class="selector">
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <i class="fa fa-home icon-2"></i> -- EMI SAMULATOR
+                            </div>
+                            <h1 class="title">EMI SAMULATOR</h1>
+                        </div>
+                        <div class="xpertz-col v-align-bottom text-right gen-date">
+                            <div class="">
+                                <img src="images/calculator.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class=" tabs typ-verti2">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3">
+                                <!-- Nav tabs -->
+                                <ul class="nav xpertz-tab typ-verti2 nav-stacked emi-nav" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#emi-calculator-pl" aria-controls="emi-calculator-pl" role="tab"
+                                            data-toggle="tab">Personal
+                                            Loan
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#lap-calculator" aria-controls="lap-calculator" role="tab"
+                                            data-toggle="tab">Loan
+                                            Against Property</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-md-10 col-sm-9">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active emi-cal" id="emi-calculator-pl">
+                                        <div class="xpertz-sec">
+                                            <div class="row">
+
+                                                <div class="col-md-7 col-sm-12 col-xs-12 div-cal">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/money.png" width="65px"
+                                                                            height="auto">
+                                                                    </span>
+                                                                    <span class="svg-title">Desire Loan</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="plemiLoanAmmountSlider">
+
+                                                                </div>
+
+                                                            </div>
+                                                            <span class="low-amount">30k</span>
+                                                            <span class="high-amount">
+                                                                < 20lac</span> </div> <div
+                                                                    class="col-md-4 col-sm-4 col-xs-12 emi-text ">
+
+                                                                    <span class="input-unit">
+                                                                        <span class="span-sym"><i class='fa fa-inr'
+                                                                                aria-hidden='true'></i></span>
+                                                                        <input type="text"
+                                                                            class="example-val text-center"
+                                                                            id="plemiLoanAmmountText" />
+                                                                        <span class="text-ammount text-center"
+                                                                            id="plemiLoanAmmountWords">
+
+                                                                        </span>
+
+                                                                    </span>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row div-top">
+                                                        <div class="col-md-8 col-sm-8 col-xs-12 ">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/time.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Tenure required</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="plemiTenureRquiredSlider">
+                                                                </div>
+                                                            </div>
+                                                            <span class="low-amount">12 Months</span>
+                                                            <span class="high-amount">240 Months</span>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-12 emi-text">
+                                                            <span class="input-unit">
+                                                                <span class="span-text">Months</span>
+                                                                <input type="text" class="example-val text-center"
+                                                                    id="plemiTenureRquiredText" />
+                                                                <span class="text-ammount text-center "
+                                                                    id="plemiTenureRquiredWords"></span>
+
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row div-top">
+                                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="images/rate1.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Intrest Rate</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="plemiInterestRateSlider">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-12 emi-text">
+                                                            <span class="input-unit">
+                                                                <span class="span-sym">%</span>
+                                                                <input type="text" class="example-val text-center"
+                                                                    id="plemiInterestRateText" />
+                                                                <span class="text-ammount"
+                                                                    id="plemiInterestRateWords"></span>
+
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-5 col-sm-12 col-xs-12 mob-pad-30-0">
+                                                    <div class="text-center mob-emi-image">
+                                                        <div class="calculator">
+                                                            <div class="loan-ammount">
+
+                                                                <div class="text-center">
+                                                                    <span class="text-600">Estimated EMI</span>
+                                                                    <h3 class="font-semi-bold">
+                                                                        <span class='emi-rupee'><i class='fa fa-inr'
+                                                                                aria-hidden='true'></i></span>
+                                                                        <span class="amount-color"
+                                                                            id="plemiAmount"></span>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="text-center hidden-xs">
+
+                                                                    <h3 class="">
+                                                                        <div class="int-text" id="plintRate"></div>
+                                                                    </h3>
+                                                                    <span class="text-600">Interest Rate</span>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="button-overlap">
+                                                                <a class="btn btn-primary emi-btn" href="#"
+                                                                    type="button" id="emi-btn"
+                                                                    onclick="calculateEmi('plemi')">Calculate</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- LAP Calculator -->
+
+                                    <div role="tabpanel" class="tab-pane emi-cal" id="lap-calculator">
+                                        <div class="xpertz-sec">
+                                            <div class="row">
+
+                                                <div class="col-md-7 col-sm-12 col-xs-12 div-cal">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/money.png" width="65px"
+                                                                            height="auto">
+                                                                    </span>
+                                                                    <span class="svg-title">Desire Loan</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="lapLoanAmmountSlider">
+
+                                                                </div>
+
+                                                            </div>
+                                                            <span class="low-amount">30k</span>
+                                                            <span class="high-amount">
+                                                                < 2Crore</span> </div> <div
+                                                                    class="col-md-4 col-sm-4 col-xs-12 emi-text lap-emi-text">
+
+                                                                    <span class="input-unit">
+                                                                        <span class="span-sym"><i class='fa fa-inr'
+                                                                                aria-hidden='true'></i></span>
+                                                                        <input type="text"
+                                                                            class="example-val text-center"
+                                                                            id="lapLoanAmmountText" />
+                                                                        <span class="text-ammount text-center"
+                                                                            id="lapLoanAmmountWords">
+
+                                                                        </span>
+
+                                                                    </span>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row div-top">
+                                                        <div class="col-md-8 col-sm-8 col-xs-12 ">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="/images/icons/time.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Tenure required</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="lapTenureRquiredSlider">
+                                                                </div>
+                                                            </div>
+                                                            <span class="low-amount">12 Months</span>
+                                                            <span class="high-amount">240 Months</span>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-12 emi-text lap-emi-text">
+                                                            <span class="input-unit">
+                                                                <span class="span-text">Months</span>
+                                                                <input type="text" class="example-val text-center"
+                                                                    id="lapTenureRquiredText" />
+                                                                <span class="text-ammount text-center "
+                                                                    id="lapTenureRquiredWords"></span>
+
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row div-top">
+                                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                                            <div class="example">
+                                                                <div class="emi-img">
+                                                                    <span class="tab-svg">
+                                                                        <img src="images/rate1.png">
+                                                                    </span>
+                                                                    <span class="svg-title">Intrest Rate</span>
+                                                                </div>
+                                                                <div class="slider noUi-target noUi-ltr noUi-horizontal"
+                                                                    id="lapInterestRateSlider">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-12 emi-text">
+                                                            <span class="input-unit">
+                                                                <span class="span-sym">%</span>
+                                                                <input type="text" class="example-val text-center"
+                                                                    id="lapInterestRateText" />
+                                                                <span class="text-ammount"
+                                                                    id="lapInterestRateWords"></span>
+
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-5 col-sm-12 col-xs-12 mob-pad-30-0">
+                                                    <div class="text-center mob-emi-image">
+                                                        <div class="calculator lap-cal">
+                                                            <div class="loan-ammount">
+
+                                                                <div class="text-center">
+                                                                    <span class="text-600">Estimated EMI</span>
+                                                                    <h3 class="font-semi-bold">
+                                                                        <span class='emi-rupee'><i class='fa fa-inr'
+                                                                                aria-hidden='true'></i></span>
+                                                                        <span class="amount-color"
+                                                                            id="lapAmount"></span>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="text-center hidden-xs">
+
+                                                                    <h3 class="">
+                                                                        <div class="int-text" id="lapintRate"></div>
+                                                                    </h3>
+                                                                    <span class="text-600">Interest Rate</span>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="button-overlap">
+                                                                <a class="btn btn-primary emi-btn" href="#"
+                                                                    type="button" id="lap-btn"
+                                                                    onclick="calculateEmi('lap')">Calculate</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+
+        <!-- SELECT DATE MODAL -->
+        <div class="modal fade typ-select-date" id="selectDate" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="call-date-popup">
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6">
+                                    <div id="selectCallDate"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary typ-outline">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer include in external file -->
+    <footer class="xpertz-footer" id="inc-footer">
+    </footer>
+    <script src="js/app_xpertz.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/lib/simulate-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.js"></script>
+
+    <script src="js/nouislider.min.js"></script>
+    <script type="text/javascript">
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+
+        function addCommaToNumber(number) {
+            number = number + "";
+            number = number.split(",").join("");
+            return number.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+
+
+        // $("input[type='radio']").change(function () {
+        // 	calculatePartpayment("lap");
+        // 	calculatePartpayment("pl");
+        // });
+
+        // function calculatePartpayment(type) {
+        //     var pamt = $('#' + type + 'preOutstandingText').val();
+        //     pamt = pamt.split(",").join("");
+        //     var month = $('#' + type + 'preTenureText').val();
+        //     var rate = $('#' + type + 'preIntrestText').val();
+        //     var pp = $('#' + type + 'prePartPaymentAmountText').val();
+        //     pp = pp.split(",").join("");
+        //     var calby = $('input[name=' + type + 'radioButtonTest]:checked').val();
+        //     console.log(calby);
+        //     if (calby == "emi") {
+        //         pamt = pamt - pp;
+        //         var monthlyInterestRatio = (rate / 100) / 12;
+        //         var monthlyInterest = (monthlyInterestRatio * pamt);
+        //         var top = Math.pow((1 + monthlyInterestRatio), month);
+        //         var bottom = top - 1;
+        //         var sp = top / bottom;
+        //         var emi = ((pamt * monthlyInterestRatio) * sp);
+        //         var result = Math.ceil(emi);
+        //         var totalAmount = Math.ceil(emi * month);
+        //         var yearlyInteret = Math.ceil(totalAmount - pamt);
+        //         var downPayment = pamt * (20 / 100);
+        //         if (isNaN(result)) {
+        //             $('#ppresult').empty();
+        //         } else {
+        //             $('#' + type + 'CalEmipart').empty();
+        //             $('#' + type + 'Tenureperiod').empty();
+        //             if (isNaN(result) || !isFinite(result)) {
+        //                 $('#' + type + 'CalEmipart');
+        //             } else {
+        //                 $('#' + type + 'CalEmipart').append(addCommaToNumber(Math.ceil(result)));
+        //             }
+        //             $('#' + type + 'Tenureperiod').append(month + " Months");
+
+        //         }
+        //     } if (calby == "tenure") {
+        //         var monthlyInterestRatio = (rate / 100) / 12;
+        //         var monthlyInterest = (monthlyInterestRatio * pamt);
+        //         var top = Math.pow((1 + monthlyInterestRatio), month);
+        //         var bottom = top - 1;
+        //         var sp = top / bottom;
+        //         var emi = ((pamt * monthlyInterestRatio) * sp);
+        //         var result = Math.ceil(emi);
+        //         console.log(emi);
+        //         var totalAmount = Math.ceil(emi * month);
+        //         pamt = pamt - pp;
+        //         rate = rate / (12 * 100);
+        //         console.log(rate);
+        //         bottom = Math.log(1 + rate);
+        //         var emical = pamt * rate;
+        //         emical = result - emical;
+        //         top = Math.log(result);
+        //         var t2 = Math.log(emical);
+        //         top = top - t2;
+        //         month = top / bottom;
+        //         month = Math.ceil(month);
+        //         if (isNaN(result)) {
+
+        //             $('#ppresult').empty();
+
+        //         } else {
+        //             $('#' + type + 'CalEmipart').empty();
+        //             $('#' + type + 'Tenureperiod').empty();
+        //             if (isNaN(result) || !isFinite(result)) {
+        //                 $('#' + type + 'CalEmipart').append(0);
+        //             } else {
+        //                 $('#' + type + 'CalEmipart').append(addCommaToNumber(Math.ceil(result)));
+        //             }
+        //             $('#' + type + 'Tenureperiod').append(month + " Months");
+        //         }
+        //     }
+
+        // }
+
+
+        function calculateEmi(type) {
+            var isValid = true;
+            var pamt = $('#' + type + 'LoanAmmountText').val();
+            pamt = pamt.split(",").join("");
+            var month = $('#' + type + 'TenureRquiredText').val();
+            var rate = $('#' + type + 'InterestRateText').val();
+            var monthlyInterestRatio = (rate / 100) / 12;
+            var monthlyInterest = (monthlyInterestRatio * pamt);
+            var top = Math.pow((1 + monthlyInterestRatio), month);
+            var bottom = top - 1;
+            var sp = top / bottom;
+            var emi = ((pamt * monthlyInterestRatio) * sp);
+            var result = Math.ceil(emi);
+            var totalAmount = Math.ceil(emi * month);
+            var yearlyInteret = Math.ceil(totalAmount - pamt);
+            var downPayment = pamt * (20 / 100);
+            console.log(result);
+            $("#" + type + "Amount").empty();
+            if (isNaN(result) || !isFinite(result)) {
+
+                $("#" + type + "Amount").append();
+            } else {
+                $("#" + type + "Amount").append(addCommaToNumber(Math.ceil(result)));
+            }
+        }
+
+
+
+
+        function convertNumberToWords(amount) {
+            var amount1 = amount + "";
+            amount = amount1.split(",").join("");
+            var words_string = "";
+            if ($.isNumeric(amount)) {
+                words_string = NumberToWords(amount);
+                if (words_string == "") {
+                    words_string = "Zero ";
+                }
+                words_string = words_string;
+            } else {
+                words_string = "Please enter only numeric values";
+            }
+
+            return words_string;
+        }
+
+
+
+
+        function NumberToWords(amount) {
+            var words_string = "";
+            var words = new Array();
+            words[0] = '';
+            words[1] = 'One';
+            words[2] = 'Two';
+            words[3] = 'Three';
+            words[4] = 'Four';
+            words[5] = 'Five';
+            words[6] = 'Six';
+            words[7] = 'Seven';
+            words[8] = 'Eight';
+            words[9] = 'Nine';
+            words[10] = 'Ten';
+            words[11] = 'Eleven';
+            words[12] = 'Twelve';
+            words[13] = 'Thirteen';
+            words[14] = 'Fourteen';
+            words[15] = 'Fifteen';
+            words[16] = 'Sixteen';
+            words[17] = 'Seventeen';
+            words[18] = 'Eighteen';
+            words[19] = 'Nineteen';
+            words[20] = 'Twenty';
+            words[30] = 'Thirty';
+            words[40] = 'Forty';
+            words[50] = 'Fifty';
+            words[60] = 'Sixty';
+            words[70] = 'Seventy';
+            words[80] = 'Eighty';
+            words[90] = 'Ninety';
+            amount = amount.toString();
+            var atemp = amount.split(".");
+            var number = atemp[0].split(",").join("");
+            var n_length = number.length;
+            var words_string = "";
+            if (n_length <= 9) {
+                var n_array = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0);
+                var received_n_array = new Array();
+                for (var i = 0; i < n_length; i++) {
+                    received_n_array[i] = number.substr(i, 1);
+                }
+                for (var i = 9 - n_length, j = 0; i < 9; i++, j++) {
+                    n_array[i] = received_n_array[j];
+                }
+                for (var i = 0, j = 1; i < 9; i++, j++) {
+                    if (i == 0 || i == 2 || i == 4 || i == 7) {
+                        if (n_array[i] == 1) {
+                            n_array[j] = 10 + parseInt(n_array[j]);
+                            n_array[i] = 0;
+                        }
+                    }
+                }
+                value = "";
+                for (var i = 0; i < 9; i++) {
+                    if (i == 0 || i == 2 || i == 4 || i == 7) {
+                        value = n_array[i] * 10;
+                    } else {
+                        value = n_array[i];
+                    }
+                    if (value != 0) {
+                        words_string += words[value] + " ";
+                    }
+                    if ((i == 1 && value != 0) || (i == 0 && value != 0 && n_array[i + 1] == 0)) {
+                        words_string += "Crores ";
+                    }
+                    if ((i == 3 && value != 0) || (i == 2 && value != 0 && n_array[i + 1] == 0)) {
+                        words_string += "Lakhs ";
+                    }
+                    if ((i == 5 && value != 0) || (i == 4 && value != 0 && n_array[i + 1] == 0)) {
+                        words_string += "Thousand ";
+                    }
+                    if (i == 6 && value != 0 && (n_array[i + 1] != 0 && n_array[i + 2] != 0)) {
+                        words_string += "Hundred and ";
+                    } else if (i == 6 && value != 0) {
+                        words_string += "Hundred ";
+                    }
+                }
+                words_string = words_string.split("  ").join(" ");
+            } else {
+                words_string = "Max length reached";
+            }
+            return words_string;
+        }
+    </script>
+
+
+
+
+    <script>
+        var plemiLoanAmmountSlider = document.getElementById('plemiLoanAmmountSlider');
+        noUiSlider.create(plemiLoanAmmountSlider, {
+            start: 30000,
+            connect: [true, false],
+            animate: false,
+            step: 5000,
+            range: {
+                min: 30000,
+                max: 2000000
+            },
+
+            format: wNumb({
+                decimals: 0,
+            })
+        })
+
+
+        var plemiLoanAmmountText = document.getElementById('plemiLoanAmmountText');
+        var connect = plemiLoanAmmountSlider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+
+        plemiLoanAmmountSlider.noUiSlider.on('update', function (values, handle) {
+            var val = parseInt(values[handle]);
+            var commaval = addCommaToNumber(val);
+            $("#plemiLoanAmmountText").val(commaval);
+            plemiLoanAmmountWords.innerHTML = convertNumberToWords(val);
+            // calculateEmi("plemi")
+        });
+
+
+        $("#plemiLoanAmmountText").change(function () {
+            var wordval = $("#plemiLoanAmmountText").val();
+            wordval = wordval.split(",").join("");
+            var commaval = addCommaToNumber(wordval);
+            $("#plemiLoanAmmountText").val(commaval);
+
+            if (wordval >= 2000000) {
+                plemiLoanAmmountWords.innerHTML = convertNumberToWords(2000000);
+            } else {
+                var setoff = 5000;
+                plemiLoanAmmountWords.innerHTML = convertNumberToWords(wordval);
+            }
+            plemiLoanAmmountSlider.noUiSlider.updateOptions({
+                start: wordval
+            });
+            // calculateEmi("plemi");
+        });
+
+
+
+
+
+        var plemiTenureRquiredSlider = document.getElementById('plemiTenureRquiredSlider');
+        noUiSlider.create(plemiTenureRquiredSlider, {
+            start: 12,
+            connect: [true, false],
+            animate: false,
+            step: 6,
+            range: {
+                min: 12,
+                max: 240
+            },
+
+            format: wNumb({
+                decimals: 0,
+            })
+        })
+
+
+        var emiTenureRquiredText = document.getElementById('plemiTenureRquiredText');
+        var connect = plemiTenureRquiredSlider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+
+        plemiTenureRquiredSlider.noUiSlider.on('update', function (values, handle) {
+            var val = (values[handle]);
+            $("#plemiTenureRquiredText").val(val);
+            plemiTenureRquiredWords.innerHTML = (val / 12) + " " + "yrs";
+            // calculateEmi("plemi");
+        });
+
+        $("#plemiTenureRquiredText").change(function () {
+            var wordval = $("#plemiTenureRquiredText").val();
+            plemiTenureRquiredSlider.noUiSlider.updateOptions({
+                start: wordval
+            });
+            // calculateEmi("plemi")
+        });
+
+
+
+
+        var plemiInterestRateSlider = document.getElementById('plemiInterestRateSlider');
+        noUiSlider.create(plemiInterestRateSlider, {
+            start: 6,
+            connect: [true, false],
+            animate: false,
+            step: 0.01,
+            range: {
+                min: 6,
+                max: 18
+            },
+            format: wNumb({
+                decimals: 2,
+            }),
+
+        })
+
+
+        var emiInterestRateText = document.getElementById('plemiInterestRateText');
+        var connect = plemiInterestRateSlider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+
+        plemiInterestRateSlider.noUiSlider.on('update', function (values, handle) {
+            var val = values[handle];
+            $("#plemiInterestRateText").val(val);
+            plintRate.innerHTML = (val) + " " + "%";
+            // calculateEmi("plemi")
+        });
+
+        $("#plemiInterestRateText").change(function () {
+            var wordval = $("#plemiInterestRateText").val();
+            plemiInterestRateSlider.noUiSlider.updateOptions({
+                start: wordval
+            });
+            // calculateEmi("plemi")
+        });
+    </script>
+    <script>
+        var lapLoanAmmountSlider = document.getElementById('lapLoanAmmountSlider');
+        noUiSlider.create(lapLoanAmmountSlider, {
+            start: 30000,
+            connect: [true, false],
+            animate: false,
+            step: 5000,
+            range: {
+                min: 30000,
+                max: 20000000
+            },
+
+            format: wNumb({
+                decimals: 0,
+            })
+        })
+
+
+        var lapLoanAmmountText = document.getElementById('lapLoanAmmountText');
+        var connect = lapLoanAmmountSlider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+
+        lapLoanAmmountSlider.noUiSlider.on('update', function (values, handle) {
+            var val = parseInt(values[handle]);
+            var commaval = addCommaToNumber(val);
+            $("#lapLoanAmmountText").val(commaval);
+            lapLoanAmmountWords.innerHTML = convertNumberToWords(val);
+            // calculateEmi("lap")
+        });
+
+
+        $("#lapLoanAmmountText").change(function () {
+            var wordval = $("#lapLoanAmmountText").val();
+            wordval = wordval.split(",").join("");
+            var commaval = addCommaToNumber(wordval);
+            $("#lapLoanAmmountText").val(commaval);
+
+            if (wordval >= 20000000) {
+                lapLoanAmmountWords.innerHTML = convertNumberToWords(20000000);
+            } else {
+                var setoff = 5000;
+                lapLoanAmmountWords.innerHTML = convertNumberToWords(wordval);
+            }
+            lapLoanAmmountSlider.noUiSlider.updateOptions({
+                start: wordval
+            });
+            // calculateEmi("lap");
+        });
+
+
+
+
+
+        var lapTenureRquiredSlider = document.getElementById('lapTenureRquiredSlider');
+        noUiSlider.create(lapTenureRquiredSlider, {
+            start: 12,
+            connect: [true, false],
+            animate: false,
+            step: 6,
+            range: {
+                min: 12,
+                max: 240
+            },
+
+            format: wNumb({
+                decimals: 0,
+            })
+        })
+
+
+        var lapTenureRquiredText = document.getElementById('lapTenureRquiredText');
+        var connect = lapTenureRquiredSlider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+
+        lapTenureRquiredSlider.noUiSlider.on('update', function (values, handle) {
+            var val = (values[handle]);
+            $("#lapTenureRquiredText").val(val);
+            lapTenureRquiredWords.innerHTML = (val / 12) + " " + "yrs";
+            // calculateEmi("lap");
+        });
+
+        $("#lapTenureRquiredText").change(function () {
+            var wordval = $("#lapTenureRquiredText").val();
+            lapTenureRquiredSlider.noUiSlider.updateOptions({
+                start: wordval
+            });
+            // calculateEmi("lap")
+        });
+
+
+
+
+        var lapInterestRateSlider = document.getElementById('lapInterestRateSlider');
+        noUiSlider.create(lapInterestRateSlider, {
+            start: 6,
+            connect: [true, false],
+            animate: false,
+            step: 0.01,
+            range: {
+                min: 6,
+                max: 18
+            },
+            format: wNumb({
+                decimals: 2,
+            }),
+
+        })
+
+
+        var lapInterestRateText = document.getElementById('lapInterestRateText');
+        var connect = lapInterestRateSlider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+
+        lapInterestRateSlider.noUiSlider.on('update', function (values, handle) {
+            var val = values[handle];
+            $("#lapInterestRateText").val(val);
+            lapintRate.innerHTML = (val) + " " + "%";
+            // calculateEmi("lap")
+        });
+
+        $("#lapInterestRateText").change(function () {
+            var wordval = $("#lapInterestRateText").val();
+            lapInterestRateSlider.noUiSlider.updateOptions({
+                start: wordval
+            });
+            // calculateEmi("lap")
+        });
+
+
+        $("#emi-btn").click(function (e) {
+            e.preventDefault();
+            $(".emi-rupee").css("display", "inline");
+
+        })
+        $("#lap-btn").click(function (e) {
+            e.preventDefault();
+            $(".emi-rupee").css("display", "inline");
+
+        })
+    </script>
+
+
+
+
+    <!-- <script>
+        var lockedState = false;
+        var lockedSlider = false;
+        var lockedValues = [1000];
+
+        var slider1 = document.getElementById('plemiLoanAmmountSlider');
+        var slider1Value = document.getElementById('plemiLoanAmmountText');
+        var connect = slider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+    </script>
+    <script>
+        var slider = document.getElementById('slider-color');
+        noUiSlider.create(plemiLoanAmmountSlider, {
+            start: 70000,
+            connect: [true, false],
+            // Disable animation on value-setting,
+            // so the sliders respond immediately.
+            animate: false,
+            range: {
+                min: 0,
+                max: 100000
+            }
+        });
+
+        plemiLoanAmmountSlider.noUiSlider.on('update', function (values, handle) {
+            slider1Value.innerHTML = values[handle];
+        });
+
+    </script>
+
+
+
+    <script>
+        var lockedState = false;
+        var lockedSlider = false;
+        var lockedValues = [1000];
+
+        var slider2 = document.getElementById('slider2');
+        var slider2Value = document.getElementById('slider2-input');
+        var connect = slider.querySelectorAll('.noUi-connect');
+        var classes = ['c-1-color'];
+
+        for (var i = 0; i < connect.length; i++) {
+            connect[i].classList.add(classes[i]);
+        }
+    </script>
+    <script>
+        var slider = document.getElementById('slider-color');
+        noUiSlider.create(slider2, {
+            start: 70000,
+            connect: [true, false],
+            // Disable animation on value-setting,
+            // so the sliders respond immediately.
+            animate: false,
+            range: {
+                min: 0,
+                max: 100000
+            }
+        });
+
+        slider2.noUiSlider.on('update', function (values, handle) {
+            slider2Value.innerHTML = values[handle];
+        });
+
+    </script> -->
+
+
+
+    <!-- SCRIPTS -->
+
+</body>
+
+</html>

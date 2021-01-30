@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="fa fa" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title>Pre Submit</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+
+    <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+</head>
+
+<body class="selector">
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <i class="fa fa-home icon-2"></i> -- LOAN AGAINST PROPERTY APPLICATION
+                                <!-- <span class="active">ADD CO-APPLICANT</span> -->
+                            </div>
+                            <h1 class="title">Loan Against Property Apllication</h1>
+                        </div>
+                        <div class="xpertz-col v-align-bottom text-right gen-date">
+                            <div class="">
+                                <img src="images/mobile_search.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="xpertz-sec ">
+                        <div class="sec-body">
+                            <div class="form-group row">
+                                <div class="col-md-4 col-sm-4 float-default-icon">
+                                    <input type="text" class="form-control" required="">
+                                    <label class="floating-label">ENTER MOBILE</label>
+
+                                    <!-- <label for="mobile">Mobile Number</label>
+                                        <input type="text" class="form-control" id="mobile" value="9876543210" placeholder="Enter Mobile" />
+                                    <div class="edit-btn">
+                                        <a href="">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </a>
+                                    </div> -->
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <label class="hide-label" for="mobile">Enter Mobile</label>
+                                    <div class="yellow-txt">
+                                        <span class="help-text italic">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i> This will be your
+                                            application id
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="xpertz-sec sm-half-circle">
+                        <!-- <div class="sec-head">
+                            <h3 class="sec-title">
+                                <span>Do you want OTP verification?</span>
+                            </h3>
+                        </div> -->
+                        <div class="sec-body switch-btn">
+                            <div class="form-group row">
+                                <div class="col-md-12 col-sm-12">
+                                    <h5 for="mobile" class="">
+                                        <strong>DO Y<span class="orange-o">O</span>U WANT OTP VERIFICATION?</strong>
+                                    </h5>
+                                    <div class="switch">
+                                        <input type="radio" class="switch-input" name="view" value="week" id="week"
+                                            checked>
+                                        <label for="week" class="switch-label switch-label-off">NO</label>
+                                        <input type="radio" class="switch-input" name="view" value="month" id="month">
+                                        <label for="month" class="switch-label switch-label-on">YES</label>
+                                        <span class="switch-selection"></span>
+                                    </div>
+                                    <span class="help-text otp italic">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i> OTP verification helps in
+                                        processing loans faster
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <div class="action-btn-wrapper text-center ">
+                <!-- <button type="button" class="btn">Cancel</button> -->
+                <a href="/loan-info.html" type="button" id="continue" class="btn btn-primary btn-condensed">CONTINUE</a>
+                <a href="/pl-form-otp.html" type="button" id="gen-otp" class="btn btn-primary btn-condensed">GENERATE
+                    OTP</a>
+
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <!-- footer include in external file -->
+    <footer class="xpertz-footer" id="inc-footer">
+    </footer>
+
+
+    <script src="js/app_xpertz.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            if ($(".switch").find(".switch-label-off").has("active")) {
+                $("#continue").show();
+                $("#gen-otp").hide();
+            } else
+            if ($(".switch").find(".switch-label-on").has("active")) {
+                $("#continue").hide();
+                $("#gen-otp").show();
+            }
+        })
+
+
+        $(".switch-label-off").click(function () {
+            if ($(".switch-label-off").has("active")) {
+                $("#continue").show();
+                $("#gen-otp").hide();
+            } else {
+                $(".switch-label-on").removeClass("active");
+                $(".switch-label-off").addClass("active");
+                $("#continue").hide();
+                $("#gen-otp").show();
+            }
+
+        })
+
+        $(".switch-label-on").click(function () {
+            if ($(".switch-label-on").has("active")) {
+                $("#continue").hide();
+                $("#gen-otp").show();
+            } else {
+                $(".switch-label-off").removeClass("active");
+                $(".switch-label-on").addClass("active");
+                $("#continue").show();
+                $("#gen-otp").hide();
+            }
+
+        })
+        // jQuery(".switch-label-on").click(function(){
+        //     $("#continue").hide();
+        //     $("#gen-otp").show();
+        // })
+
+        // jQuery(".switch-label-off").click(function(){
+
+        //     $("#continue").show();
+        //     $("#gen-otp").hide();
+        // })
+    </script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 {
   "name": "Portfolio",
   "display": "standalone",
-  "start_url": "/work/cocktail/",
+  "start_url": "/",
   "short_name": "Portfolio",
   "theme_color": "#000000",
   "description": "This is a Portfolio app",

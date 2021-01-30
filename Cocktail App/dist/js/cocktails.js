@@ -1,16 +1,62 @@
 "use strict";
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
 
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
 
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
 
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+  return arr2;
+}
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
 
 $(function () {
   var $body = $('body');
@@ -26,7 +72,7 @@ $(function () {
   }); //SMOOTH SCROLL 
   // $('.mob-nav ul li a').click(function (event) {
   //     event.preventDefault();
-  //     var link = this;
+  //     var link = this; 
   //     $.smoothScroll({
   //         scrollTarget: link.hash
   //     });
@@ -42,8 +88,24 @@ $(function () {
       $mainNav.addClass("active");
       $("#menu-lines").addClass("active");
     }
+  }); ////////////////////////////////////////////////// RANDOM COCKTAIL FOR HOME PAGE
+
+  var randomCocktailSettings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://the-cocktail-db.p.rapidapi.com/random.php",
+    "method": "GET",
+    "headers": {
+      "x-rapidapi-key": "82ddc2a600msh1494e8e6f9ac181p126ff1jsn281879195311",
+      "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com"
+    }
+  };
+  $.ajax(randomCocktailSettings).done(function (response) {
+    console.log("RANDOM", response);
+    var html = "<div class=\"bg\" style=\"background-image: url('".concat(response.drinks[0].strDrinkThumb, "');\n        \"></div>");
+    $('.js-randomDrink').append(html);
   }); //////////////////////////////////////////////////
-  //KEYS
+  //KEYS 
 
   var rapidapiHost = "the-cocktail-db.p.rapidapi.com";
   var rapidapiKey = "82ddc2a600msh1494e8e6f9ac181p126ff1jsn281879195311";
@@ -223,5 +285,20 @@ $(function () {
     getSelectCategorie(category);
     $('.db-cat-name').text(category);
   }
+
+  $(function () {
+    $("#test").swipe({
+      swipe: function swipe(event, direction) {
+        $(this).text("You swiped " + direction);
+        alert(direction);
+      },
+      swipeStatus: function swipeStatus(event, phase) {
+        if (phase == "cancel") {
+          $(this).text("You didnt swipe far enough ");
+        }
+      },
+      threshold: 200
+    });
+  });
 });
 //# sourceMappingURL=cocktails.js.map

@@ -4,10 +4,10 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("icons.eot?be571b396330a34c00d51753060bfb53");
-	src:url("icons.eot?be571b396330a34c00d51753060bfb53#iefix") format("embedded-opentype"),
-		url("icons.woff?be571b396330a34c00d51753060bfb53") format("woff"),
-		url("icons.ttf?be571b396330a34c00d51753060bfb53") format("truetype");
+	src:url("icons.eot?b9efa426317358bea6d2cc00b0b53b7b");
+	src:url("icons.eot?b9efa426317358bea6d2cc00b0b53b7b#iefix") format("embedded-opentype"),
+		url("icons.woff?b9efa426317358bea6d2cc00b0b53b7b") format("woff"),
+		url("icons.ttf?b9efa426317358bea6d2cc00b0b53b7b") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -32,31 +32,56 @@
 /* Icons */
 
 
-.tn-alcohol:before {
+.tn-airplay:before {
 	content:"\f101";
 }
 
 
-.tn-cocktail:before {
+.tn-alcohol:before {
 	content:"\f102";
 }
 
 
-.tn-home:before {
+.tn-arrow:before {
 	content:"\f103";
 }
 
 
-.tn-list:before {
+.tn-cocktail:before {
 	content:"\f104";
 }
 
 
-.tn-search:before {
+.tn-eye:before {
 	content:"\f105";
 }
 
 
-.tn-shot:before {
+.tn-home:before {
 	content:"\f106";
+}
+
+
+.tn-list:before {
+	content:"\f107";
+}
+
+
+.tn-search-gray:before {
+	content:"\f108";
+}
+
+
+.tn-search:before {
+	content:"\f109";
+}
+
+
+.tn-shot:before {
+	content:"\f10a";
+}
+
+
+.tn-user:before {
+	content:"\f10b";
 }

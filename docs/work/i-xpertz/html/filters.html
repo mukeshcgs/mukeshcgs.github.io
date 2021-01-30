@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="fa fa" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title>XPERTZ</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#filter">
+        FIlter1
+    </button>
+    <!-- Modal 1-->
+    <div class="modal fade salesweb" id="filter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>FILTERS</strong>
+                        </div>
+                        <div class="col-md-6 text-right text-orange reset">RESET ALL</div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-collapse">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                <strong>Y<span class="text-orange">O</span>UR FAVOURITES</strong>
+                                <i class="reverse-arrow fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                        </h4>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <table id="fav-table" class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <strong> FAVOURITE 1 </strong>
+                                                    </td>
+                                                    <td>
+                                                        DATE, PL, LAP, WEEKLY
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong> FAVOURITE 2 </strong>
+                                                    </td>
+                                                    <td>
+                                                        CHANNEL, DATE, LAP, LP MONTHLY
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6 "></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sorting-options">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 col-sm-12">
+                                <p>SORT BY</p>
+                                <div class="container check-filter">
+                                    <input id="tab1" type="checkbox" checked>
+                                    <label for="tab1">DATE</label>
+
+                                    <input id="tab2" type="checkbox">
+                                    <label for="tab2">PRODUCT</label>
+
+                                    <input id="tab3" type="checkbox">
+                                    <label for="tab3">LOCATION</label>
+
+                                    <input id="tab4" type="checkbox">
+                                    <label for="tab4">CHANNEL</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 col-sm-12">
+                                <p>
+                                    FILTER BY
+                                </p>
+
+                                <div class="container check-filter">
+                                    <input id="pl" type="checkbox" checked>
+                                    <label for="pl">PL</label>
+
+                                    <input id="lap" type="checkbox">
+                                    <label for="lap">LAP</label>
+
+                                    <input id="mf" type="checkbox">
+                                    <label for="mf">MF</label>
+
+                                    <input id="demat" type="checkbox">
+                                    <label for="demat">DEMAT</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row top-date">
+
+                        <div class="col-md-12">
+                            <p>SELECT DATE</p>
+                            <div class="filter-main-tab">
+                                <ul class="nav xpertz-tab nav-justified filter-tab" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#daily" aria-controls="daily" role="tab" data-toggle="tab">DAILY</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#weekly" aria-controls="weekly" role="tab" data-toggle="tab">WEEKLY</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#monthly" aria-controls="monthly" role="tab"
+                                            data-toggle="tab">MONTHLY</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#custom1" aria-controls="custom1" role="tab"
+                                            data-toggle="tab">CUSTOM</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="daily">
+                                    <div class="call-date-popup transperent">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="popup-task">
+                                                    <div class="day-fulldate">
+                                                        <div class="day">Wednesday
+                                                            <strong class="text-orange"> 09 March 2018</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label for="contact">SELECT DATE</label>
+                                                                    <select class="form-control  text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>09</option>
+                                                                    </select>
+                                                                    <span class="help-block">DATE</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>MAR</option>
+                                                                    </select>
+                                                                    <span class="help-block">MONTH</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>2018</option>
+                                                                    </select>
+                                                                    <span class="help-block">YEAR</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <div id="selectCallDate"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="weekly">
+                                    <div class="call-date-popup transperent">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="popup-task">
+                                                    <div class="day-fulldate">
+                                                        <div class="day">Wednesday
+                                                            <strong class="text-orange"> 09 March 2018</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label for="contact">START DATE</label>
+                                                                    <select class="form-control  text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>09</option>
+                                                                    </select>
+                                                                    <span class="help-block">DATE</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>MAR</option>
+                                                                    </select>
+                                                                    <span class="help-block">MONTH</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>2018</option>
+                                                                    </select>
+                                                                    <span class="help-block">YEAR</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label for="contact">END DATE</label>
+                                                                    <select class="form-control  text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>09</option>
+                                                                    </select>
+                                                                    <span class="help-block">DATE</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>MAR</option>
+                                                                    </select>
+                                                                    <span class="help-block">MONTH</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>2018</option>
+                                                                    </select>
+                                                                    <span class="help-block">YEAR</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <div id="selectCallDate1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="monthly">
+                                    <div class="call-date-popup transperent">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="popup-task">
+                                                    <div class="day-fulldate">
+                                                        <div class="day">Wednesday
+                                                            <strong class="text-orange"> 09 March 2018</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-4">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label for="contact">SELECT MONTH</label>
+                                                                    <select class="form-control  text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>11</option>
+                                                                    </select>
+                                                                    <span class="help-block">MONTH</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <div id="monthView"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="custom1">
+                                    <div class="call-date-popup transperent">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="popup-task">
+                                                    <div class="day-fulldate">
+                                                        <div class="day">Wednesday
+                                                            <strong class="text-orange"> 09 March 2018</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label for="contact">START DATE</label>
+                                                                    <select class="form-control  text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>09</option>
+                                                                    </select>
+                                                                    <span class="help-block">DATE</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>MAR</option>
+                                                                    </select>
+                                                                    <span class="help-block">MONTH</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>2018</option>
+                                                                    </select>
+                                                                    <span class="help-block">YEAR</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label for="contact">END DATE</label>
+                                                                    <select class="form-control  text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>09</option>
+                                                                    </select>
+                                                                    <span class="help-block">DATE</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>MAR</option>
+                                                                    </select>
+                                                                    <span class="help-block">MONTH</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div>
+                                                                    <label class="hide-label" for="contact">SELECT
+                                                                        DATE</label>
+                                                                    <select class="form-control text-orange valid"
+                                                                        aria-invalid="false">
+                                                                        <option>2018</option>
+                                                                    </select>
+                                                                    <span class="help-block">YEAR</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div id="custom">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="text-center italic favorite-sec">
+                        <div class="common-checkbox">
+                            <div class="custom-checkbox tc">
+                                <input checked="" name="checkbox1" class="checkbox-custom" id="checkbox1" value="6"
+                                    type="checkbox">
+                                <label class="checkbox-custom-label" for="checkbox1">Add the above setting as a
+                                    favourite
+                                </label>
+                            </div>
+                            <!-- Button trigger modal -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-wrapper text-center">
+                        <button type="button" class="btn btn-primary typ-outline">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save & reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_xpertz.min.js"></script>
+    <script src="js/pages/new-lead.js"></script>
+
+    <script>
+        $(function () {
+            NewLead.init();
+            var d = new Date();
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            var time = d.getTime();
+            var output = d.getFullYear() + '/' +
+                (('' + month).length < 2 ? '0' : '') + month + '/' +
+                (('' + day).length < 2 ? '0' : '') + day;
+            $("#date").append(output);
+        });
+
+        $(function () {
+            NewLead1.init();
+            var d = new Date();
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            var time = d.getTime();
+            var output = d.getFullYear() + '/' +
+                (('' + month).length < 2 ? '0' : '') + month + '/' +
+                (('' + day).length < 2 ? '0' : '') + day;
+            $("#date").append(output);
+        });
+        $(function () {
+            NewLead2.init();
+            var d = new Date();
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            var time = d.getTime();
+            var output = d.getFullYear() + '/' +
+                (('' + month).length < 2 ? '0' : '') + month + '/' +
+                (('' + day).length < 2 ? '0' : '') + day;
+            $("#date").append(output);
+        });
+        $(function () {
+            NewLead3.init();
+            var d = new Date();
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            var time = d.getTime();
+            var output = d.getFullYear() + '/' +
+                (('' + month).length < 2 ? '0' : '') + month + '/' +
+                (('' + day).length < 2 ? '0' : '') + day;
+            $("#date").append(output);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="fa fa" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+  <title>Pre Submit</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Page CSS -->
+  <link href="css/app_xpertz.min.css" rel="stylesheet">
+  <link href="css/select2.css" rel="stylesheet" />
+  <link href='css/fullcalendar.min.css' rel='stylesheet' />
+  <link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" rel="stylesheet"> -->
+  <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+
+
+  <style>
+    .datepicker {
+      z-index: 1151 !important;
+    }
+  </style>
+  <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+  -->
+
+</head>
+
+<body class="selector">
+  <!-- navigation include in external file -->
+  <header>
+    <div class="xpertz-header list-tabs no-border">
+      <div id="inc-navigation">
+      </div>
+      <div class="sub-header">
+        <div class="container">
+          <div class="xpertz-row">
+            <div class="xpertz-col v-align-bottom">
+              <div class="xpertz-bredcrumbs hidden-xs">
+                <a href="">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+                --
+
+                <a href="">NEW LEAD ELEGIBILITY</a>
+
+              </div>
+              <h1 class="title">New Lead Elegibility</h1>
+              <ul class="nav xpertz-tab nav-justified scheduler-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#month-1" aria-controls="month-1" role="tab" data-toggle="tab">
+                    <span class="schdul-icon">
+                      <i class="fa fa-align-right" aria-hidden="true"></i>
+                    </span> MONTH</a>
+
+                </li>
+                <li role="presentation">
+                  <a href="#week" aria-controls="week" role="tab" data-toggle="tab">
+                    <span class="schdul-icon">
+                      <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span> WEEK</a>
+                </li>
+                <li role="presentation">
+                  <a href="#day" aria-controls="day" role="tab" data-toggle="tab">
+                    <span class="schdul-icon">
+                      <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span> DAY</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <form action="">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-container">
+            <!-- TABS -->
+            <div class="tabs">
+              <!-- Nav tabs -->
+
+              <!-- Tab panes -->
+              <div class="tab-content no-shadow no-lr-padding">
+                <div role="tabpanel" class="tab-pane active" id="month-1">
+                  <div class="row">
+                    <div class="col-md-4" id="">
+                      <div class="call-date-popup">
+
+                        <div class="xpertz-sec">
+                          <div id="selectCallDate"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-8" id="list">
+
+                    </div>
+
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="week">
+                  <div class="row">
+                    <div class="col-md-12" id="week-disp">
+
+                    </div>
+
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="day">
+                  <div class="row">
+                    <div class="col-md-12" id="day-disp">
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TABS END-->
+
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <footer class="footer" id="inc-footer">
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/app_xpertz.min.js"></script>
+  <script src="js/pages/new-lead.js"></script>
+  <script src='js/fullcalendar.min.js'></script>
+  <script src="js/select2.min.js"></script>
+  <script src='js/moment.min.js'></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script> -->
+
+  <script>
+    $(function () {
+      NewLead.init();
+      var d = new Date();
+      var month = d.getMonth() + 1;
+      var day = d.getDate();
+      // var time = d.getTime();
+      var output = d.getFullYear() + '/' +
+        (('' + month).length < 2 ? '0' : '') + month + '/' +
+        (('' + day).length < 2 ? '0' : '') + day;
+      $("#date").append(output);
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+
+      $('#list').fullCalendar({
+        header: {
+          left: '',
+          center: 'title',
+          right: ''
+        },
+
+        // customize the button names,
+        // otherwise they'd all just say "list"
+        views: {
+          listDay: {
+            buttonText: 'list day'
+          },
+          listWeek: {
+            buttonText: 'list week'
+          }
+        },
+
+        defaultView: 'listDay',
+        defaultDate: '2018-03-12',
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [{
+            title: 'All Day Event',
+            start: '2018-03-01'
+          },
+          {
+            title: 'Long Event',
+            start: '2018-03-07',
+            end: '2018-03-10'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-09T16:00:00'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-16T16:00:00'
+          },
+          {
+            title: 'Conference',
+            start: '2018-03-11',
+            end: '2018-03-13'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T10:30:00',
+            end: '2018-03-12T12:30:00'
+          },
+          {
+            title: 'Lunch',
+            start: '2018-03-12T12:00:00'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T14:30:00'
+          },
+          {
+            title: 'Happy Hour',
+            start: '2018-03-12T17:30:00'
+          },
+          {
+            title: 'Dinner',
+            start: '2018-03-12T20:00:00'
+          },
+          {
+            title: 'Birthday Party',
+            start: '2018-03-13T07:00:00'
+          },
+          {
+            title: 'Click for Google',
+            url: 'http://google.com/',
+            start: '2018-03-28'
+          }
+        ]
+      });
+
+      $('#month').fullCalendar({
+        header: {
+          left: 'prev,next',
+          center: 'title',
+          right: ''
+
+        },
+
+        // customize the button names,
+        // otherwise they'd all just say "list"
+        views: {
+          listDay: {
+            buttonText: 'list day'
+          },
+          listWeek: {
+            buttonText: 'list week'
+          }
+        },
+
+        defaultView: 'month',
+        defaultDate: '2018-03-12',
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [{
+            title: 'All Day Event',
+            start: '2018-03-01'
+          },
+          {
+            title: 'Long Event',
+            start: '2018-03-07',
+            end: '2018-03-10'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-09T16:00:00'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-16T16:00:00'
+          },
+          {
+            title: 'Conference',
+            start: '2018-03-11',
+            end: '2018-03-13'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T10:30:00',
+            end: '2018-03-12T12:30:00'
+          },
+          {
+            title: 'Lunch',
+            start: '2018-03-12T12:00:00'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T14:30:00'
+          },
+          {
+            title: 'Happy Hour',
+            start: '2018-03-12T17:30:00'
+          },
+          {
+            title: 'Dinner',
+            start: '2018-03-12T20:00:00'
+          },
+          {
+            title: 'Birthday Party',
+            start: '2018-03-13T07:00:00'
+          },
+          {
+            title: 'Click for Google',
+            url: 'http://google.com/',
+            start: '2018-03-28'
+          }
+        ]
+      });
+
+
+      $('#week-disp').fullCalendar({
+        header: {
+          left: 'prev,next',
+          center: 'title',
+          right: ''
+        },
+
+        // customize the button names,
+        // otherwise they'd all just say "list"
+        views: {
+          listDay: {
+            buttonText: 'list day'
+          },
+          listWeek: {
+            buttonText: 'list week'
+          }
+        },
+
+        defaultView: 'agendaWeek',
+        navLinks: true, // can click day/week names to navigate views
+        selectable: true,
+        selectHelper: true,
+        select: function (start, end) {
+          var title = prompt('Event Title:');
+          var eventData;
+          if (title) {
+            eventData = {
+              title: title,
+              start: start,
+              end: end
+            };
+            $('#week-disp').fullCalendar('renderEvent', eventData, true); // stick? = true
+          }
+          $('#week-disp').fullCalendar('unselect');
+        },
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [{
+            title: 'All Day Event',
+            start: '2018-03-01'
+          },
+          {
+            title: 'Long Event',
+            start: '2018-03-07',
+            end: '2018-03-10'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-09T16:00:00'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-16T16:00:00'
+          },
+          {
+            title: 'Conference',
+            start: '2018-03-11',
+            end: '2018-03-13'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T10:30:00',
+            end: '2018-03-12T12:30:00'
+          },
+          {
+            title: 'Lunch',
+            start: '2018-03-12T12:00:00'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T14:30:00'
+          },
+          {
+            title: 'Happy Hour',
+            start: '2018-03-12T17:30:00'
+          },
+          {
+            title: 'Dinner',
+            start: '2018-03-12T20:00:00'
+          },
+          {
+            title: 'Birthday Party',
+            start: '2018-03-13T07:00:00'
+          },
+          {
+            title: 'Click for Google',
+            url: 'http://google.com/',
+            start: '2018-03-28'
+          }
+        ]
+      });
+
+
+      $('#day-disp').fullCalendar({
+        header: {
+          left: 'prev,next',
+          center: 'title',
+          right: ''
+        },
+
+        defaultView: 'agendaDay',
+        navLinks: true, // can click day/week names to navigate views
+        selectable: true,
+        selectHelper: true,
+        select: function (start, end) {
+          var title = prompt('Event Title:');
+          var eventData;
+          if (title) {
+            eventData = {
+              title: title,
+              start: start,
+              end: end
+            };
+            $('#day-disp').fullCalendar('renderEvent', eventData, true); // stick? = true
+          }
+          $('#day-disp').fullCalendar('unselect');
+        },
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [{
+            title: 'All Day Event',
+            start: '2018-03-01'
+          },
+          {
+            title: 'Long Event',
+            start: '2018-03-07',
+            end: '2018-03-10'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-09T16:00:00'
+          },
+          {
+            id: 999,
+            title: 'Repeating Event',
+            start: '2018-03-16T16:00:00'
+          },
+          {
+            title: 'Conference',
+            start: '2018-03-11',
+            end: '2018-03-13'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T10:30:00',
+            end: '2018-03-12T12:30:00'
+          },
+          {
+            title: 'Lunch',
+            start: '2018-03-12T12:00:00'
+          },
+          {
+            title: 'Meeting',
+            start: '2018-03-12T14:30:00'
+          },
+          {
+            title: 'Happy Hour',
+            start: '2018-03-12T17:30:00'
+          },
+          {
+            title: 'Dinner',
+            start: '2018-03-12T20:00:00'
+          },
+          {
+            title: 'Birthday Party',
+            start: '2018-03-13T07:00:00'
+          },
+          {
+            title: 'Click for Google',
+            url: 'http://google.com/',
+            start: '2018-03-28'
+          }
+        ]
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

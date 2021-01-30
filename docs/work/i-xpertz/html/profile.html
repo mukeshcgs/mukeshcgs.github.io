@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+    <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+    <script type="text/javascript" src="js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="js/lib/daterangepicker.min.js"></script>
+    <!-- Offline -->
+    <!-- <script src="js/lib/offline.min.js"></script> -->
+    <script src="js/lib/simulate-ui.js"></script>
+</head>
+
+<body class="selector">
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <a href="">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                                --
+                                <a href=""> PROFILE</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-7">
+
+                            <div class="profile-sec1">
+                                <div class="user-pic">
+                                    <img src="images/user.jpg" alt="">
+                                    <span class="upload-img">
+                                        <input type="file" id="file1" name="image" accept="image/*" capture
+                                            style="display:none" />
+                                        <img src="/images/user.png" id="upfile1" style="cursor:pointer" />
+                                    </span>
+                                </div>
+                                <div class="user-details">
+                                    <div>
+                                        <span class="text-grey">
+                                            <i class="fa fa-user" aria-hidden="true">
+                                            </i> Senior sales agent
+
+                                        </span>
+                                        <h3>
+                                            <strong>Gaurav</strong> Pahwa</h3>
+                                        <div>
+
+
+
+                                            <span class="prof-info">
+                                                <i class="text-grey fa fa-mobile" aria-hidden="true">
+
+                                                </i>
+                                                7738326115
+                                            </span>
+                                            <span class="prof-info">
+                                                <i class="text-grey fa fa-birthday-cake" aria-hidden="true">
+
+                                                </i>
+                                                19 july 1980
+                                            </span>
+                                            <br>
+                                            <span class="prof-info">
+                                                <i class=" text-grey fa fa-envelope" aria-hidden="true">
+
+                                                </i>
+                                                prashantrao@yahoo.com
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="xpertz-row">
+                                <div class="xpertz-col v-align-bottom text-right gen-date">
+                                    <div class="lead-gen-date ">
+                                        Lead Started On
+                                        <span id=""> 2:43 PM 7 March 2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tabs profile-tab">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <!-- Nav tabs -->
+                                <ul class="nav xpertz-tab typ-verti nav-stacked" role="tablist">
+                                    <li role="presentation" class="active">
+
+                                        <a href="#personal-details" aria-controls="personal-details" role="tab"
+                                            data-toggle="tab">
+                                            <span>
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                            </span>personal-details</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#visiting-card" aria-controls="visiting-card" role="tab"
+                                            data-toggle="tab">
+                                            <span>
+                                                <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                            </span>visiting-card</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#change-pass" aria-controls="change-pass" role="tab" data-toggle="tab">
+                                            <span>
+                                                <i class="fa fa-key" aria-hidden="true"></i>
+                                            </span>change-password</a>
+                                    </li>
+                                </ul>
+                                <!-- <ul class="nav xpertz-tab typ-verti2 nav-stacked" role="tablist">
+                                    <li role="presentation">
+                                        <a href="#personal-details" aria-controls="personal-details" role="tab" data-toggle="tab">Visiting Card</a>
+                                    </li>
+                                    <li role="presentation" class="active">
+                                        <a href="#visiting-card" aria-controls="visiting-card" role="tab" data-toggle="tab">Change Password</a>
+                                    </li>
+
+
+                                </ul> -->
+                            </div>
+                            <div class="col-md-8 col-sm-8">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="personal-details">
+
+                                        <div class="profile-inn">
+                                            <div class="prof-edit">
+                                                <a href="javascript:void(0)" data-toggle="modal"
+                                                    data-target="#editmodal">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <P>CURRENT ADDRESS</P>
+                                                <span>65/93 Sakshi Apartment, Near MHADA, MG Road, Kandivli (W) Mumbai -
+                                                    400021</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="profile-inn">
+                                            <div class="prof-edit">
+                                                <a href="" data-toggle="" data-target="">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <P>OFFICE ADDRESS</P>
+                                                <span>65/93 Sakshi Apartment, Near MHADA, MG Road, Kandivli (W) Mumbai -
+                                                    400021</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="visiting-card">
+                                        <div class="col-md-6">
+
+                                            <div class="visit-card ">
+                                                <div class="visit-logo">
+                                                    <img src="images/visit-logo.png">
+                                                </div>
+                                                <div class="visit-mob">
+                                                    <i class="fa fa-mobile" aria-hidden="true">
+                                                        <span>7738326115</span>
+                                                    </i>
+                                                </div>
+                                                <br>
+                                                <div class="visit-details">
+                                                    <div>
+                                                        <p>Gaurav Pahwa</p>
+                                                        <span>Senior Sales Officer</span>
+                                                    </div>
+                                                    <div class="visit-email">
+                                                        <span>
+                                                            <i class="fa fa-envelope" aria-hidden="true">
+                                                                <span>prashantrao@yahoo.com</span>
+                                                            </i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="visit-line"></div>
+                                                    <div class="visit-line1"></div>
+                                                    <div class="visit-line2"></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <div class="visit-card ">
+                                                <div class="visit-logo">
+                                                    <img src="images/visit-logo.png">
+                                                </div>
+                                                <div class="visit-mob">
+                                                    <i class="fa fa-mobile" aria-hidden="true">
+                                                        <span>7738326115</span>
+                                                    </i>
+                                                </div>
+                                                <br>
+                                                <div class="visit-details">
+                                                    <div>
+                                                        <p>Gaurav Pahwa</p>
+                                                        <span>Senior Sales Officer</span>
+                                                    </div>
+                                                    <div class="visit-email">
+                                                        <span>
+                                                            <i class="fa fa-envelope" aria-hidden="true">
+                                                                <span>prashantrao@yahoo.com</span>
+                                                            </i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="visit-line"></div>
+                                                    <div class="visit-line1"></div>
+                                                    <div class="visit-line2"></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="change-pass">
+                                        <strong>change-pass</strong>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Animi
+                                        earum reprehenderit, esse ratione laudantium accusamus repellat recusandae
+                                        aperiam
+                                        perspiciatis quam excepturi temporibus ex quas beatae!Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Animi earum reprehenderit, esse ratione laudantium
+                                        accusamus repellat recusandae aperiam perspiciatis quam excepturi temporibus ex
+                                        quas
+                                        beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi earum
+                                        reprehenderit,
+                                        esse ratione laudantium accusamus repellat recusandae aperiam perspiciatis quam
+                                        excepturi
+                                        temporibus ex quas beatae!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SELECT DATE MODAL -->
+    <div class="modal fade" id="editmodal" tabindex="" role="dialog" aria-labelledby="editmodalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="xpertz-sec">
+                        <p>HOME ADDRESS</p>
+                        <div class="sec-body">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-6">
+                                    <div class="form-group float-default">
+                                        <div>
+
+                                            <input type="text" required="" class="form-control"
+                                                name="val_profcompanyname" placeholder="" id="val_profcompanyname">
+                                            <label class="floating-label" for="dla">ADDRESS LINE1</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-sm-6">
+                                    <div class="form-group float-default">
+                                        <div>
+
+                                            <input type="text" required="" class="form-control"
+                                                name="val_companyindustry" placeholder="" id="val_companyindustry">
+                                            <label class="floating-label" for="mobile">ADDRESS LINE1</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-5 col-sm-6 float-default-icon">
+                                    <div>
+
+                                        <input type="text" required="" class="form-control" name="val_companyindustry"
+                                            placeholder="" id="val_companyindustry">
+                                        <label class="floating-label" for="dla">WORKING IN COMPANY SINCE</label>
+
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-2 col-sm-2 col-xs-12 float-default-icon">
+                                    <div class="">
+
+                                        <input type="text" required="" class="form-control" name="pincode"
+                                            placeholder="" id="pincode">
+                                        <label class="floating-label" for="dla">PINCODE</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-2 col-sm-2 col-xs-12 float-default-icon">
+                                    <div class="">
+
+                                        <input type="text" required="" class="form-control" name="area" placeholder=""
+                                            id="area">
+                                        <label class="floating-label" for="dla">AREA</label>
+                                    </div>
+                                </div>
+                                <div class=" form-group col-md-3 col-sm-2 ">
+                                    <div class="custom-select">
+                                        <div class="">
+                                            <label for="dla">CITY</label>
+                                            <select class="form-control valid" aria-invalid="false" id="" name="">
+                                                <option value="mrs">Mumbai</option>
+                                                <option value="mr">Mumbai</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-btn-wrapper text-left">
+                                <button type="button" class="btn btn-primary typ-outline">CANCEL</button>
+                                <button type="submit" class="btn btn-primary ">SAVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer include in external file -->
+    <footer class="xpertz-footer" id="inc-footer">
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_xpertz.min.js"></script>
+    <script src="js/custom_select.js"></script>
+    <script>
+        $("#upfile1").click(function () {
+            $("#file1").trigger('click');
+        });
+    </script>
+</body>
+
+</html>

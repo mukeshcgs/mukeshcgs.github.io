@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta content="width=device-width,initial-scale=1" name="viewport"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="fa fa" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <title>Loan Information</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="css/app_xpertz.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="https://use.fontawesome.com/fc9ca5d4c9.js"></script>
+
+    <!-- <script data-main="js/app" src="js/lib/require.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+</head>
+
+<body class="selector">
+    <!-- navigation include in external file -->
+    <header>
+        <div class="xpertz-header">
+            <div id="inc-navigation">
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="xpertz-row">
+                        <div class="xpertz-col v-align-bottom">
+                            <div class="xpertz-bredcrumbs hidden-xs">
+                                <a href="">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                                --
+                                <a href=""> NEW PERSONAL LOAN</a> -
+                                <a href="">ADD CO-APPLICANT</a> -
+                                <span class="active">PROFESSIONAL INFORMATION</span>
+                            </div>
+                            <h1 class="title">Professional Information</h1>
+                        </div>
+                        <div class="xpertz-col v-align-bottom text-right">
+                            <div class="lead-gen-date">
+
+                                <span> Mobile #8792034765</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <form action="" id="plprofessionalinfo">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="xpertz-sec cong-sec-thankyou2">
+                        <div class="sec-head">
+                            <h3 class="sec-title">C<span class="orange-o">O</span>MPANY DETAILS
+                                <!-- <span class="italic"> (Optional)</span> -->
+                            </h3>
+                        </div>
+                        <div class="sec-body">
+                            <div class="row form-row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group float-default">
+                                        <div>
+
+                                            <input type="text" required="" class="form-control"
+                                                name="val_profcompanyname" placeholder="" id="val_profcompanyname">
+                                            <label class="floating-label" for="dla">COMPANY NAME</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group float-default">
+                                        <div>
+
+                                            <input type="text" required="" class="form-control"
+                                                name="val_companyindustry" placeholder="" id="val_companyindustry">
+                                            <label class="floating-label" for="mobile">COMPANY INDUSTRY</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-3 col-sm-6">
+                                    <div>
+                                        <label for="dla">WORKING IN COMPANY SINCE</label>
+                                        <div class="no-dept">
+                                            <span>
+                                                <strong>
+                                                    <input id="val_expInCurrentCompYears"
+                                                        name="val_expInCurrentCompYears" value=""
+                                                        class="form-control inline-inp text-center valid" type="text"
+                                                        aria-invalid="false">
+                                                </strong>
+                                            </span>years
+                                            <span>
+                                                <strong>
+                                                    <input id="val_expInCurrentCompMonths"
+                                                        name="val_expInCurrentCompMonths" value=""
+                                                        class="form-control inline-inp text-center" type="text">
+                                                </strong>
+                                            </span>months
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-9 col-sm-6">
+                                    <div>
+                                        <label for="dla">TOTAL WORK EXPERIENCE</label>
+                                        <div class="no-dept">
+                                            <span>
+                                                <strong>
+                                                    <input value="" id="val_totalExpYears" name="val_totalExpYears"
+                                                        class="form-control inline-inp text-center valid" type="text"
+                                                        aria-invalid="false">
+                                                </strong>
+                                            </span>years
+                                            <span>
+                                                <strong>
+                                                    <input id="val_totalExpMonths" name="val_totalExpMonths" value=""
+                                                        class="form-control inline-inp text-center" type="text">
+                                                </strong>
+                                            </span>months
+                                            <span class="red-text italic">
+                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                Error-Current company experinece cannot be more than totalwork experince
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="xpertz-sec">
+                        <div class="sec-head">
+                            <h3 class="sec-title">EMPL<span class="orange-o">O</span>YEMENT DETAILS
+                                <!-- <span class="italic"> (Optional)</span> -->
+                            </h3>
+                        </div>
+                        <div class="sec-body">
+                            <div class="row form-row">
+                                <div class="form-group col-md-6 col-sm-12 float-default-icon">
+                                    <div>
+
+                                        <input id="val_designation" type="text" required="" class="form-control"
+                                            name="val_designation" placeholder="">
+                                        <label class="floating-label" for="dla">DESIGNATION</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-3 col-sm-12 float-default-icon">
+                                    <div>
+
+                                        <input type="text" id="val_department" required="" class="form-control"
+                                            name="val_department" placeholder="">
+                                        <label class="floating-label" for="dla">DEPARTMENT
+                                            <span class="italic"> (Optional)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-3 col-sm-12">
+                                    <div>
+                                        <label for="dla">REMAINING PERIOD FOR RETIREMENT</label>
+                                        <!-- <input type="text" required="" class="form-control" name="retirement" placeholder=""> -->
+                                        <div class="no-dept">
+                                            <span>
+                                                <strong>
+                                                    <input value="" id="val_retirementinYears" required=""
+                                                        name="val_retirementinYears"
+                                                        class="form-control inline-inp text-center valid" type="text"
+                                                        aria-invalid="false">
+                                                </strong>
+                                            </span>years
+                                            <span>
+                                                <strong>
+                                                    <input value="" id="val_retirementinMonths"
+                                                        name="val_retirementinMonths" required=""
+                                                        class="form-control inline-inp text-center valid" type="text"
+                                                        aria-invalid="false">
+                                                </strong>
+                                            </span>Months
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row rupees">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="row form-row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group with-icon left float-default-icon">
+                                                <div>
+
+                                                    <input id="val_netMonthlySalary" type="text" required=""
+                                                        class="form-control" name="val_netMonthlySalary" placeholder="">
+                                                    <span class="inp-icon">
+                                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                                    </span>
+                                                    <label class="floating-label" for="sa2">NET MONTHLY SALARY</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group ">
+                                                <label class="hide-label" for="sa2">NET MONTHLY SALARY</label>
+                                                <div class="emp-help-txt">
+                                                    <span class="help-text italic">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i> Amount that
+                                                        get deposited in your bank account
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group with-icon left float-default-icon">
+                                                <div>
+
+                                                    <input id="val_otherMonthlyIncome" type="text" required=""
+                                                        class="form-control" name="val_otherMonthlyIncome"
+                                                        placeholder="">
+                                                    <span class="inp-icon">
+                                                        <i class="fa fa-inr" aria-hidden="true"></i>
+                                                    </span>
+                                                    <label class="floating-label" for="sa2">OTHER MONTHLY INCOME</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group ">
+                                                <label class="hide-label">OTHER MONTHLY INCOME</label>
+                                                <div class="emp-help-txt">
+                                                    <span class="help-text italic">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i> This can be
+                                                        Rental,Farming,Shop,Tuitions but not invested in shares
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="row rupees">
+                                <div class=" col-md-3 col-sm-3 ">
+                                    <div class="form-group with-icon left float-default-icon">
+
+                                        <input id="val_monthlyObligations" type="text" required="" class="form-control"
+                                            name="val_monthlyObligations" placeholder="">
+                                        <span class="inp-icon">
+                                            <i class="fa fa-inr" aria-hidden="true"></i>
+                                        </span>
+                                        <label class="floating-label" for="sa2">MONTHLY OBLIGATIONS</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xpertz-sec">
+                <div class="sec-head">
+                    <div class="sec-option pull-right typ-view-all">
+                        <!-- <div class="opt-btn">
+                            <a href="" class="opt-btn icon">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <h3 class="sec-title">C<span class="orange-o">o</span>MPANY ADDRESS
+                        <span class="help-text italic">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Only "," and "/" are allowed as special
+                            characters
+                        </span>
+
+                    </h3>
+                </div>
+                <div class="sec-body">
+                    <div class="row form-row">
+                        <div class="form-group col-md-6 col-sm-6 float-default-icon ">
+                            <div>
+
+                                <input id="val_addressLine1" type="text" required="" class="form-control"
+                                    name="val_addressLine1" placeholder="">
+                                <label class="floating-label" for="dla">ADDRESS LINE 1</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input id="val_addressLine2" type="text" required="" class="form-control"
+                                    name="val_addressLine2" placeholder="">
+                                <label class="floating-label" for="dla">ADDRESS LINE 2</label>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div class="">
+
+                                <input type="text" required id="val_landmark" class="form-control" name="val_landmark"
+                                    placeholder="">
+                                <label class="floating-label" for="dla">LANDMARK
+                                    <span class="italic"> (Optional)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="val_pincode" placeholder=""
+                                    id="val_pincode">
+                                <label class="floating-label" for="dla">PINCODE</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input id="val_city" type="text" required="" class="form-control" name="val_city"
+                                    placeholder="">
+                                <label class="floating-label" for="dla">CITY</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="district" placeholder="">
+                                <label class="floating-label" for="dla">DISTRICT</label>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="state" placeholder="">
+                                <label class="floating-label" for="dla">STATE</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="country" placeholder="">
+                                <label class="floating-label" for="dla">COUNTRY</label>
+
+                            </div>
+                        </div>
+                        <div class=" col-md-3 col-sm-6">
+                            <div>
+
+                                <div class="form-group float-default">
+                                    <div>
+
+                                        <input type="text" required="" class="form-control" name="company industry"
+                                            placeholder="">
+                                        <label class="floating-label" for="mobile">OFFICIAL CONTACT LANDLINE<span
+                                                class="italic"> (Optional)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xpertz-sec">
+                <div class="sec-head">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <h3 class="sec-title">C<span class="orange-o">o</span>MMUNICATION ADDRESS
+                            </h3>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <div class="  ">
+                                <div class="radiobuttons info">
+                                    <div class="rdio rdio-primary radio-inline">
+                                        <input name="radio" value="2" id="radio1" type="radio">
+                                        <label for="radio1">Current</label>
+                                    </div>
+
+                                    <div class="rdio rdio-primary radio-inline">
+                                        <input name="radio" value="2" id="radio3" type="radio">
+                                        <label for="radio3">Office</label>
+                                    </div>
+                                    <div class="rdio rdio-primary radio-inline hidden-xs">
+                                        <input name="radio" value="2" id="radio4" type="radio">
+                                        <label for="radio4">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sec-body">
+                    <div class="row">
+                        <div class="form-group col-md-6 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-address" placeholder="">
+                                <label class="floating-label" for="dla">ADDRESS LINE 1</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-address2" placeholder="">
+                                <label class="floating-label" for="dla">ADDRESS LINE 2</label>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-landmark" placeholder="">
+                                <label class="floating-label" for="dla">LANDMARK
+                                    <span class="italic"> (Optional)</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-pincode" placeholder="">
+                                <label class="floating-label" for="dla">PINCODE</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-city" placeholder="">
+                                <label class="floating-label" for="dla">CITY</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-district" placeholder="">
+                                <label class="floating-label" for="dla">DISTRICT</label>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-state" placeholder="">
+                                <label class="floating-label" for="dla">STATE</label>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3 col-sm-6 float-default-icon">
+                            <div>
+
+                                <input type="text" required="" class="form-control" name="info-country" placeholder="">
+                                <label class="floating-label" for="dla">COUNTRY</label>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <br>
+            <div class="action-btn-wrapper text-center">
+                <a type="button" class="btn btn-default typ-grey btn-condensed">BACK</a>
+                <a href="pl-personal-loan-application.html" type="button" class="btn btn-default btn-condensed">ADD
+                    CO-APPLICANT</a>
+                <a href="/pl-personal-loan-under-process.html" type="button" class="btn btn-primary btn-condensed"
+                    id="plprofessionalinfobtn">PROCEED</a>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- footer include in external file -->
+    <footer class="footer" id="inc-footer">
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/app_xpertz.min.js"></script>
+</body>
+
+</html>

@@ -16,10 +16,6 @@ module.exports = function (grunt) {
         // Project settings
         config: config,
         pkg: grunt.file.readJSON('package.json'),
-
-
-
-
         copy: {
             // making working assets copy
             main: {
@@ -175,16 +171,21 @@ module.exports = function (grunt) {
                 banner: '/*!<%= pkg.name %> - v<%= pkg.version %> - ' + ' <%= grunt.template.today("yyyy-mm-dd") %> */',
             },
             dist: {
-                src: ['<%= config.app %>/js/index.js', '<%= config.app %>/js/script.js', '<%= config.app %>/js/cocktails.js'],
-                dest: '<%= config.dist %>/js/script.js',
+                src: [
+                    '<%= config.app %>/js/index.js',
+                    '<%= config.app %>/js/db.js',
+                    '<%= config.app %>/js/globle.js',
+                    '<%= config.dist %>/js/cocktails.js'
+                ],
+                dest: '<%= config.app %>/js/scripts.js',
             },
             deps: {
                 src: [
-                    'libs/jquery/dist/jquery.js',
-                    'libs/modernizr/modernizr.js',
-                    '<%= config.dist %>/js/script.js',
+                    '<%= config.app %>/js/libs/jquery.js',
+                    '<%= config.app %>/js/libs/modernizr.js',
+                    '<%= config.app %>/js/scripts.js',
                 ],
-                dest: '<%= config.dist %>/js/vendor.js'
+                dest: '<%= config.app %>/js/vendor.js'
             },
             // move: {
             //     src: ['libs/angularjs/angular.min.js.map'],
@@ -205,7 +206,10 @@ module.exports = function (grunt) {
             // Following task will take all the js in "dest/js" folder and combine in one minifyed js
             minifyalljs: {
                 files: {
-                    '<%= config.dist %>/js/app.min.js': ['<%= config.dist %>/js/bootstrap.js', '<%= config.dist %>/js/vendor.js']
+                    '<%= config.dist %>/js/app.min.js': [
+                        // '<%= config.app %>/js/libs/bootstrap.js',
+                        '<%= config.app %>/js/vendor.js'
+                    ]
                 }
             },
             /* Following task make all js minified but not combine in one file

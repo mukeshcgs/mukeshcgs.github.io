@@ -1,0 +1,11 @@
+.js-randomDrink {
+    .bg {
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+}

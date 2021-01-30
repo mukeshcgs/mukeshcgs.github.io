@@ -8,4 +8,4 @@
 //         console.log("SW registeration failed.!");
 //         console.log(error);
 //     })
-// } 
+// }
