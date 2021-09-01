@@ -535,12 +535,14 @@ section {
 @media (max-width: 768px) {
     .hero {
         text-align: center;
+        padding: 50px 0 40px 0;
     }
     .hero h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
     .hero h2 {
-        font-size: 24px;
+        font-size: 16px;
+        margin-bottom: 15px;
     }
     .hero .hero-img img {
         width: 100%;
@@ -678,6 +680,18 @@ section {
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .counts .count-box {
+        padding: 15px;
+    }
+    .counts .count-box span {
+        font-size: 24px;
+    }
+    section {
+        padding: 30px 0;
+    }
 }
 
 
@@ -2501,4 +2515,18 @@ section {
 
 .text_offer p {
     font-size: 16px;
+}
+
+.dic_cl {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.dic_cl li {
+    list-style: none;
+    display: inline-block;
+}
+
+.pl-text {
+    color: #2db6fa;
 }
