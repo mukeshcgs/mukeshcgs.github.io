@@ -665,14 +665,14 @@ section {
     font-size: 42px;
     line-height: 0;
     margin-right: 20px;
-    color: #00324d;
+    color: #2db6fa;
 }
 
 .counts .count-box span {
     font-size: 36px;
     display: block;
     font-weight: 600;
-    color: #0b198f;
+    color: #00324d;
 }
 
 .counts .count-box p {
@@ -2581,6 +2581,10 @@ section {
     margin: 0px 0px 15px 0px;
 }
 
+.zcwf_lblLeft .zcwf_button {
+    max-width: 80% !important;
+}
+
 .zcwf_col_fld.pl-form-cta {
     display: flex;
     flex-direction: row;
@@ -2598,8 +2602,7 @@ section {
     color: #fff;
     border: 0px;
     outline: 0px;
-    width: 50%;
-    margin: 0px;
+    margin: 0px 10px;
     flex: 1;
 }
 
@@ -2612,7 +2615,6 @@ section {
     color: #fff;
     border: 0px;
     outline: 0px;
-    width: 50%;
-    margin: 0px;
+    margin: 0px 10px;
     flex: 1;
 }
