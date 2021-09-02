@@ -31,7 +31,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -89,6 +89,22 @@
     }
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
+  }
+
+  /**
+   * Toggle .partner-with-us class to #header when page is scrolled
+   */
+  let selectPWU = select('#partner_with_us')
+  if (selectPWU) {
+    const heroScrolled = () => {
+      if (window.scrollY > 500) {
+        selectPWU.classList.add('page-scrolled')
+      } else {
+        selectPWU.classList.remove('page-scrolled')
+      }
+    }
+    window.addEventListener('load', heroScrolled)
+    onscroll(document, heroScrolled)
   }
 
   /**
@@ -155,7 +171,7 @@
     }
   });
 
-  //HOME 
+  //HOME
   new Swiper('.hero-left-slider', {
     speed: 400,
     effect: 'fade',
@@ -240,7 +256,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfokio-lightbox'
