@@ -2559,4 +2559,10 @@ img.up_arrow {
     .text_offer p {
         font-size: 12px
     }
+    .footer-info {
+        text-align: center;
+    }
+    .footer-info .logo {
+        justify-content: center;
+    }
 }
