@@ -2480,7 +2480,7 @@ section {
 }
 
 button.partner_bec {
-   display: none;
+    display: none;
     background: #0a90cd;
     border: 0;
     border-radius: 4px;
@@ -2492,8 +2492,17 @@ button.partner_bec {
     width: 100%;
     z-index: 999
 }
+
+button.partner_bec a {
+    color: #fff;
+}
+
+button.partner_bec a:hover {
+    color: #fff;
+}
+
 button.partner_bec.page-scrolled {
-  display: block;
+    display: block;
 }
 
 .sec22 .number_add {
@@ -2550,5 +2559,4 @@ img.up_arrow {
     .text_offer p {
         font-size: 12px
     }
-
 }
