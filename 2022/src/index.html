@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Designer/Developer by profession an artist by passion">
+    <meta name="author" content="Mukesh Thankar">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- <link rel="apple-touch-startup-image" href="temp/apple-splash-2048-2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"> -->
+
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <!-- <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png"> -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon-16x16.png">
+
+    <!-- Recommended favicon format -->
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+
+    <!-- Microsoft Tiles -->
+    <!-- <meta name="msapplication-config" content="browserconfig.xml"> -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mukeshcgs.github.io/">
+    <meta property="og:title" content="Mukesh Thankar | portfoli">
+    <meta property="og:image" content="https://mukeshcgs.github.io/images/image.jpg">
+    <meta property="og:description" content="A Designer/Developer by profession an artist by passion">
+    <meta property="og:site_name" content="Mukesh Thankar | portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="https://mukeshcgs.github.io/">
+    <meta name="twitter:title" content="Mukesh Thankar-portfoli">
+    <meta name="twitter:description" content="A Designer/Developer by profession an artist by passion">
+    <meta name="twitter:image" content="https://mukeshcgs.github.io/images/image.jpg">
+
+    <title>Mukesh Thankar | Portfolio </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- <link href="./css/main.min.css" rel="stylesheet">   -->
+
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <!-- <link href="icon-font/icons.css" rel="stylesheet"> -->
+    <!-- <link href="css/vendor.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script> -->
+
+    <script>
+        function onSubmit(token) {
+            alert('thanks ' + document.getElementById('field').value);
+        }
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('field').value) {
+                alert("You must add text to the required field");
+            } else {
+                grecaptcha.execute();
+            }
+        }
+
+        function onload() {
+            var element = document.getElementById('submit');
+            element.onclick = validate;
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body role="document">
+    <header data-module="header" class="">
+        <div class="close-menu">
+            <div class="navigation">
+                <div class="logo">
+                    <a href="#"><svg class="svg-logo"
+                                width="55"
+                                height="30">
+                                <path d="M 0 30 L 15 0 L 30 30 Z"
+                                    fill="#0084ff"></path>
+                                <path d="M 15 30 L 30 0 L 45 30 Z"
+                                    fill="#000000"></path>
+                            </svg>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="fade-in"><a href="#p0">About</a> </li>
+                <li class="fade-in"><a href="#p1">Skills</a> </li>
+                <li class="fade-in"><a href="#p2">Work Experience</a></li>
+                <li class="fade-in"><a href="#p3">Freelance Work</a></li>
+                <li class="fade-in"><a href="#p4">Education</a></li>
+                <li class="fade-in"><a href="#p5">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app">
+        <div data-reactroot="">
+            <section class="home-container">
+                <div class="my-name">
+                    <h1> mukesh thankar
+                    </h1>
+                    <p>
+                        designer
+                        <span>|</span> developer
+                    </p>
+                    <div class="visco-badg">
+                        <a style="display: inline-block; border: 0; text-decoration: none;" href="http://vsco.co/mypixels?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid"><img style="width: 48px; height: 48px; margin: 0px;" src="http://assets.vsco.co/assets/images/assets/Logo_white_48.png" alt="VSCO Logo" /></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-container">
+                <div>
+                    <div class="page-heading"><span class="overlay22"></span>Me</div>
+                    <div class="" data-wow-delay="0.3s">
+                        <p>I am <span class="mt">Mukesh Thankar</span>, a graphic designer and web developer living in Mumbai, India. I am primarily focused on web design, and development but love taking on any good design/development challenge. I love getting
+                            to collaborate with clients to find a strategic and creative solution for any and all of their design needs. When I am not designing, you can find me drawing, playing games.</p>
+                    </div>
+                </div>
+            </section>
+            <!--SKILL-->
+            <section class="page-container">
+                <div class="skills">
+                    <div id="p1" class="page-heading">
+                        <span class="overlay22"></span> Skills
+                    </div>
+                    <ul class="skill">
+                        <li class="fade-in">
+                            <div class="skill-name">
+                                <div>Adobe Photoshop</div>
+                                <div>Coral Draw</div>
+                                <div>Adobe Illustrator</div>
+                                <div>HTML5</div>
+                                <div>CSS3+</div>
+                                <div>Javascript</div>
+                                <div>React JS</div>
+                                <div>Stimulus JS</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--WORK EXPERIANCE-->
+
+            <section class="page-container">
+                <div class="work-experience">
+                    <div id="p2" class="page-heading"><span class="overlay22"></span>Work Experience</div>
+                    <ul class="">
+                        <li>
+                            <div class="skill-name">Black Ant Pvt. Ltd.</div>
+                            <div class="skill-type">Graphic Designer
+                            </div>
+                            <div class="skill-time">Nov 2007 - May 2013</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">Hotels &amp; More Pvt. Ltd.</div>
+                            <div class="skill-type">Web Designer &amp; Developer</div>
+                            <div class="skill-time">May 2013 - June 2014</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">Astrika Infotech Pvt. Ltd.</div>
+                            <div class="skill-type">Front-end Developer</div>
+                            <div class="skill-time">Jully 2014 - Sept 2018
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">Macann Erricson</div>
+                            <div class="skill-type">Front-end Developer
+                            </div>
+                            <div class="skill-time">Sept 2018 - Present</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--FREELANCE WORK-->
+            <section class="page-container">
+                <div class="freelance-experience">
+                    <div id="p3" class="page-heading"><span class="overlay22"></span>Freelance Work</div>
+                    <ul class="freelance  " data-wow-delay="0.3s">
+                        <li class="fade-in" style="color: rgb(203, 39, 37);">
+                            <div class="skill-name">Srikant Villuri</div>
+                            <div class="skill-type">
+                                <div>website</div>
+                                <div>design</div>
+                                <div>UI</div>
+                                <div>UX</div>
+                            </div>
+                            <div class="skill-time">3 Months <a href="./srikantvilluri/index.html" target="_blank" rel="noopener noreferrer">Visit</a></div>
+                        </li>
+                        <li class="fade-in" style="color: rgb(203, 39, 37);">
+                            <div class="skill-name">CCUSA</div>
+                            <div class="skill-type">
+                                <div>application</div>
+                                <div>website</div>
+                                <div>design</div>
+                                <div>UI</div>
+                                <div>UX</div>
+                            </div>
+                            <div class="skill-time">3 Months <a href="./ravebizz/index.html" target="_blank" rel="noopener noreferrer">Visit</a></div>
+                        </li>
+                        <li class="fade-in" style="color: rgb(17, 35, 90);">
+                            <div class="skill-name">Ravebizz Solutions
+                            </div>
+                            <div class="skill-type">
+                                <div>application</div>
+                                <div>website</div>
+                                <div>design</div>
+                                <div>UI</div>
+                                <div>UX</div>
+                            </div>
+                            <div class="skill-time">3 Months <a href="./ravebizz/index.html" target="_blank" rel="noopener noreferrer">Visit</a></div>
+                        </li>
+                        <li class="fade-in" style="color: rgb(0, 195, 244);">
+                            <div class="skill-name">Magical Tarot
+                            </div>
+                            <div class="skill-type">
+                                <div>website</div>
+                                <div>UI</div>
+                            </div>
+                            <div class="skill-time">1.5 Months</div>
+                        </li>
+                        <li class="fade-in" style="color: rgb(225, 197, 116);">
+                            <div class="skill-name">Massakali Sarees
+                            </div>
+                            <div class="skill-type">
+                                <div>application</div>
+                                <div>website</div>
+                                <div>design</div>
+                                <div>UI</div>
+                            </div>
+                            <div class="skill-time">2 Months <a href="./ravebizz/index.html" target="_blank" rel="noopener noreferrer">Visit</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--EDUCATION-->
+            <section class="page-container">
+                <div class="education">
+                    <div id="p4" class="page-heading"><span class="overlay22"></span>Education</div>
+                    <ul class="skills edu " data-wow-delay="0.3s">
+                        <li>
+                            <div class="skill-name">BCA</div>
+                            <div class="skill-type">Pune Univercity</div>
+                            <div class="skill-time">Feb 2012 - 2013</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">Graphic Design</div>
+                            <div class="skill-type">Digicom Institute
+                            </div>
+                            <div class="skill-time">Feb 2011 - 2012</div>
+                        </li>
+                        <li>
+                            <div class="skill-name">HSC</div>
+                            <div class="skill-type">Birla Collage</div>
+                            <div class="skill-time">Feb 2011 - 2012</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="page-container " data-wow-delay="0.3s">
+                    <form action="" class="contact-form">
+                        <div class="g12">
+                            <div class="g1x2">
+                                <div><input placeholder="Name" type="text" id="field" name="field" />
+                                </div>
+                            </div>
+                            <div class="g1x2">
+                                <div><input id='submit' type="button" value="Sumbmit" type="text" /></div>
+                            </div>
+                        </div>
+                        <div id='recaptcha' class="g-recaptcha" data-sitekey="6LcmzdwUAAAAAFDTv8rRuGWfESS1D0_KharJCtHW" data-callback="onSubmit" data-size="invisible"></div>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+
+    <script>
+        onload();
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="107198644461564">
+    </div>
+</body>
+
+</html>

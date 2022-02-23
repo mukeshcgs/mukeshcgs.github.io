@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #444444;
+}
+
+html {
+    background: #fff;
+}
+
+.mt {
+    color: #0084ff;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #444444;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+    color: #999;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+img {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 100rem;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.fade-in {
+    animation: fadein 3s;
+}
+
+.loading_spinner-wrap {
+    position: fixed;
+    z-index: 999;
+    background: #1f1f1f;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.loading_spinner {
+    display: block;
+    margin: 0 auto;
+    fill: #1f1f1f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -10px;
+    circle {
+        animation-name: upAndDown;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.05, 0.2, 0.35, 1);
+        animation-iteration-count: infinite;
+        &:nth-child(2) {
+            animation-delay: .18s;
+        }
+        &:nth-child(3) {
+            animation-delay: .36s;
+        }
+    }
+}
+
+.home-container {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    top: 0;
+    .my-name {
+        position: relative;
+        top: 40%;
+        display: inline-block;
+        h1 {
+            font-size: 2em;
+            letter-spacing: 0.2em;
+            font-weight: 300;
+            color: #1f1f1f;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            &::after {
+                content: "";
+                bottom: 10px;
+                right: 3px;
+                display: block;
+                width: 3px;
+                height: 3px;
+                background: #0084ff;
+                position: absolute;
+            }
+            span {
+                color: #0084ff;
+            }
+        }
+        p {
+            color: #999;
+            letter-spacing: 0.3em;
+            font-size: 1em;
+            span {
+                color: #0084ff;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.page-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
