@@ -1,0 +1,161 @@
+{
+  "title": "Anagram.paris | Work",
+  "content": [
+    {
+      "id": "prefabs.text_titles",
+      "text": "Meet our team of ",
+      "titles": [
+        "*digital experts*"
+      ],
+      "paddingTop": 150,
+      "paddingBottom": 45,
+      "mobile": {
+        "paddingTop": 150,
+        "paddingBottom": 20,
+        "maxWidth": "70w"
+      }
+    },
+    {
+      "id": "prefabs.text",
+      "text": "We are actualy way more fun and smiling in real life. But anyway, we’re passionate about digital stuff, and always want to improve our skills and push limits!"
+    },
+    {
+      "id": "prefabs.team",
+      "content": [
+        {
+          "text": "Alex",
+          "src": "img/assets/pages/team/alex.jpg",
+          "job": "CEO",
+          "skills": [
+            "Client management",
+            "Financial inspector",
+            "Joke master"
+          ]
+        },
+        {
+          "text": "Axel",
+          "src": "img/assets/pages/team/axel.jpg",
+          "job": "CEO & Creative Director",
+          "skills": [
+            "UX/UI expert",
+            "Design & motion specialist",
+            "Long time creative geek"
+          ]
+        },
+        {
+          "text": "Laurent",
+          "src": "img/assets/pages/team/laurent.jpg",
+          "job": "CTO - Associate",
+          "skills": [
+            "Back and front development",
+            "Development team manager",
+            "'My body is a temple' Master"
+          ]
+        },
+        {
+          "text": "Antoine",
+          "src": "img/assets/pages/team/antoine.jpg",
+          "job": "Product manager",
+          "skills": [
+            "UX master",
+            "Product management",
+            "HipHop Guru"
+          ]
+        },
+        {
+          "text": "Basile",
+          "src": "img/assets/pages/team/basile.jpg",
+          "job": "Film director",
+          "skills": [
+            "Brand content expert",
+            "Video and photography specialist",
+            "Dungeon lover"
+          ]
+        },
+        {
+          "text": "Christelle",
+          "src": "img/assets/pages/team/christelle.jpg",
+          "job": "Financial Officer",
+          "skills": [
+            "Reporting queen",
+            "HR mummy",
+            ""
+          ]
+        },
+        {
+          "text": "Christopher",
+          "src": "img/assets/pages/team/christopher.jpg",
+          "job": "Back-end developer",
+          "skills": [
+            "Back-end enthousiast",
+            "API ninja",
+            "Hardcore gamer"
+          ]
+        },
+        {
+          "text": "Clement",
+          "src": "img/assets/pages/team/clement.jpg",
+          "job": "Designer",
+          "skills": [
+            "UX skills",
+            "UI specialist",
+            "3D and motion padawan"
+          ]
+        },
+        {
+          "text": "Florian",
+          "src": "img/assets/pages/team/florian.jpg",
+          "job": "Head of production",
+          "skills": [
+            "Project management mastermind",
+            "Strategic planner",
+            "Awkward jokes master"
+          ]
+        },
+        {
+          "text": "Loïc",
+          "src": "img/assets/pages/team/loic.jpg",
+          "job": "Senior front-end developer",
+          "skills": [
+            "Front-end master",
+            "Web and shader master",
+            "Donald duck Impersonator"
+          ]
+        },
+        {
+          "text": "Marion",
+          "src": "img/assets/pages/team/marion.jpg",
+          "job": "Project manager",
+          "skills": [
+            "Project management",
+            "Client relationship",
+            "WTF Queen"
+          ]
+        },
+        {
+          "text": "Patricia",
+          "src": "img/assets/pages/team/patricia.jpg",
+          "job": "Project manager",
+          "skills": [
+            "Wireframe addict",
+            "Client relationship",
+            "Ronaldo biggest fan"
+          ]
+        },
+        {
+          "text": "Samuel",
+          "src": "img/assets/pages/team/samuel.jpg",
+          "job": "Front-end developer",
+          "skills": [
+            "UX skills",
+            "Full stack developer",
+            "Knife and arrow lover"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prefabs.footer"
+    }
+  ]
+}

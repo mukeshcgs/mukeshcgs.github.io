@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    header {
+        display: flex;
+        justify-content: flex-end;
+        background: black;
+        justify-content: space-between;
+        margin: 0 auto;
+        nav {
+            ul {
+                display: flex;
+                li {
+                    a {
+                        display: block;
+                        border: none;
+                        text-decoration: underline;
+                        font-size: 14px;
+                        cursor: pointer;
+                        outline: 0;
+                        color: blue;
+                        padding: 1rem;
+                        margin-right: 20px;
+                        background: black;
+                        color: white;
+                        text-decoration: none;
+                         :hover {
+                            color: darken(white, 20%)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home {
+        width: 100%;
+        background: red;
+        ;
+        .home-header {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 90%;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .home-content {
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 90%;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .home-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto;
+            margin-top: 5px;
+            width: 90%;
+            font-size: 14px;
+        }
+    }
+    .about {
+        width: 100%;
+        background: blue;
+        .about-header {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 90%;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .about-content {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+            width: 90%;
+            border-radius: 5px;
+            padding: 5px;
+            .number {
+                border: 1px solid black;
+                border-radius: 5px;
+                background: black;
+                color: white;
+                padding: 50px;
+            }
+        }
+    }
+    .contact {
+        background: green;
+        width: 100%;
+    }
+}

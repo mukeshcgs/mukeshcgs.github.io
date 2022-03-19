@@ -1,0 +1,38 @@
+{
+  "title": "Anagram.paris | Find us",
+  "content": [
+    {
+      "id": "prefabs.text_titles",
+      "text": "Find us",
+      "titles": [
+        "*we re waiting for you*"
+      ],
+      "paddingTop": 150,
+      "paddingBottom": 45,
+      "mobile": {
+        "paddingTop": 150,
+        "paddingBottom": 20,
+        "maxWidth": "80w"
+      }
+    },
+    {
+      "id": "prefabs.text",
+      "text": "We’re based in Paris, FRANCE.",
+      "maxWidth": "60w",
+      "paddingBottom": 0
+    },
+    {
+      "id": "prefabs.contact",
+      "align": "left"
+    },
+    {
+      "id": "prefabs.map"
+    },
+    {
+      "id": "prefabs.form"
+    },
+    {
+      "id": "prefabs.footer"
+    }
+  ]
+}

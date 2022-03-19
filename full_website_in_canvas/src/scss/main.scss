@@ -1,0 +1,47 @@
+    main {
+        margin-top: 76px;
+        @media only screen and (max-width: $mobile-width) {
+            margin-top: 0px;
+        }
+    }
+    
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+    
+    section {
+        padding: 2rem 0px;
+        min-height: 100vh;
+        width: 100%;
+        // width: 100vw;
+        position: relative;
+        max-width: 1080px;
+        margin: 0 auto;
+        &.full {
+            max-width: 100%;
+            width: 100%;
+        }
+        @media only screen and (max-width: $mobile-width) {}
+    }
+    
+    .no-pad {
+        padding: 0px;
+    }
+    
+    #viewport {
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    #scroll-container {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }

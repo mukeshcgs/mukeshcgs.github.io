@@ -1,0 +1,163 @@
+{
+  "title": "Anagram.paris | Work",
+  "content": [
+    {
+      "id": "prefabs.text_titles",
+      "text": "Discover our",
+      "titles": [
+        "*productions*"
+      ],
+      "paddingTop": 150,
+      "paddingBottom": 45,
+      "mobile": {
+        "paddingTop": 150,
+        "paddingBottom": 20,
+        "maxWidth": "70w"
+      }
+    },
+    {
+      "id": "prefabs.text",
+      "text": "Our motto : craft beautiful digital experiences that actually create value for people who use it. Responsive websites, WebGL experiences, apps, products or VR, we cover a large range of creative fields to build the most innovative experiences, working hand-to-hand with our clients."
+    },
+    {
+      "id": "prefabs.works",
+      "content": [
+        {
+          "src": "img/assets/pages/works/jetlag.jpg",
+          "text": "Jetlag",
+          "label": {
+            "text": "Web experience",
+            "src": "img/assets/pages/works/icon-web.png"
+          },
+          "link": {
+            "href": "/work/jetlag"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/burgerking.jpg",
+          "text": "Burger King",
+          "label": {
+            "text": "Responsive website",
+            "src": "img/assets/pages/works/icon-web.png"
+          },
+          "link": {
+            "href": "/work/bk"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/premiereclasse.jpg",
+          "text": "Première Classe",
+          "label": {
+            "text": "Responsive website",
+            "src": "img/assets/pages/works/icon-web.png"
+          },
+          "link": {
+            "href": "/work/premiereclasse"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/panorama.jpg",
+          "text": "360° New York",
+          "label": {
+            "text": "VR WebGL experience",
+            "src": "img/assets/pages/works/icon-vr.png"
+          },
+          "link": {
+            "href": "/work/panorama"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/autosphere.jpg",
+          "text": "Autosphère",
+          "label": {
+            "text": "Cross platform app",
+            "src": "img/assets/pages/works/icon-mobile.png"
+          },
+          "link": {
+            "href": "/work/autosphere"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/noeltoys.jpg",
+          "text": "Noël des toys",
+          "label": {
+            "text": "WebGL experience",
+            "src": "img/assets/pages/works/icon-mobile.png"
+          },
+          "link": {
+            "href": "/work/toys-christmas"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/goldensim.jpg",
+          "text": "Golden sim",
+          "label": {
+            "text": "Web marketing operation",
+            "src": "img/assets/pages/works/icon-web.png"
+          },
+          "link": {
+            "href": "/work/goldensim"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/moment.jpg",
+          "text": "Ibis Moment",
+          "label": {
+            "text": "WebGL & VR",
+            "src": "img/assets/pages/works/icon-video.png"
+          },
+          "link": {
+            "href": "/work/ibis-moment"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/charlesk.jpg",
+          "text": "Charles Kalpakian",
+          "label": {
+            "text": "Responsive website",
+            "src": "img/assets/pages/works/icon-web.png"
+          },
+          "link": {
+            "href": "/work/charles-kalpakian"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/spray.jpg",
+          "text": "Spray",
+          "label": {
+            "text": "VR native app",
+            "src": "img/assets/pages/works/icon-vr.png"
+          },
+          "link": {
+            "href": "/work/spray"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/carenity.jpg",
+          "text": "Carenity",
+          "label": {
+            "text": "UX Design",
+            "src": "img/assets/pages/works/icon-web.png"
+          },
+          "link": {
+            "href": "/work/carenity"
+          }
+        },
+        {
+          "src": "img/assets/pages/works/mobiskill.jpg",
+          "text": "Mobiskill",
+          "label": {
+            "text": "Responsive website",
+            "src": "img/assets/pages/works/icon-web.png"
+          },
+          "link": {
+            "href": "/work/mobiskill"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prefabs.footer"
+    }
+  ]
+}

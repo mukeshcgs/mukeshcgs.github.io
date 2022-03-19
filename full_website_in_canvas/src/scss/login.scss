@@ -1,0 +1,65 @@
+.login-rigester {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    position: fixed;
+    z-index: 99;
+    // left: auto;
+    right: -300px;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: aliceblue;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    form {
+        width: 100%;
+        padding: 1rem;
+        .input-holder {
+            margin-bottom: 14px;
+            width: 100%;
+        }
+        input,
+        select {
+            color: rgb(32, 32, 32);
+            padding: 10px 20px;
+            // border-radius: 25px;
+            border: 2px solid #c5c5c5;
+            font-size: 16px;
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            -ms-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            width: 100%;
+            background: transparent;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 0px;
+            outline: 0px;
+            margin-bottom: 0.5rem;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #ccc;
+        }
+        input:focus,
+        input:active,
+        input:focus {
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            -ms-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+        }
+        input[type="submit"] {
+            background: #ee3c96 !important;
+            color: #ffffff;
+            // border: 0px;
+        }
+        input[type="checkbox"] {
+            border: 1px solid #ccc;
+        }
+    }
+}

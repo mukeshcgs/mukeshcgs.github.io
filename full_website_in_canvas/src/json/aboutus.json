@@ -1,0 +1,158 @@
+{
+  "title": "Anagram.paris | About us",
+  "content": [
+    {
+      "id": "prefabs.text_titles",
+      "text": "Learn more",
+      "titles": [
+        "*About us*"
+      ],
+      "paddingTop": 150,
+      "paddingBottom": 45,
+      "mobile": {
+        "paddingTop": 150,
+        "paddingBottom": 20,
+        "maxWidth": "80w"
+      }
+    },
+    {
+      "id": "prefabs.text",
+      "text": "Not another random digital agency. We are passionate digital creatives who just love the web and its unlimited possibilities. Working with us is becoming part of our family, we will form a multi-skilled team to help you take your digital projects to a whole new level.",
+      "paddingBottom": 80,
+      "mobile": {
+        "paddingBottom": 40
+      }
+    },
+    {
+      "id": "prefabs.image",
+      "src": "img/assets/pages/aboutus/place.jpg",
+      "height": "39.296875w",
+      "paddingBottom": 100,
+      "mobile": {
+        "paddingBottom": 40
+      }
+    },
+    {
+      "id": "prefabs.skills",
+      "content": [
+        {
+          "title": "Strategy",
+          "description": "Strategy and marketing should work hand to hand with design and production.\nWe set up design sprints and workshops to have you work with our team of experts to analyse your problem and address it the best way possible.",
+          "src": "img/assets/pages/aboutus/icon-strategy.png",
+          "link": {
+            "text": "See a case study",
+            "title": "See a case study",
+            "href": "/work/carenity"
+          }
+        },
+        {
+          "title": "Design",
+          "description": "Our team features UX and UI designers that are also passionate about motion, photo, 3d and coding. This way, every steps of design and production are working together smoothly.",
+          "src": "img/assets/pages/aboutus/icon-design.png",
+          "link": {
+            "text": "See a case study",
+            "title": "See a case study",
+            "href": "/work/jetlag"
+          }
+        },
+        {
+          "title": "Product",
+          "description": "We use dozens of digital products every day but only a handful provide us such a satisfying experience that we want to use them again and again. This is the type of product we love and like to build for our clients.",
+          "src": "img/assets/pages/aboutus/icon-product.png",
+          "link": {
+            "text": "See a case study",
+            "title": "See a case study",
+            "href": "/work/autosphere"
+          }
+        },
+        {
+          "title": "Web",
+          "description": "Responsive websites, webGL experiences, web applications or even IoT. We use the most innovative technologies to bring to life your most ambitious projects and ideas. Our  secret goal : make the web richer, faster and easier to use than ever.",
+          "src": "img/assets/pages/aboutus/icon-web.png",
+          "link": {
+            "text": "See a case study",
+            "title": "See a case study",
+            "href": "/work/bk"
+          }
+        },
+        {
+          "title": "Mobile",
+          "description": "We are experts of the mobile web and will help your brand go mobile with the more appropriate technology : cross-platform app, native app, progressive web apps or mobile site… you name it !",
+          "src": "img/assets/pages/aboutus/icon-mobile.png",
+          "link": {
+            "text": "See a case study",
+            "title": "See a case study",
+            "href": "/work/goldensim"
+          }
+        },
+        {
+          "title": "VR & AR",
+          "description": "Today, VR and AR are like a limitless playground for creativity. After a period of R&D, we are now one of the most advanced french agencies working with VR and AR technology. The future is screenless, don’t forget…",
+          "src": "img/assets/pages/aboutus/icon-vr.png",
+          "link": {
+            "text": "See a case study",
+            "title": "See a case study",
+            "href": "/work/ibis-moment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prefabs.text_titles",
+      "text": "We want to",
+      "titles": [
+        "*_make amazing projects_*"
+      ],
+      "paddingTop": 100,
+      "paddingBottom": 60,
+      "mobile": {
+        "paddingTop": 40,
+        "paddingBottom": 20,
+        "maxWidth": "80w"
+      }
+    },
+    {
+      "id": "prefabs.text",
+      "text": "From world renown brands to early stage startups, we don’t put boundaries on the type of client we work with. As long as the project requires creativity and innovation we will be thrilled to step outside our comfort zone to discover a whole new project.",
+      "paddingBottom": 80
+    },
+    {
+      "id": "prefabs.contain",
+      "src": "img/assets/pages/aboutus/clients.png"
+    },
+    {
+      "id": "prefabs.stats",
+      "fill": "#0f917a",
+      "background": "#00ffd2",
+      "content": [
+        {
+          "margin": "0",
+          "src": "img/assets/pages/aboutus/fwa.png",
+          "content": [
+            "22 Site of the day"
+          ]
+        },
+        {
+          "margin": "6w",
+          "src": "img/assets/pages/aboutus/awwwards.png",
+          "content": [
+            "3 Site of the day",
+            "12 Honorable mentions"
+          ]
+        },
+        {
+          "margin": "8w",
+          "src": "img/assets/pages/aboutus/cssdesign.png",
+          "content": [
+            "2 Site of the day",
+            "1 Special kudo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prefabs.footer",
+      "paddingTop": 0
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+.banner {
+    $lineHeight: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    .line-row {
+        display: flex;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: ($lineHeight/8);
+        // margin-left: 25px;
+        // margin-right: 25px;
+        .line {
+            border-radius: $lineHeight;
+            // border-style: solid;
+            // border-width: 4px;
+            // border-color: #fff;
+            height: $lineHeight;
+            width: $lineHeight;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            -webkit-transition: all 2000ms ease;
+            -moz-transition: all 2000ms ease;
+            -ms-transition: all 2000ms ease;
+            -o-transition: all 2000ms ease;
+            transition: all 2000ms ease;
+            &.small {
+                width: $lineHeight;
+                &.right {
+                    justify-content: flex-end;
+                }
+                &.left {
+                    justify-content: flex-start;
+                }
+            }
+            &.mid {
+                width: $lineHeight*1.4;
+                &.right {
+                    justify-content: flex-end;
+                }
+                &.left {
+                    justify-content: flex-start;
+                }
+            }
+            &.large {
+                width: $lineHeight * 1.7;
+                &.right {
+                    justify-content: flex-end;
+                }
+                &.left {
+                    justify-content: flex-start;
+                }
+            }
+            .char-img {
+                position: relative;
+                border-radius: $lineHeight;
+                margin: 25px;
+                width: ($lineHeight - 50);
+                height: ($lineHeight - 50);
+                background-color: #fff;
+                img {
+                    border-radius: $lineHeight;
+                    overflow: hidden;
+                }
+                .char-name {
+                    font-size: 14px;
+                    font-weight: bold;
+                    width: fit-content;
+                    position: absolute;
+                    left: 85%;
+                    top: -20px;
+                    background: #fff;
+                    padding: 0.5rem 1rem;
+                    border-radius: 2rem;
+                    border-bottom-left-radius: 0rem;
+                    border: 1px solid #ccc;
+                    min-width: 150px;
+                    box-sizing: border-box;
+                    // -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+                    // -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+                    // box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+                    span {
+                        font-size: 12px;
+                        font-weight: normal;
+                        color: #797979;
+                    }
+                    &.left {
+                        left: auto;
+                        right: 85%;
+                        border-bottom-left-radius: 2rem;
+                        border-bottom-right-radius: 0rem;
+                    }
+                }
+            }
+            &:nth-child(1) {
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+            &:nth-last-child(1) {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    }
+    @media only screen and (max-width: 1024px) {}
+    @media only screen and (max-width: $mobile-width) {
+        $lineHeightMob: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        #sec0 {
+            display: flex;
+            justify-content: space-around;
+        }
+        .line-row {
+            // flex-direction: column;
+            display: block;
+            margin-bottom: ($lineHeightMob/4);
+            .line {
+                border-radius: $lineHeightMob;
+                height: $lineHeightMob;
+                width: $lineHeightMob;
+                margin-bottom: 15px;
+                &.small {
+                    width: $lineHeightMob;
+                    height: $lineHeightMob * 1.3;
+                    &.right {
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                    }
+                    &.left {
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                }
+                &.mid {
+                    width: $lineHeightMob;
+                    height: $lineHeightMob *1.8;
+                    &.right {
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                    }
+                    &.left {
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                }
+                &.large {
+                    width: $lineHeightMob;
+                    height: $lineHeightMob *2.5;
+                    &.right {
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                    }
+                    &.left {
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                }
+                .char-img {
+                    border-radius: $lineHeightMob;
+                    margin: 5px;
+                    width: ($lineHeightMob - 10);
+                    height: ($lineHeightMob - 10);
+                    background-color: #fff;
+                }
+                &:nth-child(1) {
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: $lineHeightMob;
+                }
+                &:nth-last-child(1) {
+                    border-top-right-radius: $lineHeightMob;
+                    border-bottom-left-radius: $lineHeightMob;
+                    border-bottom-right-radius: $lineHeightMob;
+                }
+            }
+        }
+    }
+}

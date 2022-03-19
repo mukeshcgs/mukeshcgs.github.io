@@ -1,0 +1,119 @@
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     // font-family: 'DINP-R';
+     font-family: 'Quicksand', sans-serif !important;
+     margin-bottom: 1rem;
+     font-weight: bold;
+ }
+ 
+ h1 {
+     font-size: 60px;
+ }
+ 
+ h2 {
+     font-size: 48px;
+ }
+ 
+ h3 {
+     font-size: 32px;
+ }
+ 
+ h4 {
+     font-size: 24px;
+ }
+ 
+ h5 {
+     font-size: 16px;
+ }
+ 
+ p {
+     font-size: 16px;
+     color: #414141;
+     letter-spacing: 0.5px;
+     margin-bottom: 1rem;
+ }
+ 
+ a {
+     color: $blue;
+     -webkit-transition: all 500ms ease;
+     -moz-transition: all 500ms ease;
+     -ms-transition: all 500ms ease;
+     -o-transition: all 500ms ease;
+     transition: all 500ms ease;
+     &:hover {
+         color: $black;
+         -webkit-transition: all 500ms ease;
+         -moz-transition: all 500ms ease;
+         -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+         transition: all 500ms ease;
+     }
+ }
+ 
+ //  BUTTONS
+ .btn {
+     outline: none;
+     padding: 0.75rem 1.5rem;
+     margin: 1rem 0;
+     font-size: 16px;
+     letter-spacing: 1px;
+     background: $primary;
+     border: 0px;
+     color: #ffffff;
+     -webkit-transition: all 500ms ease;
+     -moz-transition: all 500ms ease;
+     -ms-transition: all 500ms ease;
+     -o-transition: all 500ms ease;
+     transition: all 500ms ease;
+     &:hover {
+         cursor: pointer;
+         background-color: $orange;
+         color: $white;
+         -webkit-transition: all 500ms ease;
+         -moz-transition: all 500ms ease;
+         -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+         transition: all 500ms ease;
+     }
+     &.outline {
+         background: $white;
+         border: 2px solid $primary;
+         color: $yellow;
+         &:hover {
+             border: 2px solid $orange;
+             color: $orange;
+         }
+     }
+     &.round {
+         border-radius: 0.5rem;
+     }
+     &.capsule {
+         border-radius: 2rem;
+     }
+     &.icon {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-around;
+         align-items: center;
+         padding: 0.5rem;
+         padding-right: 0.5rem;
+         .btn-lable {
+             padding: 0rem 0.5rem;
+         }
+         .btn-icon {
+             //  padding: 0rem 0.5rem;
+             background: #ffffff;
+             border-radius: 2rem;
+             padding: 0.25rem;
+         }
+     }
+     &.link {
+         background: transparent;
+         border: 0px;
+         color: $orange;
+     }
+ }

@@ -1,0 +1,29 @@
+.game-display-mob {
+    display: flex;
+    .game-info {
+        background-color: #00B1B0;
+        flex: 3;
+    }
+    .mob-frame {
+        flex: 2;
+        background-color: #ffc200;
+        .img-holder {
+            background-color: #00ff48;
+            position: relative;
+            width: 400px;
+        }
+        img {
+            position: absolute;
+            left: -50%;
+        }
+    }
+}
+
+.ver-capsul {
+    width: 500px;
+    height: 600px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    border: 1px solid #cccccc;
+    border-bottom: 0px;
+}
