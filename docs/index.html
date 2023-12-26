@@ -196,7 +196,7 @@
             style="position: relative">
             <div class="close-menu">
                 <div class="navigation">
-                    <div class="logo"><a href="http://localhost:8080/"><svg class="svg-logo"
+                    <div class="logo"><a href="/"><svg class="svg-logo"
                                 width="55"
                                 height="30">
                                 <path d="M 0 30 L 15 0 L 30 30 Z"
@@ -204,19 +204,25 @@
                                 <path d="M 15 30 L 30 0 L 45 30 Z"
                                     fill="#000000"></path>
                             </svg></a></div>
-                    <div id="threeLines"
-                        class=""><button id="el"></button></div>
+                    <div class="burger-menu">
+                        <div class="bar">
+                            <span class="bar-1"> </span>
+                            <span class="bar-2"> </span>
+                            <span class="bar-3"> </span>
+                        </div>
+                    </div>
+                    <!-- <div id="threeLines" class=""><button id="el"></button></div> -->
                 </div>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li class="fade-in"><a href="#app">Top</a> </li>
-                    <li class="fade-in"><a href="#p0">About</a> </li>
+                    <!-- <li class="fade-in"><a href="#app">Me</a> </li> -->
+                    <li class="fade-in"><a href="#p0">Me</a> </li>
                     <li class="fade-in"><a href="#p1">Skills</a> </li>
                     <li class="fade-in"><a href="#p2">Work Experience</a></li>
                     <li class="fade-in"><a href="#p3">Freelance Work</a></li>
                     <li class="fade-in"><a href="#p4">Education</a></li>
-                    <li class="fade-in"><a href="#p5">Connect</a></li>
+                    <!-- <li class="fade-in"><a href="#p5">Connect</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -233,13 +239,13 @@
                         <span>|</span>
                         developer
                     </p>
-                    <div class="visco-badg">
+                    <!-- <div class="visco-badg">
                         <a style="display: inline-block; border: 0; text-decoration: none;"
                             href="http://vsco.co/mypixels?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid"><img
                                 style="width: 48px; height: 48px; margin: 0px;"
                                 src="http://assets.vsco.co/assets/images/assets/Logo_white_48.png"
                                 alt="VSCO Logo" /></a>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -261,7 +267,7 @@
                     <div class="work-exp-block">
                         <!--SKILL-->
                         <div id="p1"
-                            class="page-heading" >
+                            class="page-heading">
                             <span class="overlay22"></span>
                             Skills
                         </div>
@@ -485,7 +491,8 @@
                         </ul> -->
                         <!--EDUCATION-->
 
-                        <div id="p4" class="page-heading"><span class="overlay22"></span>Education</div>
+                        <div id="p4"
+                            class="page-heading"><span class="overlay22"></span>Education</div>
                         <ul class="skills edu wow fadeInUp"
                             data-wow-delay="0.3s">
                             <li>
@@ -556,6 +563,12 @@
             </script>
         </div>
     </div>
+    <div class="connect-mail">
+        <a href="mailto:dev.mukeshcgs@gmail.com">
+            <img src="./images/mail.svg"
+                alt="">
+        </a>
+    </div>
     <!--
 <ul class="subnav smooth-sec">
     <li><a href="#p1">Skills</a> </li>
@@ -609,6 +622,39 @@
     </script>
     <script>
         $(function () {
+            $(".burger-menu ").on("click", ".bar", function () {
+                $(".main-nav").slideToggle();
+                $(".bar").toggleClass('change');
+                $(".main-nav li").slideRight();
+            });
+            // $(".main-nav ul li").on("click", function () {
+            //     $(".main-nav").slideToggle();
+            //     $(".bar").toggleClass('change');
+            // })
+            $(document).on('click', 'a[href^="#"]', function (e) {
+                $(".main-nav").slideToggle();
+                $(".bar").toggleClass('change');
+                // ANIMATE TO SECTION
+                // target element id
+                var id = $(this).attr('href');
+
+                // target element
+                var $id = $(id);
+                if ($id.length === 0) {
+                    return;
+                }
+
+                // prevent standard hash navigation (avoid blinking in IE)
+                e.preventDefault();
+
+                // top position relative to the document
+                var pos = $id.offset().top;
+
+                // animated top scrolling
+                $('body, html').animate({ scrollTop: pos });
+            })
+
+
             // // GSAP SCROLL MAGIC
             var controller = new ScrollMagic.Controller();
             // gsap.from(".skill .skill-name div", {
@@ -646,7 +692,7 @@
         })
     </script>
     <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function () {
             FB.init({
@@ -663,11 +709,10 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat"
+     <div class="fb-customerchat"
         attribution="setup_tool"
         page_id="107198644461564">
-    </div>
+    </div> -->
 
 </body>
 
